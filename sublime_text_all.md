@@ -15,6 +15,7 @@ Follow the steps:
 
 ### Shortcuts
 * `ctrl + P` - find anything within the workspace.
+  * `eosio.hpp:5` - this takes to line 5 of "eosio.hpp" file.
 * `alt + shift + 2` -  split the view into 2
 * `ctrl + shift + P` - command palette i.e. manually install packages, Project:Save, Project:close, set:java, set:javascript, so on and so forth.
-  * `eosio.hpp:5` - this takes to line 5 of "eosio.hpp" file.
+  
