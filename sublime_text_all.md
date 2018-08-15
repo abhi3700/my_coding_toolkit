@@ -1,5 +1,6 @@
 ## About
 This is a editor cum IDE used for any format of file.
+link - https://www.sublimetext.com/
 
 ## Documentation
 link - http://docs.sublimetext.info/en/latest/index.html
@@ -8,7 +9,9 @@ link - http://docs.sublimetext.info/en/latest/index.html
 I prefer using Win 10. So, install on Win 10 & then connect WSL by creating shortcut to the ubuntu repo "/usr/local/bin/subl"
 
 Follow the steps:
-* Install from the link - 
+* Install from the link - https://www.sublimetext.com/3
+* make the shortcut link on ubuntu using `ln -s "/mnt/f/Softwares/Sublime Text 3/subl.exe" /usr/local/bin/subl`
+* use `subl` on bash-cmd
 
 ### Shortcuts
 * `ctrl + P` - find anything within the workspace.
