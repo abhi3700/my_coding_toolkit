@@ -24,4 +24,7 @@ Just `ctrl + shift + P` and type the package name and enter. It will install the
 If not found, then manually download the .zip file into the directory "Preferences >> Browse packages". Then restart the sublime App.
 
 * File icon - https://github.com/ihodev/a-file-icon
-  
+* Markdown Extended
+* JSON Comma
+* Ethereum
+* EthereumSoliditySnippets
