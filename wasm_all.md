@@ -1,5 +1,5 @@
 ## About
-Web Assembly is the subset of JS. It is being used in Web Apps for high performance like games using unconventional languages like C/C++ and many more.
+Web Assembly is the subset of JS. It is being used in Web Apps for high performance feature like in games using languages like C/C++, Rust and many more.
 
 ## Links
 * Documentation - https://kripken.github.io/emscripten-site/index.html
