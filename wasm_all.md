@@ -15,7 +15,7 @@ Steps to be followed:
 * `./emsdk activate sdk-incoming-64bit binaryen-master-64bit`
 * `source ./emsdk_env.sh` - Added to the PATH. <br/>
   #### NOTE: But whenever bash-cmd is loaded for wasm, follow these 2 steps:
-   * `cd /mnt/f/Softwares/emsdk`
+   * `cd /mnt/f/Softwares/emsdk` (wherever installed)
    * `source ./emsdk_env.sh`
 * **Execution:**
   * `emcc hello.cpp` : creates 2 files - `a.out.js` , `a.out.wasm`
