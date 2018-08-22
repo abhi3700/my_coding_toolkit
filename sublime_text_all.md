@@ -13,11 +13,18 @@ Follow the steps:
 * make the shortcut link on ubuntu using `ln -s "/mnt/f/Softwares/Sublime Text 3/subl.exe" /usr/local/bin/subl`
 * use `subl` on bash-cmd
 
+## Uninstallation
+* All the extra packages are installed in "click Browse Packages".
+* So, during uninstall, make a copy of the Sublime Text3 in other drives (E/ F/ G). Location - "C:\Users\abhijit\AppData\Roaming\Sublime Text 3".
+* After re-install, copy the folder into the location of the 'Browse Packages'
+
 ### Shortcuts
 * `ctrl + P` - find anything within the workspace.
   * `eosio.hpp:5` - this takes to line 5 of "eosio.hpp" file.
 * `alt + shift + 2` -  split the view into 2
 * `ctrl + shift + P` - command palette i.e. manually install packages, Project:Save, Project:close, set:java, set:javascript, so on and so forth.
+* 'Double click' will open the file (among the open side bar) and show in the "OPEN FILES". <br/>
+  'Single click' will just open the file.
 
 ### Packages
 Just `ctrl + shift + P` and type the package name and enter. It will install thereafter. 
@@ -28,3 +35,4 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * JSON Comma
 * Ethereum
 * EthereumSoliditySnippets
+
