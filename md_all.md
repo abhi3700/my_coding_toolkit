@@ -3,4 +3,4 @@
 * Markdown TOC - https://github.com/naokazuterada/MarkdownTOC
 
 ## Salient points
-* One can try editing a file on Github or Sublime.
+* One can try editing a file on Github or Sublime enabling this above extensions.
