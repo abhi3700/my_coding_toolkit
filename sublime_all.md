@@ -26,6 +26,20 @@ Follow the steps:
 * 'Double click' will open the file (among the open side bar) and show in the "OPEN FILES". <br/>
   'Single click' will just open the file.
 
+### Preferences
+* "Settings": set 
+```json
+{
+  "line_padding_top": 1,
+  "line_padding_bottom": 1
+}
+```
+* `ctrl+P` - Type 
+  - @ to jump to symbols, 
+  - # to search within the file, and 
+  - : to go to a line number
+
+
 ### Packages
 Just `ctrl + shift + P` and type the package name and enter. It will install thereafter. 
 If not found, then manually download the .zip file into the directory "Preferences >> Browse packages". Then restart the sublime App.
@@ -35,4 +49,18 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * JSON Comma
 * Ethereum
 * EthereumSoliditySnippets
+* SideBarEnhancements 
+* MarkdownWriter 
+* MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
+* Vue Syntax Highlight
+* Color Scheme - Pastels UI 
+* Stackoverflow Debug Helper
+* Stackoverflow Snippets
+* EasyWorkspace - [link](https://packagecontrol.io/packages/EasyWorkspace)
+  ```
+  Save Workspace    | ctrl+alt+s       | Save open files and folders as an easy workspace
+  Save As Workspace | ctrl+alt+shift+s | Save easy workspace to specified file
+  Open Workspace    | ctrl+alt+o       | Open an existing workspace
+  ```
+* Rainglow theme
 
