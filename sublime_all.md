@@ -63,4 +63,9 @@ If not found, then manually download the .zip file into the directory "Preferenc
   Open Workspace    | ctrl+alt+o       | Open an existing workspace
   ```
 * Rainglow theme
+* Auto refresh
+* WebAssembly Text Syntax
+* Vue Syntax Highlight
+* Vuejs Complete Package
+* FuzzyFilePath
 
