@@ -68,4 +68,5 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * Vue Syntax Highlight
 * Vuejs Complete Package
 * FuzzyFilePath
+* Include Autocomplete - for C++ files (in particular)
 
