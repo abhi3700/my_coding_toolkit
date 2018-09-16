@@ -35,10 +35,29 @@ Follow the steps:
 }
 ```
 * `ctrl+P` - Type 
-  - @ to jump to symbols, 
-  - # to search within the file, and 
-  - : to go to a line number
-
+  - `@` to jump to symbols, 
+  - `#` to search within the file, and 
+  - `:` to go to a line number
+* Creating a new build system:
+	- Tools >> Build system >> New build system...
+	- paste your settings. E.g.- in c++ for implementing `g++ -std=c++14 -o hello.out hello.cpp`
+	```
+	{
+	 "cmd":["bash", "-c", "g++ -std=c++14 -Wall '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"],
+	 "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	 "working_dir": "${file_path}",
+	 "selector": "source.c, source.c++",
+	 "variants":
+	 [
+		 {
+			 "name": "Run",
+			 "cmd":["bash", "-c", "g++ -std=c++14 '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"]
+		 }
+	 ]
+	}
+	```
+	- save the file (into the directory shown). Remember to give just the name, no extension (it will automatically take).
+	- Now, choose the build system.
 
 ### Packages
 Just `ctrl + shift + P` and type the package name and enter. It will install thereafter. 
@@ -68,5 +87,6 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * Vue Syntax Highlight
 * Vuejs Complete Package
 * FuzzyFilePath
-* Include Autocomplete - for C++ files (in particular)
+* [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. Use `../` to search for files and also other files inside different folders.
+* #### [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
 
