@@ -91,3 +91,18 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * #### [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
 	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
 
+### Shortcut keys
+After the above packages are installed, use the following personalized shortcut keys:
+* `ctrl + o` - open files, folders.
+* `ctrl + s` - save the file.
+* `ctrl + shift + s` - "save as" the file.
+* `ctrl + alt + s` - save the workspace with opened folder.
+* `ctrl + alt + o` - open the saved workspaces (all will appear in the palette).
+* `alt + shift + 1` - view layout single. 
+* `alt + shift + 2` - view layout double. Like this, so on and so forth.
+* `ctrl + shift + p` - open the command palette.
+* `ctrl + p` - open any files from the workspace (chosen folder).
+* `ctrl + shift + p` >> "install package" --> install any package available.
+* `ctrl + alt + b` - debug, compile, test C++ program.
+
+
