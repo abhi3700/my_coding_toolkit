@@ -6,6 +6,10 @@
 * Use mingw64 compiler. Compile any `.cpp` file using <br/>
 `..mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++ -std=c++17- -o hello.out hello.cpp`
 
+### IDE
+* Editor - Sublime
+* Compiler - Use [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#cppfastolympiccoding--)
+
 ## on Linux (Ubuntu)
 ### Editor
 * Use the `sublime text 3`
