@@ -90,6 +90,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. Use `../` to search for files and also other files inside different folders.
 * #### [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
 	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
+* [Git repository](https://packagecontrol.io/packages/Open%20in%20Git%20Repository) - open any code in github.
 
 ### Shortcut keys
 After the above packages are installed, use the following personalized shortcut keys:
