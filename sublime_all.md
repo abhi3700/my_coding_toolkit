@@ -107,4 +107,6 @@ After the above packages are installed, use the following personalized shortcut 
 * `ctrl + shift + p` >> "install package" --> install any package available.
 * `ctrl + alt + b` - debug, compile, test C++ program.
 
+For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
+
 
