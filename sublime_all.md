@@ -63,36 +63,44 @@ Follow the steps:
 Just `ctrl + shift + P` and type the package name and enter. It will install thereafter. 
 If not found, then manually download the .zip file into the directory "Preferences >> Browse packages". Then restart the sublime App.
 
-* File icon - https://github.com/ihodev/a-file-icon
-* Markdown Extended
-* JSON Comma
-* Ethereum
-* EthereumSoliditySnippets
-* SideBarEnhancements 
-* MarkdownWriter 
-* MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
-* Vue Syntax Highlight
-* Color Scheme - Pastels UI 
-* Stackoverflow Debug Helper
-* Stackoverflow Snippets
-* EasyWorkspace - [link](https://packagecontrol.io/packages/EasyWorkspace)
+* [x] A File Icon - https://github.com/ihodev/a-file-icon
+* [x] Auto Refresh
+* [x] AutoFileName
+* [x] Color Scheme - Pastels UI
+* [x] Comment-Snippets
+* [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
+	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
+* [x] EasyWorkspace - [link](https://packagecontrol.io/packages/EasyWorkspace)
   ```
   Save Workspace    | ctrl+alt+s       | Save open files and folders as an easy workspace
   Save As Workspace | ctrl+alt+shift+s | Save easy workspace to specified file
   Open Workspace    | ctrl+alt+o       | Open an existing workspace
   ```
+* [x] EasyWorkspace-workspaces
+* [x] FuzzyFilePath
+* [x] [Git Savvy](https://packagecontrol.io/packages/GitSavvy) - Full git and GitHub integration with ST3.
+* [x] [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. inside `#include " "`, use `../` to search for files and also other files inside different folders.
+* [x] Inline Google translate
+* [x] MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
+* [x] [MarkdownTOC](https://github.com/naokazuterada/MarkdownTOC)
+* [x] MarkdownWriter
+* [x] PlainTasks
+* [x] RTagsComplete
+* [x] SideBarEnhancements
+* [x] Stackoverflow Snippets
+* [x] Stackoverflow Debug Helper
+* [x] Toggle Read-Only 
+* [x] Vue Syntax Highlight
+* [x] Vuejs Complete Package
+* [x] WebAssembly Text Syntax
+* [x] zzz A File Icon zzz
+* Markdown Extended
+* JSON Comma
+* Ethereum
+* EthereumSoliditySnippets
 * Rainglow theme
-* Auto refresh
-* WebAssembly Text Syntax
-* Vue Syntax Highlight
-* Vuejs Complete Package
-* FuzzyFilePath
-* [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. Use `../` to search for files and also other files inside different folders.
-* #### [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
-	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
-* [MarkdownTOC](https://github.com/naokazuterada/MarkdownTOC)
-* [Git Savvy](https://packagecontrol.io/packages/GitSavvy) - Full git and GitHub integration with ST3.
-* Inline Google translate
+
+
 
 ### Shortcut keys
 After the above packages are installed, use the following personalized shortcut keys:
