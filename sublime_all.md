@@ -80,6 +80,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] FuzzyFilePath
 * [x] [Git Savvy](https://packagecontrol.io/packages/GitSavvy) - Full git and GitHub integration with ST3.
 * [x] [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. inside `#include " "`, use `../` to search for files and also other files inside different folders.
+	NOTE: It has to be applied in workspace i.e. open a folder and import any files within a sub-folder using the above technique.
 * [x] Inline Google translate
 * [x] MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
 * [x] [MarkdownTOC](https://github.com/naokazuterada/MarkdownTOC)
