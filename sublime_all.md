@@ -108,14 +108,17 @@ After the above packages are installed, use the following personalized shortcut 
 * `ctrl + o` - open files, folders.
 * `ctrl + s` - save the file.
 * `ctrl + shift + s` - "save as" the file.
-* `ctrl + alt + s` - save the workspace with opened folder.
-* `ctrl + alt + o` - open the saved workspaces (all will appear in the palette).
+* `ctrl + tab` - switch b/w tabs in a panel.
 * `alt + shift + 1` - view layout single. 
 * `alt + shift + 2` - view layout double. Like this, so on and so forth.
+* `ctrl + 1` - switch to panel 1.
+* `ctrl + 2` - switch to panel 2.
+* `ctrl + alt + s` - save the workspace with opened folder.
+* `ctrl + alt + o` - open the saved workspaces (all will appear in the palette).
 * `ctrl + shift + p` - open the command palette.
 * `ctrl + p` - open any files from the workspace (chosen folder).
 * `ctrl + shift + p` >> "install package" --> install any package available.
-* `ctrl + alt + b` - debug, compile, test C++ program.
+* `ctrl + alt + b` - debug, compile, test C++ program. [NOTE: `cppfastcoding` package should be installed first.]
 
 For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
 
