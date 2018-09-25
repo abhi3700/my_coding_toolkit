@@ -70,6 +70,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Comment-Snippets
 * [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
 	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
+* [x] DoxyDoc: C++ description about any method, class, template. [Usages](https://packagecontrol.io/packages/DoxyDoc) in animation form.
 * [x] EasyWorkspace - [link](https://packagecontrol.io/packages/EasyWorkspace)
   ```
   Save Workspace    | ctrl+alt+s       | Save open files and folders as an easy workspace
