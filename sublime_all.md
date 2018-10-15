@@ -83,6 +83,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. inside `#include " "`, use `../` to search for files and also other files inside different folders.
 	NOTE: It has to be applied in workspace i.e. open a folder and import any files within a sub-folder using the above technique.
 * [x] Inline Google translate
+* [x] Javascript Completions
 * [x] MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
 * [x] [MarkdownTOC](https://github.com/naokazuterada/MarkdownTOC)
 * [x] MarkdownWriter
@@ -91,6 +92,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] SideBarEnhancements
 * [x] Stackoverflow Snippets
 * [x] Stackoverflow Debug Helper
+* [x] Terminal: open terminal at the current folder of the opened file. Access by right clicking and choose the option "Open terminal here". By default it opens the Windows cmd. But to open the bash cmd, follow this: Preferences >> Package Settings >> Terminal >> Settings-Default. And then add this `"terminal": "C:/Windows/System32/bash.exe",` i.e. bash executable location.
 * [x] Toggle Read-Only 
 * [x] Vue Syntax Highlight
 * [x] Vuejs Complete Package
