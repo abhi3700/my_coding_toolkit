@@ -64,6 +64,7 @@ Just `ctrl + shift + P` and type the package name and enter. It will install the
 If not found, then manually download the .zip file into the directory "Preferences >> Browse packages". Then restart the sublime App.
 
 * [x] A File Icon - https://github.com/ihodev/a-file-icon
+* [x] [AppendSemiColon](https://packagecontrol.io/packages/AppendSemiColon): On windows, `Ctrl + ;` for inserting semicolon and `Ctrl + Shift + ;` to insert both semicolon and newline.
 * [x] Auto Refresh
 * [x] AutoFileName
 * [x] Color Scheme - Pastels UI
