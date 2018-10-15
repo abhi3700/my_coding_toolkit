@@ -1,6 +1,7 @@
 ## Online compiler
 - https://jsfiddle.net/
 
+## IDE
 ### Editor
 - Sublime text
 
