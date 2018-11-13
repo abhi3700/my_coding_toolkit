@@ -19,6 +19,10 @@ Follow the steps:
 * After re-install, copy the folder into the location of the 'Browse Packages'
 
 ### Shortcuts
+* CMD: <br/>
+	In cmd, bash-cmd, use `subl -h` to show the docs.
+	- `subl -n hello.cpp`: opens a file in new ST3 window.
+	
 * `ctrl + P` - find anything within the workspace.
   * `eosio.hpp:5` - this takes to line 5 of "eosio.hpp" file.
 * `alt + shift + 2` -  split the view into 2
