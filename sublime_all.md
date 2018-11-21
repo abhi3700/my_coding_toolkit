@@ -71,6 +71,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] [AppendSemiColon](https://packagecontrol.io/packages/AppendSemiColon): On windows, `Ctrl + ;` for inserting semicolon and `Ctrl + Shift + ;` to insert both semicolon and newline.
 * [x] Auto Refresh
 * [x] AutoFileName
+* [x] [C++ Snippets](https://packagecontrol.io/packages/C%2B%2B%20Snippets)
 * [x] Color Scheme - Pastels UI
 * [x] Comment-Snippets
 * [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
