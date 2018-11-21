@@ -89,7 +89,8 @@ If not found, then manually download the .zip file into the directory "Preferenc
 	NOTE: It has to be applied in workspace i.e. open a folder and import any files within a sub-folder using the above technique.
 * [x] Inline Google translate
 * [x] Javascript Completions
-* [x] MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
+* [ ] MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
+* [x] [MarkdownPreview](https://packagecontrol.io/packages/MarkdownPreview). After install, for `key binding` i.e shortcut key, `Preferences >> Key Bindings`, add this line `{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },`. Now, press `alt+m` to preview in browser.
 * [x] [MarkdownTOC](https://github.com/naokazuterada/MarkdownTOC)
 * [x] MarkdownWriter
 * [x] PlainTasks
