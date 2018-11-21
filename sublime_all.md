@@ -131,4 +131,31 @@ After the above packages are installed, use the following personalized shortcut 
 
 For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
 
+## Custom
+### Snippet
+Anytime, a custom snippet might be needed in order to automate a lot of code.
 
+Follow this steps:
+* Open a new snippet - `Tools >> Developer >> New Snippet`
+* For meaning of each tag, refer [video](https://www.youtube.com/watch?v=zS_4yLizMBw), [article](https://medium.freecodecamp.org/a-guide-to-preserving-your-wrists-with-sublime-text-snippets-7541662a53f2), [examples](https://github.com/Rapptz/cpp-sublime-snippet).
+* I created my own version. E.g.
+```xml
+<snippet>
+	<description>eosc - CONTRACT</description>
+	<content><![CDATA[
+CONTRACT ${1:/*class_name*/} : public eosio::contract {
+public:
+	using contract::contract;
+	${1}( name self ) : contract(self) {}
+
+private:
+
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>eosc</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
+```
+* This is how, one can create any snippet as per the need.
