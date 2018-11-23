@@ -68,12 +68,14 @@ Just `ctrl + shift + P` and type the package name and enter. It will install the
 If not found, then manually download the .zip file into the directory "Preferences >> Browse packages". Then restart the sublime App.
 
 * [x] A File Icon - https://github.com/ihodev/a-file-icon
+* [x] Anaconda
 * [x] [AppendSemiColon](https://packagecontrol.io/packages/AppendSemiColon): On windows, `Ctrl + ;` for inserting semicolon and `Ctrl + Shift + ;` to insert both semicolon and newline.
 * [x] Auto Refresh
 * [x] AutoFileName
 * [x] [C++ Snippets](https://packagecontrol.io/packages/C%2B%2B%20Snippets)
 * [x] Color Scheme - Pastels UI
 * [x] Comment-Snippets
+* [x] Conda
 * [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
 	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
 * [x] DoxyDoc: C++ description about any method, class, template. [Usages](https://packagecontrol.io/packages/DoxyDoc) in animation form.
