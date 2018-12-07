@@ -23,10 +23,10 @@ Follow the steps:
 	In cmd, bash-cmd, use `subl -h` to show the docs.
 	- `subl -n hello.cpp`: opens a file in new ST3 window.
 	
-* `ctrl + P` - find anything within the workspace.
+* <kbd>ctrl + p</kbd> - find anything within the workspace.
   * `eosio.hpp:5` - this takes to line 5 of "eosio.hpp" file.
-* `alt + shift + 2` -  split the view into 2
-* `ctrl + shift + P` - command palette i.e. manually install packages, Project:Save, Project:close, set:java, set:javascript, so on and so forth.
+* <kbd>alt + shift + 2</kbd> -  split the view into 2
+* <kbd>ctrl + shift + p</kbd> - command palette i.e. manually install packages, Project:Save, Project:close, set:java, set:javascript, so on and so forth.
 * 'Double click' will open the file (among the open side bar) and show in the "OPEN FILES". <br/>
   'Single click' will just open the file.
 
@@ -64,12 +64,12 @@ Follow the steps:
 	- Now, choose the build system.
 
 ### Packages
-Just `ctrl + shift + P` and type the package name and enter. It will install thereafter. 
+Just <kbd>ctrl + shift + p</kbd> and type the package name and enter. It will install thereafter. 
 If not found, then manually download the .zip file into the directory "Preferences >> Browse packages". Then restart the sublime App.
 
 * [x] A File Icon - https://github.com/ihodev/a-file-icon
 * [x] Anaconda
-* [x] [AppendSemiColon](https://packagecontrol.io/packages/AppendSemiColon): On windows, `Ctrl + ;` for inserting semicolon and `Ctrl + Shift + ;` to insert both semicolon and newline.
+* [x] [AppendSemiColon](https://packagecontrol.io/packages/AppendSemiColon): On windows, <kbd>ctrl + ;</kbd> for inserting semicolon and <kbd>ctrl + shift + ;</kbd> to insert both semicolon and newline.
 * [x] Auto Refresh
 * [x] AutoFileName
 * [x] [C++ Snippets](https://packagecontrol.io/packages/C%2B%2B%20Snippets)
@@ -77,7 +77,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Comment-Snippets
 * [x] Conda
 * [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
-	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use `ctrl + alt + b` to debug, compile, test.
+	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use <kbd>ctrl + alt + b</kbd> to debug, compile, test.
 * [x] DoxyDoc: C++ description about any method, class, template. [Usages](https://packagecontrol.io/packages/DoxyDoc) in animation form.
 * [x] EasyWorkspace - [link](https://packagecontrol.io/packages/EasyWorkspace)
   ```
@@ -117,20 +117,20 @@ If not found, then manually download the .zip file into the directory "Preferenc
 
 ### Shortcut keys
 After the above packages are installed, use the following personalized shortcut keys:
-* `ctrl + o` - open files, folders.
-* `ctrl + s` - save the file.
-* `ctrl + shift + s` - "save as" the file.
-* `ctrl + tab` - switch b/w tabs in a panel.
-* `alt + shift + 1` - view layout single. 
-* `alt + shift + 2` - view layout double. Like this, so on and so forth.
-* `ctrl + 1` - switch to panel 1.
-* `ctrl + 2` - switch to panel 2.
-* `ctrl + alt + s` - save the workspace with opened folder.
-* `ctrl + alt + o` - open the saved workspaces (all will appear in the palette).
-* `ctrl + shift + p` - open the command palette.
-* `ctrl + p` - open any files from the workspace (chosen folder).
-* `ctrl + shift + p` >> "install package" --> install any package available.
-* `ctrl + alt + b` - debug, compile, test C++ program. [NOTE: `cppfastcoding` package should be installed first.]
+* <kbd>ctrl + o</kbd> - open files, folders.
+* <kbd>ctrl + s</kbd> - save the file.
+* <kbd>ctrl + shift + s</kbd> - "save as" the file.
+* <kbd>ctrl + tab</kbd> - switch b/w tabs in a panel.
+* <kbd>alt + shift + 1</kbd> - view layout single. 
+* <kbd>alt + shift + 2</kbd> - view layout double. Like this, so on and so forth.
+* <kbd>ctrl + 1</kbd> - switch to panel 1.
+* <kbd>ctrl + 2</kbd> - switch to panel 2.
+* <kbd>ctrl + alt + s</kbd> - save the workspace with opened folder.
+* <kbd>ctrl + alt + o</kbd> - open the saved workspaces (all will appear in the palette).
+* <kbd>ctrl + shift + p</kbd> - open the command palette.
+* <kbd>ctrl + p</kbd> - open any files from the workspace (chosen folder).
+* <kbd>ctrl + shift + p</kbd> >> "install package" --> install any package available.
+* <kbd>ctrl + alt + b</kbd> - debug, compile, test C++ program. [NOTE: `cppfastcoding` package should be installed first.]
 
 For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
 
