@@ -131,6 +131,7 @@ After the above packages are installed, use the following personalized shortcut 
 * <kbd>ctrl + p</kbd> - open any files from the workspace (chosen folder).
 * <kbd>ctrl + shift + p</kbd> >> "install package" --> install any package available.
 * <kbd>ctrl + alt + b</kbd> - debug, compile, test C++ program. [NOTE: `cppfastcoding` package should be installed first.]
+* <kbd>ctrl + shift + t</kbd> - open terminal in that directory location
 
 For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
 
