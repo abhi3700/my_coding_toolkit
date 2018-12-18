@@ -139,7 +139,7 @@ For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_S
 ### Snippet
 Anytime, a custom snippet might be needed in order to automate a lot of code.
 
-Follow this steps:
+Follow these steps:
 * Open a new snippet - `Tools >> Developer >> New Snippet`
 * For meaning of each tag, refer [video](https://www.youtube.com/watch?v=zS_4yLizMBw), [article](https://medium.freecodecamp.org/a-guide-to-preserving-your-wrists-with-sublime-text-snippets-7541662a53f2), [examples](https://github.com/Rapptz/cpp-sublime-snippet).
 * I created my own version. E.g.
@@ -163,3 +163,34 @@ private:
 </snippet>
 ```
 * This is how, one can create any snippet as per the need.
+
+### Build System
+Create your custom build file to compile any type of program files.
+
+Follow these steps:
+* `Tools >> Build System >> New Build System`
+* <kbd>ctrl + s</kbd> to save the file in `"../Packages/User/"` location with a name (to be seen in **Build System** list).
+* Now, it is visible in `Tools >> Build System` location.
+
+>	NOTE: Remember, for any windows based build, the command has to be installed in Win environment. And the same is applied in case of Ubuntu & OSX machine.
+
+* Cases:
+	- **windows**: <br/>
+	An object of options to use when the build system is being executed on a Windows machine.
+	Example:
+	{
+			"cmd": ["my_command.exe", "/D", "$file"]
+	}
+	- **osx**: <br/>
+	An object of options to use when the build system is being executed on a Mac machine.
+	Example:
+	{
+			"cmd": ["/Applications/MyProgram.app/Contents/MacOS/my_command", "-d", "$file"]
+	}
+	- **linux**: <br/>
+	An object of options to use when the build system is being executed on a Linux machine.
+	Example:
+	{
+			"cmd": ["bash", "-c", "/usr/local/bin/my_command", "-d", "$file"]
+	}
+
