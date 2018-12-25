@@ -14,6 +14,8 @@ Function Area(x As Double, y As Double) As Double
 Area = x * y
 End Function
 ```
+  
+> NOTE: you will also find that user-defined function within a cell after typing "=".
 
 * **Sub** procedure: defined for a sheet in an excel workbook.
   - View project structure on the left panel of the editor.
