@@ -29,6 +29,7 @@ z = Area(2, 5) + 5
 MsgBox(z)
 End Sub
 ```
+> NOTE: **Sub vs Function** - <br/> Sub doesn't return anything. But, Function returns as Integer, Double, String, Long, etc.
 
 ## Websites
 * https://www.excel-easy.com/
