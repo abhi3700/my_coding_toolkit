@@ -78,6 +78,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Conda
 * [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
 	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use <kbd>ctrl + alt + b</kbd> to debug, compile, test.
+	> NOTE: It will work only if the g++ installation is done.
 * [x] DoxyDoc: C++ description about any method, class, template. [Usages](https://packagecontrol.io/packages/DoxyDoc) in animation form.
 * [x] EasyWorkspace - [link](https://packagecontrol.io/packages/EasyWorkspace)
   ```
