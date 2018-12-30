@@ -9,7 +9,11 @@ I prefer this:
 	* for Blockchain projects - use [eosio.cdt](https://github.com/EOSIO/eosio.cdt) on bash terminal
   
 ### Anaconda
+* Refer [this](https://github.com/abhi3700/My_learning-Python/blob/master/anaconda.md)
 
 ### pip
-  - Install at a custom location using `pip install <package> -t <directory>`. <br/>
+* Install at a custom location using `pip install <package> -t <directory>`. <br/>
     e.g. `pip install XlsxWriter -t F:\Softwares\Python\Python37\Lib`
+
+## References
+* My repo - https://github.com/abhi3700/My_learning-Python
