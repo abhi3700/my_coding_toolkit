@@ -114,8 +114,6 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * EthereumSoliditySnippets
 * Rainglow theme
 
-
-
 ### Shortcut keys
 After the above packages are installed, use the following personalized shortcut keys:
 * <kbd>ctrl + o</kbd> - open files, folders.
@@ -195,3 +193,9 @@ Follow these steps:
 			"cmd": ["bash", "-c", "/usr/local/bin/my_command", "-d", "$file"]
 	}
 
+
+## NOTE
+* Know spaces and tabs within code: <br/>
+	When the code is selected-
+	- all the tabs are marked with single dash line
+	- all the spaces are marked with dotted lines
