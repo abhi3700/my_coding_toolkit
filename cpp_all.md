@@ -28,5 +28,9 @@ I prefer this:
 * Use gcc compiler. Compile any `.cpp` file using `g++ -std=c++17- -o hello.out hello.cpp`
   
 
+## Shortcuts 
+(in ST3 with [packages](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#packages) installed)
+* **Multi-line comment**: type `/**` and then <kbd>enter</kbd>
+* **Single-line comment**: <kbd>ctrl + /</kbd>
 ## References
 * For more refer to [this](https://github.com/abhi3700/My_Learning-Cpp).
