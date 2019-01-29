@@ -15,7 +15,7 @@ I prefer this:
 * [RECOMMENDED] Install in conda environment.
 	- On Windows, open "Anaconda Prompt".
   - `> pip install <package-name>`
-  - Check for the package if installed: try `conda list` in a separate terminal.
+  - Check for the package if installed: try `conda list` on same/separate terminal.
   - DONE!
 * Install at a custom location using `pip install <package> -t <directory>`. <br/>
     e.g. `pip install XlsxWriter -t F:\Softwares\Python\Python37\Lib`
