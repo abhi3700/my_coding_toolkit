@@ -8,4 +8,15 @@
 
 
 ## Coding 
-* 
+* #### `@echo off`
+  **Output:**
+  ```
+  C:\Users\abhijit>@echo off
+
+
+  ```
+* #### `echo abhijit`
+  **Output:**
+  ```
+  abhijit
+  ```
