@@ -102,7 +102,9 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] SideBarEnhancements
 * [x] Stackoverflow Snippets
 * [x] Stackoverflow Debug Helper
-* [x] Terminal: open terminal at the current folder of the opened file. Access by right clicking and choose the option "Open terminal here". By default it opens the Windows cmd. But to open the bash cmd, follow this: Preferences >> Package Settings >> Terminal >> Settings-Default. And then add this `"terminal": "C:/Windows/System32/bash.exe",` i.e. bash executable location.
+* [x] Terminal: open terminal at the current folder of the opened file. Access by right clicking and choose the option "Open terminal here". By default it opens the Windows cmd. But to open the bash cmd, follow this: Preferences >> Package Settings >> Terminal >> Settings-Default. And then <br/>
+  **Linux (Ubuntu):** add this `"terminal": "C:/Windows/System32/bash.exe",` i.e. bash executable location. <br/>
+  **Windows:** Just add this `"terminal": "C:\\Windows\\System32\\cmd.exe",` i.e. cmd executable location.
 * [x] Toggle Read-Only 
 * [x] Vue Syntax Highlight
 * [x] Vuejs Complete Package
