@@ -31,6 +31,13 @@ Follow the steps:
   'Single click' will just open the file.
 
 ### Preferences
+* `Preferences -> Settings - Default/User`: for all files
+* `Preferences -> Settings - Syntax Specific`: for that language. `E.g. - Python.sublime-settings`
+* Convert tabs to spaces: set this
+```json
+    "tab_size": 4,
+    "translate_tabs_to_spaces": false,
+```
 * "Settings": set 
 ```json
 {
