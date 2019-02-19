@@ -1,5 +1,11 @@
 # Git & Github Essentials
 ## Commands
+* ##### `git init` - intialize git within a non-Github folder (i.e. a local folder)
+* ##### `git add .` - add all the files, folders inside a repo. for commit.
+* ##### `git add ./find.cpp` - adding a `.cpp` file for commit.
+* ##### `git commit -m "Add a comment"` - commit to the master branch.
+* ##### `git push origin master` - pushing the added commit to the remote url
+* ##### `git remote -v` - verify the url of the repo.
 
 ## Activities
 * ### Push a local folder to Github
@@ -13,8 +19,16 @@
   8. `$ git remote add origin <repo-url>` - sets the new remote. Add the github link to the commit
   9. `$ git remote -v` - verifies the new remote URL.
   10. `$ git push origin master`
+  11. DONE!
 
   [Source](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+
+* ### Create a Submodule inside a Module (cloned from github repo)
+  1. Open terminal (cmd or bash) in the directory (cloned repo)
+  2. `$ git submodule <repo-url> <repo-name>`
+  3. A file will be created with this content:
+  `[submodule "eos-api"] path = eos-api url = https://github.com/oraclize/eos-api.git`
+  4. DONE!
 
 ## References
 * Udacity courses on Git & Github:
