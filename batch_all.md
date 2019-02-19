@@ -22,6 +22,10 @@ drwxr-xr-x 1 abhijit 197121   0 Feb 19 12:36 hello
 ```bash
 -rw-r--r-- 1 abhijit 197121 574 Feb 19 12:36 README.md
 ```
+* #### `> pwd`: shows the directory
+```bash
+/f/Coding/Github_repos/eosio-playground
+```
 
 ## Coding 
 * #### `> @echo off`
