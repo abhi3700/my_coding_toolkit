@@ -24,14 +24,14 @@ drwxr-xr-x 1 abhijit 197121   0 Feb 19 12:36 hello
 ```
 
 ## Coding 
-* #### `@echo off`
+* #### `> @echo off`
   **Output:**
   ```
   C:\Users\abhijit>@echo off
 
 
   ```
-* #### `echo abhijit`
+* #### `> echo abhijit`
   **Output:**
   ```
   abhijit
