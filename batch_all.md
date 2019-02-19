@@ -26,7 +26,9 @@ drwxr-xr-x 1 abhijit 197121   0 Feb 19 12:36 hello
 ```bash
 /f/Coding/Github_repos/eosio-playground
 ```
-
+* #### `type nul > file.txt`
+  create a new file named - "file.txt"
+ 
 ## Coding 
 * #### `> @echo off`
   **Output:**
