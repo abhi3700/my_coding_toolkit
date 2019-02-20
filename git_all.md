@@ -8,7 +8,12 @@
 * ##### `git remote -v` - verify the url of the repo.
 * ##### `git clone <repo-url>` - clone a github repository from link like - https://github.com/EOSIO/eosio.cdt
 * ##### `git clone <repo-url> <your-repo-name>` - clone a github repository with a custom name.
-
+* ##### `svn checkout <repo-url>` - clone a github repo.
+* ##### `svn checkout <modified-repo-url>` 
+  clone a folder from github repo. Original repo-url - `https://github.com/EOSIO/eosio.cdt`
+  - Master branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/trunk/libraries`
+  - other branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/branches/develop/libraries`
+  
 ## Activities
 * ### Push a local folder to Github
   1. create a github repo.
@@ -32,6 +37,15 @@
   `[submodule "eos-api"] path = eos-api url = https://github.com/oraclize/eos-api.git`
   4. DONE!
 
+* ### Clone a directory from github repo.
+  NOTE: Valid for Github repo. only.
+  1. copy the url - https://github.com/EOSIO/eosio.cdt
+  2. Modify the url - https://github.com/EOSIO/eosio.cdt/libraries
+  3. Clone a folder from 
+    - master branch: `svn checkout https://github.com/EOSIO/eosio.cdt/trunk/libraries`
+    - other branch: `svn checkout https://github.com/EOSIO/eosio.cdt/branches/develop/libraries`
+    
+  [Source](https://stackoverflow.com/a/18194523/6774636)
 
 ## References
 * Udacity courses on Git & Github:
