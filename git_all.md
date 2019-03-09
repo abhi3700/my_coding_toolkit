@@ -13,7 +13,9 @@
   clone a folder from github repo. Original repo-url - `https://github.com/EOSIO/eosio.cdt`
   - Master branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/trunk/libraries`
   - other branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/branches/develop/libraries`
-  
+* ##### `svn update` - Update the repo. by going inside the folder.
+* ##### `git pull` - Update the repo. by going inside the folder.
+
 ## Activities
 * ### Push a local folder to Github
   1. create a github repo.
