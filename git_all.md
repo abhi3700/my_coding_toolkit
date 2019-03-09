@@ -37,7 +37,7 @@
   `[submodule "eos-api"] path = eos-api url = https://github.com/oraclize/eos-api.git`
   4. DONE!
 
-* ### Clone a directory from github repo.
+* ### Clone a folder from github repo.
   NOTE: Valid for Github repo. only.
   1. copy the url - https://github.com/EOSIO/eosio.cdt
   2. Modify the url - https://github.com/EOSIO/eosio.cdt/libraries
