@@ -34,7 +34,7 @@
 
 * ### Clone a Submodule (from github) inside a Module (cloned from github repo)
   1. Open terminal (cmd or bash) in the directory (cloned repo)
-  2. `$ git submodule <repo-url> <repo-name>`
+  2. `$ git submodule add <repo-url.git> <repo-name>`
   3. A file will be created with this content:
   `[submodule "eos-api"] path = eos-api url = https://github.com/oraclize/eos-api.git`
   4. DONE!
