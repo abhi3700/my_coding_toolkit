@@ -27,5 +27,14 @@
   `![eos_image](http://url/to/img.png)`
   
 * Image from local folder
+* Highlight console
+```console
+foo@bar:~$ whoami
+foo
+```
+* Highlight shell
+```sh
+wc -l en_US.twitter.txt 
+```
 ## Salient points
 * One can try editing a file on Github or Sublime enabling this above extensions.
