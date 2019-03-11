@@ -8,6 +8,8 @@
 * ##### `git remote -v` - verify the url of the repo.
 * ##### `git clone <repo-url>` - clone a github repository from link like - https://github.com/EOSIO/eosio.cdt
 * ##### `git clone <repo-url> <your-repo-name>` - clone a github repository with a custom name.
+* ##### `git clone -b <branch> <remote_repo>` - clone a specific branch (only) of github repo.
+  E.g. - `git clone -b v1.x --single-branch https://github.com/gabime/spdlog.git` [git v1.7.10 and later]
 * ##### `svn checkout <repo-url>` - clone a github repo.
 * ##### `svn checkout <modified-repo-url>` 
   clone a folder from github repo. Original repo-url - `https://github.com/EOSIO/eosio.cdt`
