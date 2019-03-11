@@ -15,7 +15,12 @@
   - other branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/branches/develop/libraries`
 * ##### `svn update` - Update the repo. by going inside the folder.
 * ##### `git pull` - Update the repo. by going inside the folder.
-
+* ##### `git submodule add <repo-url.git> <custom-repo-name>` - add submodule
+* ##### `git-delete-submodule <custom-repo-name>`: delete submodule
+  - First, install [`git-extras`](https://github.com/tj/git-extras) - [Installation](https://github.com/tj/git-extras/blob/master/Installation.md)
+* ##### update submodule
+  - `$ cd <custom-submodule-repo-name>`
+  - `$ git pull`
 ## Activities
 * ### Push a local folder to Github
   1. create a github repo.
@@ -34,7 +39,7 @@
 
 * ### Clone a Submodule (from github) inside a Module (cloned from github repo)
   1. Open terminal (cmd or bash) in the directory (cloned repo)
-  2. `$ git submodule add <repo-url.git> <repo-name>`
+  2. `$ git submodule add <repo-url.git> <custom-repo-name>`
   3. A file will be created with this content:
   `[submodule "eos-api"] path = eos-api url = https://github.com/oraclize/eos-api.git`
   4. DONE!
