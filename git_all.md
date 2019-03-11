@@ -21,6 +21,9 @@
 * ##### update submodule
   - `$ cd <custom-submodule-repo-name>`
   - `$ git pull`
+* ##### `git submodule status` - check submodule status inside the parent repo.
+* ##### `git status` - check the status of files, folders changed.
+
 ## Activities
 * ### Push a local folder to Github
   1. create a github repo.
