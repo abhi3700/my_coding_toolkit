@@ -11,7 +11,8 @@
 * ##### `git clone -b <branch> <remote_repo>` - clone a specific branch (only) of github repo.
   E.g. - `git clone -b v1.x --single-branch https://github.com/gabime/spdlog.git` [git v1.7.10 and later]
 * ##### `svn checkout <repo-url>` - clone a github repo.
-* ##### `svn checkout <modified-repo-url>` 
+* ##### `svn checkout <repo-url> <custom-name>` - clone a github repo with a custom local name.
+* ##### `svn checkout <modified-repo-url> <custom-name-optional>` 
   clone a folder from github repo. Original repo-url - `https://github.com/EOSIO/eosio.cdt`
   - Master branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/trunk/libraries`
   - other branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/branches/develop/libraries`
@@ -25,6 +26,7 @@
   - `$ git pull`
 * ##### `git submodule status` - check submodule status inside the parent repo.
 * ##### `git status` - check the status of files, folders changed.
+* ##### `svn checkout `
 
 ## Activities
 * ### Push a local folder to Github
