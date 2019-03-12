@@ -62,6 +62,15 @@
     
   [Source](https://stackoverflow.com/a/18194523/6774636)
 
+## Git for Excel - `xltrail`
+### System
+Currently, only available on Windows.
+
+### Installation
+* Download & install setup file from [here](https://www.xltrail.com/client).
+* open cmd and `git xltrail install` - Git xltrail requires a global installation once per-machine.
+
+
 ## Troubleshoot
 * `git` may not work properly on `bash-cmd` in directory of **removable disk**.
 
