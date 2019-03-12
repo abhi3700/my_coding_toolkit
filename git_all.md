@@ -26,7 +26,8 @@
   - `$ git pull`
 * ##### `git submodule status` - check submodule status inside the parent repo.
 * ##### `git status` - check the status of files, folders changed.
-* ##### `svn checkout `
+* ##### `git submodule update` - update the submodule after cloning any git repo.
+
 
 ## Activities
 * ### Push a local folder to Github
@@ -60,6 +61,9 @@
     - other branch: `svn checkout https://github.com/EOSIO/eosio.cdt/branches/develop/libraries`
     
   [Source](https://stackoverflow.com/a/18194523/6774636)
+
+## Troubleshoot
+* `git` may not work properly on `bash-cmd` in directory of **removable disk**.
 
 ## References
 * Udacity courses on Git & Github:
