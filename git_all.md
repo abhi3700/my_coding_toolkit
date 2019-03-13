@@ -27,7 +27,7 @@
 * ##### `git submodule status` - check submodule status inside the parent repo.
 * ##### `git status` - check the status of files, folders changed.
 * ##### `git submodule update` - update the submodule after cloning any git repo.
-
+* ##### `git branch` - list the branches. `*` shows the current branch.
 
 ## Activities
 * ### Push a local folder to Github
