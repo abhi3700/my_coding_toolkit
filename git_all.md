@@ -68,9 +68,18 @@
 Currently, only available on Windows.
 
 ### Installation
+* [Github]()
 * Download & install setup file from [here](https://www.xltrail.com/client).
 * open cmd and `git xltrail install` - Git xltrail requires a global installation once per-machine.
+* Now, available terminal commands are: `git-xltrail`, `git-xltrail-diff`, `git-xltrail-merge`. <br/>
+  All these are available in this installed folder: "F:\Softwares\Git xltrail". Also, these has been added in **PATH** of Environment variables.
+  
 
+### Setup
+* Spreadsheet Compare - "C:\Program Files (x86)\Microsoft Office\Office15\DCF\SPREADSHEETCOMPARE.EXE" [Microsoft Office Professional Plus 2013]
+
+### References [`xltrail`]
+* https://www.xltrail.com/blog/git-diff-spreadsheetcompare
 
 ## Troubleshoot
 * `git` may not work properly on `bash-cmd` in directory of **removable disk**.
