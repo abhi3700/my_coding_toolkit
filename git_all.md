@@ -5,6 +5,7 @@
 * ##### `git add ./find.cpp` - adding a `.cpp` file for commit.
 * ##### `git commit -m "Add a comment"` - commit to the master branch.
 * ##### `git push origin master` - pushing the added commit to the remote url
+* ##### `git pull origin master` - pulling the Master branch of the repo.
 * ##### Add a remote url to a git repo.
   ```console
   # Set a new remote
