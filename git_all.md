@@ -5,6 +5,16 @@
 * ##### `git add ./find.cpp` - adding a `.cpp` file for commit.
 * ##### `git commit -m "Add a comment"` - commit to the master branch.
 * ##### `git push origin master` - pushing the added commit to the remote url
+* ##### Add a remote url to a git repo.
+  ```console
+  # Set a new remote
+  $ git remote add origin https://github.com/user/repo.git
+
+  # Verify new remote
+  $ git remote -v
+  > origin  https://github.com/user/repo.git (fetch)
+  > origin  https://github.com/user/repo.git (push)
+  ```
 * ##### `git remote -v` - verify the url of the repo.
 * ##### `git clone <repo-url>` - clone a github repository from link like - https://github.com/EOSIO/eosio.cdt
 * ##### `git clone <repo-url> <your-repo-name>` - clone a github repository with a custom name.
