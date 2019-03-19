@@ -1,4 +1,11 @@
 # Git & Github Essentials
+## System
+Windows 10
+
+## Tools Installation
+* [Git for Windows](https://git-scm.com/download/win): To use as a console (git-bash is recommended)to clone, pull, push, commit, branch, etc...
+* [Sublime Merge](https://www.sublimemerge.com/) - Local Git GUI and these (Github, Gitlab, Bitbucket) are used as server.
+
 ## Commands
 * ##### `git init` - intialize git within a non-Github folder (i.e. a local folder)
 * ##### `git add .` - add all the files, folders inside a repo. for commit.
@@ -101,20 +108,21 @@
 
 ## Git for Server
 Setup a local directory as server (in place of Github) for Git repositories.
+
 ### Installation
-* OpenSSH
-  - Search "manage optional features" in the start menu.
-  - "Optional features" >> "Add a feature" >> OpenSSH Server. Install it. And then it will be listed in the Optional features.
-  - Now, **OpenSSH Server** & **OpenSSH Client** are installed.
+* [Bonobo Git Server](https://bonobogitserver.com/) - Local Git GUI with local storage (in network location). Auth like contributors, admin, anonymous push features are available. 
   
-### Setup
+  Follow the steps: #todo
+  - Open 
+* [Sublime Merge](https://www.sublimemerge.com/) - View files system in Local Git GUI.
+  
 
 ## Git for Excel - `xltrail`
 ### System
 Currently, only available on Windows.
 
 ### Installation
-* [Github]()
+* [Github](https://github.com/ZoomerAnalytics/git-xltrail)
 * Download & install setup file from [here](https://www.xltrail.com/client).
 * open cmd and `git xltrail install` - Git xltrail requires a global installation once per-machine.
 * Now, available terminal commands are: `git-xltrail`, `git-xltrail-diff`, `git-xltrail-merge`. <br/>
@@ -123,9 +131,6 @@ Currently, only available on Windows.
 
 ### Setup
 * Spreadsheet Compare - "C:\Program Files (x86)\Microsoft Office\Office15\DCF\SPREADSHEETCOMPARE.EXE" [Microsoft Office Professional Plus 2013]
-
-### References [`xltrail`]
-* https://www.xltrail.com/blog/git-diff-spreadsheetcompare
 
 
 ## References
@@ -149,3 +154,4 @@ Currently, only available on Windows.
     + https://git-scm.com/book/en/v2/Git-on-the-Server-GitLab
     + https://git-scm.com/book/en/v2/Git-on-the-Server-Third-Party-Hosted-Options
 * [Set up Git server on your local network windows](https://medium.com/@piteryo7/how-to-set-up-git-server-on-local-network-windows-tutorial-7ec5cd2df3b1)
+* [xltrail git diff spreadsheetcompare](https://www.xltrail.com/blog/git-diff-spreadsheetcompare)
