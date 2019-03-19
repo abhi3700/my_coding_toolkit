@@ -110,7 +110,7 @@ Windows 10
 Setup a local directory as server (in place of Github) for Git repositories.
 
 ### Installation
-* [Bonobo Git Server](https://bonobogitserver.com/) - Local Git GUI with local storage (in network location). Auth like contributors, admin, anonymous push features are available. 
+* [Bonobo Git Server](https://bonobogitserver.com/) - Local Git GUI with local storage (in network location). Auth like contributors, admin, anonymous push features are available. Manage repositories for a team/division in Office.
   
   Follow the steps: #todo
   - Open 
