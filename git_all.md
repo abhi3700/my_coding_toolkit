@@ -56,6 +56,10 @@
   
   E.g. `git diff origin/master..master` or `git diff remotes/origin/master..master` - Both are the same thing, which says difference b/w remote `master` branch and my `master` branch
   
+  #### Short difference:
+  - `origin/master` is "where master was over there last time I checked"
+  - `master` is "where master is over here based on what I have been doing"
+  
 ## Activities
 * ### Push a local folder to Github
   1. create a github repo.
