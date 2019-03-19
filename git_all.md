@@ -2,7 +2,8 @@
 ## Commands
 * ##### `git init` - intialize git within a non-Github folder (i.e. a local folder)
 * ##### `git add .` - add all the files, folders inside a repo. for commit.
-* ##### `git add ./find.cpp` - adding a `.cpp` file for commit.
+* ##### `git add <file1-name.ext> <file2-name.ext> <file3-name.ext>`
+  `git add ./find.cpp` - adding a `.cpp` file for commit.
 * ##### `git commit -m "Add a comment"` - commit to the master branch.
 * ##### `git push origin <branch-name>` - pushing the added commit (locally) to the remote url (respective branch).
   E.g. `git push origin master` - pushing the commits in the local master branch to the remote master branch.
