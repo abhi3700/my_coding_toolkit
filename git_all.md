@@ -122,3 +122,5 @@ Currently, only available on Windows.
   - [Version Control with Git](https://classroom.udacity.com/courses/ud123)
   - [Optimize your Github profile](https://classroom.udacity.com/courses/ud247)
   - [How to use Git and Github](https://classroom.udacity.com/courses/ud775)
+* Microsoft docs
+  - [History in Git](https://docs.microsoft.com/en-us/azure/devops/repos/git/history?view=azure-devops)
