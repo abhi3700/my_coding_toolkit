@@ -59,8 +59,9 @@
   
   #### Short difference:
   - `origin/master` is "where master was over there last time I checked"
-  - `master` is "where master is over here based on what I have been doing"
-  
+  - `master` is "where master is over here based on what I have been doing"  
+* ##### `git log --oneline --graph --color --all --decorate` - shows the entire graph of the repo.
+
 ## Activities
 * ### Push a local folder to Github
   1. create a github repo.
