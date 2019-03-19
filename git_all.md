@@ -40,9 +40,13 @@
 * ##### `git submodule update` - update the submodule after cloning any git repo.
 * ##### `git branch` - list the branches. `*` shows the current branch.
 * ##### `git log` - logs all the commits. Press <kbd>down arrow</kbd> to scroll down. Type <kbd>q</kbd> to exit out of **END** display in the terminal.
-* ##### `git branch cool-new-feature` - create a branch cool-new-feature
-* ##### `git checkout cool-new-feature` - work in the branch cool-new-feature
-
+* ##### `git branch cool-new-feature` - create a branch **cool-new-feature**
+* ##### `git checkout cool-new-feature` - work in the branch **cool-new-feature**
+* ##### `git merge cool-new-feature master` - merge **cool-new-feature** with the master branch
+* ### origin vs master:
+  - **origin**:When you clone a repository for the first time origin is a default name given to the original remote repository that you clone, from where you want to push and pull changes. So basically ‘origin’ is alias of your so big remote repository name. By saying git push origin <branch_name> , you are saying to push to the original repository.
+  - **master**: Master is the name of the default branch that git creates for you when first creating a repository . In most cases, "master" means "the main branch”. It's the branch that represents production code, and that all other branches come from and generally eventually rejoin.
+  
 ## Activities
 * ### Push a local folder to Github
   1. create a github repo.
