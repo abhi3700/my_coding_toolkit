@@ -147,3 +147,4 @@ Currently, only available on Windows.
     + https://git-scm.com/book/en/v2/Git-on-the-Server-GitWeb
     + https://git-scm.com/book/en/v2/Git-on-the-Server-GitLab
     + https://git-scm.com/book/en/v2/Git-on-the-Server-Third-Party-Hosted-Options
+* [Set up Git server on your local network windows](https://medium.com/@piteryo7/how-to-set-up-git-server-on-local-network-windows-tutorial-7ec5cd2df3b1)
