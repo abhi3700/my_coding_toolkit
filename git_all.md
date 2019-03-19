@@ -45,7 +45,16 @@
 * ##### `git merge cool-new-feature master` - merge **cool-new-feature** with the master branch
 * ### origin vs master:
   - **origin**:When you clone a repository for the first time origin is a default name given to the original remote repository that you clone, from where you want to push and pull changes. So basically ‘origin’ is alias of your so big remote repository name. By saying git push origin <branch_name> , you are saying to push to the original repository.
-  - **master**: Master is the name of the default branch that git creates for you when first creating a repository . In most cases, "master" means "the main branch”. It's the branch that represents production code, and that all other branches come from and generally eventually rejoin.
+  - **master**: Master is the name of the default branch that git creates for you when first creating a repository . In most cases, "master" means "the main branch”. It's the branch that represents production code, and that all other branches come from and generally eventually rejoin. This is the local `master` branch where you make changes and they are to be merged with the remote master branch i.e. `origin/master`.
+  
+  E.g. `git branch -a` - shows all the branches inside a git repository.
+  ```console
+  * master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  ```
+  
+  E.g. `git diff origin/master..master` or `git diff remotes/origin/master..master` - Both are the same thing, which says difference b/w remote `master` branch and my `master` branch
   
 ## Activities
 * ### Push a local folder to Github
