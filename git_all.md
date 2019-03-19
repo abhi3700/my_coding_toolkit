@@ -4,7 +4,8 @@
 * ##### `git add .` - add all the files, folders inside a repo. for commit.
 * ##### `git add ./find.cpp` - adding a `.cpp` file for commit.
 * ##### `git commit -m "Add a comment"` - commit to the master branch.
-* ##### `git push origin master` - pushing the added commit to the remote url
+* ##### `git push origin <branch-name>` - pushing the added commit (locally) to the remote url (respective branch).
+  E.g. `git push origin master` - pushing the commits in the local master branch to the remote master branch.
 * ##### `git pull origin master` - pulling the Master branch of the repo.
 * ##### Add a remote url to a git repo.
   ```console
