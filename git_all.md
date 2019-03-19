@@ -40,6 +40,8 @@
 * ##### `git submodule update` - update the submodule after cloning any git repo.
 * ##### `git branch` - list the branches. `*` shows the current branch.
 * ##### `git log` - logs all the commits. Press <kbd>down arrow</kbd> to scroll down. Type <kbd>q</kbd> to exit out of **END** display in the terminal.
+* ##### `git branch cool-new-feature` - create a branch cool-new-feature
+* ##### `git checkout cool-new-feature` - work in the branch cool-new-feature
 
 ## Activities
 * ### Push a local folder to Github
