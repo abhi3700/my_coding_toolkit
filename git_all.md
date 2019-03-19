@@ -95,6 +95,19 @@
     
   [Source](https://stackoverflow.com/a/18194523/6774636)
 
+## Troubleshoot
+* `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
+
+## Git for Server
+Setup a local directory as server (in place of Github) for Git repositories.
+### Installation
+* OpenSSH
+  - Search "manage optional features" in the start menu.
+  - "Optional features" >> "Add a feature" >> OpenSSH Server. Install it. And then it will be listed in the Optional features.
+  - Now, **OpenSSH Server** & **OpenSSH Client** are installed.
+  
+### Setup
+
 ## Git for Excel - `xltrail`
 ### System
 Currently, only available on Windows.
@@ -113,8 +126,6 @@ Currently, only available on Windows.
 ### References [`xltrail`]
 * https://www.xltrail.com/blog/git-diff-spreadsheetcompare
 
-## Troubleshoot
-* `git` may not work properly on `bash-cmd` in directory of **removable disk**.
 
 ## References
 * Udacity courses on Git & Github:
@@ -124,3 +135,15 @@ Currently, only available on Windows.
   - [How to use Git and Github](https://classroom.udacity.com/courses/ud775)
 * Microsoft docs
   - [History in Git](https://docs.microsoft.com/en-us/azure/devops/repos/git/history?view=azure-devops)
+* Git for Server
+  - http://guides.beanstalkapp.com/version-control/git-on-windows.html
+  - Book pages:
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-Git-Daemon
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-Smart-HTTP
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-GitWeb
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-GitLab
+    + https://git-scm.com/book/en/v2/Git-on-the-Server-Third-Party-Hosted-Options
