@@ -64,11 +64,12 @@ Windows 10
   ```
   
   E.g. `git diff origin/master..master` or `git diff remotes/origin/master..master` - Both are the same thing, which says difference b/w remote `master` branch and my `master` branch
-  
+
   #### Short difference:
   - `origin/master` is "where master was over there last time I checked"
   - `master` is "where master is over here based on what I have been doing"  
 * ##### `git log --oneline --graph --color --all --decorate` - shows the entire graph of the repo.
+* ##### `git diff <filename.ext>` - shows the difference b/w `last pushed` and `current modified` of a file.
 
 ## Activities
 * ### Push a local folder to Github
