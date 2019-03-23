@@ -1,12 +1,15 @@
 ## About
 This is a editor cum IDE used for any format of file.
-link - https://www.sublimetext.com/
+
+**Website** - https://www.sublimetext.com/
+
+**System (described here):** Windows 10
 
 ## Documentation
 link - http://docs.sublimetext.info/en/latest/index.html
 
 ## Installation
-### Sublime Text 3
+1. ### Sublime Text 3
 I prefer using Win 10. So, install on Win 10 & then connect WSL by creating shortcut to the ubuntu repo "/usr/local/bin/subl"
 
 Follow the steps:
@@ -14,7 +17,7 @@ Follow the steps:
 * make the shortcut link on ubuntu using `ln -s "/mnt/f/Softwares/Sublime Text 3/subl.exe" /usr/local/bin/subl`
 * use `subl` on bash-cmd
 
-### Sublime Merge
+2. ### Sublime Merge
 A Git Client
 * Install from [here](https://www.sublimemerge.com/download)
 
@@ -211,6 +214,54 @@ Follow these steps:
 			"cmd": ["bash", "-c", "/usr/local/bin/my_command", "-d", "$file"]
 	}
 
+### Open with
+Open your files (any type) using your `.exe` file.
+
+NOTE: Firstly install [`SideBarEnhancements`](https://packagecontrol.io/packages/SideBarEnhancements) package.
+
+Follow these steps:
+* Open the file in Sublime Text 3.
+* "Right click" on file
+* Click "Open with" option
+* A file - "Side Bar.sublime-menu" opens.
+* Now, set the commands for any file - Word, Excel, Image, etc.
+
+Example 1: for Word 2013
+```console
+//application 3
+{
+	"caption": "MS Word 2013",
+	"id": "side-bar-files-open-with-word",
+
+	"command": "side_bar_files_open_with",
+	"args": {
+						"paths": [],
+						"application": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\winword.exe",
+						"extensions":"docx", //any file with extension (starting with doc i.e. doc, docx, docm,..)
+						"args":[]
+			},
+	"open_automatically" : true// will close the view/tab and launch the application
+},
+```
+Example 2: for Excel 2013
+```console
+//application 4
+{
+	"caption": "MS Excel 2013",
+	"id": "side-bar-files-open-with-excel",
+
+	"command": "side_bar_files_open_with",
+	"args": {
+						"paths": [],
+						"application": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\excel.exe",
+						"extensions":"xlsx", //any file with extension (starting with xls i.e. xls, xlsx, xlsm, xlsb,.)
+						"args":[]
+			},
+	"open_automatically" : true// will close the view/tab and launch the application
+},
+```
+
+> NOTE: It's use is in Git Merge, while opening any binary file. Attach it with this settings in your editor - Sublime Text 3.
 
 ## NOTE
 * Know spaces and tabs within code: <br/>
