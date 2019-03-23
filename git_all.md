@@ -70,6 +70,8 @@ Windows 10
   - `master` is "where master is over here based on what I have been doing"  
 * ##### `git log --oneline --graph --color --all --decorate` - shows the entire graph of the repo.
 * ##### `git diff <filename.ext>` - shows the difference b/w `last pushed` and `current modified` of a file.
+* ##### `HEAD` - points to latest commit in mostly `master` (local), and may or may not be `origin/master` (server). Because sometimes, a person might make a lot of commits and then push all at a time. When all pushed, then `master` (local) & `origin/master` (server) are at same commit.
+* ##### `Parent` - pointing to the `previous commit` of the selected commit.
 
 ## Activities
 * ### Push a local folder to Github
