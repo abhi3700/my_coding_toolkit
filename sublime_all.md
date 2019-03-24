@@ -21,6 +21,30 @@ Follow the steps:
 A Git Client
 * Install from [here](https://www.sublimemerge.com/download)
 
+### Context Menu
+> NOTE: DON'T Forget to tick the option.
+
+If missed, follow this workaround below:
+* Create a .bat file with ST3.
+* Copy and Paste this code:
+```console
+@echo off
+SET st3Path=C:\Program Files\Sublime Text 3\sublime_text.exe
+ 
+rem add it for all file types
+@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text 3"         /t REG_SZ /v "" /d "Open with Sublime Text 3"   /f
+@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text 3"         /t REG_EXPAND_SZ /v "Icon" /d "%st3Path%,0" /f
+@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text 3\command" /t REG_SZ /v "" /d "%st3Path% \"%%1\"" /f
+ 
+rem add it for folders
+@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text 3"         /t REG_SZ /v "" /d "Open with Sublime Text 3"   /f
+@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text 3"         /t REG_EXPAND_SZ /v "Icon" /d "%st3Path%,0" /f
+@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text 3\command" /t REG_SZ /v "" /d "%st3Path% \"%%1\"" /f
+pause
+```
+* Now, "Run as Administrator"
+* DONE!
+
 ## Uninstallation
 * All the extra packages are installed in "click Browse Packages".
 * So, during uninstall, make a copy of the Sublime Text3 in other drives (E/ F/ G). Location - "C:\Users\abhijit\AppData\Roaming\Sublime Text 3".
