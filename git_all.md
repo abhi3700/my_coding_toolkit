@@ -4,7 +4,7 @@ Windows 10
 
 ## Tools Installation
 * [Git for Windows](https://git-scm.com/download/win): To use as a console (git-bash is recommended)to clone, pull, push, commit, branch, etc...
-* [Sublime Merge](https://www.sublimemerge.com/) - Local Git GUI and these (Github, Gitlab, Bitbucket) are used as server.
+* [Sublime Merge](https://www.sublimemerge.com/), [Git-Fork](https://git-fork.com/) - Local Git GUI and these (Github, Gitlab, Bitbucket) are used as server.
 
 ## Commands
 * ##### `git init` - intialize git within a non-Github folder (i.e. a local folder)
@@ -30,6 +30,7 @@ Windows 10
 * ##### `git clone <repo-url> <your-repo-name>` - clone a github repository with a custom name.
 * ##### `git clone -b <branch> <remote_repo>` - clone a specific branch (only) of github repo.
   E.g. - `git clone -b v1.x --single-branch https://github.com/gabime/spdlog.git` [git v1.7.10 and later]
+* ##### `git clone <repo-url> --recursive` - clone a repo including all submodules.
 * ##### `svn checkout <repo-url>` - clone a github repo.
 * ##### `svn checkout <repo-url> <custom-name>` - clone a github repo with a custom local name.
 * ##### `svn checkout <modified-repo-url> <custom-name-optional>` 
@@ -51,6 +52,7 @@ Windows 10
 * ##### `git log` - logs all the commits. Press <kbd>down arrow</kbd> to scroll down. Type <kbd>q</kbd> to exit out of **END** display in the terminal.
 * ##### `git branch cool-new-feature` - create a branch **cool-new-feature**
 * ##### `git checkout cool-new-feature` - work in the branch **cool-new-feature**
+* ##### `git checkout <commit>` - navigate to that commit. Moving your focus (HEAD) to the specified commit.
 * ##### `git merge cool-new-feature master` - merge **cool-new-feature** with the master branch
 * ### origin vs master:
   - **origin**:When you clone a repository for the first time origin is a default name given to the original remote repository that you clone, from where you want to push and pull changes. So basically ‘origin’ is alias of your so big remote repository name. By saying git push origin <branch_name> , you are saying to push to the original repository.
