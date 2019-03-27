@@ -72,8 +72,12 @@ Windows 10
   - `master` is "where master is over here based on what I have been doing"  
 * ##### `git log --oneline --graph --color --all --decorate` - shows the entire graph of the repo.
 * ##### `git diff <filename.ext>` - shows the difference b/w `last pushed` and `current modified` of a file.
-* ##### `HEAD` - points to latest commit in mostly `master` (local), and may or may not be `origin/master` (server). Because sometimes, a person might make a lot of commits and then push all at a time. When all pushed, then `master` (local) & `origin/master` (server) are at same commit.
-
+* ##### `git diff` - view the difference inside the repo.
+  **Examples:**
+  - If a `.txt` file is changed, `git diff` shows the difference in the terminal itself.
+  - But for binary files, one has to make custom changes in `.git/config` (present inside the git repo) file. <br/>
+    E.g.- `git diff Book1.xlsx` or `git diff` - For excel file, one can refer [this](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Excel)
+* ##### `HEAD` - points to latest commit in mostly `master` (local), and may or may not be `origin/master` (server). Because sometimes, a person might make a lot of commits and then push all at a time. When all pushed, then `master` (local) & `origin/master` (server) are at same commit.<br/>
   E.g. `HEAD~1`: points to **HEAD-1**
   E.g. `HEAD^^`: points to **HEAD-2**
   E.g. `HEAD@{2019-03-22}`: points to **HEAD** at date: 22 March, 2019.
@@ -82,6 +86,7 @@ Windows 10
 * ##### `git show <commit>:</path/to/file> ><file.copy>`: save a copy of the file at this commit
   E.g. #todo
 * ##### `git show <commit>:</path/to/file>`: view a file's content at a specific commmit. 
+
 
 ## Activities
 * ### Push a local folder to Github
