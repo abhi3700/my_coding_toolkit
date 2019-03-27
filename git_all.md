@@ -124,31 +124,8 @@ Windows 10
 ## Troubleshoot
 * `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
 
-## Git for Server
-Setup a local directory as server (in place of Github) for Git repositories.
-
-### Installation
-* [Bonobo Git Server](https://bonobogitserver.com/) - Local Git GUI with local storage (in network location). Auth like contributors, admin, anonymous push features are available. Manage repositories for a team/division in Office.
-  
-  Follow the steps: #todo
-  - Open 
-* [Sublime Merge](https://www.sublimemerge.com/) - View files system in Local Git GUI.
-  
-
-## Git for Excel - `xltrail`
-### System
-Currently, only available on Windows.
-
-### Installation
-* [Github](https://github.com/ZoomerAnalytics/git-xltrail)
-* Download & install setup file from [here](https://www.xltrail.com/client).
-* open cmd and `git xltrail install` - Git xltrail requires a global installation once per-machine.
-* Now, available terminal commands are: `git-xltrail`, `git-xltrail-diff`, `git-xltrail-merge`. <br/>
-  All these are available in this installed folder: "F:\Softwares\Git xltrail". Also, these has been added in **PATH** of Environment variables.
-  
-
-### Setup
-* Spreadsheet Compare - "C:\Program Files (x86)\Microsoft Office\Office15\DCF\SPREADSHEETCOMPARE.EXE" [Microsoft Office Professional Plus 2013]
+## [Git for Server](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Server)
+## [Git for Excel](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Excel)
 
 
 ## References
