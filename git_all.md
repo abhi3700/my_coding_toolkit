@@ -77,6 +77,8 @@ Windows 10
   - If a `.txt` file is changed, `git diff` shows the difference in the terminal itself.
   - But for binary files, one has to make custom changes in `.git/config` (present inside the git repo) file. <br/>
     E.g.- `git diff Book1.xlsx` or `git diff` - For excel file, one can refer [this](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Excel)
+* ##### `git diff c9b1ebc..fadb6f5` - shows all the difference in contents of files (.md, .txt, .cpp, .py) b/w commits - `c9b1ebc` & `fadb6f5`.
+
 * ##### `HEAD` - points to latest commit in mostly `master` (local), and may or may not be `origin/master` (server). Because sometimes, a person might make a lot of commits and then push all at a time. When all pushed, then `master` (local) & `origin/master` (server) are at same commit.<br/>
   E.g. `HEAD~1`: points to **HEAD-1**
   E.g. `HEAD^^`: points to **HEAD-2**
