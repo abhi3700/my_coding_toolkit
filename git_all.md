@@ -85,8 +85,8 @@ Windows 10
   E.g. `HEAD@{2019-03-22}`: points to **HEAD** at date: 22 March, 2019.
 * ##### `Parent` - pointing to the `previous commit` of the selected commit.
 * ##### `git show HEAD@{2019-03-22}:readme.md`: shows the content of the file **readme.md** on the date - 22 March, 2019.
-* ##### `git show <commit>:</path/to/file> ><file.copy>`: save a copy of the file at this commit
-  E.g. #todo
+* ##### `git show <commit>:</path/to/file> ><file.copy>`: save a copy of the file at this commit <br/>
+  E.g. `git show 1f6098c:README.md > temp_README.md` - saves a copy of `README.md` @ commit:`1f6098c` named `temp_README.md` in the repo's root directory.
 * ##### `git show <commit>:</path/to/file>`: view a file's content at a specific commmit. 
 
 
