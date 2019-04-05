@@ -88,6 +88,17 @@ Windows 10
 * ##### `git show <commit>:</path/to/file> ><file.copy>`: save a copy of the file at this commit <br/>
   E.g. `git show 1f6098c:README.md > temp_README.md` - saves a copy of `README.md` @ commit:`1f6098c` named `temp_README.md` in the repo's root directory.
 * ##### `git show <commit>:</path/to/file>`: view a file's content at a specific commmit. 
+* ##### `git status`: shows status of repo.
+* ##### `git status -z`: shows one line information horizontally <br/>
+  ` D README.md?? Installation/?? README.txt?? User Manual.md?? User Manual.pdf`
+* ##### `git status --porcelain`: shows one line information vertically <br/>
+  ```console
+   D README.md
+  ?? Installation/
+  ?? README.txt
+  ?? User Manual.md
+  ?? User Manual.pdf
+  ```
 
 
 ## Activities
