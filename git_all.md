@@ -99,7 +99,11 @@ Windows 10
   ?? User Manual.md
   ?? User Manual.pdf
   ```
-
+  * ##### Track Large files (in 3 steps)
+    1. `git lfs install`: You'll need to run this in your repository directory, once per repository.
+    2. `git lfs track "*.psd"`: Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes).
+    3. Just `stage --> commit --> push` normally to Github.
+    
 
 ## Activities
 * ### Push a local folder to Github
