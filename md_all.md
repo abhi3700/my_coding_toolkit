@@ -3,20 +3,20 @@
 * Markdown TOC - https://github.com/naokazuterada/MarkdownTOC
 
 ## Shortcuts
-* **Bold** - Bold
-* _italic_ - Italics
-* `<ins>underline</ins>` - underline a statement
-* Expand text with title
+* ##### **Bold** - Bold
+* ##### _italic_ - Italics
+* ##### `<ins>underline</ins>` - underline a statement
+* ##### Expand text with title
   <details>
     <summary><b>Expand: </b></summary>
   </details>
-* Single line code snippet - `code`
-* Multiple-line code snippet - 
+* ##### Single line code snippet - `code`
+* ##### Multiple-line code snippet - 
   ```cpp
   bjvefbvjd
   jfdsvbjksfd
   ```
-* Image from HTTP link
+* ##### Image from HTTP link
   - 1
   ```
   <p align="center">
@@ -26,8 +26,13 @@
   - 2 with no width or height <br/>
   `![eos_image](http://url/to/img.png)`
   
-* Image from local folder
-* Highlight console
+* ##### Image from local folder
+  Within a git repository, it is done like this:
+  ```markdown
+  ![auto_fetch Image](./images/Fork/auto_fetch.png)
+  ```
+  Try <kbd>alt+m</kbd> from inside a ST3 application.
+* ##### Highlight console
 ```console
 foo@bar:~$ whoami
 foo
