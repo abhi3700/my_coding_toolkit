@@ -30,6 +30,7 @@
   Within a git repository, it is done like this:
   ```markdown
   ![auto_fetch Image](./images/Fork/auto_fetch.png)
+  ![Repository Image](./Sessions/Session%201/images/repository.jpg)
   ```
   Try <kbd>alt+m</kbd> from inside a ST3 application.
 * ##### Highlight console
