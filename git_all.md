@@ -138,6 +138,26 @@ Windows 10
     
   [Source](https://stackoverflow.com/a/18194523/6774636)
 
+* ### Automate commit, push if file changes observed
+  1. Create a `auto-push.sh` file.
+  2. Copy and paste this code:
+  ```sh
+  #!/bin/bash
+  ##########################################################################
+  # Auto commit the file changes (if any)
+  # The word count of the output is greater than 0, then changes is observed
+  ##########################################################################
+  if [[ $(git status --porcelain | wc -l) -gt 0 ]]; then 
+    # echo Changes
+    git add --all
+    git commit -m "Auto Update | $(date +"%D %T")"
+  fi
+  ```
+  3. [Optional] If any issue, do this `chmod +x auto-push.sh`
+  4. To run in __Task Scheduler__ in Windows PC/Desktop, create a shortcut file for this shell script - `auto-push - Shortcut.lnk` to execute in git-bash terminal.
+  5. Add this `F:\Softwares\Git\bin\sh.exe --login -i "F:\Developer\auto-push.sh"` in __target__ param of "Properties >> Shortcut" tab.
+  6. Add this file in task scheduler.
+  
 ## Troubleshoot
 * `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
 
