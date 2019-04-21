@@ -28,11 +28,40 @@
   
 * ##### Image from local folder
   Within a git repository, it is done like this:
+  
+  > NOTE: It is a relative path 
   ```markdown
   ![auto_fetch Image](./images/Fork/auto_fetch.png)
   ![Repository Image](./Sessions/Session%201/images/repository.jpg)
   ```
-  Try <kbd>alt+m</kbd> from inside a ST3 application.
+  Try <kbd>alt+m</kbd> from inside a ST3 application to view if it is shown.
+  
+  __Example: Look at the relative path in the image link__ <br/>
+  The directory is like this:
+```console
+  |-- libs
+  |   |-- Dash
+  |   |   |-- dash.md
+  |   |   |-- examples
+  |   |   |   |-- 1_demo.py
+  |   |   |   |-- 2_hello.png
+  |   |   |   |-- 2_hello.py
+  |   |   |   |-- 3_children.py
+  |   |   |   |-- kill_port.bat
+  |   |   |   `-- practice.py
+  |   |   `-- images
+  |   |       |-- console.png
+  |   |       `-- console_open_url.png
+
+```
+  Now, in `dash.md` file, the image - `console.png` will be referred as this:
+```markdown
+	<p align="center">
+	  <img src="./images/console.png" alt="console Image" width="" height="">
+	</p>
+```
+  > NOTE: the image link is `./images/console.png`, NOT this - `./libs/Dash/images/console.png`. So, it's a relative path w.r.t `dash.md` file (where the image is referenced).
+  
 * ##### Highlight console
 ```console
 foo@bar:~$ whoami
