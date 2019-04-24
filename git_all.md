@@ -106,7 +106,7 @@ Windows 10
     
 
 ## Activities
-* ### Push a local folder to Github
+* ### Start maintaining local folder to Github
   1. create a github repo.
   2. clone using **git** on bash-cmd in Ubuntu.
   3. get inside the repo using `$ cd <repo>`.
@@ -120,7 +120,16 @@ Windows 10
   11. DONE!
 
   [Source](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
-
+* ### Connect a local folder with Github server
+  1. create a github repo.
+  2. `git init` from within the local folder.
+  3. `git remote add origin <github-url>`: add the remote url (of Github) to the local folder.
+  4. `git pull origin master`: sync the server folder with local folder.
+  5. `git add .`: Add the required files to the repository.
+  6. [OPTIONAL] `git add .gitignore`: Add the files to be ignored/allowed.
+  7. `git commit -m "comment..."`: Commit the staged files.
+  8. `git push origin master`: Push the committed files. Basically, sync the server folder with local folder.
+  
 * ### Clone a Submodule (from github) inside a Module (cloned from github repo)
   1. Open terminal (cmd or bash) in the directory (cloned repo)
   2. `$ git submodule add <repo-url.git> <custom-repo-name>`
