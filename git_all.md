@@ -103,8 +103,24 @@ Windows 10
   1. `git lfs install`: You'll need to run this in your repository directory, once per repository.
   2. `git lfs track "*.psd"`: Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes).
   3. Just `stage --> commit --> push` normally to Github.
-    
+* ##### git ignore/allow using `.gitignore`:
+  ```console
+  # Ignore
+  lib/
+  src/
+  build/
+  static/**/*
 
+  # Allow
+  !static/css/bootstrap-styled.css
+  !static/css/main.css
+  !static/css/font-*.css
+  !static/font/*
+  !static/media/default.png
+  !static/robots.txt
+  ```
+  > NOTE: Here, some folders have been ignored and some files have been allowed.
+  
 ## Activities
 * ### Start maintaining local folder to Github
   1. create a github repo.
