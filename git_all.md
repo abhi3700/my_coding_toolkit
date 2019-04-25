@@ -118,6 +118,22 @@ Windows 10
   !static/font/*
   !static/media/default.png
   !static/robots.txt
+  
+  # Ignore everything
+  *
+
+  # But not these files...
+  !.gitignore
+  !script.pl
+  !template.latex
+  # etc...
+
+  # ...even if they are in subdirectories
+  !*/
+
+  # if the files to be tracked are in subdirectories
+  !*/a/b/file1.txt
+  !*/a/b/c/*
   ```
   > NOTE: Here, some folders have been ignored and some files have been allowed.
   
