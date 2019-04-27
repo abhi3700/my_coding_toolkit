@@ -201,6 +201,9 @@ Windows 10
   
 ## Troubleshoot
 * `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
+* If you are using Windows and you are stuck with any Git permission issues, make sure your (local) repository's .git folder contents are not marked as hidden.
+
+  You can however hide the directory itself, just not it's contents (files, subdirectories).
 
 ## [Git for Server](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Server)
 ## [Git for Excel](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Excel)
