@@ -137,6 +137,12 @@ Windows 10
   ```
   > NOTE: Here, some folders have been ignored and some files have been allowed.
   
+* ##### Ignore already tracked files in a repo.
+  `git rm -r --cached .` - untracking all files.
+  > NOTE: the files will still be there, but removed from the git index.
+  
+  `git rm -r --cached README.md` - untrack __README.md__ file from the repo's index.
+  
 ## Activities
 * ### Start maintaining local folder to Github
   1. create a github repo.
