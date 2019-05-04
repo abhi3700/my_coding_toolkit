@@ -191,19 +191,37 @@ Windows 10
   ```sh
   #!/bin/bash
   ##########################################################################
+  # Navigate to the folder
   # Auto commit the file changes (if any)
   # The word count of the output is greater than 0, then changes is observed
   ##########################################################################
+  # Task 1: Navigate to the folder
+  cd "Z:\SECTIONS\DRY ETCH\OPs"
+  
+  # Task 2: Git add, commit, push
   if [[ $(git status --porcelain | wc -l) -gt 0 ]]; then 
     # echo Changes
     git add --all
     git commit -m "Auto Update | $(date +"%D %T")"
+    git push origin master
   fi
   ```
   3. [Optional] If any issue, do this `chmod +x auto-push.sh`
-  4. To run in __Task Scheduler__ in Windows PC/Desktop, create a shortcut file for this shell script - `auto-push - Shortcut.lnk` to execute in git-bash terminal.
-  5. Add this `F:\Softwares\Git\bin\sh.exe --login -i "F:\Developer\auto-push.sh"` in __target__ param of "Properties >> Shortcut" tab.
+  4. To run in __Task Scheduler__ in Windows PC/Desktop, create a batch file with the following code:
+  ```bat
+  @echo off
+  cmd /c ""C:\Program Files\Git\bin\sh.exe" "Z:\SECTIONS\DRY ETCH\OPs\auto_push.sh""
+  rem pause
+  ```
+  5. [OPTIONAL] Add this `F:\Softwares\Git\bin\sh.exe --login -i "F:\Developer\auto-push.sh"` in __target__ param of "Properties >> Shortcut" tab in the shortcut file of "auto_push.sh" shell script file.
   6. Add this file in task scheduler.
+
+* ### Create a Git Repository (@ Server level) and clone repository (@ Client level) 
+  1. Go to your preferred folder (say) - "\\vmfg\VFD FILE SERVER\SECTIONS\DRY ETCH\Git_Server"
+  2. Open `git-bash.exe` here.
+  3. Create a git folder in Server level - `git init DRY_ETCH_OPs.git --bare`
+  4. Clone the git folder in Client level - `git clone '//vmfg/VFD FILE SERVER/SECTIONS/DRY ETCH/Git_Server/DRY_ETCH_OPs.git' OPs_server`
+  > NOTE: Here, A custom-name for repository has been used.
   
 ## Troubleshoot
 * `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
