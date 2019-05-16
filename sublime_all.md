@@ -143,6 +143,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Terminal: open terminal at the current folder of the opened file. Access by right clicking and choose the option "Open terminal here". By default it opens the Windows cmd. But to open the bash cmd, follow this: Preferences >> Package Settings >> Terminal >> Settings-Default. And then <br/>
   **Linux (Ubuntu):** add this `"terminal": "C:/Windows/System32/bash.exe",` i.e. bash executable location. <br/>
   **Windows:** Just add this `"terminal": "C:\\Windows\\System32\\cmd.exe",` i.e. cmd executable location.
+* [x] Theme - Primer (A UI + syntax theme for @SublimeText inspired by GitHub's UI.): [Package control url](https://packagecontrol.io/packages/Theme%20-%20Primer)
 * [x] Toggle Read-Only
 * [x] Translate - downloaded from [here](https://github.com/desislavsd/translate) and extracted to (..Roaming\Sublime Text 3\Packages\) <br/>
 	<kbd>ctrl+alt+g</kbd> - Select text and use this key shortcut.
