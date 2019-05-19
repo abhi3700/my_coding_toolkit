@@ -59,6 +59,25 @@ Windows 10
   origin
   ```
 * ##### `git log` - logs all the commits. Press <kbd>down arrow</kbd> to scroll down. Type <kbd>q</kbd> to exit out of **END** display in the terminal.
+* ##### `git log -1` - read the last commit without filename(s)
+  ```console
+  commit 4912c943d82c68b2013df1c3038bc84585f28995 (HEAD -> master, origin/master, origin/HEAD)
+  Author: Abhijit Roy <dalvath3700@gmail.com>
+  Date:   Sun May 19 21:57:47 2019 +0530
+
+    readying bash script file
+
+  ```
+* ##### `git log -1 --pretty=%B` - read the last commit (only message)
+  ```console
+  readying bash script file
+
+
+  ```
+* ##### `git log --pretty=format:'%h' -n 1` - read the last commit hash (shortened, for long use `%H`)
+ ```console
+ 4912c94
+ ```
 * ##### `git branch cool-new-feature` - create a branch **cool-new-feature**
 * ##### `git checkout cool-new-feature` - work in the branch **cool-new-feature**
 * ##### `git checkout <commit>` - navigate to that commit. Moving your focus (HEAD) to the specified commit.
