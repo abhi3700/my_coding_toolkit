@@ -151,7 +151,16 @@ Windows 10
   > NOTE: the files will still be there, but removed from the git index.
   
   `git rm -r --cached README.md` - untrack __README.md__ file from the repo's index.
+* ##### `git ls-files` - list all the files, folders inside the repo.
+* ##### `git ls-files README.md` - check if it ("README.md") is tracked.
+  ```console
+  README.md
+  ```
+  else, 
+  ```console
   
+  ```
+
 ## Activities
 * ### Start maintaining local folder to Github
   1. create a github repo.
@@ -231,7 +240,30 @@ Windows 10
   3. Create a git folder in Server level - `git init DRY_ETCH_OPs.git --bare`
   4. Clone the git folder in Client level - `git clone '//vmfg/VFD FILE SERVER/SECTIONS/DRY ETCH/Git_Server/DRY_ETCH_OPs.git' OPs_server`
   > NOTE: Here, A custom-name for repository has been used.
-  
+
+* ### Check if a file is `git` tracked
+  1. a custom alias on you `.gitconfig`
+    - M-I: 
+    ```console
+    git config --global alias.check-file <command>
+    ```
+    - M-II: Editing "~/.gitconfig" and add this line on alias section
+    ```console
+    [alias]
+    check-file = "!f() { if [ $# -eq 0 ]; then echo 'Filename missing!'; else tracked=$(git ls-files ${1}); if [[ -z ${tracked} ]]; then echo 'File not tracked'; else echo 'File tracked'; fi; fi;  };  f"
+    ```
+  2. Testing for a file
+    ```console
+    $ git check-file
+    Filename missing 
+
+    $ git check-file README.md
+    File tracked 
+
+    $ git check-file foo
+    File not tracked
+    ```
+    
 ## Troubleshoot
 * `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
 * If you are using Windows and you are stuck with any Git permission issues, make sure your (local) repository's .git folder contents are not marked as hidden.
