@@ -48,6 +48,9 @@ Windows 10
   - `$ git pull`
 * ##### `git submodule status` - check submodule status inside the parent repo.
 * ##### `git status` - check the status of files, folders changed.
+* ##### `git status .` - check within the directory (Navigate before this using `cd`)
+* ##### `git status ./` - check in the root directory of git repository.
+* ##### `git status ./macro_enabled_logbooks/UNT02_Ch_A_QC_LOG_BOOK/` - check in the specific sub-folder relative to the repo's root.
 * ##### `git submodule update` - update the submodule after cloning any git repo.
 * ##### `git branch` - list the branches. `*` shows the current branch.
 * ##### `git remote` - list the branch in the remote location.
