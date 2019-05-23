@@ -26,6 +26,11 @@ Windows 10
   > origin  https://github.com/user/repo.git (fetch)
   > origin  https://github.com/user/repo.git (push)
   ```
+* ##### Add multiple remote servers to a git repo - 
+  ```
+  $ git remote add some-server https://someserver/some/path.git`
+  $ git remote add other-server https://otherserver/some/path.git`
+  ```
 * ##### `git remote -v` - verify the url of the repo.
 * ##### `git clone <repo-url>` - clone a github repository from link like - https://github.com/EOSIO/eosio.cdt
 * ##### `git clone <repo-url> <your-repo-name>` - clone a github repository with a custom name.
