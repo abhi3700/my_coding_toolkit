@@ -16,6 +16,7 @@ Windows 10
 * ##### Add multiple lines in title, description of commits:
 ```console
 # Example-1: Title
+# press: <kbd>shift+enter</kbd> for new line after "
 $ git commit -m "Smart contracts:
 > folder added
 > README file
@@ -27,7 +28,15 @@ $ git commit -m "Smart contracts:
 > folder added
 > README file
 > " -m "
- # Example-1: Description
+# Example-2: Description
+# press: <kbd>shift+enter</kbd> for new line after "
+$ git commit -m "SCs added" -m "
+> Token contract
+> Ride contract
+> Stake contract
+> "
+[master 4245ac0] SCs added
+ 1 file changed, 4 insertions(+), 1 deletion(-)
  
 ```
 * ##### `git push origin <branch-name>` - pushing the added commit (locally) to the remote url (respective branch).
