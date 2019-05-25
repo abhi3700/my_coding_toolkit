@@ -13,6 +13,23 @@ Windows 10
   E.g.- `git add ./find.cpp` - adding a `.cpp` file for commit.
 * ##### `git commit -m "Add a comment"` - commit to the master branch (with title only)
 * ##### `git commit -m "Title" -m "Description .........."` - commit to the master branch (with title & description)
+* ##### Add multiple lines in title, description of commits:
+```console
+# Example-1: Title
+$ git commit -m "Smart contracts:
+> folder added
+> README file
+> "
+[master b77b313] Smart contracts: folder added README file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 contracts/README.md
+ $ git commit -m "Smart contracts:
+> folder added
+> README file
+> " -m "
+ # Example-1: Description
+ 
+```
 * ##### `git push origin <branch-name>` - pushing the added commit (locally) to the remote url (respective branch).
   E.g. `git push origin master` - pushing the commits in the local master branch to the remote master branch.
 * ##### `git pull origin master` - pulling the Master branch of the repo.
