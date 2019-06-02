@@ -8,7 +8,8 @@ Windows 10
 
 ## Commands
 * ##### `git init` - intialize git within a non-Github folder (i.e. a local folder)
-* ##### `git add .` - add all the files, folders inside a repo. for commit.
+* ##### `git add .` - add all the files, folders inside a repo's current folder for commit.
+  > NOTE: `git add --all`: add all the files, folders irrespective of current sub-folders inside the git repo.
 * ##### `git add <file1-name.ext> <file2-name.ext> <file3-name.ext>` - Add single/multiple files for commit
   E.g.- `git add ./find.cpp` - adding a `.cpp` file for commit.
 * ##### `git commit -m "Add a comment"` - commit to the master branch (with title only)
