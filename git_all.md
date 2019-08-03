@@ -7,6 +7,11 @@ Windows 10
 * [Sublime Merge](https://www.sublimemerge.com/), [Git-Fork](https://git-fork.com/) - Local Git GUI and these (Github, Gitlab, Bitbucket) are used as server.
 
 ## Commands
+* #### To open __Sublime Text 3__ from `git-bash`, add this to `.gitconfig` file ("C:\Users\Abhijit"):
+```txt
+[core]
+	editor = 'F:\\Softwares\\Sublime Text 3\\sublime_text.exe' -w
+```
 * ##### `git init` - intialize git within a non-Github folder (i.e. a local folder)
 * ##### `git add .` - add all the files, folders inside a repo's current folder for commit.
   > NOTE: `git add --all`: add all the files, folders irrespective of current sub-folders inside the git repo.
