@@ -125,7 +125,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
   Save As Workspace | ctrl+alt+shift+s | Save easy workspace to specified file
   Open Workspace    | ctrl+alt+o       | Open an existing workspace
   ```
-* [x] EasyWorkspace-workspaces
+* [x] FuzzyFileNav
 * [x] FuzzyFilePath
 * [x] [Git Savvy](https://packagecontrol.io/packages/GitSavvy) - Full git and GitHub integration with ST3.
 * [x] [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. inside `#include " "`, use `../` to search for files and also other files inside different folders.
@@ -151,7 +151,6 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Vue Syntax Highlight
 * [x] Vuejs Complete Package
 * [x] WebAssembly Text Syntax
-* [x] zzz A File Icon zzz
 * Markdown Extended
 * JSON Comma
 * Ethereum
