@@ -222,6 +222,13 @@ $ git commit -m "SCs added" -m "
   ```console
   
   ```
+* ##### `git log --pretty=format:"%H" --follow <file name>`
+```
+797ae5819dc32f957737bdd5fc9fecb820798f1c
+5601a298c7fcd430bc9994d46f99fef8c5acf346
+9be0025b2878b67b1dbda09b558105237b1d3bfa
+bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
+```
 
 ## Activities
 * ### Start maintaining local folder to Github
