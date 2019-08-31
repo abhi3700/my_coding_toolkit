@@ -112,7 +112,13 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Auto Refresh
 * [x] AutoFileName
 * [x] [C++ Snippets](https://packagecontrol.io/packages/C%2B%2B%20Snippets)
-* [x] Color Scheme - Pastels UI
+* Color Schemes & Themes
+	- __Dark__
+		+ Color scheme: `Monokai` (installed by default)
+		+ Theme: `Default`
+	- __Light__
+		+ [x] Color scheme: `ayu`-light (Install `ayu`)
+		+ Theme: `Adaptive`
 * [x] Comment-Snippets
 * [x] Conda
 * [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
