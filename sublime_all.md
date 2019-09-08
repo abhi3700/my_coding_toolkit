@@ -116,8 +116,10 @@ If not found, then manually download the .zip file into the directory "Preferenc
 	- __Dark__
 		+ Color scheme: `Monokai` (installed by default)
 		+ Theme: `Default`
-	- __Light__
-		+ [x] Color scheme: `ayu`-light (Install `ayu`)
+	- __Light__ (adjust the brightness of the screen to 50 (contrast, brightness))
+		+ [x] Color scheme: 
+			+ `sixteen` light 
+			+ `ayu`-light (Install `ayu`)
 		+ Theme: `Adaptive`
 * [x] Comment-Snippets
 * [x] Conda
