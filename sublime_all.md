@@ -139,6 +139,14 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. inside `#include " "`, use `../` to search for files and also other files inside different folders.
 	NOTE: It has to be applied in workspace i.e. open a folder and import any files within a sub-folder using the above technique.
 * [x] Javascript Completions
+* [x] Kite: [Download](https://kite.com/download/), [kite for sublime](https://kite.com/integrations/sublime-text/), [Disable Anaconda & then activate Kite](https://help.kite.com/article/81-kite-and-anaconda)
+	- To disable Anaconda's autocompletions and signatures, click on Preferences → Package Settings → Anaconda → Settings - User. In the opened settings file, add the following configurations:
+```
+{
+  "disable_anaconda_completion": true,
+  "display_signatures": false
+} 
+```
 * [ ] MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
 * [x] [MarkdownPreview](https://packagecontrol.io/packages/MarkdownPreview). After install, for `key binding` i.e shortcut key, `Preferences >> Key Bindings`, add this line `{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },`. Now, press `alt+m` to preview in browser.
 * [x] [MarkdownTOC](https://github.com/naokazuterada/MarkdownTOC)
