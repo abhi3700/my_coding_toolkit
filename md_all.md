@@ -71,5 +71,9 @@ foo
 ```sh
 wc -l en_US.twitter.txt 
 ```
+* ##### New page
+```markdown
+<div style="page-break-after: always;"></div>
+```
 ## Salient points
 * One can try editing a file on Github or Sublime enabling this above extensions.
