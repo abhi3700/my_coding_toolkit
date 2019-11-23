@@ -139,7 +139,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] [Include Autocomplete](https://packagecontrol.io/packages/Include%20Autocomplete) - for C++ files (in particular) to find out files inside folders. e.g. inside `#include " "`, use `../` to search for files and also other files inside different folders.
 	NOTE: It has to be applied in workspace i.e. open a folder and import any files within a sub-folder using the above technique.
 * [x] Javascript Completions
-* [x] Kite: [Download](https://kite.com/download/), [kite for sublime](https://kite.com/integrations/sublime-text/), [Disable Anaconda & then activate Kite](https://help.kite.com/article/81-kite-and-anaconda)
+* [x] Kite: [Download](https://kite.com/download/), [kite for sublime](https://kite.com/integrations/sublime-text/), [Configuring the Sublime Text plugin](https://help.kite.com/article/72-configuring-the-sublime-text-plugin), [Using the Sublime Text plugin](https://help.kite.com/article/76-using-the-sublime-text-plugin), [Disable Anaconda & then activate Kite](https://help.kite.com/article/81-kite-and-anaconda)
 	- To disable Anaconda's autocompletions and signatures, click on Preferences → Package Settings → Anaconda → Settings - User. In the opened settings file, add the following configurations:
 ```
 {
