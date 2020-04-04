@@ -75,5 +75,9 @@ wc -l en_US.twitter.txt
 ```markdown
 <div style="page-break-after: always;"></div>
 ```
+* Embed Videos
+```md
+[[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
+```
 ## Salient points
 * One can try editing a file on Github or Sublime enabling this above extensions.
