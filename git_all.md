@@ -234,7 +234,9 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 	`git reset --soft HEAD~1` (latest commit) <br/>
 	- Delete the most recent commit, __destroying__ the work you've done: <br/>
 	`git reset --hard HEAD~2` (latest & its next commits)
-	
+* ##### Unstage a file
+	- `git restore --staged <filename-with-path>`
+
 ## Activities
 * ### Start maintaining local folder to Github
   1. create a github repo.
