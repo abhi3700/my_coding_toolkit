@@ -229,7 +229,12 @@ $ git commit -m "SCs added" -m "
 9be0025b2878b67b1dbda09b558105237b1d3bfa
 bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 ```
-
+* ##### Delete unpushed commits locally
+	- Delete the most recent commit, _keeping_ the work you've done: <br/>
+	`git reset --soft HEAD~1` (latest commit) <br/>
+	- Delete the most recent commit, __destroying__ the work you've done: <br/>
+	`git reset --hard HEAD~2` (latest & its next commits)
+	
 ## Activities
 * ### Start maintaining local folder to Github
   1. create a github repo.
