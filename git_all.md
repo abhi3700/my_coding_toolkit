@@ -3,10 +3,11 @@
 Windows 10
 
 ## Tools Installation
-* [Git for Windows](https://git-scm.com/download/win): To use as a console (git-bash is recommended)to clone, pull, push, commit, branch, etc...
+* [Git for Windows](https://git-scm.com/download/win): To use as a console (git-bash is recommended) to clone, pull, push, commit, branch, etc...
 * [Sublime Merge](https://www.sublimemerge.com/), [Git-Fork](https://git-fork.com/) - Local Git GUI and these (Github, Gitlab, Bitbucket) are used as server.
 
 ## Commands
+* ##### Check the git version (whether installed) using: `git --version`
 * #### To open __Sublime Text 3__ from `git-bash`, add this to `.gitconfig` file ("C:\Users\Abhijit"):
 ```txt
 [core]
@@ -235,7 +236,7 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 	- Delete the most recent commit, __destroying__ the work you've done: <br/>
 	`git reset --hard HEAD~2` (latest & its next commits)
 * ##### Unstage a file
-	- `git restore --staged <filename-with-path>`
+	- `git restore --staged <filename-with-path>` (for v2.24 & later)
 
 ## Activities
 * ### Start maintaining local folder to Github
