@@ -237,6 +237,11 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 	`git reset --hard HEAD~2` (latest & its next commits)
 * ##### Unstage a file
 	- `git restore --staged <filename-with-path>` (for v2.24 & later)
+* ##### Discard changes locally
+	- `git stash`: Discard all local changes, but save them for possible re-use later
+	- `git checkout -- <filename-with-path>`: Discarding local changes (permanently) to a file
+	- `git reset --hard`: Discard all local changes to all files permanently
+	
 
 ## Activities
 * ### Start maintaining local folder to Github
