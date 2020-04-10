@@ -83,24 +83,40 @@ pause
   - `:` to go to a line number
 * Creating a new build system:
 	- Tools >> Build system >> New build system...
-	- paste your settings. E.g.- in c++ for implementing `g++ -std=c++14 -o hello.out hello.cpp`
-	```
-	{
-	 "cmd":["bash", "-c", "g++ -std=c++14 -Wall '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"],
-	 "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
-	 "working_dir": "${file_path}",
-	 "selector": "source.c, source.c++",
-	 "variants":
-	 [
-		 {
-			 "name": "Run",
-			 "cmd":["bash", "-c", "g++ -std=c++14 '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"]
-		 }
-	 ]
-	}
-	```
+	- paste your settings. <br/>
+	__Example-1:__ 
+		+ in c++ for implementing `g++ -std=c++14 -o hello.out hello.cpp`
+```
+{
+ "cmd":["bash", "-c", "g++ -std=c++14 -Wall '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"],
+ "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+ "working_dir": "${file_path}",
+ "selector": "source.c, source.c++",
+ "variants":
+ [
+	 {
+		 "name": "Run",
+		 "cmd":["bash", "-c", "g++ -std=c++14 '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"]
+	 }
+ ]
+}
+```
+	- __Example-2__:
+		+ For C++: Create a new build system. File - "gcc-cpp.sublime-build"
+```
+{
+	"shell_cmd": "g++ -std=c++17 ${file_path}/${file_name} -o ${file_path}/${file_base_name} && ${file_path}/${file_base_name}.exe"
+}
+```
+		+ For C: Create a new build system. File - "gcc-c.sublime-build"
+```
+{
+	"shell_cmd": "gcc -std=c11 ${file_path}/${file_name} -o ${file_path}/${file_base_name} && ${file_path}/${file_base_name}.exe"
+}
+```
 	- save the file (into the directory shown). Remember to give just the name, no extension (it will automatically take).
 	- Now, choose the build system.
+	- References: For more, click [here](https://www.sublimetext.com/docs/3/build_systems.html)
 
 ### Packages
 Just <kbd>ctrl + shift + p</kbd> and type the package name and enter. It will install thereafter. 
