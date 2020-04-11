@@ -2,6 +2,11 @@
 * Markdown Extended Higlighting - https://github.com/jonschlinkert/sublime-markdown-extended
 * Markdown TOC - https://github.com/naokazuterada/MarkdownTOC
 
+## NOTES
+* One can try editing a file on __Github__ or __Sublime Text 3__ enabling this above extensions.
+* Always use indentation using tabs, NOT spaces.
+* Indentation size can be 2, 3, 4..anything.
+
 ## Shortcuts
 * ##### **Bold** - Bold
 * ##### _italic_ - Italics
@@ -79,5 +84,4 @@ wc -l en_US.twitter.txt
 ```md
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 ```
-## Salient points
-* One can try editing a file on Github or Sublime enabling this above extensions.
+
