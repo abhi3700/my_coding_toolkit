@@ -103,7 +103,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 		+ Theme: `Adaptive`
 * [x] Comment-Snippets
 * [x] Conda
-* [x] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
+* [ ] [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) - 
 	compile in a unique way (in the sidebar on right side using unique test cases). Demo on the package link. Use <kbd>ctrl + alt + b</kbd> to debug, compile, test.
 	> NOTE: It will work only if the g++ installation is done.
 * [x] DoxyDoc: C++ description about any method, class, template. [Usages](https://packagecontrol.io/packages/DoxyDoc) in animation form.
@@ -136,6 +136,8 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] SideBarEnhancements
 * [x] Stackoverflow Snippets
 * [x] Stackoverflow Debug Helper
+* [x] Sublime-Linter: [link](https://packagecontrol.io/packages/SublimeLinter) The code linting framework for Sublime Text 3 (for all languages)
+* [x] SublimeLinter-gcc: [link](https://packagecontrol.io/packages/SublimeLinter-gcc) This linter plugin for SublimeLinter provides an interface to gcc or other gcc-like (cross-)compiler.
 * [x] TabNine: A Deep learning based package for autocompletion of code. [More](https://tabnine.com/install)
 * [x] Terminal: open terminal at the current folder of the opened file. Access by right clicking and choose the option "Open terminal here". By default it opens the Windows cmd. But to open the bash cmd, follow this: Preferences >> Package Settings >> Terminal >> Settings-Default. And then <br/>
   **Linux (Ubuntu):** add this `"terminal": "C:/Windows/System32/bash.exe",` i.e. bash executable location. <br/>
