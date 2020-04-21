@@ -15,11 +15,25 @@
   <details>
     <summary><b>Expand: </b></summary>
   </details>
+* ##### Expand code snippet with title
+	> NOTE: give a line break after summary tag
+
+	<details>
+		<summary><b>View code: </b></summary>
+
+	```cpp
+	std::cout << "With Iterator:" << std::endl;
+	for (std::vector<string>::iterator i = v.begin(); i != v.end(); ++i)
+	{
+		std::cout << *i << std::endl;
+	}
+	```
+	</details>
+
 * ##### Single line code snippet - `code`
 * ##### Multiple-line code snippet - 
   ```cpp
-  bjvefbvjd
-  jfdsvbjksfd
+  std::string s = "hello";
   ```
 * ##### Image from HTTP link
   - 1
