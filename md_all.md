@@ -5,21 +5,25 @@
 ## NOTES
 * One can try editing a file on __Github__ or __Sublime Text 3__ enabling this above extensions.
 * Always use indentation using tabs, NOT spaces.
-* Indentation size can be 2, 3, 4..anything.
+* Indentation size can be 2, 3, 4..anything. [2 recommended]
 
 ## Shortcuts
 * ##### **Bold** - Bold
 * ##### _italic_ - Italics
 * ##### `<ins>underline</ins>` - underline a statement
-* ##### Expand text with title
+* ##### Collapsible: Expand text with title
   <details>
-    <summary><b>Expand: </b></summary>
+  <summary><b>Expand: </b></summary>
+		
+	<h2>Abhijit is a good boy</h2>
+	<p>Humand is a village in Chashm Rural District, Shahmirzad District, Mehdishahr County, Semnan Province, Iran. At the 2006 census, its existence was noted, but its population was not reported. </p>
+		
   </details>
-* ##### Expand code snippet with title
+* ##### Collapsible: Expand code snippet/block with title
 	> NOTE: give a line break after summary tag
 
 	<details>
-		<summary><b>View code: </b></summary>
+	<summary><b>View code: </b></summary>
 
 	```cpp
 	std::cout << "With Iterator:" << std::endl;
