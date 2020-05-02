@@ -92,7 +92,10 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Auto Refresh
 * [x] AutoFileName
 * [x] [C++ Snippets](https://packagecontrol.io/packages/C%2B%2B%20Snippets)
-* Color Schemes & Themes
+* [x] [CMake](https://packagecontrol.io/packages/CMake)
+* [x] [CMakeEditor](https://packagecontrol.io/packages/CMakeEditor)
+* [x] [CMakeSnippets](https://packagecontrol.io/packages/CMakeSnippets)
+* [x] Color Schemes & Themes
 	- __Dark__
 		+ Color scheme: `Monokai` (installed by default)
 		+ Theme: `Default`
@@ -180,6 +183,16 @@ After the above packages are installed, use the following personalized shortcut 
 For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
 
 ## Custom
+### Key Bindings
+```key
+[
+	{ "keys": ["ctrl+t"], "command": "new_file" },
+	{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
+	{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },	
+	{ "keys": ["ctrl+alt+e"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} }
+]
+```
+
 ### Snippet
 Anytime, a custom snippet might be needed in order to automate a lot of code.
 
