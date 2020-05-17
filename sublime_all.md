@@ -337,11 +337,11 @@ Example 2: for Excel 2013
 > NOTE: It's use is in Git Merge, while opening any binary file. Attach it with this settings in your editor - Sublime Text 3.
 
 ## Troubleshooting
-* __Disable <ESC>aping to COMMAND MODE__
+* __Disable <kbd>ESC</kbd> aping to COMMAND MODE__
 	- Just add this to your "Preferences >> Settings" & then choose right screen i.e. "Settings-User"
-```json
-    "ignored_packages": ["Vintage"]
-```
+	```json
+	"ignored_packages": ["Vintage"]
+	```
 	
 ## NOTE
 * Know spaces and tabs within code: <br/>
