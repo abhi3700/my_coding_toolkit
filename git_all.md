@@ -351,6 +351,17 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 * If you are using Windows and you are stuck with any Git permission issues, make sure your (local) repository's .git folder contents are not marked as hidden.
 
   You can however hide the directory itself, just not it's contents (files, subdirectories).
+* SSL Certificate Error:
+	```console
+	...
+	...
+ 	server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+	```
+	- Solution:
+	```console
+	$ git config --global http.sslverify false
+	$ export GIT_SSL_NO_VERIFY=true
+	```
 
 ## [Git for Server](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Server)
 ## [Git for Excel](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Excel)
