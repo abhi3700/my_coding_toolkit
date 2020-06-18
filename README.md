@@ -1,6 +1,8 @@
 # my_coding_toolkit
 This repo includes coding toolkit - editor, IDE, utility tools like JSON, etc........
 
+* Beautify your code - Click [here](https://carbon.now.sh/)
+
 This is my shortcut repo to refer any setup for anything related to coding.
 * [C++](https://github.com/abhi3700/my_coding_toolkit/blob/master/cpp_all.md)
 * [Emoji](https://github.com/abhi3700/my_coding_toolkit/blob/master/emoji_all.md)
