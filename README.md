@@ -2,6 +2,7 @@
 This repo includes coding toolkit - editor, IDE, utility tools like JSON, etc........
 
 * Beautify your code - Click [here](https://carbon.now.sh/)
+* Temporary paste your code to seek help from others: https://pastebin.com/
 
 This is my shortcut repo to refer any setup for anything related to coding.
 * [C++](https://github.com/abhi3700/my_coding_toolkit/blob/master/cpp_all.md)
