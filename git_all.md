@@ -244,6 +244,15 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 * ##### Release
 	- `git tag <version e.g v0.1>`: versioning corresponding to a commit
 	- `git tag <version-number> -m <title> -m <description>`: give message title or both title & description.
+* ##### switch branches
+	- `git checkout develop-randnum` - switching from current branch to another existing branch develop-random
+	- `git checkout master` - switch from __develop-randnum__ (above) to __master__ branch
+* ##### rename branch
+	- `git branch -m`
+* ##### list all the branches (local)
+	- `git branch --list` or `git branch`
+* ##### list all the branches (remote)
+	- `git branch -a`
 
 ## Activities
 * ### Start maintaining local folder to Github
