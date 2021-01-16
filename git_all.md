@@ -253,6 +253,31 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 	- `git branch --list` or `git branch`
 * ##### list all the branches (remote)
 	- `git branch -a`
+* ##### make a directory in private repo as public
+	- just assign the folder as submodule & link a github url to it.
+	- Follow this procedure [Source](https://stackoverflow.com/a/57481704/6774636)
+		+ step-1
+```console
+cd /path/to/cloned/original/repo
+git rm -r src/
+git commit -m "Remove src"
+git submodule add https://github.com/you/newSrcRepo src
+```
+		+ step-2
+```console
+cd /path/to/cloned/original/repo
+cd src
+# work in src
+git add .
+git commit -m "new src modifications"
+git push
+```
+		+ step-3
+```console
+cd ..
+git add .
+git commit -m "src new state"
+```
 
 ## Activities
 * ### Start maintaining local folder to Github
