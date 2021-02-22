@@ -278,6 +278,17 @@ cd ..
 git add .
 git commit -m "src new state"
 ```
+* #### Credentials
+	- ##### Set
+		+ M-1: In Win10 PC, "Start menu" → "Credential Manager" → "Windows Credentials" → find the line (Git: https:https://github.com/) → edit, user name is "PersonalAccessToken" and password is your access token (which can be created in "Settings" of Github account). [Source](https://stackoverflow.com/a/54096357/6774636)
+		+ M-2: In CLI (git-bash or CMD) in Win10, [Source](https://stackoverflow.com/a/58535890/6774636)
+			1. `git config --global credential.helper wincred`
+			2. `git pull`
+			3. give "PersonalAccessToken" as the username
+			4. give the Personal Access Token (created in "Settings" of Github account) as the password
+	- ##### Unset
+		+ For global, In CMD or git-bash in the repo, `git config --global --unset credential.helper`
+		+ For repo, In CMD or git-bash in the repo, `git config --system --unset credential.helper` if this has been set in the system configuration file.
 
 ## Activities
 * ### Start maintaining local folder to Github
