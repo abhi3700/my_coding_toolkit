@@ -290,6 +290,7 @@ git commit -m "src new state"
 		+ For global, In CMD or git-bash in the repo, `git config --global --unset credential.helper`
 		+ For repo, In CMD or git-bash in the repo, `git config --system --unset credential.helper` if this has been set in the system configuration file.
 * ##### Modify latest commit message, description
+  - step-1: modify
 ```console
 $ git commit --amend -m "FAQ added" -m "
 > - Case-2 & Case-3 games are added in 'usergamestat' TABLE, but not Case-1
@@ -298,6 +299,41 @@ $ git commit --amend -m "FAQ added" -m "
  Date: Mon Feb 22 18:47:42 2021 +0530
  1 file changed, 5 insertions(+), 1 deletion(-)
 ```
+  - step-2: Force push to update the history of the remote repository
+```console
+$ git push --force <branch-name>
+```
+* ##### Modify latest commit message, description in older commits
+  - step-1: `git rebase -i HEAD~5` & it will open in default text editor:
+```
+pick 43f8707f9 fix: update dependency json5 to ^2.1.1
+pick cea1fb88a fix: update dependency verdaccio to ^4.3.3
+pick aa540c364 fix: update dependency webpack-dev-server to ^3.8.2
+pick c5e078656 chore: update dependency flow-bin to ^0.109.0
+pick 11ce0ab34 fix: Fix spelling.
+
+# Rebase 7e59e8ead..11ce0ab34 onto 7e59e8ead (5 commands)
+```
+  - step-2: Move to the lines of the commit message you want to change and replace pick with reword
+```
+reword 43f8707f9 fix: update dependency json5 to ^2.1.1
+reword cea1fb88a fix: update dependency verdaccio to ^4.3.3
+pick aa540c364 fix: update dependency webpack-dev-server to ^3.8.2
+pick c5e078656 chore: update dependency flow-bin to ^0.109.0
+pick 11ce0ab34 fix: Fix spelling.
+
+# Rebase 7e59e8ead..11ce0ab34 onto 7e59e8ead (5 commands)
+```
+  - step-3: Save the changes and close the editor.
+  - step-4: For each chosen commit, a new text editor window will open. Change the commit message, save the file, and close the editor.
+```
+fix: update dependency json5 to ^2.1.1
+```
+  - step-5: Force push the changes to the remote repository:
+```
+git push --force <branch-name>
+```
+
 
 ## Activities
 * ### Start maintaining local folder to Github
