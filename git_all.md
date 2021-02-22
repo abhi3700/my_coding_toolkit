@@ -289,6 +289,15 @@ git commit -m "src new state"
 	- ##### Unset
 		+ For global, In CMD or git-bash in the repo, `git config --global --unset credential.helper`
 		+ For repo, In CMD or git-bash in the repo, `git config --system --unset credential.helper` if this has been set in the system configuration file.
+* ##### Modify latest commit message, description
+```console
+$ git commit --amend -m "FAQ added" -m "
+> - Case-2 & Case-3 games are added in 'usergamestat' TABLE, but not Case-1
+> "
+[master 712a1cc] FAQ added
+ Date: Mon Feb 22 18:47:42 2021 +0530
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+```
 
 ## Activities
 * ### Start maintaining local folder to Github
