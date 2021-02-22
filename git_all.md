@@ -333,7 +333,8 @@ fix: update dependency json5 to ^2.1.1
 ```
 git push --force <branch-name>
 ```
-
+* Push all tags of a repo to remote
+	- `git push --tags origin master`
 
 ## Activities
 * ### Start maintaining local folder to Github
