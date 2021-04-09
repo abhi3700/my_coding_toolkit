@@ -336,6 +336,10 @@ git push --force <branch-name>
 ```
 * Push all tags of a repo to remote
 	- `git push --tags origin master`
+* Credential Manager
+	- enable: `git config --global credential.modalPrompt true`
+	- disable: `git config --global credential.modalPrompt false`
+
 
 ## Activities
 * ### Start maintaining local folder to Github
