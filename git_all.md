@@ -340,6 +340,8 @@ git push --force <branch-name>
 	- enable: `git config --global credential.modalPrompt true`
 	- disable: `git config --global credential.modalPrompt false`
 
+> NOTE: after disable, the `git push` won't work
+
 
 ## Activities
 * ### Start maintaining local folder to Github
