@@ -5,6 +5,7 @@ Windows 10
 ## Tools Installation
 * [Git for Windows](https://git-scm.com/download/win): To use as a console (git-bash is recommended) to clone, pull, push, commit, branch, etc...
 	- Add `git-bash` to system environment variables, so that it can be opened from <kbd>win+r</kbd> command & by typing `git-bash` on windows explorer to open in a specific directory.
+	- Tick the option - "GitCredentialManager" during installation. This will be one-time prompt for logged-in using authentication via browser.
 * [Sublime Merge](https://www.sublimemerge.com/), [Git-Fork](https://git-fork.com/) - Local Git GUI and these (Github, Gitlab, Bitbucket) are used as server.
 
 ## Commands
