@@ -1,6 +1,11 @@
+## Tool
+* [Just the docs](https://pmarsceill.github.io/just-the-docs/)
+* [Github Pages](https://pages.github.com/)
+
 ## GitHub Repo
 * Markdown Extended Higlighting - https://github.com/jonschlinkert/sublime-markdown-extended
 * Markdown TOC - https://github.com/naokazuterada/MarkdownTOC
+
 
 ## NOTES
 * One can try editing a file on __Github__ or __Sublime Text 3__ enabling this above extensions.
