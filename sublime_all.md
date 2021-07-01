@@ -116,6 +116,8 @@ If not found, then manually download the .zip file into the directory "Preferenc
   Save As Workspace | ctrl+alt+shift+s | Save easy workspace to specified file
   Open Workspace    | ctrl+alt+o       | Open an existing workspace
   ```
+* [x] [Ethereum](https://packagecontrol.io/packages/Ethereum)
+	- Enable by using "View >> Syntax >> Ethereum >> Solidity" on `.sol` file.
 * [x] FuzzyFileNav
 * [x] FuzzyFilePath
 * [x] [Git Savvy](https://packagecontrol.io/packages/GitSavvy) - Full git and GitHub integration with ST3.
@@ -137,6 +139,8 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] PlainTasks
 * [x] RTagsComplete
 * [x] SideBarEnhancements
+* [x] [Solidity Docstring Generator](https://packagecontrol.io/packages/Solidity%20Docstring%20Generator)
+	- Enable via "<kbd>ctrl+shift+p</kbd> >> type "Generate..." >> Click on it"
 * [x] Stackoverflow Snippets
 * [x] Stackoverflow Debug Helper
 * [x] SublimeLinter: [link](https://packagecontrol.io/packages/SublimeLinter) The code linting framework for Sublime Text 3 (for all languages)
