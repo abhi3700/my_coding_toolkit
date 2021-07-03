@@ -16,6 +16,7 @@ Windows 10
 	editor = 'F:\\Softwares\\Sublime Text 3\\sublime_text.exe' -w
 ```
 * ##### `git init` - intialize git within a non-Github folder (i.e. a local folder)
+* ##### `git init -b <branch-name>` - intialize git within a non-Github folder (i.e. a local folder) alongwith a custom branch name.
 * ##### `git add .` - add all the files, folders inside a repo's current folder for commit.
   > NOTE: `git add --all`: add all the files, folders irrespective of current sub-folders inside the git repo.
 * ##### `git add <file1-name.ext> <file2-name.ext> <file3-name.ext>` - Add single/multiple files for commit
