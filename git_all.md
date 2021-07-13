@@ -73,6 +73,7 @@ $ git commit -m "SCs added" -m "
 * ##### `git clone -b <branch> <remote_repo>` - clone a specific branch (only) of github repo.
   E.g. - `git clone -b v1.x --single-branch https://github.com/gabime/spdlog.git` [git v1.7.10 and later]
 * ##### `git clone <repo-url> --recursive` - clone a repo including all submodules.
+* ##### `git clone <repo-url>` >> `git reset --hard <sha-1_commit>` - clone a specific commit of a repo.
 * ##### `git submodule update --init` - pull submodules after cloning the parent repo
 * ##### `svn checkout <repo-url>` - clone a github repo.
 * ##### `svn checkout <repo-url> <custom-name>` - clone a github repo with a custom local name.
