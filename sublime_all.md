@@ -153,6 +153,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * [x] Toggle Read-Only
 * [x] Translate - downloaded from [here](https://github.com/desislavsd/translate) and extracted to (..Roaming\Sublime Text 3\Packages\) <br/>
 	<kbd>ctrl+alt+g</kbd> - Select text and use this key shortcut.
+* [x] Typescript Syntax
 * [x] Vue Syntax Highlight
 * [x] Vuejs Complete Package
 * [x] WebAssembly Text Syntax
