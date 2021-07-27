@@ -100,9 +100,14 @@ If not found, then manually download the .zip file into the directory "Preferenc
 		+ Color scheme: `Monokai` (installed by default)
 		+ Theme: `Default`
 	- __Light__ (adjust the brightness of the screen to 50 (contrast, brightness))
-		+ [x] Color scheme: 
-			+ `sixteen` light 
-			+ `ayu`-light (Install `ayu`)
+		+ [x] Color scheme:
+			+ [x] `one-light`
+				1. Download zip from [here](https://github.com/abhi3700/one)
+				2. Select "Preferences" >> "Browse Packages..." >> "extract the zip folder here as 'one-master'"
+				3. In ST, "Preferences" >> "Select Color Scheme" >> "Select One Light"
+				4. Done!
+			+ [ ]`sixteen` light 
+			+ [ ]`ayu`-light (Install `ayu`)
 		+ Theme: `Adaptive`
 * [x] Comment-Snippets
 * [x] Conda
