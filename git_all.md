@@ -249,6 +249,8 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 * ##### Release
 	- `git tag <version e.g v0.1>`: versioning corresponding to a commit
 	- `git tag <version-number> -m <title> -m <description>`: give message title or both title & description.
+	- `git tag -d <version-number>`: delete a tag locally.
+	- `git tag --delete origin <version-number>`: delete a tag remotely.
 * ##### switch branches
 	- `git checkout develop-randnum` - switching from current branch to another existing branch develop-random
 	- `git checkout master` - switch from __develop-randnum__ (above) to __master__ branch
