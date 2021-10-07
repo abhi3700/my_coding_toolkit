@@ -33,6 +33,12 @@
 * This error occurs after login into "App Store" >> press Review button >> Error >> Again login >> Review >> Error .....likewise infinite times. 
 * __Solution__: Open "Apple Music" App. Go to Account on the top >> Login using Apple ID >> Set the payment (as None or other method) & billing address >> Done.
 
+### 2. Unable to run unverified App
+1. Open __Finder__
+1. Search for the App
+1. Select and `ctrl+click (on touchpad)` >> open
+1. Thereafter, it's added into the list of unverified Apps & it will automatically open just like other verified Apps.
+
 ## References
 * Apple keyboard shortcuts - https://support.apple.com/en-in/HT201236
 * Apple Q & A - https://apple.stackexchange.com/
