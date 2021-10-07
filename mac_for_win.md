@@ -5,6 +5,7 @@
 * Taskbar <--> Dock
 * Action center <--> Notification Center
 * `.exe` <--> `.dmg`
+* Properties <--> Quick look
 
 ## Keyboard shortcuts
 * <kbd>command+c</kbd>: copy
