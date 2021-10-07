@@ -296,6 +296,10 @@ git commit -m "src new state"
 	- ##### Unset
 		+ For global, In CMD or git-bash in the repo, `git config --global --unset credential.helper`
 		+ For repo, In CMD or git-bash in the repo, `git config --system --unset credential.helper` if this has been set in the system configuration file.
+* #### Credentials (on MacOS)
+	- copy personal access token from Github's Settings >> Developer settings >> Personal access token
+	- `$ git config --global credential.helper cache` to set globally. To clear, `$ git config --global --unset credential.helper`
+	- During the `git push ..` command, add username & password as the token.
 * ##### Modify latest commit message, description
   - step-1: modify
 ```console
