@@ -13,8 +13,8 @@
 * <kbd>command+[</kbd>: Go Back
 * <kbd>command+]</kbd>: Go Forward ~ `backspace`
 * <kbd>command+shift+c</kbd>: Go to computer ~ `win+e`
-* <kbd>command+tab</kbd>: Go forward in opened applications
-* <kbd>command+shift+tab</kbd>: Go backward in opened applications
+* <kbd>command+tab</kbd>: Go forward in opened applications ~ `alt+tab`
+* <kbd>command+shift+tab</kbd>: Go backward in opened applications ~ `alt+shift+tab`
 
 ## How-to
 * [Force Shutdown using Key](https://www.youtube.com/watch?v=ePhnDneb19M)
