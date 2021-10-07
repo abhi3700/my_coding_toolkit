@@ -1,6 +1,7 @@
 # MacOS for Windows users
 
 ## Glossary (Win <--> Mac)
+* Explorer <--> Finder
 * Taskbar <--> Dock
 * Action center <--> Notification Center
 * `.exe` <--> `.dmg`
