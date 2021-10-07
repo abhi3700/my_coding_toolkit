@@ -2,13 +2,19 @@
 
 ## Glossary (Win <--> Mac)
 * Taskbar <--> Dock
+* Action center <--> Notification Center
 
 ## Keyboard shortcuts
 * <kbd>command+c</kbd>: copy
 * <kbd>command+v</kbd>: paste
 * <kbd>command+m</kbd>: minimize an opened windows 
-* <kbd>command+w</kbd>: close the App, but still open in background.
+* <kbd>command+w</kbd>: close the App, but still open in background. ~ `ctrl+w`
 * <kbd>command+q</kbd>: quit the App
+* <kbd>command+[</kbd>: Go Back
+* <kbd>command+]</kbd>: Go Forward ~ `backspace`
+* <kbd>command+shift+c</kbd>: Go to computer ~ `win+e`
+* <kbd>command+tab</kbd>: Go forward in opened applications
+* <kbd>command+shift+tab</kbd>: Go backward in opened applications
 
 ## How-to
 * [Force Shutdown using Key](https://www.youtube.com/watch?v=ePhnDneb19M)
