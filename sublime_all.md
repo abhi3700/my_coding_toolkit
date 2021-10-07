@@ -138,7 +138,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 } 
 ```
 * [ ] MarkdownLivePreview: In the command palette, type "markdownlivepreview" and go to markdownlivepreview.preferences and toggle "keep on preview" as true.
-* [x] [MarkdownPreview](https://packagecontrol.io/packages/MarkdownPreview). After install, for `key binding` i.e shortcut key, `Preferences >> Key Bindings`, add this line `{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },`. Now, press `alt+m` to preview in browser.
+* [x] [MarkdownPreview](https://packagecontrol.io/packages/MarkdownPreview). After install, for `key binding` i.e shortcut key, `Preferences >> Key Bindings`, add this line `{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },` on `Win` or `{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },` on `MacOS`. Now, press `alt+m` (Win) or `option+m` (Mac) to preview in browser.
 * [x] [MarkdownTOC](https://github.com/naokazuterada/MarkdownTOC)
 * [x] MarkdownWriter
 * [x] PlainTasks
