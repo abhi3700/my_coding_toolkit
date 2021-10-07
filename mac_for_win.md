@@ -20,7 +20,10 @@
 * <kbd>command+shift+tab</kbd>: Go backward in opened applications ~ `alt+shift+tab`
 * <kbd>command+shift+n</kbd>: create a new folder at selected directory
 * <kbd>option+ <-</kbd>: skip to character after space ~ `ctrl+ <-`
-* <kbd>option+ -></kbd>: skip to character before space ~ `ctrl+ ->`                                                                    
+* <kbd>option+ -></kbd>: skip to character before space ~ `ctrl+ ->`
+* <kbd>option+command+delete</kbd>: permanent delet ~ `shift+delete`
+* open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
+                                                                                                                                      
 
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
