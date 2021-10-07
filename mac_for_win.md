@@ -21,6 +21,13 @@
 * <kbd>option+ <-</kbd>: skip to character after space ~ `ctrl+ <-`
 * <kbd>option+ -></kbd>: skip to character before space ~ `ctrl+ ->`                                                                    
 
+## Display
+* Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
+* Resolution: Choose 2nd i.e. `1280 x 800`
+
+## Touchpad
+* three touch towards up: Show all the opened apps & also create new workspace or switch to a workspace.
+
 ## Terminal
 * <kbd>ctrl+l</kbd>: clear the console
 * <kbd>command+l</kbd>: clear console by 1 command
