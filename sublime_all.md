@@ -190,11 +190,22 @@ After the above packages are installed, use the following personalized shortcut 
 * <kbd>ctrl + shift + k</kbd> - Delete current line
 * <kbd>ctrl + r</kbd> - lists all functions and classes within a file to make them easier to find. Simply start typing the one you want.
 
+For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
+
 #### MacOS
 After the above packages are installed, use the following personalized shortcut keys:
 * Follow [this](https://sublime-text-unofficial-documentation.readthedocs.io/en/sublime-text-2/reference/keyboard_shortcuts_osx.html#editing)
+* Enable Mouse Wheel Zoom:
+  1. Open Preferences >> Browse Packages >> opens the directory in the Finder
+  2. Create a `Default (OSX).sublime-mousemap` file in location `"~/Library/Application Support/Sublime Text 3/Packages/User"`
+  3. Paste this:
 
-For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
+```
+[
+    { "button": "scroll_down", "modifiers": ["super"], "command": "decrease_font_size" },
+    { "button": "scroll_up", "modifiers": ["super"], "command": "increase_font_size" }
+]
+```
 
 ## Custom
 ### Key Bindings
