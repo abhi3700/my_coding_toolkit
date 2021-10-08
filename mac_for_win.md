@@ -51,6 +51,35 @@
 * <kbd>ctrl+l</kbd>: clear the console
 * <kbd>command+l</kbd>: clear console by 1 command
 
+### Beautify
+#### 1. Preparation
+Recommend to install homebrew first:
+
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+Install zsh if you are on macOS version prior to Catalina:
+
+* Install zsh `brew install zsh`
+* Set zsh as your default shell `chsh -s /usr/local/bin/zsh`
+
+#### 2. Install oh-my-zsh
+* `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
+#### 3. Install oh-my-zsh theme & must-have plugins
+* config `.zshrc` (present in `~` location)
+* open via `nano ~/.zshrc` & set these
+* Set `ZSH_THEME` to your favorite theme name (preferred `intheloop`). Select from [link1](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes), [link2](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes)
+* must-have plugins
+```
+plugins=(
+  git
+  extract
+  autojump
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+```
+
 ## How-to
 * [Force Shutdown using Key](https://www.youtube.com/watch?v=ePhnDneb19M)
 * Hibernate: Go to Apple icon >> Shutdown >> tick the "Reopen the windows..." >> Press shutdown button. 
