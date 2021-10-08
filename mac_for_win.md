@@ -24,6 +24,8 @@
 * <kbd>option+ -></kbd>: skip to character before space ~ `ctrl+ ->`
 * <kbd>option+command+delete</kbd>: permanent delet ~ `shift+delete`
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
+* <kbd>command+shift+3</kbd>: Full capture
+* <kbd>command+shift+3</kbd>: Custom capture
                                                                                                                                       
 ## Installation
 * Install:
