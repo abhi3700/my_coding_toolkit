@@ -7,6 +7,7 @@
 * `.exe` <--> `.dmg`
 * Properties <--> Quick look
 * Task Manager <--> Activity Monitor
+* Spotlight: help you quickly find apps, documents, and other files on your Mac.
 
 ## Keyboard shortcuts
 * <kbd>command+c</kbd>: copy
@@ -28,6 +29,8 @@
 * <kbd>command+shift+3</kbd>: Custom capture
 * <kbd>control+ <-</kbd>: Switch to workspace towards right ~ `ctrl+alt+ <-`
 * <kbd>control+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
+* <kbd>command+spacebar</kbd>: Open Spotlight menu
+* <kbd>command+shift+spacebar</kbd>: Open Spotlight in the Finder
                                                                                                                                       
 ## Installation
 * Install:
@@ -42,7 +45,7 @@
 
 ## Touchpad
 * three touch towards up: Show all the opened apps & also create new workspace or switch to a workspace.
-* clicked with 2 fingers on the touchpad ~ `Right click` on Windows.
+* Single clicked with 2 fingers on the touchpad ~ `Right click` on Windows.
 
 ## Terminal
 * <kbd>ctrl+l</kbd>: clear the console
