@@ -42,6 +42,7 @@
 
 ## Touchpad
 * three touch towards up: Show all the opened apps & also create new workspace or switch to a workspace.
+* clicked with 2 fingers on the touchpad ~ `Right click` on Windows.
 
 ## Terminal
 * <kbd>ctrl+l</kbd>: clear the console
