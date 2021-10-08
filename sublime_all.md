@@ -169,6 +169,7 @@ If not found, then manually download the .zip file into the directory "Preferenc
 * Rainglow theme
 
 ### Shortcut keys
+#### Windows
 After the above packages are installed, use the following personalized shortcut keys:
 * <kbd>ctrl + o</kbd> - open files, folders.
 * <kbd>ctrl + s</kbd> - save the file.
@@ -189,6 +190,9 @@ After the above packages are installed, use the following personalized shortcut 
 * <kbd>ctrl + shift + k</kbd> - Delete current line
 * <kbd>ctrl + r</kbd> - lists all functions and classes within a file to make them easier to find. Simply start typing the one you want.
 
+#### MacOS
+After the above packages are installed, use the following personalized shortcut keys:
+* Follow [this](https://sublime-text-unofficial-documentation.readthedocs.io/en/sublime-text-2/reference/keyboard_shortcuts_osx.html#editing)
 
 For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_Shortcuts)
 
