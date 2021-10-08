@@ -26,6 +26,8 @@
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
 * <kbd>command+shift+3</kbd>: Full capture
 * <kbd>command+shift+3</kbd>: Custom capture
+* <kbd>control+ <-</kbd>: Switch to workspace towards right ~ `ctrl+alt+ <-`
+* <kbd>control+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
                                                                                                                                       
 ## Installation
 * Install:
