@@ -24,6 +24,12 @@
 * <kbd>option+command+delete</kbd>: permanent delet ~ `shift+delete`
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
                                                                                                                                       
+## Installation
+* Install:
+  - M-1: Go to App store, then press `GET` to install.
+  - M-2: From internet download the file (`.dgm` preferrred) >> install >> drag & drop to "Applications" 
+* Uninstall:
+  - Go to "Finder", search for App >> drag & drop the App to "Bin"
 
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
