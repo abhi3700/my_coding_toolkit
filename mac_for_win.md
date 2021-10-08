@@ -6,6 +6,7 @@
 * Action center <--> Notification Center
 * `.exe` <--> `.dmg`
 * Properties <--> Quick look
+* Task Manager <--> Activity Monitor
 
 ## Keyboard shortcuts
 * <kbd>command+c</kbd>: copy
