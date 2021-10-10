@@ -1,3 +1,5 @@
+# Sublime Text 4
+
 ## About
 This is a editor cum IDE used for any format of file.
 
@@ -9,15 +11,23 @@ This is a editor cum IDE used for any format of file.
 link - http://docs.sublimetext.info/en/latest/index.html
 
 ## Installation
-1. ### Sublime Text 3
+### Sublime Text 4
+
+#### Win
 I prefer using Win 10. So, install on Win 10 & then connect WSL by creating shortcut to the ubuntu repo "/usr/local/bin/subl"
 
 Follow the steps:
-* Install from the link - https://www.sublimetext.com/3
-* make the shortcut link on ubuntu using `ln -s "/mnt/f/Softwares/Sublime Text 3/subl.exe" /usr/local/bin/subl`
-* use `subl` on bash-cmd
+1. Install from [here](https://www.sublimetext.com/download)
+2. make the shortcut link on ubuntu using `sudo ln -s "/mnt/f/Softwares/Sublime Text 3/subl.exe" /usr/local/bin/subl`
+3. use `subl` on bash-cmd
 
-2. ### Sublime Merge
+#### Mac
+1. Install from [here](https://www.sublimetext.com/download)
+2. Use `subl` from terminal by adding the `bin` folder to the `PATH` environment variable
+	a. `echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile`
+	b. Use `subl <filename>` on terminal & it will open in the editor.
+
+### Sublime Merge
 A Git Client
 * Install from [here](https://www.sublimemerge.com/download)
 
