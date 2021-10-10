@@ -95,7 +95,7 @@ plugins=(
 1. Select and `ctrl+click (on touchpad)` >> open
 1. Thereafter, it's added into the list of unverified Apps & it will automatically open just like other verified Apps.
 
-### 3. Unable to use Software requiring x86_64 architecture
+### 3. Unable to use Software requiring x86_64 architecture on M1 Macbook
 * Below is the error for `eosio` installation
 ```
 eosio: The intel architecture is required for this software.
