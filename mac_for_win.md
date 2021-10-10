@@ -95,6 +95,22 @@ plugins=(
 1. Select and `ctrl+click (on touchpad)` >> open
 1. Thereafter, it's added into the list of unverified Apps & it will automatically open just like other verified Apps.
 
+### 3. Unable to use Software requiring x86_64 architecture
+* Below is the error for `eosio` installation
+```
+eosio: The intel architecture is required for this software.
+Error: An unsatisifed requirement failed this build.
+```
+* Solution: Follow [this](https://benobi.one/posts/running_brew_on_m1_for_x86/)
+  - Install Rosetta (this will fail if your Terminal is set to “Open using Rosetta") by running: `softwareupdate --install-rose`
+  - Run this command to install the Intel architecture Homebrew: `arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+  - Add this to your ZSH config (I recommend using OhMyZSH + add a file called `~/.oh-my-zsh/custom/brew.zsh`) with the contents:
+     + `touch ~/.oh-my-zsh/custom/brew.zsh`
+  - `export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"`
+  - `alias ibrew='arch -x86_64 /usr/local/bin/brew'`
+  - Re-source your zsh term `source ~/.zshrc`
+  - Run Intel brew as `ibrew install <whatever>`
+
 ## References
 * Apple keyboard shortcuts - https://support.apple.com/en-in/HT201236
 * Apple Q & A - https://apple.stackexchange.com/
