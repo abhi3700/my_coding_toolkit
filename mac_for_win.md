@@ -23,7 +23,7 @@
 * <kbd>command+shift+n</kbd>: create a new folder at selected directory
 * <kbd>option+ <-</kbd>: skip to character after space ~ `ctrl+ <-`
 * <kbd>option+ -></kbd>: skip to character before space ~ `ctrl+ ->`
-* <kbd>option+command+delete</kbd>: permanent delet ~ `shift+delete`
+* <kbd>option+command+delete</kbd>: permanent delete ~ `shift+delete`
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
 * <kbd>command+shift+3</kbd>: Full capture
 * <kbd>command+shift+3</kbd>: Custom capture
@@ -31,6 +31,9 @@
 * <kbd>control+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
 * <kbd>command+spacebar</kbd>: Open Spotlight menu
 * <kbd>command+shift+spacebar</kbd>: Open Spotlight in the Finder
+* Cut & Paste file:
+  1. Copy <kbd>command+c</kbd>
+  2. Paste with replacing the copied file <kbd>command+option+v</kbd>
                                                                                                                                       
 ## Installation
 * Install:
