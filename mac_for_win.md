@@ -26,7 +26,7 @@
 * <kbd>option+command+delete</kbd>: permanent delete ~ `shift+delete`
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
 * <kbd>command+shift+3</kbd>: Full capture
-* <kbd>command+shift+3</kbd>: Custom capture
+* <kbd>command+shift+4</kbd>: Custom capture. To copy, press & hold the `control` key during the capture. And paste into wherever you want.
 * <kbd>control+ <-</kbd>: Switch to workspace towards right ~ `ctrl+alt+ <-`
 * <kbd>control+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
 * <kbd>command+spacebar</kbd>: Open Spotlight menu
@@ -51,8 +51,12 @@
 * Single clicked with 2 fingers on the touchpad ~ `Right click` on Windows.
 
 ## Terminal
+### Shortcut keys
 * <kbd>ctrl+l</kbd>: clear the console
 * <kbd>command+l</kbd>: clear console by 1 command
+
+### Commands
+* `$ open .`: open the Finder in the directory
 
 ### Beautify
 #### 1. Preparation
