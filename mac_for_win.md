@@ -34,6 +34,8 @@
 * Cut & Paste file:
   1. Copy <kbd>command+c</kbd>
   2. Paste with replacing the copied file <kbd>command+option+v</kbd>
+* <kbd>command+tab</kbd>: Switch to an Application
+* <kbd>command+`</kbd>: Switch to a window of an Application
                                                                                                                                       
 ## Installation
 * Install:
