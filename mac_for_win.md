@@ -36,6 +36,9 @@
   2. Paste with replacing the copied file <kbd>command+option+v</kbd>
 * <kbd>command+tab</kbd>: Switch to an Application
 * <kbd>command+`</kbd>: Switch to a window of an Application
+* <kbd>control+down</kbd>: show all opened windows of an App. Restore back by opening the current window via <kbd>control+up</kbd>
+* <kbd>command+up</kbd>: Home
+* <kbd>command+down</kbd>: End
                                                                                                                                       
 ## Installation
 * Install:
