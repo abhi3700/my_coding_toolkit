@@ -39,6 +39,9 @@
 * <kbd>control+down</kbd>: show all opened windows of an App. Restore back by opening the current window via <kbd>control+up</kbd>
 * <kbd>command+up</kbd>: Home
 * <kbd>command+down</kbd>: End
+* Add your own shortcut key using [this](https://apple.stackexchange.com/a/212607/435627)
+* [custom] <kbd>ctrl+opt+leftarrow</kbd>: Tile to the left of the window
+* [custom] <kbd>ctrl+opt+rightarrow</kbd>: Tile to the right of the window
                                                                                                                                       
 ## Installation
 * Install:
@@ -54,6 +57,10 @@
 ## Touchpad
 * three touch towards up: Show all the opened apps & also create new workspace or switch to a workspace.
 * Single clicked with 2 fingers on the touchpad ~ `Right click` on Windows.
+
+## Browser (chrome-based)
+* <kbd>cmd+opt+leftarrow</kbd>: switch to left tab
+* <kbd>cmd+opt+rightarrow</kbd>: switch to right tab
 
 ## Terminal
 ### Shortcut keys
