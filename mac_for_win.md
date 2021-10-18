@@ -61,6 +61,8 @@
 ## Browser (chrome-based)
 * <kbd>cmd+opt+leftarrow</kbd>: switch to left tab
 * <kbd>cmd+opt+rightarrow</kbd>: switch to right tab
+* <kbd>cmd+w</kbd>: close tab
+* <kbd>cmd+shift+w</kbd>: close window
 
 ## Terminal
 ### Shortcut keys
