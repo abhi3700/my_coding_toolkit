@@ -319,6 +319,14 @@ Follow these steps:
 	```
 
 * save the file (into the directory shown). Remember to give just the name, no extension (it will automatically take).
+* Create a build system for Javascript: 1. Create a file "Javscript.sublime-build" inside "Packages/Users" folder. 2. Choose Build system as this & build any file.
+```
+{
+	"cmd": ["node", "$file"],
+	"selector": "source.js"
+}
+
+```
 * Now, choose the build system.
 * References: For more, click [here](https://www.sublimetext.com/docs/3/build_systems.html)
 
