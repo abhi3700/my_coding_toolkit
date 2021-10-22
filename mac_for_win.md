@@ -57,6 +57,7 @@
 ## Touchpad
 * three touch towards up: Show all the opened apps & also create new workspace or switch to a workspace.
 * Single clicked with 2 fingers on the touchpad ~ `Right click` on Windows.
+* Touchpad settings can be changed.
 
 ## Browser (chrome-based)
 * <kbd>cmd+opt+leftarrow</kbd>: switch to left tab
