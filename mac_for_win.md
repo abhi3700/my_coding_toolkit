@@ -72,6 +72,7 @@
 
 ### Commands
 * `$ open .`: open the Finder in the directory
+* Run `.sh` file: `sh /path/to/file/with/extension`
 
 ### Beautify
 #### 1. Preparation
