@@ -42,6 +42,7 @@
 * Add your own shortcut key using [this](https://apple.stackexchange.com/a/212607/435627)
 * [custom] <kbd>ctrl+opt+leftarrow</kbd>: Tile to the left of the window
 * [custom] <kbd>ctrl+opt+rightarrow</kbd>: Tile to the right of the window
+* <kbd>command+option+d</kbd>: Hide the dock (or taskbar in Windows)
                                                                                                                                       
 ## Installation
 * Install:
