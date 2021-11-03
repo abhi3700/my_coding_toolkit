@@ -1,5 +1,10 @@
 # MacOS for Windows users
 
+## Installation
+
+### Update
+* After updating, update the CLI tools using `xcode-select --install` in terminal.
+
 ## Glossary (Win <--> Mac)
 * Explorer <--> Finder
 * Taskbar <--> Dock
@@ -134,6 +139,10 @@ Error: An unsatisifed requirement failed this build.
   - `alias ibrew='arch -x86_64 /usr/local/bin/brew'`
   - Re-source your zsh term `source ~/.zshrc`
   - Run Intel brew as `ibrew install <whatever>`
+
+### 4. Error: xcrun: error: invalid active developer path
+* Reason: After updating MacOS, the CLI needs to be updated.
+* Solution: Run `xcode-select --install` in terminal.
 
 ## References
 * Apple keyboard shortcuts - https://support.apple.com/en-in/HT201236
