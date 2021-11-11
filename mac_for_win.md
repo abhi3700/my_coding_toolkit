@@ -48,6 +48,8 @@
 * [custom] <kbd>ctrl+opt+leftarrow</kbd>: Tile to the left of the window
 * [custom] <kbd>ctrl+opt+rightarrow</kbd>: Tile to the right of the window
 * <kbd>command+option+d</kbd>: Hide the dock (or taskbar in Windows)
+* <kbd>command+shift+.</kbd>: Show/Hide the hidden files (starting with ., ).
+* <kbd>command+t</kbd> on Finder creates a separate tab.
                                                                                                                                       
 ## Installation
 * Install:
