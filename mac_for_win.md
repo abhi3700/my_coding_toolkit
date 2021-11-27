@@ -58,6 +58,9 @@
 * Uninstall:
   - Go to "Finder", search for App >> drag & drop the App to "Bin"
 
+## Apps
+* Numbers: a quick analysis app like Excel for data analytics.
+
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
 * Resolution: Choose 2nd i.e. `1280 x 800`
