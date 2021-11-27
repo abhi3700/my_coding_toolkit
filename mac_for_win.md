@@ -60,6 +60,10 @@
 
 ## Apps
 * Numbers: a quick analysis app like Excel for data analytics.
+* Pages: a document app like Word, but with PPT type of styling. Easy to add cards, etc.
+* Notes: a note app for TODO list
+* IPEVO: Whiteboard app
+* Mind Map: Miro
 
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
