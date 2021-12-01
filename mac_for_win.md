@@ -50,6 +50,7 @@
 * <kbd>command+option+d</kbd>: Hide the dock (or taskbar in Windows)
 * <kbd>command+shift+.</kbd>: Show/Hide the hidden files (starting with ., ).
 * <kbd>command+t</kbd> on Finder creates a separate tab.
+* <kbd>command+i</kbd>: Get info on an App i.e. basically right click >> Select "Get Info"
                                                                                                                                       
 ## Installation
 * Install:
