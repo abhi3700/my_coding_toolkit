@@ -89,6 +89,15 @@
 ### Commands
 * `$ open .`: open the Finder in the directory
 * Run `.sh` file: `sh /path/to/file/with/extension`
+* `$ which <command>`: gives the location of the command file
+
+### PATH
+* Stored in `/etc/profile`
+* Add current directory to the PATH:
+  - Open the file in ST editor, `$ subl ~/.zprofile`.
+  - add this line `export PATH=$PWD/bin:$PATH` to the End of File (EOF). If a specific directory, then `export PATH=<custom-directory>:$PATH` e.g. `export PATH="/Users/abhi3700/Desktop/solana-1.8.5/bin:$PATH"`
+  - Run this to activate `$ source ~/.zprofile`
+  - Now, use the command in the current/new terminal. 
 
 ### Beautify
 #### 1. Preparation
@@ -153,6 +162,14 @@ Error: An unsatisifed requirement failed this build.
 ### 4. Error: xcrun: error: invalid active developer path
 * Reason: After updating MacOS, the CLI needs to be updated.
 * Solution: Run `xcode-select --install` in terminal.
+
+### 5. The command is not activated even after `export PATH=$PWD/bin:$PATH`
+* Reason: the command is not mentioned into the `~/.zprofile`
+* Solution:
+  - Open the file in ST editor, `$ subl ~/.zprofile`.
+  - add this line `export PATH=$PWD/bin:$PATH` to the End of File (EOF).
+  - Run this to activate `$ source ~/.zprofile`
+  - Now, use the command in the current/new terminal.
 
 ## References
 * Apple keyboard shortcuts - https://support.apple.com/en-in/HT201236
