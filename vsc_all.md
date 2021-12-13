@@ -1,6 +1,7 @@
 # Visual Studio Code
 
 ## Installation
+> For Mac OS.
 
 ## Packages
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
@@ -11,3 +12,5 @@
 ## Shortcut keys
 * <kbd>ctrl+k</kbd>, <kbd>ctrl+t</kbd> - change the color theme
 * <kbd>ctrl+shift+p</kbd> - open the command palette
+* <kbd>ctrl+`</kbd> - toggle the terminal
+* <kbd>cmd+k,f</kbd - close the opened folder
