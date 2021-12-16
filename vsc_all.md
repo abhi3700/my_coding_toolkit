@@ -1,16 +1,18 @@
 # Visual Studio Code
 
+My favourite editors: ST, VSC
+
 ## Installation
-> For Mac OS
+> For Mac OS & Win OS
 
 ## Packages
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
 * [x] [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
   - This would enable to work Mo
-* [x] Work with WSL Ubuntu Server
+* [x] Work with WSL Ubuntu Server (Applicable for Win OS)
 
 
-## Shortcut keys
+## Shortcut keys (Mac OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
 
 * <kbd>cmd+k+t</kbd>, <kbd>ctrl+t</kbd> - change the color theme
@@ -20,3 +22,14 @@
 * <kbd>cmd+k+b</kbd - toggle the explorer
 * <kbd>cmd+shift+k</kbd - delete the line cursor is at
 * press <kbd>cmd</kbd> & hold - Edit multiple lines at different line no. simultaneously.
+
+## Shortcut keys (Win OS)
+> First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
+
+* <kbd>ctrl+k+t</kbd>, <kbd>ctrl+t</kbd> - change the color theme
+* <kbd>ctrl+shift+p</kbd> - open the command palette
+* <kbd>ctrl+`</kbd> - toggle the terminal
+* <kbd>ctrl+k,f</kbd - close the opened folder
+* <kbd>ctrl+k+b</kbd - toggle the explorer
+* <kbd>ctrl+shift+k</kbd - delete the line cursor is at
+* press <kbd>ctrl</kbd> & hold - Edit multiple lines at different line no. simultaneously.
