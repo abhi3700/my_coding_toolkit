@@ -28,6 +28,7 @@ My favourite editors: ST, VSC
 * <kbd>cmd+opt+1</kbd> - Only one screen
 * <kbd>cmd+opt+2</kbd> - 2 screens side by side. In order to have 3 screens, just select one file opened & then press this shortcut key.
 * <kbd>ctrl+g</kbd> - Go to a line
+* <kbd>cmd+shift+f</kbd> - Find all references of a function in entire project files.
 
 ## Shortcut keys (Win OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
