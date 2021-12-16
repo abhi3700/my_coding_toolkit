@@ -7,6 +7,7 @@ My favourite editors: ST, VSC
 
 ## Packages
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
+* [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [x] [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
   - This would enable to work Mo
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)
