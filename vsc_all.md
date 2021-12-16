@@ -18,8 +18,10 @@ My favourite editors: ST, VSC
 * <kbd>cmd+k+t</kbd>, <kbd>ctrl+t</kbd> - change the color theme
 * <kbd>cmd+shift+p</kbd> - open the command palette
 * <kbd>ctrl+`</kbd> - toggle the terminal
-* <kbd>cmd+k,f</kbd - close the opened folder
-* <kbd>cmd+k+b</kbd - toggle the explorer
+* <kbd>ctrl+l</kbd> - select multiple lines
+* <kbd>ctrl+shift+l</kbd> - edit multiple lines at a time
+* <kbd>cmd+k,f</kbd> - close the opened folder
+* <kbd>cmd+k+b</kbd> - toggle the explorer
 * <kbd>cmd+shift+k</kbd> - delete the line cursor is at
 * press <kbd>cmd</kbd> & hold - Edit multiple lines at different line no. simultaneously.
 * <kbd>cmd+opt+1</kbd> - Only one screen
