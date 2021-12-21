@@ -5,6 +5,13 @@ My favourite editors: ST, VSC
 ## Installation
 > For Mac OS & Win OS
 
+* Add to terminal [source](https://stackoverflow.com/a/36882426)
+```
+1. Open VSC & type `cmd+shift+p`
+2. Type "Shell" & select 'Shell Command : Install code in PATH'
+3. Use `$ code <project-folder-name>`
+```
+
 ## Packages
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
