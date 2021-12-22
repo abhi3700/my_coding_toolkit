@@ -15,6 +15,9 @@ My favourite editors: ST, VSC
 ## Packages
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+* [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode) 
+* [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
+* [x] [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 * [x] [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
   - This would enable to work Mo
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)
