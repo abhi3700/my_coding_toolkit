@@ -11,9 +11,8 @@ This is a editor cum IDE used for any format of file.
 link - http://docs.sublimetext.info/en/latest/index.html
 
 ## Installation
-### Sublime Text 4
 
-#### Win
+### Win
 I prefer using Win 10. So, install on Win 10 & then connect WSL by creating shortcut to the ubuntu repo "/usr/local/bin/subl"
 
 Follow the steps:
@@ -21,13 +20,19 @@ Follow the steps:
 2. make the shortcut link on ubuntu using `sudo ln -s "/mnt/f/Softwares/Sublime Text 3/subl.exe" /usr/local/bin/subl`
 3. use `subl` on bash-cmd
 
-#### Mac
+### Mac
 1. Install from [here](https://www.sublimetext.com/download)
 2. Use `subl` from terminal by adding the `bin` folder to the `PATH` environment variable
 	a. `echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile`
 	b. Use `subl <filename>` on terminal & it will open in the editor.
 
-### Sublime Merge
+## Uninstallation
+### Win
+* All the extra packages are installed in "click Browse Packages".
+* So, during uninstall, make a copy of the Sublime Text3 in other drives (E/ F/ G). Location - "C:\Users\abhijit\AppData\Roaming\Sublime Text 3".
+* After re-install, copy the folder into the location of the 'Browse Packages'
+
+## Sublime Merge
 A Git Client
 * Install from [here](https://www.sublimemerge.com/download)
 
@@ -55,22 +60,10 @@ pause
 * Now, "Run as Administrator"
 * DONE!
 
-## Uninstallation
-* All the extra packages are installed in "click Browse Packages".
-* So, during uninstall, make a copy of the Sublime Text3 in other drives (E/ F/ G). Location - "C:\Users\abhijit\AppData\Roaming\Sublime Text 3".
-* After re-install, copy the folder into the location of the 'Browse Packages'
-
 ### Shortcuts
 * CMD: <br/>
 	In cmd, bash-cmd, use `subl -h` to show the docs.
 	- `subl -n hello.cpp`: opens a file in new ST3 window.
-	
-* <kbd>ctrl + p</kbd> - find anything within the workspace.
-  * `eosio.hpp:5` - this takes to line 5 of "eosio.hpp" file.
-* <kbd>alt + shift + 2</kbd> -  split the view into 2
-* <kbd>ctrl + shift + p</kbd> - command palette i.e. manually install packages, Project:Save, Project:close, set:java, set:javascript, so on and so forth.
-* 'Double click' will open the file (among the open side bar) and show in the "OPEN FILES". <br/>
-  'Single click' will just open the file.
 
 ### Preferences
 * `Preferences -> Settings - Default/User`: for all files
@@ -185,6 +178,11 @@ After the above packages are installed, use the following personalized shortcut 
 * <kbd>ctrl + s</kbd> - save the file.
 * <kbd>ctrl + shift + s</kbd> - "save as" the file.
 * <kbd>ctrl + tab</kbd> - switch b/w tabs in a panel.
+* <kbd>ctrl + p</kbd> - find anything within the workspace.
+  - `eosio.hpp:5` - this takes to line 5 of "eosio.hpp" file.
+* <kbd>ctrl + shift + p</kbd> - command palette i.e. manually install packages, Project:Save, Project:close, set:java, set:javascript, so on and so forth.
+* 'Double click' will open the file (among the open side bar) and show in the "OPEN FILES". <br/>
+  'Single click' will just open the file.
 * <kbd>alt + shift + 1</kbd> - view layout single. 
 * <kbd>alt + shift + 2</kbd> - view layout double. Like this, so on and so forth.
 * <kbd>ctrl + 1</kbd> - switch to panel 1.
@@ -205,6 +203,7 @@ For more, click [here](https://shortcutworld.com/Sublime-Text/win/Sublime-Text_S
 #### MacOS
 After the above packages are installed, use the following personalized shortcut keys:
 * Follow [this](https://sublime-text-unofficial-documentation.readthedocs.io/en/sublime-text-2/reference/keyboard_shortcuts_osx.html#editing)
+* <kbd>cmd + enter</kbd>: go to new/next line
 * Enable Mouse Wheel Zoom:
   1. Open Preferences >> Browse Packages >> opens the directory in the Finder
   2. Create a `Default (OSX).sublime-mousemap` file in location `"~/Library/Application Support/Sublime Text 3/Packages/User"`
