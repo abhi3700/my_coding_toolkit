@@ -11,6 +11,15 @@ My favourite editors: ST, VSC
 2. Type "Shell" & select 'Shell Command : Install code in PATH'
 3. Use `$ code <project-folder-name>`
 ```
+* For permanence, follow this:
+  1. Open profile in `$ subl ~/.zprofile`
+  2. Add this line
+```
+# install code on terminal
+export PATH="/usr/local/bin/code:$PATH"
+```
+  3. `$ source ~/.zprofile`
+  4. Now, use `$ code <folder_or_file_path>` from terminal
 
 ## Packages
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
