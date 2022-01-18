@@ -64,7 +64,7 @@
 * Pages: a document app like Word, but with PPT type of styling. Easy to add cards, etc.
 * Notes: a note app for TODO list
 * Miro: Architecture, Mind Map, Whiteboard
-* [UTM](Architecture, Mind Map, Whiteboard): A FREE virtual environment for Linux, Windows on Mac OS
+* [UTM](https://mac.getutm.app/): A FREE virtual environment for Linux, Windows on Mac OS
 
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
