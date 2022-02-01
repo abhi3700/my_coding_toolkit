@@ -25,6 +25,8 @@ export PATH="/usr/local/bin/code:$PATH"
 > This is for MacOS
 
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
+* [x] [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
+* [x] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 * [x] [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode) 
