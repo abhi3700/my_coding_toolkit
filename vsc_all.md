@@ -37,6 +37,8 @@ export PATH="/usr/local/bin/code:$PATH"
 * [x] [Semicolon Insertion Shortcut](https://marketplace.visualstudio.com/items?itemName=chrisvltn.vs-code-semicolon-insertion)
   - <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'semicolon' >> Toggle the 2 shortcut keys from <kbd>cmd+/</kbd> & <kbd>cmd+shift+/</kbd> to <kbd>cmd+;</kbd> & <kbd>cmd+shift+;</kbd>
   - There would be another duplicate usage of this keyboard shortcut <kbd>cmd+shift+;</kbd>. Change that to some other shortcut key.
+* [x] [Terminal Here](https://marketplace.visualstudio.com/items?itemName=Tyriar.vscode-terminal-here)
+  -  <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'terminal here' >> set <kbd>ctrl+shift+t</kbd> as shortcut key
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)  
 
 ## Shortcut keys (Mac OS)
