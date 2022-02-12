@@ -15,14 +15,21 @@
 * Spotlight: help you quickly find apps, documents, and other files on your Mac.
 
 ## Keyboard shortcuts
+| Mac | Win |
+|---|---|
+| cmd | ctrl, win |
+| opt | alt |
+
 * <kbd>command+c</kbd>: copy
 * <kbd>command+v</kbd>: paste
 * <kbd>command+m</kbd>: minimize an opened windows 
 * <kbd>command+w</kbd>: close the App, but still open in background. ~ `ctrl+w`
 * <kbd>command+q</kbd>: quit the App
-* <kbd>command+[</kbd>: Go Back
-* <kbd>command+]</kbd>: Go Forward ~ `backspace`
+* <kbd>command+[</kbd>: Go Back on browser
+* <kbd>command+]</kbd>: Go Forward on browser ~ `backspace`
+* <kbd>command+F3</kbd>: Show Desktop ~ `win+d`
 * <kbd>command+shift+c</kbd>: Go to computer ~ `win+e`
+> NOTE: It won't work on browser
 * <kbd>command+tab</kbd>: Go forward in opened applications ~ `alt+tab`
 * <kbd>command+shift+tab</kbd>: Go backward in opened applications ~ `alt+shift+tab`
 * <kbd>command+shift+n</kbd>: create a new folder at selected directory
@@ -32,9 +39,10 @@
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
 * <kbd>command+shift+3</kbd>: Full capture
 * <kbd>command+shift+4</kbd>: Custom capture. To copy, press & hold the `control` key during the capture. And paste into wherever you want.
+* <kbd>command+shift+4</kbd>: More features related to capture
 * <kbd>control+ <-</kbd>: Switch to workspace towards right ~ `ctrl+alt+ <-`
 * <kbd>control+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
-* <kbd>command+spacebar</kbd>: Open Spotlight menu
+* <kbd>command+spacebar</kbd>: Open Spotlight menu which helps in searching anything
 * <kbd>command+shift+spacebar</kbd>: Open Spotlight in the Finder
 * Cut & Paste file:
   1. Copy <kbd>command+c</kbd>
@@ -51,6 +59,7 @@
 * <kbd>command+shift+.</kbd>: Show/Hide the hidden files (starting with ., ).
 * <kbd>command+t</kbd> on Finder creates a separate tab.
 * <kbd>command+i</kbd>: Get info on an App i.e. basically right click >> Select "Get Info"
+* <kbd>cmd+ctrl+f</kbd>: Go & Escape fullscreen for an App
                                                                                                                                       
 ## Installation
 * Install:
