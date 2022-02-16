@@ -59,6 +59,7 @@ export PATH="/usr/local/bin/code:$PATH"
 * <kbd>ctrl+g</kbd> - Go to a line
 * <kbd>cmd+shift+f</kbd> - Find all references of a function in entire project files.
 * <kbd>opt+click</kbd> - Go to the file, function, folder directly
+* <kbd>ctrl+w</kbd> - Switch to workspace/window
 
 ## Shortcut keys (Win OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
