@@ -2,6 +2,12 @@
 
 ## Installation
 
+## Folders
+* Root: `/`
+* Temp: `/tmp`
+* Home: `~`
+* Desktop: `~/Desktop`
+
 ### Update
 * After updating, update the CLI tools using `xcode-select --install` in terminal.
 
