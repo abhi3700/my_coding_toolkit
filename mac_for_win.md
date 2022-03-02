@@ -165,14 +165,16 @@ eosio: The intel architecture is required for this software.
 Error: An unsatisifed requirement failed this build.
 ```
 * Solution: Follow [this](https://benobi.one/posts/running_brew_on_m1_for_x86/)
-  - Install Rosetta (this will fail if your Terminal is set to “Open using Rosetta") by running: `softwareupdate --install-rose`
-  - Run this command to install the Intel architecture Homebrew: `arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+  - Install Rosetta (this will fail if your Terminal is set to “Open using Rosetta") by running: `$ softwareupdate --install-rose`
+  - Run this command to install the Intel architecture Homebrew: `$ arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
   - Add this to your ZSH config (I recommend using OhMyZSH + add a file called `~/.oh-my-zsh/custom/brew.zsh`) with the contents:
-     + `touch ~/.oh-my-zsh/custom/brew.zsh`
-  - `export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"`
-  - `alias ibrew='arch -x86_64 /usr/local/bin/brew'`
-  - Re-source your zsh term `source ~/.zshrc`
-  - Run Intel brew as `ibrew install <whatever>`
+    + create `.../brew.zsh` using `$ touch ~/.oh-my-zsh/custom/brew.zsh`
+  ```
+  export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+  alias ibrew='arch -x86_64 /usr/local/bin/brew'
+  ```
+  - Re-source your zsh term `$ source ~/.zshrc`
+  - Run Intel brew as `$ ibrew install <whatever>`
 
 ### 4. Error: xcrun: error: invalid active developer path
 * Reason: After updating MacOS, the CLI needs to be updated.
