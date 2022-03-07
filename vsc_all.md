@@ -16,7 +16,9 @@ My favourite editors: ST, VSC
   2. Add this line
 ```
 # install code on terminal
-export PATH="/usr/local/bin/code:$PATH"
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+OR
+alias code="open -a /Applications/Visual\ Studio\ Code.app"
 ```
   3. `$ source ~/.zprofile`
   4. Now, use `$ code <folder_or_file_path>` from terminal
