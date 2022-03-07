@@ -105,6 +105,7 @@
 * `$ open .`: open the Finder in the directory
 * Run `.sh` file: `sh /path/to/file/with/extension`
 * `$ which <command>`: gives the location of the command file
+* open any application from terminal: `$ open -a <executable_dir>` E.g. `open -a /Applications/Visual\ Studio\ Code.app`
 
 ### PATH
 * Stored in `/etc/profile`
@@ -112,7 +113,7 @@
   - Open the file in ST editor, `$ subl ~/.zprofile`.
   - add this line `export PATH=$PWD/bin:$PATH` to the End of File (EOF). If a specific directory, then `export PATH=<custom-directory>:$PATH` e.g. `export PATH="/Users/abhi3700/Desktop/solana-1.8.5/bin:$PATH"`
   - Run this to activate `$ source ~/.zprofile`
-  - Now, use the command in the current/new terminal. 
+  - Now, use the command in the current/new terminal.
 
 ### Beautify
 #### 1. Preparation
