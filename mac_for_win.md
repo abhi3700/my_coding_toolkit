@@ -66,6 +66,7 @@
 * <kbd>command+t</kbd> on Finder creates a separate tab.
 * <kbd>command+i</kbd>: Get info on an App i.e. basically right click >> Select "Get Info"
 * <kbd>cmd+ctrl+f</kbd>: Go & Escape fullscreen for an App
+* <kbd>cmd+down</kbd>: Open a file in finder
                                                                                                                                       
 ## Installation
 * Install:
