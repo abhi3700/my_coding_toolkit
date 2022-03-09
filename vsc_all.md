@@ -43,6 +43,7 @@ alias code="open -a /Applications/Visual\ Studio\ Code.app"
 * [x] [Terminal Here](https://marketplace.visualstudio.com/items?itemName=Tyriar.vscode-terminal-here)
   -  <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'terminal here' >> set <kbd>ctrl+shift+t</kbd> as shortcut key
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)  
+* [x] GitHub Pull Requests and Issues
 
 ## Shortcut keys (Mac OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
