@@ -14,12 +14,12 @@ My favourite editors: ST, VSC
 * For permanence, follow this:
   1. Open profile in `$ subl ~/.zprofile`
   2. Add this line
-```
-# install code on terminal
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-OR
-alias code="open -a /Applications/Visual\ Studio\ Code.app"
-```
+  ```
+  # install code on terminal
+  export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+  OR
+  alias code="open -a /Applications/Visual\ Studio\ Code.app"
+  ```
   3. `$ source ~/.zprofile`
   4. Now, use `$ code <folder_or_file_path>` from terminal
 
@@ -30,6 +30,7 @@ alias code="open -a /Applications/Visual\ Studio\ Code.app"
 * [x] [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
 * [x] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 * [x] [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
+* [x] [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
 * [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode) 
@@ -44,7 +45,6 @@ alias code="open -a /Applications/Visual\ Studio\ Code.app"
 * [x] [Terminal Here](https://marketplace.visualstudio.com/items?itemName=Tyriar.vscode-terminal-here)
   -  <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'terminal here' >> set <kbd>ctrl+shift+t</kbd> as shortcut key
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)  
-* [x] [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
 ## Shortcut keys (Mac OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
@@ -64,6 +64,7 @@ alias code="open -a /Applications/Visual\ Studio\ Code.app"
 * <kbd>cmd+shift+f</kbd> - Find all references of a function in entire project files.
 * <kbd>opt+click</kbd> - Go to the file, function, folder directly
 * <kbd>ctrl+w</kbd> - Switch to workspace/window
+* <kbd>cmd+shift+.</kbd> - View a navigation pane for a file.
 
 ## Shortcut keys (Win OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
