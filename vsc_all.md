@@ -32,6 +32,7 @@ My favourite editors: ST, VSC
 * [x] [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
 * [x] [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+* [x] [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
 * [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode) 
 * [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
