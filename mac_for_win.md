@@ -26,45 +26,45 @@
 | cmd | ctrl, win |
 | opt | alt |
 
-* <kbd>command+c</kbd>: copy
-* <kbd>command+v</kbd>: paste
-* <kbd>command+m</kbd>: minimize an opened windows 
-* <kbd>command+w</kbd>: close the App, but still open in background. ~ `ctrl+w`
-* <kbd>command+q</kbd>: quit the App
-* <kbd>command+[</kbd>: Go Back on browser
-* <kbd>command+]</kbd>: Go Forward on browser ~ `backspace`
-* <kbd>command+F3</kbd>: Show Desktop ~ `win+d`
-* <kbd>command+shift+c</kbd>: Go to computer ~ `win+e`
+* <kbd>cmd+c</kbd>: copy
+* <kbd>cmd+v</kbd>: paste
+* <kbd>cmd+m</kbd>: minimize an opened windows 
+* <kbd>cmd+w</kbd>: close the App, but still open in background. ~ `ctrl+w`
+* <kbd>cmd+q</kbd>: quit the App
+* <kbd>cmd+[</kbd>: Go Back on browser
+* <kbd>cmd+]</kbd>: Go Forward on browser ~ `backspace`
+* <kbd>cmd+F3</kbd>: Show Desktop ~ `win+d`
+* <kbd>cmd+shift+c</kbd>: Go to computer ~ `win+e`
 > NOTE: It won't work on browser
-* <kbd>command+tab</kbd>: Go forward in opened applications ~ `alt+tab`
-* <kbd>command+shift+tab</kbd>: Go backward in opened applications ~ `alt+shift+tab`
-* <kbd>command+shift+n</kbd>: create a new folder at selected directory
-* <kbd>option+ <-</kbd>: skip to character after space ~ `ctrl+ <-`
-* <kbd>option+ -></kbd>: skip to character before space ~ `ctrl+ ->`
-* <kbd>option+command+delete</kbd>: permanent delete ~ `shift+delete`
+* <kbd>cmd+tab</kbd>: Go forward in opened applications ~ `alt+tab`
+* <kbd>cmd+shift+tab</kbd>: Go backward in opened applications ~ `alt+shift+tab`
+* <kbd>cmd+shift+n</kbd>: create a new folder at selected directory
+* <kbd>opt+ <-</kbd>: skip to character after space ~ `ctrl+ <-`
+* <kbd>opt+ -></kbd>: skip to character before space ~ `ctrl+ ->`
+* <kbd>opt+cmd+delete</kbd>: permanent delete ~ `shift+delete`
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
-* <kbd>command+shift+3</kbd>: Full capture
-* <kbd>command+shift+4</kbd>: Custom capture. To copy, press & hold the `control` key during the capture. And paste into wherever you want.
-* <kbd>command+shift+4</kbd>: More features related to capture
-* <kbd>control+ <-</kbd>: Switch to workspace towards right ~ `ctrl+alt+ <-`
-* <kbd>control+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
-* <kbd>command+spacebar</kbd>: Open Spotlight menu which helps in searching anything
-* <kbd>command+shift+spacebar</kbd>: Open Spotlight in the Finder
+* <kbd>cmd+shift+3</kbd>: Full capture
+* <kbd>cmd+shift+4</kbd>: Custom capture. To copy, press & hold the `control` key during the capture. And paste into wherever you want.
+* <kbd>cmd+shift+5</kbd>: More features related to capture
+* <kbd>ctrl+ <-</kbd>: Switch to workspace towards right ~ `ctrl+alt+ <-`
+* <kbd>ctrl+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
+* <kbd>cmd+spacebar</kbd>: Open Spotlight menu which helps in searching anything
+* <kbd>cmd+shift+spacebar</kbd>: Open Spotlight in the Finder
 * Cut & Paste file:
   1. Copy <kbd>command+c</kbd>
   2. Paste with replacing the copied file <kbd>command+option+v</kbd>
-* <kbd>command+tab</kbd>: Switch to an Application
-* <kbd>command+`</kbd>: Switch to a window of an Application
-* <kbd>control+down</kbd>: show all opened windows of an App. Restore back by opening the current window via <kbd>control+up</kbd>
-* <kbd>command+up</kbd>: Home
-* <kbd>command+down</kbd>: End
+* <kbd>cmd+tab</kbd>: Switch to an Application
+* <kbd>cmd+`</kbd>: Switch to a window of an Application
+* <kbd>ctrl+down</kbd>: show all opened windows of an App. Restore back by opening the current window via <kbd>control+up</kbd>
+* <kbd>cmd+up</kbd>: Home
+* <kbd>cmd+down</kbd>: End
 * Add your own shortcut key using [this](https://apple.stackexchange.com/a/212607/435627)
 * [custom] <kbd>ctrl+opt+leftarrow</kbd>: Tile to the left of the window
 * [custom] <kbd>ctrl+opt+rightarrow</kbd>: Tile to the right of the window
-* <kbd>command+option+d</kbd>: Hide the dock (or taskbar in Windows)
-* <kbd>command+shift+.</kbd>: Show/Hide the hidden files (starting with ., ).
-* <kbd>command+t</kbd> on Finder creates a separate tab.
-* <kbd>command+i</kbd>: Get info on an App i.e. basically right click >> Select "Get Info"
+* <kbd>cmd+opt+d</kbd>: Hide the dock (or taskbar in Windows)
+* <kbd>cmd+shift+.</kbd>: Show/Hide the hidden files (starting with ., ).
+* <kbd>cmd+t</kbd> on Finder creates a separate tab.
+* <kbd>cmd+i</kbd>: Get info on an App i.e. basically right click >> Select "Get Info"
 * <kbd>cmd+ctrl+f</kbd>: Go & Escape fullscreen for an App
 * <kbd>cmd+down</kbd>: Open a file in finder
                                                                                                                                       
@@ -100,7 +100,10 @@
 ## Terminal
 ### Shortcut keys
 * <kbd>ctrl+l</kbd>: clear the console
-* <kbd>command+l</kbd>: clear console by 1 command
+* <kbd>cmd+l</kbd>: clear console by 1 command
+* <kbd>cmd+w</kbd>: close the current terminal
+* <kbd>cmd+t</kbd>: open a new tab at the current directory
+* <kbd>ctrl+w</kbd>: backspace word by word
 
 ### Commands
 * `$ open .`: open the Finder in the directory
