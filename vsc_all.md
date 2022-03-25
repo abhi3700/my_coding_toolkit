@@ -48,7 +48,8 @@ My favourite editors: ST, VSC
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [x] [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
-* [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode) 
+* [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode)
+* [x] [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
 * [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
 * [x] [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 * [x] [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
@@ -133,3 +134,6 @@ My favourite editors: ST, VSC
     ],
 
 ```
+
+### Rust
+* Add the static analyzer package above.
