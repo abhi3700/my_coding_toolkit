@@ -112,6 +112,7 @@ My favourite editors: ST, VSC
 * Maintain this settings in the "Preferences: Open Settings" file (get by typing after pressing key <kbd>cmd+,</kbd>).
 <img width="531" alt="image" src="https://user-images.githubusercontent.com/16472948/160102081-9b695c2a-3afe-4485-ad6f-2ec7526ca70b.png">
 
+##### settings JSON
 ```json
     "C_Cpp.workspaceSymbols": "All",
     "c-cpp-flylint.flawfinder.enable": false,
@@ -121,6 +122,17 @@ My favourite editors: ST, VSC
     "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/Library/Developer/CommandLineTools/usr/include",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libc",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libcxx",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/capi",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/contracts",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/core",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/native"
+    ],
+    "c-cpp-flylint.includePaths": [
         "${workspaceFolder}/**",
         "/Library/Developer/CommandLineTools/usr/include",
         "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include",
@@ -149,6 +161,10 @@ My favourite editors: ST, VSC
 
 #### Lib
 - [Boost](https://www.boost.org/users/download/)
+
+#### Output
+* TODO also looks in good color like this
+<img width="705" alt="image" src="https://user-images.githubusercontent.com/16472948/160118920-6db571d9-20a5-4cb8-9122-768a8406ea87.png">
 
 #### Others
 * More config commands: https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp
