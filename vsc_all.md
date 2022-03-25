@@ -138,6 +138,8 @@ My favourite editors: ST, VSC
 * Use this compiler based on OS:
   - Mac: `clang`
   - Linux (using WSL): `g++`
+* In Mac, `clang` uses this directory for compiling: "/Library/Developer/CommandLineTools/usr/include/".
+* In order to put some custom lib or folder like `boost`, download the folder & paste into this directory: "/Library/Developer/CommandLineTools/usr/include/"
 * More config commands: https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp
 
 ### Rust
