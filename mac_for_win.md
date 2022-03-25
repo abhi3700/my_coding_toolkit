@@ -110,6 +110,7 @@
 * Run `.sh` file: `sh /path/to/file/with/extension`
 * `$ which <command>`: gives the location of the command file
 * open any application from terminal: `$ open -a <executable_dir>` E.g. `open -a /Applications/Visual\ Studio\ Code.app`
+* `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
 
 ### PATH
 * Stored in `/etc/profile`
