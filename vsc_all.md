@@ -99,3 +99,37 @@ My favourite editors: ST, VSC
   - local: create a language properties for a repository like "c_cpp_properties.json" inside ".vscode/" folder.
 
 > NOTE: By default, the local settings (if defined) supersedes global settings.
+
+## Languages
+### C/C++
+* Look at the packages to be installed above.
+* Maintain this settings in the "Preferences: Open Settings" file (get by typing after pressing key <kbd>cmd+,</kbd>).
+<img width="531" alt="image" src="https://user-images.githubusercontent.com/16472948/160080617-c38b4b5e-9634-4005-b7e7-5c06d09bbd8d.png">
+
+```json
+    "C_Cpp.workspaceSymbols": "All",
+    "c-cpp-flylint.flawfinder.enable": false,
+    "c-cpp-flylint.flexelint.enable": false,
+    "c-cpp-flylint.lizard.enable": false,
+    "cmake.configureOnOpen": true,
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libc",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libcxx",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/capi",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/contracts",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/core",
+        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/native"
+    ],
+    "include-autocomplete.extensions": [
+        "",
+        ".h",
+        ".hpp",
+        ".hxx",
+        ".cpp"
+    ],
+
+```
