@@ -82,6 +82,7 @@ My favourite editors: ST, VSC
 * <kbd>opt+click</kbd> - Go to the file, function, folder directly
 * <kbd>ctrl+w</kbd> - Switch to workspace/window
 * <kbd>cmd+shift+.</kbd> - View a navigation pane for a file.
+* <kbd>opt+ 🔼/🔽</kbd> - Keeping the cursor on a line, use this move the line up or down.
 
 ## Shortcut keys (Win OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
