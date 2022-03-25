@@ -30,7 +30,21 @@ My favourite editors: ST, VSC
 * [x] [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
 * [x] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 * [x] [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
+* [ ] [C/C++ Advanced Lint](https://marketplace.visualstudio.com/items?itemName=jbenden.c-cpp-flylint)
+  - pre-requisite: install `cppcheck` using `$ brew install cppcheck`. Try `$ cppcheck` command on terminal
+  - open the global settings <kbd>cmd+,</kbd> >> "Extensions" >> "C/C++ Lint configuration" >> untick these:
+  ```
+  Flawfinder: Enable
+  Flexelint: Enable
+  Lizard: Enable
+  ```
+  which looks like this
+  
+  <img width="462" alt="image" src="https://user-images.githubusercontent.com/16472948/160075374-64b18202-5dbb-49e4-9cc1-e9fc799d8457.png">
+
 * [x] [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+* [x] [Include Autocomplete](https://marketplace.visualstudio.com/items?itemName=ajshort.include-autocomplete)
+  - For C/C++ include directive
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [x] [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
@@ -50,6 +64,7 @@ My favourite editors: ST, VSC
 ## Shortcut keys (Mac OS)
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
 
+* <kbd>cmd+,</kbd> - Open preferences (global)
 * <kbd>cmd+k+t</kbd>, <kbd>ctrl+t</kbd> - change the color theme
 * <kbd>cmd+shift+p</kbd> - open the command palette
 * <kbd>ctrl+`</kbd> - toggle the terminal
@@ -77,3 +92,10 @@ My favourite editors: ST, VSC
 * <kbd>ctrl+k+b</kbd - toggle the explorer
 * <kbd>ctrl+shift+k</kbd - delete the line cursor is at
 * press <kbd>ctrl</kbd> & hold - Edit multiple lines at different line no. simultaneously.
+
+## Preferences
+* In VSCode, 2 ways to be dependent on settings for a language:
+  - global: <kbd>cmd+shift+p</kbd>  >>  "Preferences: Open Settings"
+  - local: create a language properties for a repository like "c_cpp_properties.json" inside ".vscode/" folder.
+
+> NOTE: By default, the local settings (if defined) supersedes global settings.
