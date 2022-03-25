@@ -110,7 +110,7 @@ My favourite editors: ST, VSC
 
 #### Linting
 * Maintain this settings in the "Preferences: Open Settings" file (get by typing after pressing key <kbd>cmd+,</kbd>).
-<img width="531" alt="image" src="https://user-images.githubusercontent.com/16472948/160102081-9b695c2a-3afe-4485-ad6f-2ec7526ca70b.png">
+<img width="551" alt="image" src="https://user-images.githubusercontent.com/16472948/160159728-4ea3a39f-e0d1-4ac5-8d02-199ff82df64e.png">
 
 ##### settings JSON
 ```json
@@ -132,17 +132,17 @@ My favourite editors: ST, VSC
         "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/core",
         "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/native"
     ],
-    "c-cpp-flylint.includePaths": [
-        "${workspaceFolder}/**",
-        "/Library/Developer/CommandLineTools/usr/include",
-        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include",
-        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libc",
-        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libcxx",
-        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/capi",
-        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/contracts",
-        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/core",
-        "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/native"
-    ],
+    // "c-cpp-flylint.includePaths": [
+    //     "${workspaceFolder}/**",
+    //     "/Library/Developer/CommandLineTools/usr/include",
+    //     "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include",
+    //     "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libc",
+    //     "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libcxx",
+    //     "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/capi",
+    //     "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/contracts",
+    //     "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/core",
+    //     "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/eosiolib/native"
+    // ],
     "include-autocomplete.extensions": [
         "",
         ".h",
@@ -151,6 +151,8 @@ My favourite editors: ST, VSC
         ".cpp"
     ],
 ```
+
+Commented "c-cpp-flylint.includePaths" because it is not linting the imp. ones.
 
 #### Compiler
 * Use this compiler based on OS:
