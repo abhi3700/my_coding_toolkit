@@ -106,7 +106,7 @@ My favourite editors: ST, VSC
 ### C/C++
 * Look at the packages to be installed above.
 * Maintain this settings in the "Preferences: Open Settings" file (get by typing after pressing key <kbd>cmd+,</kbd>).
-<img width="531" alt="image" src="https://user-images.githubusercontent.com/16472948/160080617-c38b4b5e-9634-4005-b7e7-5c06d09bbd8d.png">
+<img width="556" alt="image" src="https://user-images.githubusercontent.com/16472948/160082869-f5d2080b-96ff-4e15-a405-43b15ae1bc3c.png">
 
 ```json
     "C_Cpp.workspaceSymbols": "All",
@@ -114,7 +114,7 @@ My favourite editors: ST, VSC
     "c-cpp-flylint.flexelint.enable": false,
     "c-cpp-flylint.lizard.enable": false,
     "cmake.configureOnOpen": true,
-    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
