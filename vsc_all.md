@@ -134,6 +134,7 @@ My favourite editors: ST, VSC
     ],
 
 ```
+* More config commands: https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp
 
 ### Rust
 * Add the static analyzer package above.
