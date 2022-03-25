@@ -104,9 +104,13 @@ My favourite editors: ST, VSC
 
 ## Languages
 ### C/C++
+
+#### Package
 * Look at the packages to be installed above.
+
+#### Linting
 * Maintain this settings in the "Preferences: Open Settings" file (get by typing after pressing key <kbd>cmd+,</kbd>).
-<img width="556" alt="image" src="https://user-images.githubusercontent.com/16472948/160082869-f5d2080b-96ff-4e15-a405-43b15ae1bc3c.png">
+<img width="531" alt="image" src="https://user-images.githubusercontent.com/16472948/160102081-9b695c2a-3afe-4485-ad6f-2ec7526ca70b.png">
 
 ```json
     "C_Cpp.workspaceSymbols": "All",
@@ -118,6 +122,7 @@ My favourite editors: ST, VSC
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
+        "/Library/Developer/CommandLineTools/usr/include",
         "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include",
         "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libc",
         "/usr/local/Cellar/eosio.cdt/1.8.1/opt/eosio.cdt/include/libcxx",
@@ -133,13 +138,19 @@ My favourite editors: ST, VSC
         ".hxx",
         ".cpp"
     ],
-
 ```
+
+#### Compiler
 * Use this compiler based on OS:
   - Mac: `clang`
   - Linux (using WSL): `g++`
 * In Mac, `clang` uses this directory for compiling: "/Library/Developer/CommandLineTools/usr/include/".
-* In order to put some custom lib or folder like `boost`, download the folder & paste into this directory: "/Library/Developer/CommandLineTools/usr/include/"
+* In order to put some custom lib or folder like `boost`, download the folder from [here](https://www.boost.org/users/download/) & paste into this directory: "/Library/Developer/CommandLineTools/usr/include/"
+
+#### Lib
+- [Boost](https://www.boost.org/users/download/)
+
+#### Others
 * More config commands: https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp
 
 ### Rust
