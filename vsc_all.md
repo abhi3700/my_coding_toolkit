@@ -134,6 +134,9 @@ My favourite editors: ST, VSC
     ],
 
 ```
+* Use this compiler based on OS:
+  - Mac: `clang`
+  - Linux (using WSL): `g++`
 * More config commands: https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp
 
 ### Rust
