@@ -30,7 +30,7 @@ My favourite editors: ST, VSC
 * [x] [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
 * [x] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 * [x] [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
-* [ ] [C/C++ Advanced Lint](https://marketplace.visualstudio.com/items?itemName=jbenden.c-cpp-flylint)
+* [x] [C/C++ Advanced Lint](https://marketplace.visualstudio.com/items?itemName=jbenden.c-cpp-flylint)
   - pre-requisite: install `cppcheck` using `$ brew install cppcheck`. Try `$ cppcheck` command on terminal
   - open the global settings <kbd>cmd+,</kbd> >> "Extensions" >> "C/C++ Lint configuration" >> untick these:
   ```
@@ -62,7 +62,9 @@ My favourite editors: ST, VSC
   -  <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'terminal here' >> set <kbd>ctrl+shift+t</kbd> as shortcut key
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)  
 
-## Shortcut keys (Mac OS)
+## Shortcut keys
+
+### Mac OS
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
 
 * <kbd>cmd+,</kbd> - Open preferences (global)
@@ -84,7 +86,7 @@ My favourite editors: ST, VSC
 * <kbd>cmd+shift+.</kbd> - View a navigation pane for a file.
 * <kbd>opt+ 🔼/🔽</kbd> - Keeping the cursor on a line, use this move the line up or down.
 
-## Shortcut keys (Win OS)
+### Win OS
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
 
 * <kbd>ctrl+k+t</kbd>, <kbd>ctrl+t</kbd> - change the color theme
