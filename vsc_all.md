@@ -42,6 +42,7 @@ My favourite editors: ST, VSC
   
   <img width="462" alt="image" src="https://user-images.githubusercontent.com/16472948/160075374-64b18202-5dbb-49e4-9cc1-e9fc799d8457.png">
 
+* [x] [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Linting for JS, TS
 * [x] [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   - [Documentation](https://gitlens.amod.io/)
 * [x] [Include Autocomplete](https://marketplace.visualstudio.com/items?itemName=ajshort.include-autocomplete)
