@@ -52,6 +52,7 @@ My favourite editors: ST, VSC
 * [x] [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 * [x] [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
+* [x] [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 * [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode)
 * [x] [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
 * [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
