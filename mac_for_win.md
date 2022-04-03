@@ -97,6 +97,7 @@
 * <kbd>cmd+opt+rightarrow</kbd>: switch to right tab
 * <kbd>cmd+w</kbd>: close tab
 * <kbd>cmd+shift+w</kbd>: close window
+* <kbd>cmd+opt+j</kbd>: Open console for current browser tab
 
 ## Terminal
 ### Shortcut keys
