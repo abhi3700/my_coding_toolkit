@@ -181,3 +181,17 @@ Commented "c-cpp-flylint.includePaths" because it is not linting the imp. ones.
 
 ### Rust
 * Add the static analyzer package above.
+
+### TypeScript
+#### Package
+* Look at the packages to be installed above.
+
+#### Linting
+* ESLint package automatically ensures linting on typescript in vscode
+  - @pre
+    - First install the compiler as per [this](https://github.com/abhi3700/My_Learning-Typescript/blob/main/README.md#macos)
+
+#### Compiler
+* [Installation](https://github.com/abhi3700/My_Learning-Typescript/blob/main/README.md#macos)
+
+#### Lib
