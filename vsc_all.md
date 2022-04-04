@@ -27,6 +27,7 @@ My favourite editors: ST, VSC
 > This is for MacOS
 
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
+* [x] [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 * [x] [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
 * [x] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 * [x] [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
