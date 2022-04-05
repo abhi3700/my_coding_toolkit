@@ -63,7 +63,6 @@ My favourite editors: ST, VSC
 * [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
 * [x] [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
 * [x] [Sublime Oceanic After Next Theme](https://marketplace.visualstudio.com/items?itemName=christophwolff.sublime-oceanic-after-next-theme)
-* [x] [Sublime Search](https://marketplace.visualstudio.com/items?itemName=garreh.sublime-search-vscode)
 * [x] [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
   - This would enable to work with keyboard shortcuts used in ST
 * [x] [Semicolon Insertion Shortcut](https://marketplace.visualstudio.com/items?itemName=chrisvltn.vs-code-semicolon-insertion)
@@ -97,6 +96,9 @@ My favourite editors: ST, VSC
 * <kbd>ctrl+w</kbd> - Switch to workspace/window
 * <kbd>cmd+shift+.</kbd> - View a navigation pane for a file.
 * <kbd>opt+ 🔼/🔽</kbd> - Keeping the cursor on a line, use this move the line up or down.
+* <kbd>cmd+f</kbd> - find in the current file
+* <kbd>cmd+shift+f</kbd> - find in the current workspace
+* <kbd>cmd+opt+f</kbd> - Replace in the current file
 
 ### Win OS
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
