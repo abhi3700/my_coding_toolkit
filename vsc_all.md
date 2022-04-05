@@ -48,6 +48,7 @@ My favourite editors: ST, VSC
 * [x] [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Linting for JS, TS
 * [x] [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   - [Documentation](https://gitlens.amod.io/)
+* [x] [Identical Sublime Text Monokai theme](https://marketplace.visualstudio.com/items?itemName=maximetinu.identical-sublime-monokai-csharp-theme-colorizer)
 * [x] [Include Autocomplete](https://marketplace.visualstudio.com/items?itemName=ajshort.include-autocomplete)
   - For C/C++ include directive
 * [x] [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
@@ -61,6 +62,8 @@ My favourite editors: ST, VSC
 * [x] [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
 * [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
 * [x] [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
+* [x] [Sublime Oceanic After Next Theme](https://marketplace.visualstudio.com/items?itemName=christophwolff.sublime-oceanic-after-next-theme)
+* [x] [Sublime Search](https://marketplace.visualstudio.com/items?itemName=garreh.sublime-search-vscode)
 * [x] [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
   - This would enable to work with keyboard shortcuts used in ST
 * [x] [Semicolon Insertion Shortcut](https://marketplace.visualstudio.com/items?itemName=chrisvltn.vs-code-semicolon-insertion)
