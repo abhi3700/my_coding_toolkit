@@ -60,6 +60,8 @@ My favourite editors: ST, VSC
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
 * [x] [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 * [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode)
+* [x] [Pretty js/json](https://marketplace.visualstudio.com/items?itemName=supperchong.pretty-json)
+  - Refer "Usage"
 * [x] [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 * [x] [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [x] [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
