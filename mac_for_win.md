@@ -23,7 +23,7 @@
 ## Keyboard shortcuts
 | Mac | Win |
 |---|---|
-| cmd | ctrl, win |
+| cmd, ctrl | ctrl, win |
 | opt | alt |
 
 * <kbd>cmd+c</kbd>: copy
