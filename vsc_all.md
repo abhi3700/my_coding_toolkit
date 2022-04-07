@@ -52,6 +52,7 @@ My favourite editors: ST, VSC
 * [x] [Identical Sublime Text Monokai theme](https://marketplace.visualstudio.com/items?itemName=maximetinu.identical-sublime-monokai-csharp-theme-colorizer)
 * [x] [Include Autocomplete](https://marketplace.visualstudio.com/items?itemName=ajshort.include-autocomplete)
   - For C/C++ include directive
+* [x] [json](https://marketplace.visualstudio.com/items?itemName=ZainChen.json)
 * [x] [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
   - Activate this
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
@@ -223,3 +224,7 @@ Commented "c-cpp-flylint.includePaths" because it is not linting the imp. ones.
 * [Installation](https://www.anaconda.com/)
 
 #### Lib
+
+### JSON
+#### Package
+* Look at the packages to be installed above.
