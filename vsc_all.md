@@ -27,6 +27,7 @@ My favourite editors: ST, VSC
 > This is for MacOS
 
 * [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
+* [x] [autoDocstring - Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
 * [x] [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 * [x] [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
 * [x] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
@@ -59,6 +60,8 @@ My favourite editors: ST, VSC
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
 * [x] [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 * [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode)
+* [x] [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
+* [x] [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [x] [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
 * [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
 * [x] [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
@@ -201,5 +204,20 @@ Commented "c-cpp-flylint.includePaths" because it is not linting the imp. ones.
 
 #### Compiler
 * [Installation](https://github.com/abhi3700/My_Learning-Typescript/blob/main/README.md#macos)
+
+#### Lib
+
+### Python
+* Add the packages above.
+
+### TypeScript
+#### Package
+* Look at the packages to be installed above.
+
+#### Linting
+* Python (by Microsoft) provides linting, suggestion
+
+#### Compiler
+* [Installation](https://www.anaconda.com/)
 
 #### Lib
