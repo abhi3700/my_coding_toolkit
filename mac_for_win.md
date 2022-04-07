@@ -53,7 +53,6 @@
 * Cut & Paste file:
   1. Copy <kbd>command+c</kbd>
   2. Paste with replacing the copied file <kbd>command+option+v</kbd>
-* <kbd>cmd+tab</kbd>: Switch to an Application
 * <kbd>cmd+`</kbd>: Switch to a window of an Application
 * <kbd>ctrl+down</kbd>: show all opened windows of an App. Restore back by opening the current window via <kbd>control+up</kbd>
 * <kbd>cmd+up</kbd>: Home
