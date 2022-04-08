@@ -107,6 +107,7 @@ My favourite editors: ST, VSC
 * <kbd>cmd+f</kbd> - find in the current file
 * <kbd>cmd+shift+f</kbd> - find in the current workspace
 * <kbd>cmd+opt+f</kbd> - Replace in the current file
+* <kbd>ctrl+spacebar</kbd> - give suggestions at any red color cursor point.
 
 ### Win OS
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
