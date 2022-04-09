@@ -1,6 +1,7 @@
 # MacOS for Windows users
 
 ## Installation
+* In order to migrate the data from old Macbook, just open "Migration Assistant" App on the 'To Macbook' & share all the OTP details with 'From Macbook'.
 
 ## Folders
 * Root: `/`
