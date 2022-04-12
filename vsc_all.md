@@ -45,6 +45,15 @@ My favourite editors: ST, VSC
   
   <img width="462" alt="image" src="https://user-images.githubusercontent.com/16472948/160075374-64b18202-5dbb-49e4-9cc1-e9fc799d8457.png">
 
+* [x] [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
+<img width="1166" alt="image" src="https://user-images.githubusercontent.com/16472948/163014636-3988cce0-7219-43c4-ad3d-01800af25286.png">
+
+* [x] [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+<img width="253" alt="image" src="https://user-images.githubusercontent.com/16472948/163014762-b5a8fdce-7281-4249-a7b3-bdee8cf3c7a1.png">
+
+* [x] [Color Manager](https://marketplace.visualstudio.com/items?itemName=RoyAction.color-manager)
+<img width="832" alt="image" src="https://user-images.githubusercontent.com/16472948/163014306-88928ad8-4ec2-4790-9f9b-381cfa27f764.png">
+
 * [x] [Emoji](https://marketplace.visualstudio.com/items?itemName=Perkovec.emoji)
   - Refer to its usage section
 * [x] [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Linting for JS, TS
