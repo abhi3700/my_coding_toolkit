@@ -93,11 +93,15 @@
 * Touchpad settings can be changed.
 
 ## Browser (chrome-based)
+### Shortcut keys
 * <kbd>cmd+opt+leftarrow</kbd>: switch to left tab
 * <kbd>cmd+opt+rightarrow</kbd>: switch to right tab
 * <kbd>cmd+w</kbd>: close tab
 * <kbd>cmd+shift+w</kbd>: close window
 * <kbd>cmd+opt+j</kbd>: Open console for current browser tab
+
+### Extensions
+* [Screenshot YouTube](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk/related?hl=en)
 
 ## Terminal
 ### Shortcut keys
