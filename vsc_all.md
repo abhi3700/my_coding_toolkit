@@ -111,12 +111,13 @@ My favourite editors: ST, VSC
 * <kbd>cmd+shift+f</kbd> - Find all references of a function in entire project files.
 * <kbd>opt+click</kbd> - Go to the file, function, folder directly
 * <kbd>ctrl+w</kbd> - Switch to workspace/window
-* <kbd>cmd+shift+.</kbd> - View a navigation pane for a file.
-* <kbd>opt+ 🔼/🔽</kbd> - Keeping the cursor on a line, use this move the line up or down.
+* <kbd>cmd+shift+.</kbd> - View a navigation pane for a file
+* <kbd>opt+ 🔼/🔽</kbd> - Keeping the cursor on a line, use this move the line up or down
 * <kbd>cmd+f</kbd> - find in the current file
 * <kbd>cmd+shift+f</kbd> - find in the current workspace
 * <kbd>cmd+opt+f</kbd> - Replace in the current file
-* <kbd>ctrl+spacebar</kbd> - give suggestions at any red color cursor point.
+* <kbd>ctrl+spacebar</kbd> - give suggestions at any red color cursor point
+* <kbd>cmd+shift+e</kbd> - show the active file in the explorer
 
 ### Win OS
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
