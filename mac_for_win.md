@@ -84,6 +84,8 @@
 * [UTM](https://mac.getutm.app/): A FREE virtual environment for Linux, Windows on Mac OS. It has 2 options:
   - Virtualize OS on native CPU (i.e. same as Mac processor)
   - Emulate OS on other processors like Intel x64, etc.
+    + Download desktop version of Ubuntu x64/amd64 from [here](https://releases.ubuntu.com/20.04.4/)
+    + Select "Erase & Install" in one preview dialog
 
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
