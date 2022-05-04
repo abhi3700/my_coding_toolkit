@@ -191,6 +191,13 @@ Error: An unsatisifed requirement failed this build.
   ```
   - Re-source your zsh term `$ source ~/.zshrc`
   - Run Intel brew as `$ ibrew install <whatever>`
+  - Now, create a new terminal by following these: [Source](https://medium.com/swlh/run-x86-terminal-apps-like-homebrew-on-your-new-m1-mac-73bdc9b0f343)
+    + Open Finder and navigate to `Applications -> Utilities`
+    + Right-click on the `Terminal` app and choose `Duplicate`
+    + Rename your newly duplicated Terminal app something special like `Terminal-Rosetta`
+    + Right-click the `Terminal-Rosetta` app and click on `Get Info`
+    + Select the option to `Open using Rosetta`
+    + You can now use `Terminal-Rosetta` to install and run Homebrew and any other x86 command-line apps just as you did back in the day 👏
 
 ### 4. Error: xcrun: error: invalid active developer path
 * Reason: After updating MacOS, the CLI needs to be updated.
