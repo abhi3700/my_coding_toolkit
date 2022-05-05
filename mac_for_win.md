@@ -3,11 +3,55 @@
 ## Installation
 * In order to migrate the data from old Macbook, just open "Migration Assistant" App on the 'To Macbook' & share all the OTP details with 'From Macbook'.
 
+## Architecture
+
+There are 2 methods to use x86_64 architecture on Mac M1:
+1. VMs like UTM, Parallels
+2. Switch from one arch to another in terminal
+
+### 1. Virtual Machines/Emulator
+
+### 2. How to switch the Terminal between x86_64 and arm64
+* Switch from one architecture to another in this way:
+
+```console
+❯ arch
+arm64
+   
+❯ arm
+  
+❯ arch
+arm64
+  
+❯ intel
+   
+❯ arch
+i386
+```
+
+* Here, intel, arm is an alias which has been added in `~/.zshrc` file like this:
+
+```
+# switch to architectures - intel or m1
+alias arm="env /usr/bin/arch -arm64 /bin/zsh --login"
+alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
+```
+
+* The command for switching to an architecture in Mac M1 is this: `$ env /usr/bin/arch -<architecture> /bin/zsh --login`
+
+* We can also dedicate Refer this [error](https://github.com/abhi3700/my_coding_toolkit/blob/master/mac_for_win.md#3-unable-to-use-software-requiring-x86_64-architecture-on-m1-macbook) faced during one of the software installation
+
 ## Folders
 * Root: `/`
 * Temp: `/tmp`
-* Home: `~`
+* Home: `~` or `/Users/abhi3700`
 * Desktop: `~/Desktop`
+* Downloads: `~/Desktop`
+* Drive: `/` i.e. Macintosh HD
+* Users: `/Users`
+* Me: `/Users/abhi3700`
+* Applications: `/Applications`
+* Library: `/Library` 
 
 ### Update
 * After updating, update the CLI tools using `xcode-select --install` in terminal.
@@ -121,6 +165,7 @@
 * `$ which <command>`: gives the location of the command file
 * open any application from terminal: `$ open -a <executable_dir>` E.g. `open -a /Applications/Visual\ Studio\ Code.app`
 * `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
+* `$ env`: all the global variables. can be used like this `$ echo $NVM_DIR` -> `/Users/abhi3700/.nvm`
 
 ### PATH
 * Stored in `/etc/profile`
