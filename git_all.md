@@ -353,6 +353,8 @@ git push --force <branch-name>
 
 > NOTE: after disable, the `git push` won't work
 
+* list contributors by name: `git log --all --format='%aN' | sort -u`
+* list contributors by email address: `git log --all --format='%aE' | sort -u`
 
 ## Activities
 * ### Start maintaining local folder to Github
