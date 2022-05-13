@@ -2,8 +2,11 @@
 
 ## Installation
 * In order to migrate the data from old Macbook, just open "Migration Assistant" App on the 'To Macbook' & share all the OTP details with 'From Macbook'.
+* Ensure "Xcode" App from Appstore. This is very useful for development.
 
 ## Architecture
+
+> An Apple Silicon mac can run both the Intel and the ARM64 portions of a universal binary application. But not the other way around. Intel binaries are emulated under Rosetta 2 on Apple Silicon, but there is no emulation of ARM64 on Intel-based mac.
 
 There are 2 methods to use x86_64 architecture on Mac M1:
 1. VMs like UTM, Parallels
