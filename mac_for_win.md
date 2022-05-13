@@ -6,7 +6,11 @@
 
 ## Architecture
 
-> An Apple Silicon mac can run both the Intel and the ARM64 portions of a universal binary application. But not the other way around. Intel binaries are emulated under Rosetta 2 on Apple Silicon, but there is no emulation of ARM64 on Intel-based mac.
+> An Apple Silicon mac can run both the **Intel** and the **ARM64** portions of a universal binary application. But not the other way around. Intel binaries are emulated under **Rosetta 2** on Apple Silicon, but there is no emulation of **ARM64** on **Intel**-based mac. [Source](https://indiespark.top/programming/compile-open-ssl-apple-silicon/)
+>
+> The long-rumored ARM Mac is on the horizon. With this comes the big work of porting and re-compiling current applications. But many Mac App Store apps are dependent on **OpenSSL**, which doesn’t yet support **ARM** on the Mac. Here is how you can continue to test your mac app while waiting for official **OpenSSL** support for the new hardware.
+>
+> For installation of `openssl` (imp. for most Apps) in Mac M1 machine, follow [this](https://indiespark.top/programming/compile-open-ssl-apple-silicon/) guide.
 
 There are 2 methods to use x86_64 architecture on Mac M1:
 1. VMs like UTM, Parallels
