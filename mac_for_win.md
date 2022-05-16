@@ -119,6 +119,9 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 * <kbd>cmd+ctrl+f</kbd>: Go & Escape fullscreen for an App
 * <kbd>cmd+down</kbd>: Open a file in finder
 * <kbd>cmd+ctrl+spacebar</kbd>: Use emoji & symbols
+* <kbd>cmd+ctrl+q</kbd>: lock screen
+* <kbd>cmd+ctrl+opt+power</kbd>: Shut down (closing all apps)
+* <kbd>cmd+shift+r</kbd>: quickly access airdrop
                                                                                                                                       
 ## Installation
 * Install:
