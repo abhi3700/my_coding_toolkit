@@ -95,12 +95,14 @@ $ git commit -m "SCs added" -m "
 * ##### `git status ./` - check in the root directory of git repository.
 * ##### `git status ./macro_enabled_logbooks/UNT02_Ch_A_QC_LOG_BOOK/` - check in the specific sub-folder relative to the repo's root.
 * ##### `git submodule update` - update the submodule after cloning any git repo.
-* ##### `git branch` - list the branches. `*` shows the current branch.
-* ##### `git remote` - list the branch in the remote location.
+* ##### `git branch` - list the local branches. `*` shows the currently active branch.
+* ##### `git branch -a` - list the local & remote branches present locally. `*` shows the currently active  branch.
+* ##### `git remote` - list the location name in the remote.
   ```console
   $ git remote
   origin
   ```
+* ##### `git branch -d -r origin/develop-2324`: delete remote branch locally
 * ##### `git log` - logs all the commits. Press <kbd>down arrow</kbd> to scroll down. Type <kbd>q</kbd> to exit out of **END** display in the terminal.
 * ##### `git log -1` - read the last commit without filename(s)
   ```console
