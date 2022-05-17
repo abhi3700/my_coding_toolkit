@@ -26,6 +26,23 @@ Follow the steps:
 	a. `echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile`
 	b. Use `subl <filename>` on terminal & it will open in the editor.
 
+### Linux
+Follow the commands below:
+
+```console
+# Download and install GPG Key
+$ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+
+# Enable Sublime Text repository
+$ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
+# Install Sublime Text 4 on Ubuntu 20.04
+$ sudo apt update
+$ sudo apt install sublime-text
+```
+
+And then open ST4 from the "Applications" at start menu.
+
 ## Uninstallation
 ### Win
 * All the extra packages are installed in "click Browse Packages".
