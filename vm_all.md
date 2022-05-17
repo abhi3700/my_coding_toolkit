@@ -61,5 +61,80 @@ This is the name by which it would be saved within `./utm` directory on Mac.
 
 <img width="494" alt="image" src="https://user-images.githubusercontent.com/16472948/168829979-8665d3d1-48d6-4961-adc6-0f28904c66d2.png">
 
-And then <kbd>Save</kbd it.
+And then <kbd>Save</kbd> it.
 
+### Step-11: View Saved
+
+This is how it looks like:
+  
+<img width="1278" alt="image" src="https://user-images.githubusercontent.com/16472948/168830472-61cbfd06-2fda-41ba-a92c-1dee3d92a644.png">
+
+### Step-12: Start
+
+Go for the 1st option
+
+<img width="821" alt="image" src="https://user-images.githubusercontent.com/16472948/168830929-e10ae98e-8c34-4684-bc88-cbe80c4c6bf3.png">
+
+And follow the instruction for installation.
+
+View the Screens post installation
+
+### References | Screen: Information
+
+<img width="828" alt="image" src="https://user-images.githubusercontent.com/16472948/168831755-fcc517f2-3a7d-4cfa-a326-6609391791cb.png">
+
+### References | Screen: System
+
+<img width="828" alt="image" src="https://user-images.githubusercontent.com/16472948/168831979-5b837eb3-1112-4b8f-9011-ba19550689e3.png">
+
+### References | Screen: QEMU
+
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/16472948/168832050-e2dab5a6-5674-41f4-946f-c756ad3ca8ee.png">
+
+### References | Screen: Display
+
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/16472948/168832148-fde71769-bded-4271-9ef3-45497d573921.png">
+
+### References | Screen: Input
+
+<img width="834" alt="image" src="https://user-images.githubusercontent.com/16472948/168832699-80ef5519-920a-4e30-acb5-2ad6e96e36e3.png">
+
+### References | Screen: Network
+
+<img width="823" alt="image" src="https://user-images.githubusercontent.com/16472948/168832994-dff3317d-5ba7-431a-b059-f3f621f0c1bc.png">
+
+### References | Screen: IP Config...
+
+<img width="822" alt="image" src="https://user-images.githubusercontent.com/16472948/168833260-6ae75c00-7ed6-41ab-ab82-072ef0389d8e.png">
+
+### References | Screen: Sound
+
+<img width="824" alt="image" src="https://user-images.githubusercontent.com/16472948/168833300-a7e67269-9dd3-420f-8ece-7ee57cbb8cd3.png">
+
+### References | Screen: Sharing
+
+<img width="825" alt="image" src="https://user-images.githubusercontent.com/16472948/168833630-5f5eebff-a622-4364-befa-62f09cb0df71.png">
+
+### References | Screen: IDE Drive Disc
+
+Before installation, this Disc option remains below the removable drive (CD/DVD) i.e. ISO, from where the ubuntu file is loaded for installation.
+
+After installation, the CD/DVD can be cleared from below or "removable drive" option can be put down to this Disc option, so that after OS reboot it loads the installed OS. 
+
+<img width="837" alt="image" src="https://user-images.githubusercontent.com/16472948/168833757-8cd70990-6b96-44b2-af12-63ef6e7a2fe8.png">
+
+### References | Screen: IDE Drive Removable
+
+<img width="824" alt="image" src="https://user-images.githubusercontent.com/16472948/168834756-5f014bf2-8201-43e9-8ce6-8918c333662f.png">
+
+### References | Screen: EFI Variables
+
+<img width="825" alt="image" src="https://user-images.githubusercontent.com/16472948/168834824-475761c3-d0c5-4088-967c-be3737c154dc.png">
+
+### Step-13: Shared Directory
+
+After installation, to allow the shared directory to be shown in the installed OS i.e. Ubuntu, follow these sub-steps on Ubuntu:
+
+1. `$ sudo apt install spice-vdagent spice-webdavd davfs2`
+2. Restart the VM
+ 
