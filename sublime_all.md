@@ -27,7 +27,7 @@ Follow the steps:
 	b. Use `subl <filename>` on terminal & it will open in the editor.
 
 ### Linux
-Follow the commands below:
+Follow the commands below: [Source](https://linoxide.com/how-to-install-sublime-text-4-on-ubuntu-20-04/)
 
 ```console
 # Download and install GPG Key
