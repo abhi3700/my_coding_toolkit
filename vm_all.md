@@ -4,8 +4,8 @@ This is about setting up a VM with a preferred OS on existing machine.
 
 The followings could be the needs:
 
-A. Virtualization: Install OS2 (with arch-1) on OS1 (with arch-1) => Same architecture
-B. Emulation: Install OS2 (with arch-2) on OS1 (with arch-1) => Different architecture
+- **Virtualization**: Install OS2 (with arch-1) on OS1 (with arch-1) => Same architecture
+- **Emulation**: Install OS2 (with arch-2) on OS1 (with arch-1) => Different architecture
 
 Below is the list of softwares which support this VM:
 
