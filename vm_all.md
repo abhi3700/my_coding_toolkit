@@ -97,7 +97,7 @@ Read [more](https://github.com/lima-vm/lima).
 
 ## B. Emulation
 
-### UTM | Install Ubuntu (AMD) on Mac (ARM)
+### [UTM](https://mac.getutm.app/) | Install Ubuntu (AMD) on Mac (ARM)
 
 Here, the guide is about installing Ubuntu 20.04 (using desktop ISO) with intel/AMD processor on Mac M1.
 
