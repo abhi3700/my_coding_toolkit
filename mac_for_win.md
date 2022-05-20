@@ -122,6 +122,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 * <kbd>cmd+ctrl+q</kbd>: lock screen
 * <kbd>cmd+ctrl+opt+power</kbd>: Shut down (closing all apps)
 * <kbd>cmd+shift+r</kbd>: quickly access airdrop
+* <kbd>cmd+opt+n</kbd>: show/hide the widget panel on right side of screen
                                                                                                                                       
 ## Installation
 * Install:
@@ -133,13 +134,10 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 ## Apps
 * Numbers: a quick analysis app like Excel for data analytics.
 * Pages: a document app like Word, but with PPT type of styling. Easy to add cards, etc.
-* Notes: a note app for TODO list
+* Notes: a note app for maintaining TODO list
+  - <kbd>cmd+opt+n</kbd>: show/hide folders 
 * Miro: Architecture, Mind Map, Whiteboard
-* [UTM](https://mac.getutm.app/): A FREE virtual environment for Linux, Windows on Mac OS. It has 2 options:
-  - Virtualize OS on native CPU (i.e. same as Mac processor)
-  - Emulate OS on other processors like Intel x64, etc.
-    + Download desktop version of Ubuntu x64/amd64 from [here](https://releases.ubuntu.com/20.04.4/)
-    + Select "Erase & Install" in one preview dialog
+* For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
 
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
