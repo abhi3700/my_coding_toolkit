@@ -68,6 +68,8 @@ My favourite editors: ST, VSC
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [x] [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 * [x] [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
+* [x] [Markdown Todo](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-markdown-todo)
+* [ ] 
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
 * [x] [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
 * [x] [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
@@ -85,9 +87,13 @@ My favourite editors: ST, VSC
 * [x] [Semicolon Insertion Shortcut](https://marketplace.visualstudio.com/items?itemName=chrisvltn.vs-code-semicolon-insertion)
   - <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'semicolon' >> Toggle the 2 shortcut keys from <kbd>cmd+/</kbd> & <kbd>cmd+shift+/</kbd> to <kbd>cmd+;</kbd> & <kbd>ctrl+shift+;</kbd>
   - There would be another duplicate usage of this keyboard shortcut <kbd>cmd+shift+;</kbd>. Change that to some other shortcut key.
+
 * [x] [TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 * [x] [Terminal Here](https://marketplace.visualstudio.com/items?itemName=Tyriar.vscode-terminal-here)
   -  <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'terminal here' >> set <kbd>ctrl+shift+t</kbd> as shortcut key
+* [x] [todo](https://marketplace.visualstudio.com/items?itemName=izaxon.todo)
+* [x] [Todo+](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus)
+* [x] [TODO Highlight v2](https://marketplace.visualstudio.com/items?itemName=jgclark.vscode-todo-highlight)
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)  
 
 ## Shortcut keys
@@ -239,5 +245,19 @@ Commented "c-cpp-flylint.includePaths" because it is not linting the imp. ones.
 #### Lib
 
 ### JSON
+#### Package
+* Look at the packages to be installed above.
+
+### TODO
+How to manage todo inside VSC
+
+#### key shortcuts
+* <kbd>cmd+enter</kbd> / <kbd>opt+enter</kbd>: toggle TODO
+* <kbd>opt+s</kbd>: toggle start of task
+* <kbd>opt+d</kbd>: toggle end of task
+* <kbd>cmd+shift+p</kbd>: open command palette & then:
+  - "Todo: Toggle Cancelled" to cancel (the task on which the cursor was)
+  - "TODO-highlight: List highlighted annotations" to show all the TODOs in the workspace.
+
 #### Package
 * Look at the packages to be installed above.
