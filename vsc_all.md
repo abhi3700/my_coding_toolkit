@@ -45,9 +45,11 @@ My favourite editors: ST, VSC
   
   <img width="462" alt="image" src="https://user-images.githubusercontent.com/16472948/160075374-64b18202-5dbb-49e4-9cc1-e9fc799d8457.png">
 
+* [x] [carbon-now-sh](https://marketplace.visualstudio.com/items?itemName=ericadamski.carbon-now-sh)
 * [x] [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 <img width="1166" alt="image" src="https://user-images.githubusercontent.com/16472948/163014636-3988cce0-7219-43c4-ad3d-01800af25286.png">
 
+* [x] [Code Time](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)
 * [x] [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 <img width="253" alt="image" src="https://user-images.githubusercontent.com/16472948/163014762-b5a8fdce-7281-4249-a7b3-bdee8cf3c7a1.png">
 
@@ -92,9 +94,11 @@ My favourite editors: ST, VSC
 * [x] [TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 * [x] [Terminal Here](https://marketplace.visualstudio.com/items?itemName=Tyriar.vscode-terminal-here)
   -  <kbd>cmd+shift+p</kbd> >> "Open Keyboard Shortcuts (Default)" >> Search for 'terminal here' >> set <kbd>ctrl+shift+t</kbd> as shortcut key
+* [x] [Time Converter](https://marketplace.visualstudio.com/items?itemName=HaaLeo.timing)
 * [x] [todo](https://marketplace.visualstudio.com/items?itemName=izaxon.todo)
 * [x] [Todo+](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus)
 * [x] [TODO Highlight v2](https://marketplace.visualstudio.com/items?itemName=jgclark.vscode-todo-highlight)
+* [x] [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 * [x] Work with WSL Ubuntu Server (Applicable for Win OS)  
 
 ## Shortcut keys
