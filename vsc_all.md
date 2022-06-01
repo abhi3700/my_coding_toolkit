@@ -63,13 +63,13 @@ My favourite editors: ST, VSC
 * [x] [Include Autocomplete](https://marketplace.visualstudio.com/items?itemName=ajshort.include-autocomplete)
   - For C/C++ include directive
 * [x] [json](https://marketplace.visualstudio.com/items?itemName=ZainChen.json)
+* [x] [Kanban Board](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban)
 * [x] [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
   - Activate this
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [x] [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 * [x] [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [x] [Markdown Todo](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-markdown-todo)
-* [ ] 
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
 * [x] [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
 * [x] [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
@@ -78,6 +78,7 @@ My favourite editors: ST, VSC
   - Refer "Usage"
 * [x] [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 * [x] [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+* [x] [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 * [x] [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
 * [x] [Slither](https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode)
 * [x] [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
