@@ -24,5 +24,5 @@ This is my shortcut repo to refer any setup for anything related to coding.
 * [SVN](https://github.com/abhi3700/my_coding_toolkit/blob/master/svn_all.md)
 * [Typing practice](https://github.com/abhi3700/my_coding_toolkit/blob/master/svn_all.md)
 * [VBA](https://github.com/abhi3700/my_coding_toolkit/blob/master/vba_all.md)
+* [VSCode](https://github.com/abhi3700/my_coding_toolkit/blob/master/vsc_all.md)
 * [Wasm](https://github.com/abhi3700/my_coding_toolkit/blob/master/wasm_all.md)
-
