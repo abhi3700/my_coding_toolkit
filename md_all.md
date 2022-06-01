@@ -108,3 +108,5 @@ wc -l en_US.twitter.txt
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 ```
 
+* #### [Mermaid](https://mermaid-js.github.io/mermaid/#/)
+
