@@ -65,7 +65,8 @@ My favourite editors: ST, VSC
 * [x] [Include Autocomplete](https://marketplace.visualstudio.com/items?itemName=ajshort.include-autocomplete)
   - For C/C++ include directive
 * [x] [json](https://marketplace.visualstudio.com/items?itemName=ZainChen.json)
-* [x] [Kanban Board](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban)
+* [ ] [Kanban Board](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban)
+* [x] [Kanbn Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=gordonlarrigan.vscode-kanbn)
 * [x] [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
   - Activate this
 * [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
