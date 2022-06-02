@@ -96,8 +96,9 @@ $ git commit -m "SCs added" -m "
 * ##### `git status ./macro_enabled_logbooks/UNT02_Ch_A_QC_LOG_BOOK/` - check in the specific sub-folder relative to the repo's root.
 * ##### `git submodule update` - update the submodule after cloning any git repo.
 * ##### `git branch` - list the local branches. `*` shows the currently active branch.
+* ##### `git branch -r` - list the remote branches.
 * ##### `git branch -a` - list the local & remote branches present locally. `*` shows the currently active  branch.
-* ##### `git remote` - list the location name in the remote.
+* ##### `git remote` - list the location name (like `origin`) in the remote.
   ```console
   $ git remote
   origin
