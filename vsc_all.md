@@ -150,6 +150,20 @@ My favourite editors: ST, VSC
 
 > NOTE: By default, the local settings (if defined) supersedes global settings.
 
+## Formatter
+In VSCode, select the default formatter with this [package](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for all files (sol, ts, js, md, py, java, cpp)
+
+**Procedure**:
+
+[YouTube](https://www.youtube.com/watch?v=PX6xb8sRlFc)
+
+- Open Settings
+- type 'save format' >> tick the "Editor: Format on Save"
+- type 'formatter' >> set the "Editor: Default Formatter" to Prettier (by esbenp....)
+- type 'solidity formatter' >> set the "Solidity: Formatter" from `none` to `prettier`
+- Now, on saving any solidity (`*.sol`) file, it will automatically format.
+
+
 ## Languages
 ### C/C++
 
