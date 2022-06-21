@@ -138,6 +138,10 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
   - <kbd>cmd+opt+n</kbd>: show/hide folders 
 * Miro: Architecture, Mind Map, Whiteboard
 * For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
+* Handbrake: File compressor
+* Movavi Video editor: Image, video editor
+* Photo Booth: Capture Image, Video
+* Facetime: Call someone
 
 ## Display
 * Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
