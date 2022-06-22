@@ -253,6 +253,7 @@ zainchen.json-2.0.2
 * <kbd>cmd+opt+f</kbd> - Replace in the current file
 * <kbd>ctrl+spacebar</kbd> - give suggestions at any red color cursor point
 * <kbd>cmd+shift+e</kbd> - show the active file in the explorer
+* <kbd>cmd+k</kbd>, <kbd>s</kbd> - Here, save file without formatting. Normally, if the formatter is enabled for the file extension type in the VSCode Settings, then when doing <kbd>cmd+s</kbd>, the file is saved with formatting automatically.
 
 ### Win OS
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
