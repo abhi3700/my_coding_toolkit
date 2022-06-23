@@ -24,7 +24,7 @@ Below is the list of softwares which support this VM:
 
 Lima launches Linux VMs (CLI-based/controlled) with automatic file sharing and port forwarding (similar to **WSL2**), and containerd.
 
-Here, the guide is about installing Ubuntu 20.04 OS with ARM processor on Mac M1 (ARM).
+> Here, the guide is about installing Ubuntu 20.04 OS with ARM processor on Mac M1 (ARM).
 
 * Install `lima` using brew: `$ brew install lima`
 * [OPTIONAL] Create `lima.yaml` file & modify as per required Ubuntu version i.e. 20.04 instead of latest (22.04). **Skip this**
@@ -80,10 +80,13 @@ images:
 
 <img width="1277" alt="image" src="https://user-images.githubusercontent.com/16472948/169227771-f545b404-b79a-4f25-88ab-1b25dd28e484.png">
 
-* Open the VM using `$ lima`
+* Open the VM's shell using `$ lima`
 > If no instance name is provided, then it opens the `default` instance.
 
 <img width="304" alt="image" src="https://user-images.githubusercontent.com/16472948/169227961-40558575-4d9f-4752-9675-d2c9bfa79432.png">
+
+* For a non-default VM shell, use `$ limactl shell <instance-name>` like `$ limactl shell docker`.
+<img width="288" alt="image" src="https://user-images.githubusercontent.com/16472948/175223465-ff39d0e4-08e1-4685-819e-c732eeb28289.png">
 
 * Close the VM using <kbd>ctrl+d</kbd> i.e. logout.
 <img width="363" alt="image" src="https://user-images.githubusercontent.com/16472948/169228058-cd61562d-d6fc-408e-9502-37254c4e0eea.png">
@@ -102,6 +105,49 @@ images:
 <img width="982" alt="image" src="https://user-images.githubusercontent.com/16472948/169232858-d9697b4b-604b-4357-ab50-d1c8b283d12b.png">
 
 Read [more](https://github.com/lima-vm/lima).
+
+#### Use VSCode editor
+
+1. Please ensure your VSCode is installed properly on your Mac, like [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vsc_all.md).
+
+2. Install the docker CLI using `brew`: `$ brew install docker`
+
+3. Create Linux VM with Dockerd (following instructions from [Kevin O’Brien – Utilizing Docker CLI without Docker Desktop](https://itnext.io/utilizing-docker-cli-without-docker-desktop-4933f3473d5e))
+	- Download `docker.yaml` file: `$ curl https://raw.githubusercontent.com/lima-vm/lima/master/examples/docker.yaml -O`
+	- Create a docker based instance with this: `❯ limactl start ./docker.yaml` & then follow the installation above for custom Ubuntu OS version (20.04, 22.04, ...).
+	- After modifying `lima.yaml` inside the `docker` named instance, please continue the installation like this: `$ limactl start docker` 
+<img width="1274" alt="image" src="https://user-images.githubusercontent.com/16472948/175221985-623ccfea-7071-4642-8e23-c0cab307a716.png">
+	- Enable SSH on the VM instance created: `$ sudo systemctl enable ssh.service`
+
+So, the Lima VM is stopped or logged-out, the SSH service remains enabled unless stopped/disabled inside VM's shell [More about SSH on Ubuntu](https://www.cyberciti.biz/faq/howto-start-stop-ssh-server/). The status can be checked using this:
+
+```console
+$ sudo systemctl status ssh
+```
+
+4. Ensure the `writeable` flag to the `lima.yaml` of the instance (being used i.e. `docker`). And then, restart using `❯ limactl stop docker` >> `❯ limactl start docker`
+5. On a separate terminal tab, create context for Docker-CLI to connect to dockerd running in the VM:
+
+Create (one-time):
+```
+❯ docker context create lima --docker "host=unix://${HOME}/.lima/docker/sock/docker.sock"
+```
+Use `lima` context in docker (whenever switched to other docker context):
+```
+❯ docker context use lima
+```
+
+View the current docker context (being used):
+<img width="1107" alt="image" src="https://user-images.githubusercontent.com/16472948/175228165-4c4be786-bb50-4ef0-90f9-620f6dd702e8.png">
+
+6. Open VScode:
+	- Add SSH server like this:
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/16472948/175229319-3c39fa9e-485f-4e74-a328-ec74f2b91281.png">
+
+To view the exact url of the VM instance, view from this:
+<img width="776" alt="image" src="https://user-images.githubusercontent.com/16472948/175229992-be64faa7-7824-4728-b6b2-1dd139c710d0.png">
+
+
 
 ## B. Emulation
 
