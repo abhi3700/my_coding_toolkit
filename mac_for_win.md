@@ -165,6 +165,21 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 * [Screenshot YouTube](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk/related?hl=en)
 
 ## Terminal
+
+Types:
+- `bash`
+```
+❯ which bash
+/bin/bash
+```
+- `zsh` (I use)
+```
+❯ which zsh
+/opt/homebrew/bin/zsh
+```
+
+Change from `zsh` to `bash`: `❯ chsh -s /bin/bash $USER`
+
 ### Shortcut keys
 * <kbd>ctrl+l</kbd>: clear the console
 * <kbd>cmd+l</kbd>: clear console by 1 command
