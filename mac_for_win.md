@@ -180,6 +180,30 @@ Types:
 
 Change from `zsh` to `bash`: `❯ chsh -s /bin/bash $USER`
 
+Find which one is being used on Linux/Mac:
+```
+[abhi3700@MacBook-Pro] ~ 
+❯ echo $0
+-zsh
+```
+```
+abhi3700@lima-docker:/Users/abhi3700$ echo $0
+/bin/bash
+```
+
+Find which version of bash/zsh being used on Linux/Mac:
+```
+[abhi3700@MacBook-Pro] ~  
+❯ bash --version
+GNU bash, version 3.2.57(1)-release (arm64-apple-darwin21)
+Copyright (C) 2007 Free Software Foundation, Inc.
+```
+```
+[abhi3700@MacBook-Pro] ~  
+❯ zsh --version
+zsh 5.9 (arm-apple-darwin21.3.0)
+```
+
 ### Shortcut keys
 * <kbd>ctrl+l</kbd>: clear the console
 * <kbd>cmd+l</kbd>: clear console by 1 command
