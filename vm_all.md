@@ -27,17 +27,25 @@ Lima launches Linux VMs with automatic file sharing and port forwarding (similar
 Here, the guide is about installing Ubuntu 20.04 OS with ARM processor on Mac M1 (ARM).
 
 * Install `lima` using brew: `$ brew install lima`
-* Create `lima.yaml` file & modify as per required Ubuntu version i.e. 20.04 instead of latest (22.04)
+* [OPTIONAL] Create `lima.yaml` file & modify as per required Ubuntu version i.e. 20.04 instead of latest (22.04). **Skip this**
 ```console
 ❯ mkdir /Users/abhi3700/.lima/default
 ❯ touch /Users/abhi3700/.lima/default/lima.yaml
-❯ code -n ~/.lima/default/lima.yaml
+❯ code ~/.lima/default/lima.yaml
 ```
+* Select the 'review' option during creating an instance like this:
+<img width="706" alt="image" src="https://user-images.githubusercontent.com/16472948/175220315-7adf13ce-76bf-48a6-a04a-bb413b91982b.png">
 
-* Copy the content from [here](https://gist.github.com/abhi3700/2b41a33575ab425e33199fec1e0b293f) & replace the portion below.
+Press enter with the option & then the `lima.yaml` of the instance would open using `vim` in terminal. So, in order to edit using `vscode`, exit from here:
+```
+:qa!
+```
+Now, your instance is created with `lima.yaml`. So, open this using `vscode`: `❯ code ~/.lima/docker/lima.yaml` & then
+
+* [OPTIONAL] Copy the content from [here](https://gist.github.com/abhi3700/2b41a33575ab425e33199fec1e0b293f) & 
+* replace the portion below.
 
 ![image](https://user-images.githubusercontent.com/16472948/169226669-63bd9ca0-1e02-481c-9ec1-63d613f67e5d.png)
-
 
 with
 ```yaml
