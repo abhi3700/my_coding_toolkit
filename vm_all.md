@@ -13,7 +13,7 @@ Below is the list of softwares which support this VM:
   - UTM
   - Parallels
   - VMWare (doesn't support M1 processor)
-- Console-based
+- CLI-based
   - Lima
 
 > All the softwares support VM based same architecture as host or different architectures (ARM on AMD, AMD on ARM) 
