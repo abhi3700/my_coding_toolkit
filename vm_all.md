@@ -22,7 +22,7 @@ Below is the list of softwares which support this VM:
 
 ### Lima | Install Ubuntu (ARM) on Mac (ARM)
 
-Lima launches Linux VMs with automatic file sharing and port forwarding (similar to **WSL2**), and containerd.
+Lima launches Linux VMs (CLI-based/controlled) with automatic file sharing and port forwarding (similar to **WSL2**), and containerd.
 
 Here, the guide is about installing Ubuntu 20.04 OS with ARM processor on Mac M1 (ARM).
 
