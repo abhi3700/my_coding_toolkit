@@ -1,8 +1,14 @@
 # MacOS for Windows users
 
 ## Installation
+
+### Migrate
 * In order to migrate the data from old Macbook, just open "Migration Assistant" App on the 'To Macbook' & share all the OTP details with 'From Macbook'.
 * Ensure "Xcode" App from Appstore. This is very useful for development.
+
+### New Account
+1. Like in case of windows, format C:\ drive (containing OS) & then install from scratch. Here, just create a new account (also give admin rights) from the existing (Admin) account,
+2. And then switch to the new account created & delete the previous admin account.
 
 ## Architecture
 
