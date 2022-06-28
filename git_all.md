@@ -359,6 +359,22 @@ git push --force <branch-name>
 * list contributors by name: `git log --all --format='%aN' | sort -u`
 * list contributors by email address: `git log --all --format='%aE' | sort -u`
 
+## Github Action
+
+Add these files in `.github/` folder:
+  - 'tests.yml' (club both tests, coverage), [Sample](https://gist.github.com/abhi3700/19fd4ad808587e617dbd61eae54e7624#file-tests-yml)
+  - 'coverage.yml' [OPTIONAL]
+
+It is found that sometimes the execution using `yarn` behaves differently (fails) on local & Github. And this is because Github considers the latest version (can be hardcoded) of packages (versions taken from the `package.json`).
+
+So, for a repo, it’s better to update the `package.json` & `yarn.lock`  files by running this command:
+
+```console
+$ yarn upgrade --latest
+```
+
+And then push the changes to Github. It will run successfully.
+
 ## Activities
 * ### Start maintaining local folder to Github
   1. create a github repo.
