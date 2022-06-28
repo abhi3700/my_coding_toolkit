@@ -37,11 +37,13 @@ adpyke.codesnap-1.3.4
 ajshort.include-autocomplete-0.0.4
 akamud.vscode-theme-onedark-2.2.3
 akamud.vscode-theme-onelight-2.2.3
-appland.appmap-0.28.3
+appland.appmap-0.31.0
+appland.appmap-0.31.1
 azemoh.one-monokai-0.5.0
-bierner.markdown-mermaid-1.14.0
+bierner.markdown-mermaid-1.14.2
 bierner.markdown-preview-github-styles-1.0.1
 bungcip.better-toml-0.3.2
+chrisdias.vscode-opennewinstance-0.0.12
 christian-kohler.npm-intellisense-1.4.2
 christian-kohler.path-intellisense-2.8.1
 christophwolff.sublime-oceanic-after-next-theme-0.0.2
@@ -70,8 +72,7 @@ gruntfuggly.mermaid-export-0.0.8
 haaleo.timing-2.7.1
 hediet.vscode-drawio-1.6.4
 izaxon.todo-0.1.0
-jebbs.plantuml-2.17.2
-jeff-hykin.better-cpp-syntax-1.15.16
+jebbs.plantuml-2.17.3
 jeff-hykin.better-cpp-syntax-1.15.18
 jgclark.vscode-todo-highlight-2.0.4
 jithurjacob.nbpreviewer-1.2.2
@@ -79,7 +80,8 @@ joaompinto.vscode-graphviz-0.0.6
 josetr.cmake-language-support-vscode-0.0.4
 jrtools.mariana-1.0.8
 juanblanco.solidity-0.0.139
-kevinrose.vsc-python-indent-1.16.0
+kelvin.vscode-sshfs-1.25.0
+kevinrose.vsc-python-indent-1.17.0
 llvm-vs-code-extensions.vscode-clangd-0.1.17
 maximetinu.identical-sublime-monokai-csharp-theme-colorizer-1.1.0
 mechatroner.rainbow-csv-2.4.0
@@ -88,13 +90,14 @@ mkloubert.vscode-kanban-1.33.0
 ms-azuretools.vscode-docker-1.22.0
 ms-dotnettools.vscode-dotnet-runtime-1.5.0
 ms-python.python-2022.8.0
-ms-python.vscode-pylance-2022.6.20
+ms-python.vscode-pylance-2022.6.30
 ms-toolsai.jupyter-2022.5.1001601848
 ms-toolsai.jupyter-keymap-1.0.0
 ms-toolsai.jupyter-renderers-1.0.8
 ms-toolsai.vscode-jupyter-powertoys-0.0.3
 ms-vscode-remote.remote-containers-0.238.2
 ms-vscode-remote.remote-ssh-0.82.1
+ms-vscode-remote.remote-ssh-0.82.1.vsix
 ms-vscode-remote.remote-ssh-edit-0.80.0
 ms-vscode-remote.remote-wsl-0.66.3
 ms-vscode.cmake-tools-1.11.26
@@ -112,13 +115,16 @@ nomicfoundation.hardhat-solidity-0.4.3
 perkovec.emoji-1.0.1
 pkief.material-icon-theme-4.18.1
 royaction.color-manager-0.7.5
-rust-lang.rust-analyzer-0.3.1091-darwin-arm64
+rust-lang.rust-analyzer-0.3.1099-darwin-arm64
+rust-lang.rust-analyzer-0.3.1107-darwin-arm64
 ryu1kn.partial-diff-1.4.3
 smh.eosio-0.0.1
 softwaredotcom.swdc-vscode-2.6.31
-streetsidesoftware.code-spell-checker-2.2.4
+softwaredotcom.swdc-vscode-2.6.32
+streetsidesoftware.code-spell-checker-2.2.5
 supperchong.pretty-json-0.0.4
 tabnine.tabnine-vscode-3.5.58
+tabnine.tabnine-vscode-3.5.59
 tintinweb.ethereum-security-bundle-0.0.6
 tintinweb.graphviz-interactive-preview-0.3.0
 tintinweb.solidity-metrics-0.0.20
@@ -137,7 +143,7 @@ tyriar.vscode-terminal-here-0.2.4
 visualstudioexptteam.vscodeintellicode-1.2.21
 vitelabs.soliditypp-0.7.11
 vitelabs.solppdebugger-0.2.5
-wakatime.vscode-wakatime-18.1.5
+wakatime.vscode-wakatime-18.1.6
 yzhang.markdown-all-in-one-3.4.3
 zainchen.json-2.0.2
 ```	
@@ -198,6 +204,7 @@ zainchen.json-2.0.2
 * [x] [Markdown Todo](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-markdown-todo)
 * [x] [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 
 * [x] [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
+* [x] [Open Folder Context Menus for VS Code](https://marketplace.visualstudio.com/items?itemName=chrisdias.vscode-opennewinstance)
 * [x] [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 * [x] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 * [x] [Pretty js/json](https://marketplace.visualstudio.com/items?itemName=supperchong.pretty-json)
@@ -255,6 +262,7 @@ zainchen.json-2.0.2
 * <kbd>ctrl+spacebar</kbd> - give suggestions at any red color cursor point
 * <kbd>cmd+shift+e</kbd> - show the active file in the explorer
 * <kbd>cmd+k</kbd>, <kbd>s</kbd> - Here, save file without formatting. Normally, if the formatter is enabled for the file extension type in the VSCode Settings, then when doing <kbd>cmd+s</kbd>, the file is saved with formatting automatically.
+* Open sub-folder in new window using this [package](https://marketplace.visualstudio.com/items?itemName=chrisdias.vscode-opennewinstance)
 
 ### Win OS
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
