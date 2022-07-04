@@ -99,7 +99,9 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 * <kbd>cmd+shift+n</kbd>: create a new folder at selected directory
 * <kbd>opt+ <-</kbd>: skip to character after space ~ `ctrl+ <-`
 * <kbd>opt+ -></kbd>: skip to character before space ~ `ctrl+ ->`
-* <kbd>cmd+opt+delete</kbd>: permanent delete ~ `shift+delete`
+* <kbd>cmd+delete</kbd>: Temporarily delete a file i.e. shift to **Bin** ~ `shift+delete`
+* <kbd>cmd+opt+delete</kbd>: permanently delete a file ~ `shift+delete`
+* <kbd>cmd+shift+delete</kbd>: Empty bin
 * open terminal in a finder at a location: open terminal >> type cd << drag the folder into the terminal >> enter
 * <kbd>cmd+shift+3</kbd>: Full capture
 * <kbd>cmd+shift+4</kbd>: Custom capture. To copy, press & hold the `control` key during the capture. And paste into wherever you want.
