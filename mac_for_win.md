@@ -10,6 +10,10 @@
 1. Like in case of windows, format C:\ drive (containing OS) & then install from scratch. Here, just create a new account (also give admin rights) from the existing (Admin) account,
 2. And then switch to the new account created & delete the previous admin account.
 
+## Package Manager
+
+Select Homebrew](https://brew.sh/) for installing libs, packages, tools.
+
 ## Architecture
 
 > An Apple Silicon mac can run both the **Intel** and the **ARM64** portions of a universal binary application. But not the other way around. Intel binaries are emulated under **Rosetta 2** on Apple Silicon, but there is no emulation of **ARM64** on **Intel**-based mac. [Source](https://indiespark.top/programming/compile-open-ssl-apple-silicon/)
