@@ -2,6 +2,11 @@
 
 ## Installation
 
+System:
+```
+Processor: ARM/M1
+```
+
 ### Migrate
 * In order to migrate the data from old Macbook, just open "Migration Assistant" App on the 'To Macbook' & share all the OTP details with 'From Macbook'.
 * Ensure "Xcode" App from Appstore. This is very useful for development.
@@ -12,7 +17,9 @@
 
 ## Package Manager
 
-Select Homebrew](https://brew.sh/) for installing libs, packages, tools.
+Select [Homebrew](https://brew.sh/) for installing libs, packages, tools.
+
+> This is like `apt` (frequently used for Linux).
 
 ## Architecture
 
