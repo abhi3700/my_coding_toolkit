@@ -21,6 +21,19 @@ Select [Homebrew](https://brew.sh/) for installing libs, packages, tools.
 
 > This is like `apt` (frequently used for Linux).
 
+## Console
+
+Prefer `zsh` instead of `bash`.
+> Correspondingly, use `~/.zshrc`, `~/.zprofile` instead of `~/.bashrc`, `~/.bash_profile` file.
+
+Use `profile` suffixed file for adding additional command during toolkit installation.
+
+To know which one is being used now:
+```
+❯ echo $0
+-zsh
+```
+
 ## Architecture
 
 > An Apple Silicon mac can run both the **Intel** and the **ARM64** portions of a universal binary application. But not the other way around. Intel binaries are emulated under **Rosetta 2** on Apple Silicon, but there is no emulation of **ARM64** on **Intel**-based mac. [Source](https://indiespark.top/programming/compile-open-ssl-apple-silicon/)
