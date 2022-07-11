@@ -34,6 +34,8 @@ To know which one is being used now:
 -zsh
 ```
 
+Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/).
+
 ## Architecture
 
 > An Apple Silicon mac can run both the **Intel** and the **ARM64** portions of a universal binary application. But not the other way around. Intel binaries are emulated under **Rosetta 2** on Apple Silicon, but there is no emulation of **ARM64** on **Intel**-based mac. [Source](https://indiespark.top/programming/compile-open-ssl-apple-silicon/)
@@ -218,6 +220,7 @@ Find which one is being used on Linux/Mac:
 ❯ echo $0
 -zsh
 ```
+
 ```
 abhi3700@lima-docker:/Users/abhi3700$ echo $0
 /bin/bash
