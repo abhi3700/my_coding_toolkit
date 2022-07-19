@@ -132,8 +132,8 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 * <kbd>cmd+shift+3</kbd>: Full capture
 * <kbd>cmd+shift+4</kbd>: Custom capture. To copy, press & hold the `control` key during the capture. And paste into wherever you want.
 * <kbd>cmd+shift+5</kbd>: More features related to capture
-* <kbd>ctrl+ <-</kbd>: Switch to workspace towards right ~ `ctrl+alt+ <-`
-* <kbd>ctrl+ -></kbd>: Switch to workspace towards left ~ `ctrl+alt+ ->`
+* <kbd>ctrl+ <-</kbd>: Switch to workspace towards left ~ `ctrl+alt+ <-`
+* <kbd>ctrl+ -></kbd>: Switch to workspace towards right ~ `ctrl+alt+ ->`
 * <kbd>cmd+spacebar</kbd>: Open Spotlight menu which helps in searching anything
 * <kbd>cmd+shift+spacebar</kbd>: Open Spotlight in the Finder
 * Cut & Paste file:
@@ -157,6 +157,8 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 * <kbd>cmd+ctrl+opt+power</kbd>: Shut down (closing all apps)
 * <kbd>cmd+shift+r</kbd>: quickly access airdrop
 * <kbd>cmd+opt+n</kbd>: show/hide the widget panel on right side of screen
+* <kbd>cmd+opt+d</kbd>: show/hide the dock (bar below)
+* <kbd>ctrl+e</kbd>: Show the cursor to the end of the line
                                                                                                                                       
 ## Installation
 * Install:
