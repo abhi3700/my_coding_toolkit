@@ -222,48 +222,67 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 Types:
 
-- `bash`
+`bash`
 
 ```
 ❯ which bash
 /bin/bash
 ```
 
-- `zsh` (I use)
+---
+
+`zsh` (I use)
 
 ```
 ❯ which zsh
 /opt/homebrew/bin/zsh
 ```
 
+---
+
 Change from `zsh` to `bash`: `❯ chsh -s /bin/bash $USER`
 
 Find which one is being used on Linux/Mac:
 
 ```
-[abhi3700@MacBook-Pro] ~
 ❯ echo $0
 -zsh
 ```
 
 ```
-abhi3700@lima-docker:/Users/abhi3700$ echo $0
+$ echo $0
 /bin/bash
 ```
+
+---
 
 Find which version of bash/zsh being used on Linux/Mac:
 
 ```
-[abhi3700@MacBook-Pro] ~
 ❯ bash --version
 GNU bash, version 3.2.57(1)-release (arm64-apple-darwin21)
 Copyright (C) 2007 Free Software Foundation, Inc.
 ```
 
 ```
-[abhi3700@MacBook-Pro] ~
 ❯ zsh --version
 zsh 5.9 (arm-apple-darwin21.3.0)
+```
+
+---
+
+Show the process running on a given port:
+
+```
+❯ sudo lsof -i :<PORT_NO>
+```
+
+> Get the PID from 🔝.
+
+Kill the process running on a port via PID:
+
+```
+❯ sudo kill -9 <PID>
 ```
 
 ### Shortcut keys
