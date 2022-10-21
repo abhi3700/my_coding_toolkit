@@ -20,7 +20,7 @@ Processor: ARM/M1
 
 ## Package Manager
 
-Select [Homebrew](https://brew.sh/) for installing libs, packages, tools.
+Select [Homebrew](https://brew.sh/) for installing libs, packages, tools on macOS.
 
 > This is like `apt` (frequently used for Linux).
 
