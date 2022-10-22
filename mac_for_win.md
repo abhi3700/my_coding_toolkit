@@ -1,11 +1,35 @@
 # MacOS for Windows users
 
+```console
+❯ sysctl -n machdep.cpu.brand_string
+Apple M1 Max
+```
+
+---
+
+Whether Hypervisor.framework is supported
+
+```console
+❯ sysctl kern.hv_support
+kern.hv_support: 1
+```
+
+> If it is 1, then your CPU is supported.
+> If it is 0, it means the Hypervisor.framework cannot be used with your CPU, for a reason or another.
+
+```console
+❯ sysctl -a | grep -o VMX                                                     ⏎
+VMX
+```
+
 ## Installation
 
 System:
 
 ```
+
 Processor: ARM/M1
+
 ```
 
 ### Migrate
@@ -35,8 +59,10 @@ Use `profile` suffixed file for adding additional command during toolkit install
 To know which one is being used now:
 
 ```
+
 ❯ echo $0
 -zsh
+
 ```
 
 Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/).
