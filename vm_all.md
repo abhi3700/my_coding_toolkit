@@ -16,7 +16,7 @@ Below is the list of softwares which support this VM:
 - CLI-based
   - Lima
 
-> All the softwares support VM based same architecture as host or different architectures (ARM on AMD, AMD on ARM) 
+> All the softwares support VM based same architecture as host or different architectures (ARM on AMD, AMD on ARM)
 
 ## A. Virtualization
 
@@ -26,81 +26,88 @@ Lima launches Linux VMs (CLI-based/controlled) with automatic file sharing and p
 
 > Here, the guide is about installing Ubuntu 20.04 OS with ARM processor on Mac M1 (ARM).
 
-* Install `lima` using brew: `$ brew install lima`
-* [OPTIONAL] Create `lima.yaml` file & modify as per required Ubuntu version i.e. 20.04 instead of latest (22.04). **Skip this**
+- Install `lima` using brew: `$ brew install lima`
+- [OPTIONAL] Create `lima.yaml` file & modify as per required Ubuntu version i.e. 20.04 instead of latest (22.04). **Skip this**
+
 ```console
 ❯ mkdir /Users/abhi3700/.lima/default
 ❯ touch /Users/abhi3700/.lima/default/lima.yaml
 ❯ code ~/.lima/default/lima.yaml
 ```
-* Select the 'review' option during creating an instance like this:
-<img width="706" alt="image" src="https://user-images.githubusercontent.com/16472948/175220315-7adf13ce-76bf-48a6-a04a-bb413b91982b.png">
+
+- Select the 'review' option during creating an instance like this:
+  <img width="706" alt="image" src="https://user-images.githubusercontent.com/16472948/175220315-7adf13ce-76bf-48a6-a04a-bb413b91982b.png">
 
 Press enter with the option & then the `lima.yaml` of the instance would open using `vim` in terminal. So, in order to edit using `vscode`, exit from here:
+
 ```
 :qa!
 ```
+
 Now, your instance is created with `lima.yaml`. So, open this using `vscode`: `❯ code ~/.lima/docker/lima.yaml` & then
 
-* [OPTIONAL] Copy the content from [here](https://gist.github.com/abhi3700/2b41a33575ab425e33199fec1e0b293f) & 
-* replace the portion below.
+- [OPTIONAL] Copy the content from [here](https://gist.github.com/abhi3700/2b41a33575ab425e33199fec1e0b293f) &
+- replace the portion below.
 
 ![image](https://user-images.githubusercontent.com/16472948/169226669-63bd9ca0-1e02-481c-9ec1-63d613f67e5d.png)
 
 with
+
 ```yaml
 # 🔵 This file: Ubuntu 20.04 Focal Fossa images
 images:
-# Try to use release-yyyyMMdd image if available. Note that release-yyyyMMdd will be removed after several months.
-- location: "https://cloud-images-archive.ubuntu.com/releases/focal/release-20200423/ubuntu-20.04-server-cloudimg-amd64.img"
-  arch: "x86_64"
-  digest: "sha256:266663b10f788f784a425873086051910084bc08c059bf8e4a9490ce306f8d7e"
-- location: "https://cloud-images-archive.ubuntu.com/releases/focal/release-20200423/ubuntu-20.04-server-cloudimg-arm64.img"
-  arch: "aarch64"
-  digest: "sha256:8066f5973d9b291ba1e637d7cb98b782abb6f3507f4265482ba6c6270210a736"
-# Fallback to the latest release image.
-# Hint: run `limactl prune` to invalidate the cache
-- location: "https://cloud-images.ubuntu.com/releases/20.04/release/ubuntu-20.04-server-cloudimg-amd64.img"
-  arch: "x86_64"
-- location: "https://cloud-images.ubuntu.com/releases/20.04/release/ubuntu-20.04-server-cloudimg-arm64.img"
-  arch: "aarch64"
+  # Try to use release-yyyyMMdd image if available. Note that release-yyyyMMdd will be removed after several months.
+  - location: "https://cloud-images-archive.ubuntu.com/releases/focal/release-20200423/ubuntu-20.04-server-cloudimg-amd64.img"
+    arch: "x86_64"
+    digest: "sha256:266663b10f788f784a425873086051910084bc08c059bf8e4a9490ce306f8d7e"
+  - location: "https://cloud-images-archive.ubuntu.com/releases/focal/release-20200423/ubuntu-20.04-server-cloudimg-arm64.img"
+    arch: "aarch64"
+    digest: "sha256:8066f5973d9b291ba1e637d7cb98b782abb6f3507f4265482ba6c6270210a736"
+  # Fallback to the latest release image.
+  # Hint: run `limactl prune` to invalidate the cache
+  - location: "https://cloud-images.ubuntu.com/releases/20.04/release/ubuntu-20.04-server-cloudimg-amd64.img"
+    arch: "x86_64"
+  - location: "https://cloud-images.ubuntu.com/releases/20.04/release/ubuntu-20.04-server-cloudimg-arm64.img"
+    arch: "aarch64"
 ```
 
-* Install OS using `$ limactl start`
-> It installs the set "Ubuntu 20.04" as `lima.yaml` file in `default` instance.
+- Install OS using `$ limactl start`
 
-* After this, the directory looks like this, where only `default` instance/VM is created.
-<img width="140" alt="image" src="https://user-images.githubusercontent.com/16472948/169227264-a141213e-3f94-4302-a8e6-ebad49b6b4a8.png">
+  > It installs the set "Ubuntu 20.04" as `lima.yaml` file in `default` instance.
 
-* View the installed VM using `$ limactl list`
-<img width="748" alt="image" src="https://user-images.githubusercontent.com/16472948/169227511-eca1acb3-66e5-415a-a9cf-512ba23f4219.png">
+- After this, the directory looks like this, where only `default` instance/VM is created.
+  <img width="140" alt="image" src="https://user-images.githubusercontent.com/16472948/169227264-a141213e-3f94-4302-a8e6-ebad49b6b4a8.png">
 
-* Now, to start the VM use `$ limactl start`
-> If no instance name is provided, then it starts the `default` instance.
+- View the installed VM using `$ limactl list`
+  <img width="748" alt="image" src="https://user-images.githubusercontent.com/16472948/169227511-eca1acb3-66e5-415a-a9cf-512ba23f4219.png">
+
+- Now, to start the VM use `$ limactl start`
+  > If no instance name is provided, then it starts the `default` instance.
 
 <img width="1277" alt="image" src="https://user-images.githubusercontent.com/16472948/169227771-f545b404-b79a-4f25-88ab-1b25dd28e484.png">
 
-* Open the VM's shell using `$ lima`
-> If no instance name is provided, then it opens the `default` instance.
+- Open the VM's shell using `$ lima`
+  > If no instance name is provided, then it opens the `default` instance.
 
 <img width="304" alt="image" src="https://user-images.githubusercontent.com/16472948/169227961-40558575-4d9f-4752-9675-d2c9bfa79432.png">
 
-* For a non-default VM shell, use `$ limactl shell <instance-name>` like `$ limactl shell docker`.
-<img width="288" alt="image" src="https://user-images.githubusercontent.com/16472948/175223465-ff39d0e4-08e1-4685-819e-c732eeb28289.png">
+- For a non-default VM shell, use `$ limactl shell <instance-name>` like `$ limactl shell docker`.
+  <img width="288" alt="image" src="https://user-images.githubusercontent.com/16472948/175223465-ff39d0e4-08e1-4685-819e-c732eeb28289.png">
 
-* Close the VM using <kbd>ctrl+d</kbd> i.e. logout.
-<img width="363" alt="image" src="https://user-images.githubusercontent.com/16472948/169228058-cd61562d-d6fc-408e-9502-37254c4e0eea.png">
+- Close the VM using <kbd>ctrl+d</kbd> i.e. logout.
+  <img width="363" alt="image" src="https://user-images.githubusercontent.com/16472948/169228058-cd61562d-d6fc-408e-9502-37254c4e0eea.png">
 
-* Shutdown the VM using `$ limactl stop`
-> If no instance name is provided, then it shutdown the `default` instance.
+- Shutdown the VM using `$ limactl stop`
+  > If no instance name is provided, then it shutdown the `default` instance.
 
 > NOTES: <br/>
+>
 > - It is recommended to use the VM's drive (i.e. 100 GB by default) rather than using the files (to write to). Because it would be slow to process (read/write). <br/>
 > - Otherwise, in order to write to the Mac files from inside VM, set this param as `true` like this:
-<img width="502" alt="image" src="https://user-images.githubusercontent.com/16472948/169231978-50376883-6342-464a-bf0c-38534ee76ca0.png">
+>   <img width="502" alt="image" src="https://user-images.githubusercontent.com/16472948/169231978-50376883-6342-464a-bf0c-38534ee76ca0.png">
 
 > - The home directory of VM is `~`, NOT the `/Users/abhi3700` unlike the case of Mac where both are same. In the fig. below, the content of `~` is different than `/Users/abhi3700` inside VM.
-<img width="1107" alt="image" src="https://user-images.githubusercontent.com/16472948/169232449-aceffaa0-72fa-4edc-830a-81d89ad37bab.png">
+>   <img width="1107" alt="image" src="https://user-images.githubusercontent.com/16472948/169232449-aceffaa0-72fa-4edc-830a-81d89ad37bab.png">
 
 <img width="982" alt="image" src="https://user-images.githubusercontent.com/16472948/169232858-d9697b4b-604b-4357-ab50-d1c8b283d12b.png">
 
@@ -113,11 +120,11 @@ Read [more](https://github.com/lima-vm/lima).
 2. Install the docker CLI using `brew`: `$ brew install docker`
 
 3. Create Linux VM with Dockerd (following instructions from [Kevin O’Brien – Utilizing Docker CLI without Docker Desktop](https://itnext.io/utilizing-docker-cli-without-docker-desktop-4933f3473d5e))
-	- Download `docker.yaml` file: `$ curl https://raw.githubusercontent.com/lima-vm/lima/master/examples/docker.yaml -O`
-	- Create a docker based instance with this: `❯ limactl start ./docker.yaml` & then follow the installation above for custom Ubuntu OS version (20.04, 22.04, ...).
-	- After modifying `lima.yaml` inside the `docker` named instance, please continue the installation like this: `$ limactl start docker` 
-<img width="1274" alt="image" src="https://user-images.githubusercontent.com/16472948/175221985-623ccfea-7071-4642-8e23-c0cab307a716.png">
-	- Enable SSH on the VM instance created: `$ sudo systemctl enable ssh.service`
+   - Download `docker.yaml` file: `$ curl https://raw.githubusercontent.com/lima-vm/lima/master/examples/docker.yaml -O`
+   - Create a docker based instance with this: `❯ limactl start ./docker.yaml` & then follow the installation above for custom Ubuntu OS version (20.04, 22.04, ...).
+   - After modifying `lima.yaml` inside the `docker` named instance, please continue the installation like this: `$ limactl start docker`
+     <img width="1274" alt="image" src="https://user-images.githubusercontent.com/16472948/175221985-623ccfea-7071-4642-8e23-c0cab307a716.png">
+   - Enable SSH on the VM instance created: `$ sudo systemctl enable ssh.service`
 
 So, the Lima VM is stopped or logged-out, the SSH service remains enabled unless stopped/disabled inside VM's shell [More about SSH on Ubuntu](https://www.cyberciti.biz/faq/howto-start-stop-ssh-server/). The status can be checked using this:
 
@@ -129,10 +136,13 @@ $ sudo systemctl status ssh
 5. On a separate terminal tab, create context for Docker-CLI to connect to dockerd running in the VM:
 
 Create (one-time):
+
 ```
 ❯ docker context create lima --docker "host=unix://${HOME}/.lima/docker/sock/docker.sock"
 ```
+
 Use `lima` context in docker (whenever switched to other docker context):
+
 ```
 ❯ docker context use lima
 ```
@@ -140,14 +150,11 @@ Use `lima` context in docker (whenever switched to other docker context):
 View the current docker context (being used):
 <img width="1107" alt="image" src="https://user-images.githubusercontent.com/16472948/175228165-4c4be786-bb50-4ef0-90f9-620f6dd702e8.png">
 
-6. Open VScode:
-	- Add SSH server like this:
-<img width="539" alt="image" src="https://user-images.githubusercontent.com/16472948/175229319-3c39fa9e-485f-4e74-a328-ec74f2b91281.png">
+6. Open VScode: - Add SSH server like this:
+   <img width="539" alt="image" src="https://user-images.githubusercontent.com/16472948/175229319-3c39fa9e-485f-4e74-a328-ec74f2b91281.png">
 
 To view the exact url of the VM instance, view from this:
 <img width="776" alt="image" src="https://user-images.githubusercontent.com/16472948/175229992-be64faa7-7824-4728-b6b2-1dd139c710d0.png">
-
-
 
 ## B. Emulation
 
@@ -210,7 +217,7 @@ And then <kbd>Save</kbd> it.
 #### Step-11: View Saved
 
 This is how it looks like:
-  
+
 <img width="1278" alt="image" src="https://user-images.githubusercontent.com/16472948/168830472-61cbfd06-2fda-41ba-a92c-1dee3d92a644.png">
 
 #### Step-12: Start
@@ -263,7 +270,7 @@ View the Screens post installation
 
 Before installation, this Disc option remains below the removable drive (CD/DVD) i.e. ISO, from where the ubuntu file is loaded for installation.
 
-After installation, the CD/DVD can be cleared from below or "removable drive" option can be put down to this Disc option, so that after OS reboot it loads the installed OS. 
+After installation, the CD/DVD can be cleared from below or "removable drive" option can be put down to this Disc option, so that after OS reboot it loads the installed OS.
 
 <img width="837" alt="image" src="https://user-images.githubusercontent.com/16472948/168833757-8cd70990-6b96-44b2-af12-63ef6e7a2fe8.png">
 
@@ -281,4 +288,3 @@ After installation, to allow the shared directory to be shown in the installed O
 
 1. `$ sudo apt install spice-vdagent spice-webdavd davfs2`
 2. Restart the VM
- 
