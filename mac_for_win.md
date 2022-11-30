@@ -207,16 +207,20 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 ## Apps
 
-- Numbers: a quick analysis app like Excel for data analytics.
-- Pages: a document app like Word, but with PPT type of styling. Easy to add cards, etc.
-- Notes: a note app for maintaining TODO list
+- **Numbers**: a quick analysis app like Excel for data analytics.
+- **Pages**: a document app like Word, but with PPT type of styling. Easy to add cards, etc.
+- **Notes**: a note app for maintaining TODO list
   - <kbd>cmd+opt+n</kbd>: show/hide folders
-- Miro: Architecture, Mind Map, Whiteboard
-- For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
-- Handbrake: File compressor
-- Movavi Video editor: Image, video editor
-- Photo Booth: Capture Image, Video
-- Facetime: Call someone
+- **Miro**: Architecture, Mind Map, Whiteboard
+- **Visual Studio Code (VSC)**:
+- **Virtual Machine (VM)**: For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
+  - GUI (UTM)
+  - CLI (lima)
+- **Handbrake**: File compressor
+- **Photo Booth**: Capture Image, Video
+- **Facetime**: Call someone
+- **OBS** (FREE): Screen recorder with/without camera
+- **Movavi Video Suite 23** (purchased license)
 
 ## Display
 
