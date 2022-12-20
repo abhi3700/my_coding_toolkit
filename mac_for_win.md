@@ -322,6 +322,7 @@ Kill the process running on a port via PID:
 - <kbd>cmd+w</kbd>: close the current terminal
 - <kbd>cmd+t</kbd>: open a new tab at the current directory
 - <kbd>ctrl+w</kbd>: backspace word by word
+- <kbd>ctrl+q</kbd>: clear the entire command/sentence
 
 ### Commands
 
