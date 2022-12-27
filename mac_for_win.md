@@ -332,6 +332,8 @@ Kill the process running on a port via PID:
 - open any application from terminal: `$ open -a <executable_dir>` E.g. `open -a /Applications/Visual\ Studio\ Code.app`
 - `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
 - `$ env`: all the global variables. can be used like this `$ echo $NVM_DIR` -> `/Users/abhi3700/.nvm`
+- `$ lsof -i:<PORT_NO>`: Check if a port is open. E.g. `lsof -i:3000`
+- `$ kill <PID>`: kill a process running on a port: E.g. `kill 4534`
 
 ### PATH
 
