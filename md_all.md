@@ -1,50 +1,55 @@
 ## Tool
-* [Just the docs](https://pmarsceill.github.io/just-the-docs/)
-* [Github Pages](https://pages.github.com/)
+
+- [Just the docs](https://pmarsceill.github.io/just-the-docs/)
+- [Github Pages](https://pages.github.com/)
 
 ## GitHub Repo
-* Markdown Extended Higlighting - https://github.com/jonschlinkert/sublime-markdown-extended
-* Markdown TOC - https://github.com/naokazuterada/MarkdownTOC
 
+- Markdown Extended Higlighting - https://github.com/jonschlinkert/sublime-markdown-extended
+- Markdown TOC - https://github.com/naokazuterada/MarkdownTOC
 
 ## NOTES
-* One can try editing a file on __Github__ or __Sublime Text 3__ enabling this above extensions.
-* Always use indentation using tabs, NOT spaces.
-* Indentation size can be 2, 3, 4..anything. [2 recommended]
+
+- One can try editing a file on **Github** or **Sublime Text 3** enabling this above extensions.
+- Always use indentation using tabs, NOT spaces.
+- Indentation size can be 2, 3, 4..anything. [2 recommended]
 
 ## Shortcuts
-* ##### **Bold** - Bold
-* ##### _italic_ - Italics
-* ##### `<ins>underline</ins>` - underline a statement
-* ##### Collapsible: Expand text with title
+
+- **Bold** - Bold
+- _italic_ - Italics
+- `<ins>underline</ins>` - underline a statement
+- Collapsible: Expand text with title
   <details>
   <summary><b>Expand: </b></summary>
-		
-	<h2>Abhijit is a good boy</h2>
-	<p>Humand is a village in Chashm Rural District, Shahmirzad District, Mehdishahr County, Semnan Province, Iran. At the 2006 census, its existence was noted, but its population was not reported. </p>
-		
+  	
+  <h2>Abhijit is a good boy</h2>
+  <p>Humand is a village in Chashm Rural District, Shahmirzad District, Mehdishahr County, Semnan Province, Iran. At the 2006 census, its existence was noted, but its population was not reported. </p>
+  	
   </details>
-* ##### Collapsible: Expand code snippet/block with title
-	> NOTE: give a line break after summary tag
+- ##### Collapsible: Expand code snippet/block with title
 
-	<details>
-	<summary><b>View code: </b></summary>
+  > NOTE: give a line break after summary tag
 
-	```cpp
-	std::cout << "With Iterator:" << std::endl;
-	for (std::vector<string>::iterator i = v.begin(); i != v.end(); ++i)
-	{
-		std::cout << *i << std::endl;
-	}
-	```
-	</details>
+  <details>
+  <summary><b>View code: </b></summary>
 
-* ##### Single line code snippet - `code`
-* ##### Multiple-line code snippet - 
+  ```cpp
+  std::cout << "With Iterator:" << std::endl;
+  for (std::vector<string>::iterator i = v.begin(); i != v.end(); ++i)
+  {
+  	std::cout << *i << std::endl;
+  }
+  ```
+
+  </details>
+
+- Single line code snippet - `code`
+- Multiple-line code snippet -
   ```cpp
   std::string s = "hello";
   ```
-* ##### Image from HTTP link
+- Image from HTTP link
   - 1
   ```
   <p align="center">
@@ -52,20 +57,23 @@
   </p>
   ```
   - 2 with no width or height <br/>
-  `![eos_image](http://url/to/img.png)`
-  
-* ##### Image from local folder
+    `![eos_image](http://url/to/img.png)`
+- Image from local folder
+
   Within a git repository, it is done like this:
-  
-  > NOTE: It is a relative path 
+
+  > NOTE: It is a relative path
+
   ```markdown
   ![auto_fetch Image](./images/Fork/auto_fetch.png)
   ![Repository Image](./Sessions/Session%201/images/repository.jpg)
   ```
+
   Try <kbd>alt+m</kbd> from inside a ST3 application to view if it is shown.
-  
-  __Example: Look at the relative path in the image link__ <br/>
+
+  **Example: Look at the relative path in the image link** <br/>
   The directory is like this:
+
 ```console
   |-- libs
   |   |-- Dash
@@ -82,35 +90,52 @@
   |   |       `-- console_open_url.png
 
 ```
-  Now, in `dash.md` file, the image - `console.png` will be referred as this:
+
+Now, in `dash.md` file, the image - `console.png` will be referred as this:
+
 ```markdown
-	<p align="center">
-	  <img src="./images/console.png" alt="console Image" width="" height="">
-	</p>
+    <p align="center">
+      <img src="./images/console.png" alt="console Image" width="" height="">
+    </p>
 ```
-  > NOTE: the image link is `./images/console.png`, NOT this - `./libs/Dash/images/console.png`. So, it's a relative path w.r.t `dash.md` file (where the image is referenced).
-  
-* ##### Highlight console
+
+> NOTE: the image link is `./images/console.png`, NOT this - `./libs/Dash/images/console.png`. So, it's a relative path w.r.t `dash.md` file (where the image is referenced).
+
+- Highlight console
+
 ```console
 foo@bar:~$ whoami
 foo
 ```
-* Highlight shell
+
+- Highlight shell
+
 ```sh
-wc -l en_US.twitter.txt 
+wc -l en_US.twitter.txt
 ```
-* ##### New page
+
+- New page
+
 ```markdown
 <div style="page-break-after: always;"></div>
 ```
-* Embed Videos
+
+- Embed Videos
+
 ```md
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 ```
 
-* #### [Mermaid](https://mermaid-js.github.io/mermaid/#/)
-* #### Create a badge
-[![Version](https://img.shields.io/npm/v/@uniswap/v2-core)](https://www.npmjs.com/package/@uniswap/v2-core)
-[![Actions Status](https://github.com/Uniswap/uniswap-v2-core/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-core/actions)
-
-
+- [Mermaid](https://mermaid-js.github.io/mermaid/#/)
+- Create a badge
+  [![Version](https://img.shields.io/npm/v/@uniswap/v2-core)](https://www.npmjs.com/package/@uniswap/v2-core)
+  [![Actions Status](https://github.com/Uniswap/uniswap-v2-core/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-core/actions)
+- Create book with [`mdbook`](https://rust-lang.github.io/mdBook/index.html)
+  - Installation
+  ```sh
+  cargo install mdbook
+  ```
+  - Create a book
+  ```sh
+  mdbook init
+  ```

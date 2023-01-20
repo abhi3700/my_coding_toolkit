@@ -211,7 +211,8 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - **Pages**: a document app like Word, but with PPT type of styling. Easy to add cards, etc.
 - **Notes**: a note app for maintaining TODO list
   - <kbd>cmd+opt+n</kbd>: show/hide folders
-- **Miro**: Architecture, Mind Map, Whiteboard
+- **Freeform**: whiteboard app like Miro [FREE for macOS]
+- **Miro**: Architecture, Mind Map, Whiteboard [PAID]
 - **Visual Studio Code (VSC)**:
 - **Virtual Machine (VM)**: For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
   - GUI (UTM)
@@ -229,9 +230,13 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 ## Touchpad
 
+> Touchpad settings can be changed.
+
 - three touch towards up: Show all the opened apps & also create new workspace or switch to a workspace.
 - Single clicked with 2 fingers on the touchpad ~ `Right click` on Windows.
-- Touchpad settings can be changed.
+- zoom level:
+  - 2 fingers wide apart: zoom in
+  - 2 fingers close in: zoom out
 
 ## Browser (chrome-based)
 
