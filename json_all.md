@@ -1,13 +1,17 @@
 # JSON
 
 ## with `Python`
-* load a json string into a python dict
+
+- load a json string into a python dict
+
 ```py
 data = '{"place": "australia","people": [{"website": "stackabuse.com", "from": "Nebraska", "name": "Scott"}]}'
 data_json = json.loads(data)
 print(data_json["place"])
 ```
-* validate a JSON
+
+- validate a JSON
+
 ```py
 def validate(j):
     with open(file) as f:
@@ -20,6 +24,7 @@ def validate(j):
 ```
 
 ## Resources
-* Understanding JSON schema - https://json-schema.org/understanding-json-schema/index.html
-* Dummy JSON data - https://jsonplaceholder.typicode.com/
-* JSON formatter - https://jsonformatter.org/
+
+- Understanding JSON schema - https://json-schema.org/understanding-json-schema/index.html
+- Dummy JSON data - https://jsonplaceholder.typicode.com/
+- JSON formatter - https://jsonformatter.org/
