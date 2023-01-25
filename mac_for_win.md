@@ -237,8 +237,9 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - zoom level:
   - 2 fingers wide apart: zoom in
   - 2 fingers close in: zoom out
-- zoom level (works on every App):
-  - hold the `cmd` key pressed, then use 2 fingers together in 1-direction (scroll up/down) to zoom in/out
+- zoom level using modifier key (works on every App):
+  - hold the `cmd` (custom set) key pressed, then use 2 fingers together in 1-direction (scroll up/down) to zoom in/out
+    ![](img/zoom_level_using%20modifier_key.png)
 
 ## Browser (chrome-based)
 
