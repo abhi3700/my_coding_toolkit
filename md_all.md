@@ -31,6 +31,8 @@
 
   > NOTE: give a line break after summary tag
 
+  M-1:
+
   <details>
   <summary><b>View code: </b></summary>
 
@@ -131,11 +133,18 @@ wc -l en_US.twitter.txt
   [![Version](https://img.shields.io/npm/v/@uniswap/v2-core)](https://www.npmjs.com/package/@uniswap/v2-core)
   [![Actions Status](https://github.com/Uniswap/uniswap-v2-core/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-core/actions)
 - Create book with [`mdbook`](https://rust-lang.github.io/mdBook/index.html)
+
   - Installation
+
   ```sh
   cargo install mdbook
   ```
+
   - Create a book
+
   ```sh
   mdbook init
   ```
+
+- Create a mindmap with this [vscode extension](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
+- For Maths equation, refer [this](https://mathpix.com/docs/mathpix-markdown/syntax-reference). E.g. $\sqrt{3x-1}+(1+x)^2$
