@@ -23,6 +23,10 @@ def validate(j):
         print("Valid JSON") # in case json is valid
 ```
 
+## Extensions
+
+View JSON into graphs via [JSON Crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode) on VSCode.
+
 ## Resources
 
 - Understanding JSON schema - https://json-schema.org/understanding-json-schema/index.html
