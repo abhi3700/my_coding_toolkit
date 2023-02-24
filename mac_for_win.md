@@ -256,7 +256,9 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 - [Screenshot YouTube](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk/related?hl=en)
 
-## Terminal
+## Terminal/CLI
+
+> Installation of packages to be done via `brew` (macOS) like `apt` (Linux). And path is installed in `~/.zprofile`, `~/.zshrc`, `~/.z*`
 
 Types:
 
