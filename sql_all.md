@@ -8,8 +8,36 @@ This can be considered as a summary
 
 - In order to run SQL service (as a server), we need to install `mysql` server locally, which is possible via `$ brew install mysql` command on macOS.
 - In order to view database, we need to install a client tool, for which we prefer using
+
   - ✅ VSCode extension: [**Database Client**](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2) (has all types of database support).
-  - ❌ Installing `mysql-client` was a failure in my case, in terms of library linking due to conflicts in name.
+  - ✅ We can use `mysql` CLI command as client tool like list all ports running SQL services like in SQL query syntax:
+
+    ```console
+    ❯ mysql -u root
+    Welcome to the MySQL monitor.  Commands end with ; or \g.
+    Your MySQL connection id is 12
+    Server version: 8.0.32 Homebrew
+
+    Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+    Oracle is a registered trademark of Oracle Corporation and/or its
+    affiliates. Other names may be trademarks of their respective
+    owners.
+
+    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+    mysql> SHOW GLOBAL VARIABLES LIKE 'PORT';
+    +---------------+-------+
+    | Variable_name | Value |
+    +---------------+-------+
+    | port          | 3306  |
+    +---------------+-------+
+    1 row in set (0.02 sec)
+
+    mysql>
+    ```
+
+- ❌ Installing `mysql-client` was a failure in my case, in terms of library linking due to conflicts in name.
 - Whenever, any table is viewed/opened or queried, it is done via the internal shell of `mysql` server, provided the connection is established.
 - The connection is established on CLI via `$ brew services start mysql`
   > If the connection has some issues, then we can check the logs via `$ brew services log mysql` or restart the service via `$ brew services restart mysql`
@@ -129,6 +157,9 @@ This can be considered as a summary
   mysql> \q
   Bye
   ```
+
+- List all the ports running SQL services:
+  ![](img/sql_ports_running.png)
 
 ## Usage
 

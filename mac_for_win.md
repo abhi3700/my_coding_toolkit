@@ -48,6 +48,18 @@ Select [Homebrew](https://brew.sh/) for installing libs, packages, tools on macO
 
 > This is like `apt` (frequently used for Linux).
 
+### Commands
+
+- `$ brew install <package-name>`: install the package
+- `$ brew uninstall <package-name>`: uninstall the package
+- `$ brew update`: update the package list
+- `$ brew list`: list all the packages installed
+- `$ brew list <package-name>`: check for the package if installed
+- `$ brew info <package-name>`: give info about the package
+- `$ brew services start <service-name>`: start services like `mysql`, `redis`, etc.
+- `$ brew services restart <service-name>`: restart services like `mysql`, `redis`, etc.
+- `$ brew services stop <service-name>`: stop services like `mysql`, `redis`, etc.
+
 ## Console
 
 Prefer `zsh` instead of `bash`.
@@ -257,8 +269,6 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - [Screenshot YouTube](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk/related?hl=en)
 
 ## Terminal/CLI
-
-> Installation of packages to be done via `brew` (macOS) like `apt` (Linux). And path is installed in `~/.zprofile`, `~/.zshrc`, `~/.z*`
 
 Types:
 
