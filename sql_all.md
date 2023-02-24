@@ -7,7 +7,9 @@ Learn everything about SQL
 This can be considered as a summary
 
 - In order to run SQL service (as a server), we need to install `mysql` server locally, which is possible via `$ brew install mysql` command on macOS.
-- In order to view database, we need to install a client tool, for which we prefer using VSCode extension: [Database Client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2) (has all types of database support).
+- In order to view database, we need to install a client tool, for which we prefer using
+  - ✅ VSCode extension: [**Database Client**](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2) (has all types of database support).
+  - ❌ Installing `mysql-client` was a failure in my case, in terms of library linking due to conflicts in name.
 - Whenever, any table is viewed/opened or queried, it is done via the internal shell of `mysql` server, provided the connection is established.
 - The connection is established on CLI via `$ brew services start mysql`
   > If the connection has some issues, then we can check the logs via `$ brew services log mysql` or restart the service via `$ brew services restart mysql`
@@ -204,3 +206,12 @@ Now, after running the command `$ brew services start mysql`, the connection is 
 Hence, when table is again opened in a new panel, it shows the following:
 
 ![](img/sql_db_vscode_table_open.png)
+
+## Troubleshooting
+
+### 1. ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+
+- _Cause_: The MySQL server is not running.
+- _Solution_: Just establish a connection via `$ brew services start mysql`
+
+![](img/sql_connection_reestablishment.png)
