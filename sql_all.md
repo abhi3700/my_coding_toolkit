@@ -4,8 +4,9 @@ Learn everything about SQL
 
 ## Overview/Summary
 
-This can be considered as a summary
+This can be considered as a summary.
 
+- In SQL DB, we have columns and rows, where `fields` -> `columns` and `records` -> `rows`.
 - In order to run SQL service (as a server), we need to install `mysql` server locally, which is possible via `$ brew install mysql` command on macOS.
 - In order to view database, we need to install a client tool, for which we prefer using
 

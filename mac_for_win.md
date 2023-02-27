@@ -42,11 +42,13 @@ Processor: ARM/M1
 1. Like in case of windows, format C:\ drive (containing OS) & then install from scratch. Here, just create a new account (also give admin rights) from the existing (Admin) account,
 2. And then switch to the new account created & delete the previous admin account.
 
-## Package Manager
+## Package Manager/Homebrew
 
 Select [Homebrew](https://brew.sh/) for installing libs, packages, tools on macOS.
 
 > This is like `apt` (frequently used for Linux).
+
+After installation, packages are installed into `/usr/local/Cellar/<package>` with binaries, symlinks into `/opt/homebrew/bin`, `/usr/local/bin` and `/usr/local/lib`, etc.
 
 ### Commands
 
@@ -59,6 +61,19 @@ Select [Homebrew](https://brew.sh/) for installing libs, packages, tools on macO
 - `$ brew services start <service-name>`: start services like `mysql`, `redis`, etc.
 - `$ brew services restart <service-name>`: restart services like `mysql`, `redis`, etc.
 - `$ brew services stop <service-name>`: stop services like `mysql`, `redis`, etc.
+- `$ brew services list`: list all the services running (ever started) & their status like this:
+
+  ```console
+  ❯ brew services list                                                                                                                                                               ⏎
+  Name              Status  User     File
+  docker-machine    none
+  mongodb-community started abhi3700 ~/Library/LaunchAgents/homebrew.mxcl.mongodb-community.plist
+  mysql             started abhi3700 ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+  postgresql@11     none
+  postgresql@14     none
+  redis             none
+  unbound           none
+  ```
 
 ## Console
 
