@@ -156,7 +156,7 @@ zainchen.json-2.0.2
 
 ## Packages
 
-> This is for MacOS
+> This is for MacOS. <kbd>**Not updated with Latest**</kbd>, refer to the list.
 
 - [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
 - [x] [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
@@ -450,3 +450,15 @@ How to manage todo inside VSC
 #### Package
 
 - Look at the packages to be installed above.
+
+## Troubleshoot
+
+In case where the terminal font style gets changed (during sync for multiple machines), then do this:
+
+Go to `settings.json` file via <kbd>cmd+shift+p</kbd>/<kbd>ctrl+shift+p</kbd>: `Preferences: Open Settings (JSON)`
+
+just change/**remove** this line:
+
+```json
+    "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+```
