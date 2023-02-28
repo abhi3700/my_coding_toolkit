@@ -48,10 +48,21 @@ Select [Homebrew](https://brew.sh/) for installing libs, packages, tools on macO
 
 > This is like `apt` (frequently used for Linux).
 
-After installation, packages are installed into `/usr/local/Cellar/<package>` with binaries, symlinks into `/opt/homebrew/bin`, `/usr/local/bin` and `/usr/local/lib`, etc.
+`brew` is installed at `/opt/homebrew` on M1, and `/usr/local` on Intel hardwares.
+
+After installation, packages are installed into `/usr/local/Cellar/<package>` with binaries, symlinks into
+
+| Hardware    | M1                                  | Intel                            |
+| ----------- | ----------------------------------- | -------------------------------- |
+| Binary      | `/opt/homebrew/bin`                 | `/usr/local/bin`                 |
+| Library     | `/opt/homebrew/lib`                 | `/usr/local/lib`                 |
+| Log         | `/opt/homebrew/var/log`             | `/usr/local/var/log`             |
+| Data        | `/opt/homebrew/var`                 | `/usr/local/var`                 |
+| Config file | `/opt/homebrew/etc/<filename.conf>` | `/usr/local/etc/<filename.conf>` |
 
 ### Commands
 
+- `$ brew --prefix`: where `brew` is installed.
 - `$ brew install <package-name>`: install the package
 - `$ brew uninstall <package-name>`: uninstall the package
 - `$ brew update`: update the package list
@@ -74,6 +85,8 @@ After installation, packages are installed into `/usr/local/Cellar/<package>` wi
   redis             none
   unbound           none
   ```
+
+- `$ brew doctor --verbose`: check if brew is working fine or not.
 
 ## Console
 
