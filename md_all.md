@@ -148,3 +148,9 @@ wc -l en_US.twitter.txt
 
 - Create a mindmap with this [vscode extension](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
 - For Maths equation, refer [this](https://mathpix.com/docs/mathpix-markdown/syntax-reference). E.g. $\sqrt{3x-1}+(1+x)^2$
+- To show difference in a file, write like this:
+
+```diff
+- altogether
++ together
+```
