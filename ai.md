@@ -13,6 +13,8 @@ The tools are like weapons, they are only as good as the person using them. The 
 
 ## Tools
 
+- [gpt4free](https://github.com/xtekky/gpt4free)
+  - it uses multiple models including chatgpt. And it's for free. There are search engines based on GPT4 for free - phind, you.com, and others.
 - Prompt Community: https://flowgpt.com/
   - learn prompting from the community's prompts.
 - Multiple fields:
