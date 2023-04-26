@@ -32,6 +32,8 @@ In macOS, I can get the list of packages here: `~/.vscode/extensions` in local P
 
 last updated on `17-06-2022`
 
+For remote desktop, I just need to sync after login, then all the extensions would be synced, provided I have "Settings Sync" turned on in my source PC.
+
 <details>
   <summary><b>Expand: </b></summary>
 		
@@ -261,7 +263,8 @@ zainchen.json-2.0.2
 - <kbd>cmd+opt+2</kbd> - 2 screens side by side. In order to have 3 screens, just select one file opened & then press this shortcut key.
 - <kbd>ctrl+g</kbd> - Go to a line
 - <kbd>cmd+shift+f</kbd> - Find all references of a function in entire project files.
-- <kbd>opt+click</kbd> - Go to the file, function, folder directly
+- <kbd>opt+click</kbd> - Go to the file, function (definition), folder directly
+- <kbd>fn+F12</kbd>: Go to the definition of the function or just use the above shortcut key.
 - <kbd>ctrl+w</kbd> - Switch to workspace/window
 - <kbd>cmd+shift+.</kbd> - View a navigation pane for a file
 - <kbd>opt+ 🔼/🔽</kbd> - Keeping the cursor on a line, use this move the line up or down
