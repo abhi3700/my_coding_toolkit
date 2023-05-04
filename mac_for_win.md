@@ -196,7 +196,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - <kbd>cmd+]</kbd>: Go Forward on browser ~ `backspace`
 - <kbd>cmd+F3</kbd>: Show Desktop ~ `win+d`
 - <kbd>cmd+shift+c</kbd>: Go to computer ~ `win+e`
-  > NOTE: It won't work on browser
+  > NOTE: It won't work on browser. Rather it opens the console.
 - <kbd>cmd+tab</kbd>: Go forward in opened applications ~ `alt+tab`
 - <kbd>cmd+shift+tab</kbd>: Go backward in opened applications ~ `alt+shift+tab`
 - <kbd>cmd+shift+n</kbd>: create a new folder at selected directory

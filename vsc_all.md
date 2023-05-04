@@ -251,7 +251,7 @@ zainchen.json-2.0.2
 - <kbd>cmd+,</kbd> - Open preferences (global)
 - <kbd>cmd+k+t</kbd>, <kbd>ctrl+t</kbd> - change the color theme
 - <kbd>cmd+shift+p</kbd> - open the command palette
-- <kbd>cmd+shift+c</kbd> - open the terminal in the directory of the opened file
+- <kbd>cmd+shift+c</kbd> - open the terminal in the directory of root folder (opened)
 - <kbd>ctrl+`</kbd> - toggle the terminal (integrated)
 - <kbd>ctrl+l</kbd> - select multiple lines
 - <kbd>ctrl+shift+l</kbd> - edit multiple lines at a time
