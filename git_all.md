@@ -279,6 +279,10 @@ $ git commit -m "SCs added" -m "
 - ##### `svn update` - Update the repo. by going inside the folder.
 - ##### `git pull` - Update the repo. by going inside the folder.
 - ##### `git submodule add <repo-url.git> <custom-repo-name>` - add submodule
+  ```sh
+  # example
+  ❯ git submodule add https://github.com/abhi3700/rust_apps_todo.git ./pro/todolist_w_mutex_db
+  ```
 - ##### `git-delete-submodule <custom-repo-name>`: delete submodule
   - First, install [`git-extras`](https://github.com/tj/git-extras) - [Installation](https://github.com/tj/git-extras/blob/master/Installation.md)
 - ##### update submodule

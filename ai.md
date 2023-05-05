@@ -21,6 +21,7 @@ The tools are like weapons, they are only as good as the person using them. The 
   ![](img/ai_tools1.png)
 - [Prompt formula with different examples](https://www.linkedin.com/posts/rahulkanotra_chatgpt-activity-7052276853188796416-4vii)
 - For coding in VSCode, use this extension: [AI-Genie](https://github.com/ai-genie/chatgpt-vscode)
+  > Turn on billing in OpenAI website to get this extension working.
 
 ## References
 
