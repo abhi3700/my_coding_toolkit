@@ -22,6 +22,25 @@ The tools are like weapons, they are only as good as the person using them. The 
 - [Prompt formula with different examples](https://www.linkedin.com/posts/rahulkanotra_chatgpt-activity-7052276853188796416-4vii)
 - For coding in VSCode, use this extension: [AI-Genie](https://github.com/ai-genie/chatgpt-vscode)
   > Turn on billing in OpenAI website to get this extension working.
+- Image generator
+  - [Midjourney](https://www.midjourney.com/)
+  - [Hotpot](https://hotpot.ai/)
+
+## Usage
+
+### Coding
+
+- Using the tool `genie` (`chatgpt-vscode`) for getting help for errors in the code. Don't forget to add billing into the OpenAI account.
+- Use Copilot (currently based on Codex model) for generating the code.
+- Use the AI prompt UI like `chat.openai.com` to generate the code based on prompting.
+  > The GUI supports latest model, whereas the VSCode extension supports only chatgpt FREE model.
+
+### Task Management
+
+- Automate **Jira, ClickUp, Shortcut** (or any task management tool) tickets detailing. For instance, you have a title defined, and you want to generate a description for the ticket. You can use the tool (any AI model like ChatGPT) to generate the description.
+  > Give more context to the prompt to get better results.
+
+![](img/task_management_ai.png)
 
 ## References
 
