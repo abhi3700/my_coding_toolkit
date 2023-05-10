@@ -42,6 +42,41 @@ The tools are like weapons, they are only as good as the person using them. The 
 
 ![](img/task_management_ai.png)
 
+<details>
+<summary><b>example prompt: </b></summary>
+
+```txt
+I need your assistance in creating and setting up Task detailing properly for a [project]
+
+project = "A sophisticated TODO app with Blockchain integration"
+
+I will provide you with title
+Please do the following in order to give me accurate detailing:
+
+1. user story description
+2. Analyse the story and break it down to Backend, Frontend(UI), Frontend(Integration), Blockchain subtasks
+3. Then give me their respective subtasks with their detailed descriptions and acceptance criteria
+
+Here, Frontend(Integration) means the API developed in Backend tasks and UI screens built in Frontend(UI)
+
+I need you to provide the detailing in the following order:
+
+The format should be like this
+1. User Story Description
+Subtasks
+1. Backend
+  1.1. Task 1
+      1.1.1. Description and acceptance criteria for each tasks and so on
+1. Frontend(UI)
+      2.1.1. Description and acceptance criteria for each tasks and so on
+2. Frontend(Integration)
+      3.1.1. Description and acceptance criteria for each tasks and so on
+3. Blockchain
+      4.1.1. Description and acceptance criteria for each tasks and so on
+```
+
+</details>
+
 ## References
 
 - [Learn Prompting book](https://learnprompting.org/docs/basics/intro)
