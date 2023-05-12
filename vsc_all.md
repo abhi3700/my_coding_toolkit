@@ -246,6 +246,8 @@ zainchen.json-2.0.2
 
 ### Mac OS
 
+[keyboard-shortcuts-all-macos](./docs/keyboard-shortcuts-macos.pdf)
+
 > First install the [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings), then follow this shortcut keys along with [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/sublime_all.md#shortcut-keys):
 
 - <kbd>cmd+,</kbd> - Open preferences (global)
