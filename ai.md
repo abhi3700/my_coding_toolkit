@@ -25,6 +25,11 @@ The tools are like weapons, they are only as good as the person using them. The 
 - Image generator
   - [Midjourney](https://www.midjourney.com/)
   - [Hotpot](https://hotpot.ai/)
+- Video Summary:
+  - [YT Summary Chrome extension](https://chrome.google.com/webstore/detail/youtube-article-summary-p/nmmicjeknamkfloonkhhcjmomieiodli/related)
+- [ChatGPT for Google](https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf)
+- [OpenAI Toolkit - AI Prompt For Social Media](https://chrome.google.com/webstore/detail/openai-toolkit-ai-prompt/acgbggfkaphffpbcljiibhfipmmpboep/related)
+  ![](img/ai_tools_social.png)
 
 ## Usage
 
@@ -76,6 +81,10 @@ Subtasks
 ```
 
 </details>
+
+## Project Ideas
+
+![](img/ai_project_ideas_1.png)
 
 ## References
 
