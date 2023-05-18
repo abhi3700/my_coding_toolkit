@@ -40,6 +40,60 @@ The tools are like weapons, they are only as good as the person using them. The 
 - Use the AI prompt UI like `chat.openai.com` to generate the code based on prompting.
   > The GUI supports latest model, whereas the VSCode extension supports only chatgpt FREE model.
 
+### Explanation
+
+Use this prompt to understand visually:
+
+```txt
+Can you make the answer with emojis & diagrams?
+```
+
+<details><summary><b>Sample:</b></summary>
+Absolutely, I can try to explain using emojis and diagrams. However, please note that as a text-based AI, my ability to create diagrams is quite limited.
+
+In a Next.js server, when you get multiple API requests, they are like a queue of people (requests) 🚶‍♀️🚶‍♂️🚶‍♀️🚶‍♂️ waiting to be served.
+
+Let's say these people are waiting for two things: a cup of coffee ☕ and a sandwich 🥪. These are like two different API endpoints.
+
+In a normal scenario without concurrency, this would be like serving each person one by one:
+
+1. Serve coffee ☕ to the first person 🚶‍♀️
+2. Serve sandwich 🥪 to the first person 🚶‍♀️
+3. Only then move to the second person 🚶‍♂️
+
+In this scenario, every other person has to wait until the person in front of them gets both their coffee and sandwich.
+
+With concurrency, this process changes. You start making coffee and sandwiches for everyone at the same time:
+
+1. Start making coffee ☕ for the first person 🚶‍♀️
+2. Without waiting for the coffee to finish, start making a sandwich 🥪 for the first person 🚶‍♀️
+3. Without waiting for the first person's coffee or sandwich to finish, start making coffee for the second person 🚶‍♂️
+4. Continue this process for everyone in the line.
+
+In code, this would look something like this:
+
+```javascript
+const requests = urls.map((url) => fetch(url)); // Start making coffee ☕ and sandwiches 🥪 for everyone
+
+try {
+  const responses = await Promise.all(requests); // Wait for everything to finish
+
+  const data = await Promise.all(
+    responses.map((response) => response.json()) // Convert everything to a format we can serve (like putting the coffee in cups and the sandwiches on plates)
+  );
+
+  res.status(200).json(data); // Serve everything
+} catch (error) {
+  res.status(500).json({ error: "Something went wrong" }); // If anything goes wrong, let the user know
+}
+```
+
+Please note, the maximum number of people (requests) you can serve at once depends on how many baristas (server resources) you have. If you have more people than your baristas can handle, you might need more baristas (upgraded hardware, more servers, etc.).
+
+I hope this helps! Let me know if you have any other questions.
+
+</details>
+
 ### Task Management
 
 - Automate **Jira, ClickUp, Shortcut** (or any task management tool) tickets detailing. For instance, you have a title defined, and you want to generate a description for the ticket. You can use the tool (any AI model like ChatGPT) to generate the description.
