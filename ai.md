@@ -25,11 +25,16 @@ The tools are like weapons, they are only as good as the person using them. The 
 - Image generator
   - [Midjourney](https://www.midjourney.com/)
   - [Hotpot](https://hotpot.ai/)
-- Video Summary:
-  - [YT Summary Chrome extension](https://chrome.google.com/webstore/detail/youtube-article-summary-p/nmmicjeknamkfloonkhhcjmomieiodli/related)
-- [ChatGPT for Google](https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf)
+  - [Photoleap](https://www.photoleapapp.com/)
+- Video generator
 - [OpenAI Toolkit - AI Prompt For Social Media](https://chrome.google.com/webstore/detail/openai-toolkit-ai-prompt/acgbggfkaphffpbcljiibhfipmmpboep/related)
   ![](img/ai_tools_social.png)
+- Browser (Chrome) extensions:
+  - [Monica — Your AI Copilot powered by GPT-4](https://chrome.google.com/webstore/detail/monica-%E2%80%94-your-ai-copilot/ofpnmcalabcbjgholdjcjblkibolbppb)
+    - Includes summarizing the article, selected word, YT video, etc.
+  - [ChatGPT for Google](https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf)
+    - Allows you to add `?` to the search query to get the answer from the GPT.
+  - [YT Summary Chrome extension](https://chrome.google.com/webstore/detail/youtube-article-summary-p/nmmicjeknamkfloonkhhcjmomieiodli/related)
 
 ## Usage
 
@@ -41,6 +46,8 @@ The tools are like weapons, they are only as good as the person using them. The 
   > The GUI supports latest model, whereas the VSCode extension supports only chatgpt FREE model.
 
 ### Explanation
+
+Areas including interview preparation, creating notes for the concepts, courses, content generation.
 
 Use this prompt to understand visually:
 
