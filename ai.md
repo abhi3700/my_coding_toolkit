@@ -143,3 +143,4 @@ Subtasks
 ## References
 
 - [Learn Prompting book](https://learnprompting.org/docs/basics/intro)
+- [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
