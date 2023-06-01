@@ -147,6 +147,10 @@ Subtasks
 
 ![](img/ai_project_ideas_1.png)
 
+## Repositories
+
+- Auto-generate impressive commits with AI in 1 second: https://github.com/di-sukharev/opencommit
+
 ## References
 
 - [Learn Prompting book](https://learnprompting.org/docs/basics/intro)
