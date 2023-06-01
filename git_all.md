@@ -470,6 +470,9 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
   - `git stash`: Discard all local changes, but save them for possible re-use later
   - `git checkout -- <filename-with-path>`: Discarding local changes (permanently) to a file
   - `git reset --hard`: Discard all local changes to all files permanently
+- `git stash list`: Shows all the stashes
+- `git stash apply`: Apply the most recent stash
+- `git stash apply stash@{2}`: Apply the 2nd indexed stash (starts from 0).
 - ##### Release
   - `git tag <version e.g v0.1>`: versioning corresponding to a commit
   - `git tag <version-number> -m <title> -m <description>`: give message title or both title & description.
