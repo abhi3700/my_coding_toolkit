@@ -150,6 +150,8 @@ Subtasks
 ## Repositories
 
 - Auto-generate impressive commits with AI in 1 second: https://github.com/di-sukharev/opencommit
+- Langchain using Python: [Documentation](https://python.langchain.com/en/latest/index.html)
+- LLM-chain using Rust: [Documentation](https://docs.llm-chain.xyz/), [Github](https://github.com/sobelio/llm-chain)
 
 ## References
 
