@@ -1,3 +1,11 @@
+---
+title: Everything About Markdown
+author: Abhijit Roy
+preferred_vscode_theme: Light (Visual Studio C++)
+---
+
+# Markdown
+
 ## Tool
 
 - [Just the docs](https://pmarsceill.github.io/just-the-docs/)
@@ -5,16 +13,12 @@
 
 ## GitHub Repo
 
-- Markdown Extended Higlighting - https://github.com/jonschlinkert/sublime-markdown-extended
-- Markdown TOC - https://github.com/naokazuterada/MarkdownTOC
-
 ## NOTES
 
-- One can try editing a file on **Github** or **Sublime Text 3** enabling this above extensions.
-- Always use indentation using tabs, NOT spaces.
+- Editor: VSCode (preferred)
 - Indentation size can be 2, 3, 4..anything. [2 recommended]
 
-## Shortcuts
+## Syntax
 
 - **Bold** - Bold
 - _italic_ - Italics
@@ -150,7 +154,7 @@ wc -l en_US.twitter.txt
 - For Maths equation, refer [this](https://mathpix.com/docs/mathpix-markdown/syntax-reference). E.g. $\sqrt{3x-1}+(1+x)^2$
 - To show difference in a file, write like this:
 
-```diff
-- altogether
-+ together
-```
+  ```diff
+  - altogether
+  + together
+  ```
