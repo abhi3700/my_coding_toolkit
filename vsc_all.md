@@ -277,8 +277,9 @@ zainchen.json-2.0.2
 - <kbd>cmd+shift+e</kbd> - show the active file in the explorer
 - <kbd>cmd+k</kbd>, <kbd>s</kbd> - Here, save file without formatting. Normally, if the formatter is enabled for the file extension type in the VSCode Settings, then when doing <kbd>cmd+s</kbd>, the file is saved with formatting automatically.
 - Open sub-folder in new window using this [package](https://marketplace.visualstudio.com/items?itemName=chrisdias.vscode-opennewinstance)
-- <kbd>cmd+opt+=</kbd>: zoom-in
-- <kbd>cmd+opt+-</kbd>: zoom-out
+- <kbd>cmd+=</kbd>: zoom-in
+- <kbd>cmd+-</kbd>: zoom-out
+- <kbd>cmd+shift+d</kbd>: duplicate the current line (cursor at)
 
 ### Win OS
 
