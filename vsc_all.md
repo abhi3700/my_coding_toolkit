@@ -280,6 +280,7 @@ zainchen.json-2.0.2
 - <kbd>cmd+=</kbd>: zoom-in
 - <kbd>cmd+-</kbd>: zoom-out
 - <kbd>cmd+shift+d</kbd>: duplicate the current line (cursor at)
+- <kbd>cmd+g</kbd> on terminal: Just use this shortcut key on terminal tab selected in VSCode editor. This would open the directory used in the past in VSCode editor.
 
 ### Win OS
 
