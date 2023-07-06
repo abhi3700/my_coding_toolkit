@@ -14,7 +14,7 @@ macOS (M1)
 
 > NOTE: In macOS, to open a repo on `Fork` App, just open in terminal & type `$ fork` & then <kbd>Enter</kbd>.
 
-## Multiple Github Accounts
+## Setup multiple Github Accounts locally
 
 This is about how to manage multiple github accounts on same device.
 
@@ -195,6 +195,15 @@ $ git clone git@github.com-seedify:Seedifyfund/Launchpad-smart-contract.git
 ```
 
 > This change is made depending on the host name defined in the SSH config. The string between @ and : should match what we have given in the SSH config file.
+
+## Github Personal Access Token (PAT)
+
+Github PATs are different than SSH keys.
+
+- The former is generated from the Github account settings whereas the latter is generated from the local machine & the public key is copied to the Github SSH key settings & a name is created.
+- PATs give independent authority w.r.t a repository unlike SSH keys which allow access to all the repositories of a Github account to clone & push to/from local machine.
+
+[Here](#remote-rejected-main---main-refusing-to-allow-a-personal-access-token-to-create-or-update-workflow-githubworkflowscheckyml-without-workflow-scope) is a guideline in case if stucked like while pushing workflows commit to Github repo from local machine.
 
 ## Commands
 
@@ -488,35 +497,37 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 - ##### list all the branches (remote)
   - `git branch -a`
 - ##### make a directory in private repo as public
+
   - just assign the folder as submodule & link a github url to it.
   - Follow this procedure [Source](https://stackoverflow.com/a/57481704/6774636)
+
     - step-1
 
-```console
-cd /path/to/cloned/original/repo
-git rm -r src/
-git commit -m "Remove src"
-git submodule add https://github.com/you/newSrcRepo src
-```
+      ```console
+      cd /path/to/cloned/original/repo
+      git rm -r src/
+      git commit -m "Remove src"
+      git submodule add https://github.com/you/newSrcRepo src
+      ```
 
-    	+ step-2
+    - step-2
 
-```console
-cd /path/to/cloned/original/repo
-cd src
-# work in src
-git add .
-git commit -m "new src modifications"
-git push
-```
+      ```console
+      cd /path/to/cloned/original/repo
+      cd src
+      # work in src
+      git add .
+      git commit -m "new src modifications"
+      git push
+      ```
 
-    	+ step-3
+    - step-3
 
-```console
-cd ..
-git add .
-git commit -m "src new state"
-```
+      ```console
+      cd ..
+      git add .
+      git commit -m "src new state"
+      ```
 
 - #### Credentials
   - ##### Set
@@ -741,22 +752,35 @@ And then push the changes to Github. It will run successfully.
 
 ## Troubleshoot
 
-- `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
-- If you are using Windows and you are stuck with any Git permission issues, make sure your (local) repository's .git folder contents are not marked as hidden.
+- In case of Windows OS, `git` may not work properly on `bash-cmd` in directory of **removable disk**. So, use `git-bash` to use the bash commands.
+- If you are using Windows OS and you are stuck with any Git permission issues, make sure your (local) repository's `.git` folder contents are not marked as hidden.
+  > You can however hide the directory itself, just not it's contents (files, subdirectories).
 
-  You can however hide the directory itself, just not it's contents (files, subdirectories).
+### 1. SSL Certificate Error:
 
-- SSL Certificate Error:
-  ```console
-  ...
-  ...
-  server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
-  ```
-  - Solution:
-  ```console
-  $ git config --global http.sslverify false
-  $ export GIT_SSL_NO_VERIFY=true
-  ```
+```console
+...
+...
+server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+```
+
+- _Solution_:
+
+```console
+$ git config --global http.sslverify false
+$ export GIT_SSL_NO_VERIFY=true
+```
+
+### ![remote rejected] main -> main (refusing to allow a Personal Access Token to create or update workflow .github/workflows/check.yml without workflow scope)
+
+- _Cause_: This comes when the commit contains the workflow (`.github/*.yaml`) changes. The reason is the repository is cloned using classic `git clone <repo-url>` command. This command does not clone the workflows.
+- _Solution_: In order to clone the workflows & further modify in future (only if you are admin of repo or have PAT generation authority), use this command: `git clone https://<PAT>@github.com/<account>/<repo-name>.git`. E.g. `$ git remote add origin https://ghp_hpacKW1ZAofkaFvf1tzd4yYv@github.com/abhi3700/substrate-playground.git`
+
+  > NOTE: The PAT should have `workflow` scope ticked (one can tick all options as well) during generation.
+
+  Follow these steps to generate PAT: "Settings" >> "Developer settings" >> "Personal access tokens (classic)" >> "Generate new token (classic)" >> "Select required scopes" (repo, workflows, etc.) >> "Generate token" >> Copy the token.
+
+  ![](img/pat_workflow.png)
 
 ## [Git for Server](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Server)
 
