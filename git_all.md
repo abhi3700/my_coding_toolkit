@@ -526,7 +526,7 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
       ```console
       cd ..
       git add .
-      git commit -m "src new state"
+      git commit -m "src added as submodule"
       ```
 
 - #### Credentials
