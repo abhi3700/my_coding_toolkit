@@ -143,6 +143,16 @@ Subtasks
 
 </details>
 
+### Learning
+
+Rather than reading the whole developer documentation, you can use this AI prompt to get the answer for your question. First try to make the chat session refer to the documentation & use it as reference.
+
+```txt
+For this chat session, please use this [domain] to learn about [topic] from the documentation
+topic = "Learn how to code in cairo language"
+domain = "https://cairo-book.github.io/"
+```
+
 ## Project Ideas
 
 ![](img/ai_project_ideas_1.png)
@@ -161,3 +171,7 @@ Subtasks
 - [Learn Prompting book](https://learnprompting.org/docs/basics/intro)
 - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 - https://www.freecodecamp.org/news/langchain-how-to-create-custom-knowledge-chatbots/amp/
+
+```
+
+```
