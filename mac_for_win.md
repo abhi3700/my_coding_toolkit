@@ -253,6 +253,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
   - <kbd>cmd+opt+n</kbd>: show/hide folders
 - **Freeform**: whiteboard app like Miro [FREE for macOS]
 - **Miro**: Architecture, Mind Map, Whiteboard [PAID]
+- **Draw.io**: Architecture, Mind Map, Whiteboard [FREE]
 - **Visual Studio Code (VSC)**:
 - **Virtual Machine (VM)**: For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
   - GUI (UTM)
@@ -362,6 +363,40 @@ Kill the process running on a port via PID:
 ```
 ❯ sudo kill -9 <PID>
 ```
+
+---
+
+How to convert from hex to decimal & vice-versa:
+
+```sh
+h2d(){
+  echo "ibase=16; $@"|bc
+}
+d2h(){
+  echo "obase=16; $@"|bc
+}
+o2d(){
+  echo "ibase=8; $@"|bc
+}
+d2o(){
+  echo "obase=8; $@"|bc
+}
+b2d(){
+  echo "ibase=2; $@"|bc
+}
+d2b(){
+  echo "obase=2; $@"|bc
+}
+```
+
+Example:
+
+```sh
+❯ h2d 0x1f
+31
+```
+
+Just add this to `~/.zprofile` (if using `zsh`). Then, run `source ~/.zprofile` to reflect the changes.
 
 ### Shortcut keys
 
