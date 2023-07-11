@@ -299,6 +299,29 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 ## Terminal/CLI
 
+### Shortcut keys
+
+- <kbd>ctrl+l</kbd>: clear the console
+- <kbd>cmd+l</kbd>: clear console by 1 command
+- <kbd>cmd+w</kbd>: close the current terminal
+- <kbd>cmd+t</kbd>: open a new tab at the current directory
+- <kbd>ctrl+w</kbd>: backspace word by word
+- <kbd>ctrl+q</kbd>: clear the entire command/sentence
+
+### Commands
+
+- `$ open .`: open the Finder in the directory
+- Run `.sh` file: `sh /path/to/file/with/extension`
+- `$ which <command>`: gives the location of the command file
+- open any application from terminal: `$ open -a <executable_dir>` E.g. `open -a /Applications/Visual\ Studio\ Code.app`
+- `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
+- `$ env`: all the global variables. can be used like this `$ echo $NVM_DIR` -> `/Users/abhi3700/.nvm`
+- `$ lsof -i:<PORT_NO>`: Check if a port is open. E.g. `lsof -i:3000`
+- `$ kill <PID>`: kill a process running on a port: E.g. `kill 4534`
+- `open -n -a Terminal <path>`: open a new terminal window at the given path (optional).
+
+---
+
 Types:
 
 `bash`
@@ -397,26 +420,6 @@ Example:
 ```
 
 Just add this to `~/.zprofile` (if using `zsh`). Then, run `source ~/.zprofile` to reflect the changes.
-
-### Shortcut keys
-
-- <kbd>ctrl+l</kbd>: clear the console
-- <kbd>cmd+l</kbd>: clear console by 1 command
-- <kbd>cmd+w</kbd>: close the current terminal
-- <kbd>cmd+t</kbd>: open a new tab at the current directory
-- <kbd>ctrl+w</kbd>: backspace word by word
-- <kbd>ctrl+q</kbd>: clear the entire command/sentence
-
-### Commands
-
-- `$ open .`: open the Finder in the directory
-- Run `.sh` file: `sh /path/to/file/with/extension`
-- `$ which <command>`: gives the location of the command file
-- open any application from terminal: `$ open -a <executable_dir>` E.g. `open -a /Applications/Visual\ Studio\ Code.app`
-- `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
-- `$ env`: all the global variables. can be used like this `$ echo $NVM_DIR` -> `/Users/abhi3700/.nvm`
-- `$ lsof -i:<PORT_NO>`: Check if a port is open. E.g. `lsof -i:3000`
-- `$ kill <PID>`: kill a process running on a port: E.g. `kill 4534`
 
 ### PATH
 
