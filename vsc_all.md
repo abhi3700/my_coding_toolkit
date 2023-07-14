@@ -281,6 +281,8 @@ zainchen.json-2.0.2
 - <kbd>cmd+-</kbd>: zoom-out
 - <kbd>cmd+shift+d</kbd>: duplicate the current line (cursor at)
 - <kbd>cmd+g</kbd> on terminal: Just use this shortcut key on terminal tab selected in VSCode editor. This would open the directory used in the past in VSCode editor.
+- <kbd>cmd+shift+k</kbd> - delete the line cursor is at
+- <kbd>cmd+k</kbd> (2 times) - delete the line cursor is at
 
 ### Win OS
 
@@ -289,9 +291,9 @@ zainchen.json-2.0.2
 - <kbd>ctrl+k+t</kbd>, <kbd>ctrl+t</kbd> - change the color theme
 - <kbd>ctrl+shift+p</kbd> - open the command palette
 - <kbd>ctrl+`</kbd> - toggle the terminal
-- <kbd>ctrl+k,f</kbd - close the opened folder
-- <kbd>ctrl+k+b</kbd - toggle the explorer
-- <kbd>ctrl+shift+k</kbd - delete the line cursor is at
+- <kbd>ctrl+k,f</kbd> - close the opened folder
+- <kbd>ctrl+k+b</kbd> - toggle the explorer
+- <kbd>ctrl+shift+k</kbd> - delete the line cursor is at
 - press <kbd>ctrl</kbd> & hold - Edit multiple lines at different line no. simultaneously.
 
 ## Preferences
