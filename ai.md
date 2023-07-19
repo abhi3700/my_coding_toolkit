@@ -36,6 +36,8 @@ The tools are like weapons, they are only as good as the person using them. The 
     - Allows you to add `?` to the search query to get the answer from the GPT.
   - [YT Summary Chrome extension](https://chrome.google.com/webstore/detail/youtube-article-summary-p/nmmicjeknamkfloonkhhcjmomieiodli/related)
 
+![](img/ai_tools.jpeg)
+
 ## Usage
 
 ### Coding
