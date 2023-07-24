@@ -292,8 +292,8 @@ $ git commit -m "SCs added" -m "
   # example
   ❯ git submodule add https://github.com/abhi3700/rust_apps_todo.git ./pro/todolist_w_mutex_db
   ```
-- ##### `git-delete-submodule <custom-repo-name>`: delete submodule
-  - First, install [`git-extras`](https://github.com/tj/git-extras) - [Installation](https://github.com/tj/git-extras/blob/master/Installation.md)
+- ##### `❯ git rm <path/to/submodule> -f` - remove submodule with deleting the submodule folder from the repo
+- ##### `❯ git rm <path/to/submodule> --cached` - remove submodule with keeping the submodule folder as is in the repo
 - ##### update submodule
   - `$ cd <custom-submodule-repo-name>`
   - `$ git pull`
