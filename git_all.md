@@ -785,7 +785,7 @@ $ export GIT_SSL_NO_VERIFY=true
 ### 3. Failed to get copilot token due to 401 status. Please sign out and try again. GitHub Copilot could not connect to server. Extension activation failed: "Your GitHub token is invalid. Please sign out from your GitHub account using VSCode UI and try again."
 
 - _Cause_: The github password was changed recently.
-- *Solution*: Just need to sign out from VSCode and sign in again like this:
+- _Solution_: Just need to sign out from VSCode and sign in again like this:
   ![](img/github_relogin.png)
 
 ### Invalid Username or Password
