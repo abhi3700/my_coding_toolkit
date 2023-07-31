@@ -771,7 +771,7 @@ $ git config --global http.sslverify false
 $ export GIT_SSL_NO_VERIFY=true
 ```
 
-### ![remote rejected] main -> main (refusing to allow a Personal Access Token to create or update workflow .github/workflows/check.yml without workflow scope)
+### 2. ![remote rejected] main -> main (refusing to allow a Personal Access Token to create or update workflow .github/workflows/check.yml without workflow scope)
 
 - _Cause_: This comes when the commit contains the workflow (`.github/*.yaml`) changes. The reason is the repository is cloned using classic `git clone <repo-url>` command. This command does not clone the workflows.
 - _Solution_: In order to clone the workflows & further modify in future (only if you are admin of repo or have PAT generation authority), use this command: `git clone https://<PAT>@github.com/<account>/<repo-name>.git`. E.g. `$ git remote add origin https://ghp_hpacKW1ZAofkaFvf1tzd4yYv@github.com/abhi3700/substrate-playground.git`
@@ -781,6 +781,18 @@ $ export GIT_SSL_NO_VERIFY=true
   Follow these steps to generate PAT: "Settings" >> "Developer settings" >> "Personal access tokens (classic)" >> "Generate new token (classic)" >> "Select required scopes" (repo, workflows, etc.) >> "Generate token" >> Copy the token.
 
   ![](img/pat_workflow.png)
+
+### 3. Failed to get copilot token due to 401 status. Please sign out and try again. GitHub Copilot could not connect to server. Extension activation failed: "Your GitHub token is invalid. Please sign out from your GitHub account using VSCode UI and try again."
+
+- _Cause_: The github password was changed recently.
+- *Solution*: Just need to sign out from VSCode and sign in again like this:
+  ![](img/github_relogin.png)
+
+### Invalid Username or Password
+
+- _Cause_: The github password was changed recently.
+- _Solution_: Just need to sign out from VSCode and sign in again like this:
+  ![](img/github_relogin.png)
 
 ## [Git for Server](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Server)
 
