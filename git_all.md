@@ -278,7 +278,6 @@ $ git commit -m "SCs added" -m "
   E.g. - `git clone -b v1.x --single-branch https://github.com/gabime/spdlog.git` [git v1.7.10 and later]
 - ##### `git clone <repo-url> --recurse-submodules` - clone a repo including all submodules.
 - ##### `git clone <repo-url>` >> `git reset --hard <sha-1_commit>` - clone a specific commit of a repo.
-- ##### `git submodule update --init` - pull submodules after cloning the parent repo
 - ##### `svn checkout <repo-url>` - clone a github repo.
 - ##### `svn checkout <repo-url> <custom-name>` - clone a github repo with a custom local name.
 - ##### `svn checkout <modified-repo-url> <custom-name-optional>`
@@ -292,6 +291,8 @@ $ git commit -m "SCs added" -m "
   # example
   ❯ git submodule add https://github.com/abhi3700/rust_apps_todo.git ./pro/todolist_w_mutex_db
   ```
+- ##### `git submodule update --init` - pull submodules after cloning the parent repo
+- ##### `git submodule update --remote` - sync with submodules' recent commit with the parent repo
 - ##### `❯ git rm <path/to/submodule> -f` - remove submodule with deleting the submodule folder from the repo
 - ##### `❯ git rm <path/to/submodule> --cached` - remove submodule with keeping the submodule folder as is in the repo
 - ##### update submodule
