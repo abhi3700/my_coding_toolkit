@@ -160,9 +160,20 @@ zainchen.json-2.0.2
 
 > This is for MacOS. <kbd>**Not updated with Latest**</kbd>, refer to the list.
 
-- [x] [Atom One Light theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
-- [x] [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
-- [x] [autoDocstring - Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+---
+
+| Category   | Package                                    | URL                                                                                         |
+| ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| **env**    | Dotenv (Stripped)                          | https://marketplace.visualstudio.com/items?itemName=socheatsok78-lab.dotenv-vscode-stripped |
+| **theme**  | Atom One Light theme                       | https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight            |
+| **theme**  | Atom One Dark Theme                        | https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark             |
+| **python** | autoDocstring - Python Docstring Generator | https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring                 |
+| **rust**   | Rust analyzer                              | https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer                 |
+
+TODO: [`TO BE UPDATED`]
+
+---
+
 - [x] [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 - [x] [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
 - [x] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
