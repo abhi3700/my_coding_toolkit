@@ -291,19 +291,30 @@ $ git commit -m "SCs added" -m "
   # example
   ❯ git submodule add https://github.com/abhi3700/rust_apps_todo.git ./pro/todolist_w_mutex_db
   ```
-- ##### `git submodule update --init` - pull submodules after cloning the parent repo
-- ##### `git submodule update --remote` - sync with submodules' recent commit with the parent repo
+- ##### Follow these steps:
+  - M-1
+    - `$ git submodule set-url <repo-url.git> <folder>`: change the submodule url
+    - `$ git submodule sync`: to synchronize the changes with the superproject and your working copy.
+    - `$ git submodule update --init --recursive`: to update the submodule from the new URL.
+  - M-2
+    - Open the `.gitmodules` file in the root of your repository and locate the submodule you want to update.
+    - Modify the `url` value for the submodule to the new URL.
+    - Save and close the `.gitmodules` file.
+    - `$ git submodule sync`: to synchronize the changes with the superproject and your working copy.
+    - `$ git submodule update --init --recursive`: to update the submodule from the new URL.
+- ##### `git submodule update --init --recursive` - pull submodules after cloning the parent repo
+- ##### `git submodule sync` - sync with submodules' recent commit with the parent repo
 - ##### `❯ git rm <path/to/submodule> -f` - remove submodule with deleting the submodule folder from the repo
 - ##### `❯ git rm <path/to/submodule> --cached` - remove submodule with keeping the submodule folder as is in the repo
 - ##### update submodule
   - `$ cd <custom-submodule-repo-name>`
   - `$ git pull`
 - ##### `git submodule status` - check submodule status inside the parent repo.
+- ##### `git submodule update` - update the submodule after cloning any git repo.
 - ##### `git status` - check the status of files, folders changed.
 - ##### `git status .` - check within the current (in terminal) directory.
 - ##### `git status ./` - check in the root directory of git repository.
 - ##### `git status ./macro_enabled_logbooks/UNT02_Ch_A_QC_LOG_BOOK/` - check in the specific sub-folder relative to the repo's root.
-- ##### `git submodule update` - update the submodule after cloning any git repo.
 - ##### `git branch` - list the local branches. `*` shows the currently active branch.
 - ##### `git branch -r` - list the remote branches.
 - ##### `git branch -a` - list the local & remote branches present locally. `*` shows the currently active branch.
