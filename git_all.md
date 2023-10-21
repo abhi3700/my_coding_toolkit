@@ -251,9 +251,9 @@ $ git commit -m "SCs added" -m "
 
 ```
 
-- ##### `git push origin <branch-name>` - pushing the added commit (locally) to the remote url (respective branch).
-  E.g. `git push origin master` - pushing the commits in the local master branch to the remote master branch.
-- ##### `git pull origin master` - pulling the Master branch of the repo.
+- ##### `$ git push origin <branch-name>` - pushing the added commit (locally) to the remote url (respective branch).
+  E.g. `$ git push origin master` - pushing the commits in the local master branch to the remote master branch.
+- ##### `$ git pull origin master` - pulling the Master branch of the repo.
 - ##### Add a remote url to a git repo.
 
   ```console
@@ -271,22 +271,22 @@ $ git commit -m "SCs added" -m "
   $ git remote add some-server https://someserver/some/path.git`
   $ git remote add other-server https://otherserver/some/path.git`
   ```
-- ##### `git remote -v` - verify the url of the repo.
-- ##### `git clone <repo-url>` - clone a github repository from link like - https://github.com/EOSIO/eosio.cdt
-- ##### `git clone <repo-url> <your-repo-name>` - clone a github repository with a custom name.
-- ##### `git clone -b <branch> <remote_repo>` - clone a specific branch (only) of github repo.
+- ##### `$ git remote -v` - verify the url of the repo.
+- ##### `$ git clone <repo-url>` - clone a github repository from link like - https://github.com/EOSIO/eosio.cdt
+- ##### `$ git clone <repo-url> <your-repo-name>` - clone a github repository with a custom name.
+- ##### `$ git clone -b <branch> <remote_repo>` - clone a specific branch (only) of github repo.
   E.g. - `git clone -b v1.x --single-branch https://github.com/gabime/spdlog.git` [git v1.7.10 and later]
-- ##### `git clone <repo-url> --recurse-submodules` - clone a repo including all submodules.
-- ##### `git clone <repo-url>` >> `git reset --hard <sha-1_commit>` - clone a specific commit of a repo.
-- ##### `svn checkout <repo-url>` - clone a github repo.
-- ##### `svn checkout <repo-url> <custom-name>` - clone a github repo with a custom local name.
-- ##### `svn checkout <modified-repo-url> <custom-name-optional>`
+- ##### `$ git clone <repo-url> --recurse-submodules` - clone a repo including all submodules.
+- ##### `$ git clone <repo-url>` >> `git reset --hard <sha-1_commit>` - clone a specific commit of a repo.
+- ##### `$ svn checkout <repo-url>` - clone a github repo.
+- ##### `$ svn checkout <repo-url> <custom-name>` - clone a github repo with a custom local name.
+- ##### `$ svn checkout <modified-repo-url> <custom-name-optional>`
   clone a folder from github repo. Original repo-url - `https://github.com/EOSIO/eosio.cdt`
   - Master branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/trunk/libraries`
   - other branch: modified-repo-url --> `https://github.com/EOSIO/eosio.cdt/branches/develop/libraries`
-- ##### `svn update` - Update the repo. by going inside the folder.
-- ##### `git pull` - Update the repo. by going inside the folder.
-- ##### `git submodule add <repo-url.git> <custom-repo-name>` - add submodule
+- ##### `$ svn update` - Update the repo. by going inside the folder.
+- ##### `$ git pull` - Update the repo. by going inside the folder.
+- ##### `$ git submodule add <repo-url.git> <custom-repo-name>` - add submodule
   ```sh
   # example
   ❯ git submodule add https://github.com/abhi3700/rust_apps_todo.git ./pro/todolist_w_mutex_db
@@ -302,16 +302,37 @@ $ git commit -m "SCs added" -m "
     - Save and close the `.gitmodules` file.
     - `$ git submodule sync`: to synchronize the changes with the superproject and your working copy.
     - `$ git submodule update --init --recursive`: to update the submodule from the new URL.
-- ##### `git submodule update --init --recursive` - pull submodules after cloning the parent repo
-- ##### `git submodule sync` - sync with submodules' recent commit with the parent repo
-- ##### `❯ git rm <path/to/submodule> -f` - remove submodule with deleting the submodule folder from the repo
-- ##### `❯ git rm <path/to/submodule> --cached` - remove submodule with keeping the submodule folder as is in the repo
+- ##### `$ git submodule update --init --recursive` - pull submodules after cloning the parent repo
+- ##### `$ git submodule sync` - sync with submodules' recent commit with the parent repo
+- ##### `$ git rm <path/to/submodule> -f` - remove submodule with deleting the submodule folder from the repo
+- ##### `$ git rm <path/to/submodule> --cached` - remove submodule with keeping the submodule folder as is in the repo
 - ##### update submodule
   - `$ cd <custom-submodule-repo-name>`
   - `$ git pull`
-- ##### `git submodule status` - check submodule status inside the parent repo.
-- ##### `git submodule update` - update the submodule after cloning any git repo.
-- ##### `git status` - check the status of files, folders changed.
+- ##### `$ git submodule status` - check submodule status inside the parent repo.
+- ##### `$ git submodule update` - update the submodule after cloning any git repo.
+- ##### submodule remove (Valid for NEW and pre-existing)
+
+  1. Edit `.git/config` file and remove the submodule section.
+  2. Edit `.gitmodules` file and remove the entry for the submodule.
+  3. Unstage and Remove the Submodule path: <br/>
+     `$ git rm --cached path_to_submodule` <br/>
+     `$ rm -rf .git/modules/path_to_submodule`
+
+  4. Delete the submodule directory from your working. <br/>
+     `$ rm -rf <path/to/submodule>`
+  5. Unstage and Remove the `.gitmodules` (if there are no more submodules) <br/>
+     `$ git rm --cached .gitmodules` <br/>
+     `$ rm -rf .gitmodules` <br/>
+  6. Commit changes (if there is any other change) <br/>
+     `$ git commit -m "Removed submodule <name>"`
+  7. Push the commit <br/>
+     `$ git push origin <branch>`
+
+- ##### `$ git submodule deinit` - deregister the submodule from tracking by the git repo.
+  > Preserve Submodule Data: The deinit command will preserve the submodule data in the .git/modules directory, so you won't lose the submodule's repository history. This is helpful if you want to reinitialize the submodule at a later time. If you want to delete the submodule working directory, then you have to `rm -rf .git/modules/<path_to_submodule>`
+- ##### `$ git submodule init <path_to_submodule>` - initialize the submodule as in from the already preserved submodule data in the .git/modules directory.
+- ##### `$ git status` - check the status of files, folders changed.
 - ##### `git status .` - check within the current (in terminal) directory.
 - ##### `git status ./` - check in the root directory of git repository.
 - ##### `git status ./macro_enabled_logbooks/UNT02_Ch_A_QC_LOG_BOOK/` - check in the specific sub-folder relative to the repo's root.
@@ -323,9 +344,9 @@ $ git commit -m "SCs added" -m "
   $ git remote
   origin
   ```
-- ##### `git branch -d -r origin/develop-2324`: delete remote branch locally
-- ##### `git log` - logs all the commits. Press <kbd>down arrow</kbd> to scroll down. Type <kbd>q</kbd> to exit out of **END** display in the terminal.
-- ##### `git log -1` - read the last commit without filename(s)
+- ##### `$ git branch -d -r origin/develop-2324`: delete remote branch locally
+- ##### `$ git log` - logs all the commits. Press <kbd>down arrow</kbd> to scroll down. Type <kbd>q</kbd> to exit out of **END** display in the terminal.
+- ##### `$ git log -1` - read the last commit without filename(s)
 
   ```console
   commit 4912c943d82c68b2013df1c3038bc84585f28995 (HEAD -> master, origin/master, origin/HEAD)
@@ -336,7 +357,7 @@ $ git commit -m "SCs added" -m "
 
   ```
 
-- ##### `git log -1 --pretty=%B` - read the last commit (only message)
+- ##### `$ git log -1 --pretty=%B` - read the last commit (only message)
 
   ```console
   readying bash script file
@@ -344,16 +365,16 @@ $ git commit -m "SCs added" -m "
 
   ```
 
-- ##### `git log --pretty=format:'%h' -n 1` - read the last commit hash (shortened, for long use `%H`)
+- ##### `$ git log --pretty=format:'%h' -n 1` - read the last commit hash (shortened, for long use `%H`)
 
 ```console
 4912c94
 ```
 
-- ##### `git branch cool-new-feature` - create a branch **cool-new-feature**
-- ##### `git checkout cool-new-feature` - work in the branch **cool-new-feature**
-- ##### `git checkout <commit>` - navigate to that commit. Moving your focus (HEAD) to the specified commit.
-- ##### `git merge cool-new-feature master` - merge **cool-new-feature** with the master branch
+- ##### `$ git branch cool-new-feature` - create a branch **cool-new-feature**
+- ##### `$ git checkout cool-new-feature` - work in the branch **cool-new-feature**
+- ##### `$ git checkout <commit>` - navigate to that commit. Moving your focus (HEAD) to the specified commit.
+- ##### `$ git merge cool-new-feature master` - merge **cool-new-feature** with the master branch
 - ### origin vs master:
 
   - **origin**:When you clone a repository for the first time origin is a default name given to the original remote repository that you clone, from where you want to push and pull changes. So basically ‘origin’ is alias of your so big remote repository name. By saying git push origin <branch_name> , you are saying to push to the original repository.
@@ -374,32 +395,32 @@ $ git commit -m "SCs added" -m "
   - `origin/master` is "where master was over there last time I checked"
   - `master` is "where master is over here based on what I have been doing"
 
-- ##### `git log --oneline --graph --color --all --decorate` - shows the entire graph of the repo.
-- ##### `git diff <filename.ext>` - shows the difference b/w `last pushed` and `current modified` of a file.
+- ##### `$ git log --oneline --graph --color --all --decorate` - shows the entire graph of the repo.
+- ##### `$ git diff <filename.ext>` - shows the difference b/w `last pushed` and `current modified` of a file.
 - ##### `git diff` - view the difference inside the repo.
   **Examples:**
   - If a `.txt` file is changed, `git diff` shows the difference in the terminal itself.
   - But for binary files, one has to make custom changes in `.git/config` (present inside the git repo) file. <br/>
     E.g.- `git diff Book1.xlsx` or `git diff` - For excel file, one can refer [this](https://github.com/abhi3700/My_Learning_Git/tree/master/Git_for_Excel)
-- ##### `git diff c9b1ebc..fadb6f5` - shows all the difference in contents of files (.md, .txt, .cpp, .py) b/w commits - `c9b1ebc` & `fadb6f5`.
-- ##### `git diff master..develop` - shows all the differences b/w 2 branches - `master` (local, for remote use - `origin/master`) and `develop`
+- ##### `$ git diff c9b1ebc..fadb6f5` - shows all the difference in contents of files (.md, .txt, .cpp, .py) b/w commits - `c9b1ebc` & `fadb6f5`.
+- ##### `$ git diff master..develop` - shows all the differences b/w 2 branches - `master` (local, for remote use - `origin/master`) and `develop`
 - ##### `HEAD` - points to latest commit in mostly `master` (local), and may or may not be `origin/master` (server). Because sometimes, a person might make a lot of commits and then push all at a time. When all pushed, then `master` (local) & `origin/master` (server) are at same commit.<br/>
   E.g. `HEAD~1`: points to **HEAD-1**
   E.g. `HEAD^^`: points to **HEAD-2**
   E.g. `HEAD@{2019-03-22}`: points to **HEAD** at date: 22 March, 2019.
 - ##### `Parent` - pointing to the `previous commit` of the selected commit.
-- ##### `git show HEAD@{2019-03-22}:readme.md`: shows the content of the file **readme.md** on the date - 22 March, 2019.
-- ##### `git show <commit>:</path/to/file> ><file.copy>`: save a copy of the file at this commit <br/>
+- ##### `$ git show HEAD@{2019-03-22}:readme.md`: shows the content of the file **readme.md** on the date - 22 March, 2019.
+- ##### `$ git show <commit>:</path/to/file> ><file.copy>`: save a copy of the file at this commit <br/>
   E.g. `git show 1f6098c:README.md > temp_README.md` - saves a copy of `README.md` @ commit:`1f6098c` named `temp_README.md` in the repo's root directory.
-- ##### `git show <commit>:</path/to/file>`: view a file's content at a specific commmit.
-- ##### `git show --pretty="" --name-only bd61ad98`: view all the files committed
+- ##### `$ git show <commit>:</path/to/file>`: view a file's content at a specific commmit.
+- ##### `$ git show --pretty="" --name-only bd61ad98`: view all the files committed
   ```console
   index.html
   javascript/application.js
   javascript/ie6.js
   ```
-- ##### `git status`: shows status of repo.
-- ##### `git status -z`: shows one line information horizontally <br/>
+- ##### `$ git status`: shows status of repo.
+- ##### `$ git status -z`: shows one line information horizontally <br/>
   ` D README.md?? Installation/?? README.txt?? User Manual.md?? User Manual.pdf`
 - ##### `git status --porcelain`: shows one line information vertically <br/>
   ```console
