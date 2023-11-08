@@ -311,17 +311,17 @@ $ git commit -m "SCs added" -m "
   - `$ git pull`
 - ##### `$ git submodule status` - check submodule status inside the parent repo.
 - ##### `$ git submodule update` - update the submodule after cloning any git repo.
-- ##### submodule remove (Valid for NEW and pre-existing)
+- ##### Remove submodule (Valid for NEW and pre-existing)
 
   1. Edit `.git/config` file and remove the submodule section.
   2. Edit `.gitmodules` file and remove the entry for the submodule.
-  3. Unstage and Remove the Submodule path: <br/>
+  3. Unstage (for NEW) and Remove the Submodule path from tracking (for both NEW & pre-existing): <br/>
      `$ git rm --cached path_to_submodule` <br/>
      `$ rm -rf .git/modules/path_to_submodule`
 
-  4. Delete the submodule directory from your working. <br/>
+  4. Delete the submodule directory from your working. [If the submodule folder is not needed anymore]<br/>
      `$ rm -rf <path/to/submodule>`
-  5. Unstage and Remove the `.gitmodules` (if there are no more submodules) <br/>
+  5. Unstage (for NEW) and Remove the `.gitmodules` (if there are no more submodules) <br/>
      `$ git rm --cached .gitmodules` <br/>
      `$ rm -rf .gitmodules` <br/>
   6. Commit changes (if there is any other change) <br/>
