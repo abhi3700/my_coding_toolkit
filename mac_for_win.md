@@ -289,6 +289,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - <kbd>cmd+opt+leftarrow</kbd>: switch to left tab
 - <kbd>cmd+opt+rightarrow</kbd>: switch to right tab
 - <kbd>cmd+w</kbd>: close tab
+- <kbd>cmd+shift+a</kbd>: Search tabs
 - <kbd>cmd+shift+w</kbd>: close window
 - <kbd>cmd+opt+j</kbd>: Open console for current browser tab
 - <kbd>cmd+shift+m</kbd>: View profiles & then ⬇⬆ to go up/down the profile & then <kbd>enter</kbd> to switch
