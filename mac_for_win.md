@@ -117,10 +117,12 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 
 There are 2 methods to use x86_64 architecture on Mac M1:
 
-1. VMs like UTM, Parallels
+1. VMs like UTM (requires more local RAM), Parallels (requires cloud dependency, paid)
 2. Switch from one arch to another in terminal
 
 ### 1. Virtual Machines/Emulator
+
+More on this [here](https://github.com/abhi3700/my_coding_toolkit/blob/main/vm_all.md).
 
 ### 2. How to switch the Terminal between x86_64 and arm64
 
@@ -156,11 +158,11 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 ## Folders
 
 - Root: `/`
+- Drive: `/` i.e. Macintosh HD
 - Temp: `/tmp`
 - Home: `~` or `/Users/abhi3700`
 - Desktop: `~/Desktop`
-- Downloads: `~/Desktop`
-- Drive: `/` i.e. Macintosh HD
+- Downloads: `~/Downloads`
 - Users: `/Users`
 - Me: `/Users/abhi3700`
 - Applications: `/Applications`
@@ -170,7 +172,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 - After updating, update the CLI tools using `xcode-select --install` in terminal.
 
-## Glossary (Win <--> Mac)
+## Glossary (Windows <--> macOS)
 
 - Explorer <--> Finder
 - Taskbar <--> Dock
@@ -178,7 +180,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - `.exe` <--> `.dmg`
 - Properties <--> Quick look
 - Task Manager <--> Activity Monitor
-- Spotlight: help you quickly find apps, documents, and other files on your Mac.
+- On mac, Spotlight: help you quickly find apps, documents, and other files on your Mac. It can be accessed via <kbd>cmd+spacebar</kbd>
 
 ## Keyboard shortcuts
 
@@ -254,7 +256,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - **Freeform**: whiteboard app like Miro [FREE for macOS]
 - **Miro**: Architecture, Mind Map, Whiteboard [PAID]
 - **Draw.io**: Architecture, Mind Map, Whiteboard [FREE]
-- **Visual Studio Code (VSC)**:
+- **Visual Studio Code (VSC)**: Global code editor
 - **Virtual Machine (VM)**: For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
   - GUI (UTM)
   - CLI (lima)
@@ -263,6 +265,8 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - **Facetime**: Call someone
 - **OBS** (FREE): Screen recorder with/without camera
 - **Movavi Video Suite 23** (purchased license)
+- **Fork** (purchased license): Git GUI
+- **Screen recorder**: <kbd>cmd+shift+5</kbd>
 
 ## Display
 
