@@ -17,12 +17,14 @@ My favourite editors: ST, VSC
 - For permanence, follow this:
   1. Open profile in `$ subl ~/.zprofile`
   2. Add this line
+
   ```
   # install code on terminal
   export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
   OR
   alias code="open -a /Applications/Visual\ Studio\ Code.app"
   ```
+
   3. `$ source ~/.zprofile`
   4. Now, use `$ code <folder_or_file_path>` from terminal
 
@@ -36,7 +38,7 @@ For remote desktop, I just need to sync after login, then all the extensions wou
 
 <details>
   <summary><b>Expand: </b></summary>
-		
+  
 ```
 aaron-bond.better-comments-3.0.0
 adpyke.codesnap-1.3.4
@@ -152,25 +154,14 @@ vitelabs.solppdebugger-0.2.5
 wakatime.vscode-wakatime-18.1.6
 yzhang.markdown-all-in-one-3.4.3
 zainchen.json-2.0.2
-```	
-		
+```
+
 </details>
 
-## Packages
+My favourite color themes:
 
-> This is for MacOS. <kbd>**Not updated with Latest**</kbd>, refer to the list.
-
----
-
-| Category   | Package                                    | URL                                                                                         |
-| ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| **env**    | Dotenv (Stripped)                          | https://marketplace.visualstudio.com/items?itemName=socheatsok78-lab.dotenv-vscode-stripped |
-| **theme**  | Atom One Light theme                       | https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight            |
-| **theme**  | Atom One Dark Theme                        | https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark             |
-| **python** | autoDocstring - Python Docstring Generator | https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring                 |
-| **rust**   | Rust analyzer                              | https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer                 |
-
-TODO: [`TO BE UPDATED`]
+1. **Light**: Quiet Light Theme. It is bundled by `vscode` itself.
+2. **Dark**: [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 
 ---
 
@@ -404,7 +395,7 @@ Commented "c-cpp-flylint.includePaths" because it is not linting the imp. ones.
 
 #### Others
 
-- More config commands: https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp
+- More config commands: <https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp>
 
 ### Rust
 
