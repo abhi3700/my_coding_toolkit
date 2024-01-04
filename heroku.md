@@ -40,3 +40,17 @@ web: PORT=$PORT ./target/release/rust-api-heroku
 But the catch is that `PORT=$PORT` is not needed. We can simply use `web: ./target/release/rust-api-heroku`.
 
 > The address host should be `0.0.0.0`, **NOT** ~~`127.0.0.1`/`localhost`/`::1`/`0.0.0.1`~~.
+
+## Deployment
+
+### Heroku Git
+
+Pros & Cons: The code is to be pushed separately to Heroku & Github.
+
+### Github
+
+Pros & Cons: The code is to be pushed to Github only. Heroku will automatically deploy the code from Github.
+
+### Container Registry
+
+TODO: NOT YET TESTED
