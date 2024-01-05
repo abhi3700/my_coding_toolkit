@@ -20,7 +20,91 @@ Below is the list of softwares which support this VM:
 
 ## A. Virtualization
 
-### Lima | Install Ubuntu (ARM) on Mac (ARM)
+Install Ubuntu (ARM) on Mac (ARM)
+
+### A1. `colima`
+
+This is a CLI tool that is built on top of `lima`. It is very easy to use unlike `lima`.
+
+- Install using brew: `$ brew install colima`.
+- Commands:
+  - `$ colima list` => lists the VMs
+  - `$ colima start` => starts the VM
+  - `$ colima stop` => stops the VM
+  - `$ colima ssh` => opens the VM's shell like `lima` i.e. get to use linux on top of mac with same ARM hardware.c
+  - `$ colima status` => shows the status of VM
+
+    ```sh
+    INFO[0000] colima is running using QEMU
+    INFO[0000] arch: aarch64
+    INFO[0000] runtime: docker
+    INFO[0000] mountType: sshfs
+    INFO[0000] socket: unix:///Users/abhi3700/.colima/default/docker.sock
+    ```
+
+  - `$ colima version` => shows the version of VM
+
+    ```sh
+    colima version 0.6.7
+    git commit: ba1be00e9aec47f2c1ffdacfb7e428e465f0b58a
+
+    runtime: docker
+    arch: aarch64
+    client: v24.0.5
+    server: v24.0.7
+    ```
+
+  - <kbd>ctrl+d</kbd>: Quit the VM's shell
+  - `$ colima help` => shows the help
+
+#### Use `docker` inside VM of `colima` like this
+
+```sh
+abhi3700@colima:/$ docker version
+Client: Docker Engine - Community
+ Version:           24.0.7
+ API version:       1.43
+ Go version:        go1.20.10
+ Git commit:        afdd53b
+ Built:             Thu Oct 26 09:08:29 2023
+ OS/Arch:           linux/arm64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          24.0.7
+  API version:      1.43 (minimum version 1.12)
+  Go version:       go1.20.10
+  Git commit:       311b9ff
+  Built:            Thu Oct 26 09:08:29 2023
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          1.6.25
+  GitCommit:        d8f198a4ed8892c764191ef7b3b06d8a2eeb5c7f
+ runc:
+  Version:          1.1.10
+  GitCommit:        v1.1.10-0-g18a0cb0
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+```  
+
+And we can also use other docker commands like `docker ps`, `docker images`, etc.
+
+Congrats! 🎉 You have successfully installed `colima` on your Mac M1. And also, you are able to use `docker` inside the VM of `colima`.
+
+### A2. `lima`
+
+> NOTE:
+>
+> DISCLAIMER: As of 5-Jan-2024, `lima` is not working. It doesn't open SSH connection to the VM instance. Hence, can't use linux inside mac M1 using `lima`.
+
+<details>
+
+<summary>For the sake of knowledge, you may expand this:</summary>
+
+Repo:
 
 Lima launches Linux VMs (CLI-based/controlled) with automatic file sharing and port forwarding (similar to **WSL2**), and containerd.
 
@@ -129,7 +213,7 @@ Read [more](https://github.com/lima-vm/lima).
 So, the Lima VM is stopped or logged-out, the SSH service remains enabled unless stopped/disabled inside VM's shell [More about SSH on Ubuntu](https://www.cyberciti.biz/faq/howto-start-stop-ssh-server/). The status can be checked using this:
 
 ```console
-$ sudo systemctl status ssh
+sudo systemctl status ssh
 ```
 
 4. Ensure the `writeable` flag to the `lima.yaml` of the instance (being used i.e. `docker`). And then, restart using `❯ limactl stop docker` >> `❯ limactl start docker`
@@ -155,6 +239,8 @@ View the current docker context (being used):
 
 To view the exact url of the VM instance, view from this:
 <img width="776" alt="image" src="https://user-images.githubusercontent.com/16472948/175229992-be64faa7-7824-4728-b6b2-1dd139c710d0.png">
+
+</details>
 
 ## B. Emulation
 
@@ -254,7 +340,7 @@ View the Screens post installation
 
 <img width="823" alt="image" src="https://user-images.githubusercontent.com/16472948/168832994-dff3317d-5ba7-431a-b059-f3f621f0c1bc.png">
 
-#### References | Screen: IP Config...
+#### References | Screen: IP Config
 
 <img width="822" alt="image" src="https://user-images.githubusercontent.com/16472948/168833260-6ae75c00-7ed6-41ab-ab82-072ef0389d8e.png">
 
