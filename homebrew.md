@@ -76,3 +76,13 @@ To untap (remove) a tapped repository.
 ```bash
 brew untap <user>/<repo>
 ```
+
+### Cask (GUI)
+
+Install a GUI app with `--cask` flag.
+
+> Only GUI, not CLI.
+
+```bash
+brew install --cask <package>
+```
