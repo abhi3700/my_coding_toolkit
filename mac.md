@@ -267,6 +267,11 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - **Movavi Video Suite 23** (purchased license)
 - **Fork** (purchased license): Git GUI
 - **Screen recorder**: <kbd>cmd+shift+5</kbd>
+- **[Warp](https://www.warp.dev/)**: Rust-based Terminal for any OS (Windows, Linux, Mac). It's fast & has a lot of features (AI suggestion) & customizations, notifications, etc unlike default `Terminal` app.
+  - Open from VSCode:
+    1. Go to Preferences using <kbd>cmd+,</kbd>.
+    2. Search for "terminal" & then in "Terminal > External: Osx Exec", replace `Terminal.app` with `Warp.app`.
+    3. Just press <kbd>cmd+shift+c</kbd> to open **Warp** app at the workspace directory.
 
 ## Display
 
@@ -502,10 +507,12 @@ Error: An unsatisifed requirement failed this build.
   - Run this command to install the Intel architecture Homebrew: `$ arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
   - Add this to your ZSH config (I recommend using OhMyZSH + add a file called `~/.oh-my-zsh/custom/brew.zsh`) with the contents:
     - create `.../brew.zsh` using `$ touch ~/.oh-my-zsh/custom/brew.zsh`
+
   ```
   export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
   alias ibrew='arch -x86_64 /usr/local/bin/brew'
   ```
+
   - Re-source your zsh term `$ source ~/.zshrc`
   - Run Intel brew as `$ ibrew install <whatever>`
   - Now, create a new terminal by following these: [Source](https://medium.com/swlh/run-x86-terminal-apps-like-homebrew-on-your-new-m1-mac-73bdc9b0f343)
@@ -537,5 +544,5 @@ Error: An unsatisifed requirement failed this build.
 
 ## References
 
-- Apple keyboard shortcuts - https://support.apple.com/en-in/HT201236
-- Apple Q & A - https://apple.stackexchange.com/
+- Apple keyboard shortcuts - <https://support.apple.com/en-in/HT201236>
+- Apple Q & A - <https://apple.stackexchange.com/>
