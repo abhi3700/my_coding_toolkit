@@ -271,7 +271,11 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
   - Open from VSCode:
     1. Go to Preferences using <kbd>cmd+,</kbd>.
     2. Search for "terminal" & then in "Terminal > External: Osx Exec", replace `Terminal.app` with `Warp.app`.
-    3. Just press <kbd>cmd+shift+c</kbd> to open **Warp** app at the workspace directory.
+    3. Just press <kbd>cmd+shift+c</kbd> to open **Warp** app at the workspace directory. Each time you press the shortcut key, it opens new session in Warp terminal app.
+  - Setup hotkey:
+    - Go to Warp settings, then press any shortcut key for instance, <kbd>cmd+shift+t</kbd>.
+    - Now, Warp opens from any other app on macOS using this shortcut key. Usage: from VSCode editor.
+  - Setup default editor to VSCode in Warp settings.
 
 ## Display
 
