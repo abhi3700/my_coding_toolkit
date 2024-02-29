@@ -246,7 +246,7 @@ My favourite color themes:
 
 ## Shortcut keys
 
-### Mac OS
+### macOS
 
 [keyboard-shortcuts-all-macos](./docs/keyboard-shortcuts-macos.pdf)
 
@@ -257,6 +257,7 @@ My favourite color themes:
 - <kbd>cmd+shift+p</kbd> - open the command palette
 - <kbd>cmd+shift+c</kbd> - open the terminal in the directory of root folder (opened)
 - <kbd>ctrl+`</kbd> - toggle the terminal (integrated)
+- <kbd>ctrl+shift+`</kbd> - open a new terminal (integrated)
 - <kbd>ctrl+l</kbd> - select multiple lines
 - <kbd>ctrl+shift+l</kbd> - edit multiple lines at a time
 - <kbd>cmd+k,f</kbd> - close the opened folder
@@ -449,14 +450,9 @@ Commented "c-cpp-flylint.includePaths" because it is not linting the imp. ones.
 
 How to manage todo inside VSC
 
-#### key shortcuts
-
-- <kbd>cmd+enter</kbd> / <kbd>opt+enter</kbd>: toggle TODO
+- <kbd>cmd+enter</kbd> / <kbd>opt+enter</kbd>: toggle TODO items in a `.todo` file.
 - <kbd>opt+s</kbd>: toggle start of task
 - <kbd>opt+d</kbd>: toggle end of task
-- <kbd>cmd+shift+p</kbd>: open command palette & then:
-  - "Todo: Toggle Cancelled" to cancel (the task on which the cursor was)
-  - "TODO-highlight: List highlighted annotations" to show all the TODOs in the workspace.
 
 #### Package
 
