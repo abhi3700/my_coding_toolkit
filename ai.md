@@ -15,7 +15,7 @@ The tools are like weapons, they are only as good as the person using them. The 
 
 - [gpt4free](https://github.com/xtekky/gpt4free)
   - it uses multiple models including chatgpt. And it's for free. There are search engines based on GPT4 for free - phind, you.com, and others.
-- Prompt Community: https://flowgpt.com/
+- Prompt Community: <https://flowgpt.com/>
   - learn prompting from the community's prompts.
 - Multiple fields:
   ![](img/ai_tools1.png)
@@ -23,6 +23,7 @@ The tools are like weapons, they are only as good as the person using them. The 
 - For coding in VSCode, use this extension: [AI-Genie](https://github.com/ai-genie/chatgpt-vscode)
   > Turn on billing in OpenAI website to get this extension working.
 - Image generator
+  - Dall-E by OpenAI
   - [Midjourney](https://www.midjourney.com/)
   - [Hotpot](https://hotpot.ai/)
   - [Photoleap](https://www.photoleapapp.com/)
@@ -155,24 +156,38 @@ topic = "Learn how to code in cairo language"
 domain = "https://cairo-book.github.io/"
 ```
 
+## Prompts
+
+### Format
+
+```txt
+Clear instructions
+Adopt a persona
+Specify the format
+Avoid leading the answer
+Limit the scope
+```
+
+For more, head out to [this](./ai_prompt.md).
+
 ## Project Ideas
 
 ![](img/ai_project_ideas_1.png)
 
 ## Repositories
 
-- Auto-generate impressive commits with AI in 1 second: https://github.com/di-sukharev/opencommit
+- Auto-generate impressive commits with AI in 1 second: <https://github.com/di-sukharev/opencommit>
 - Langchain using Python: [Documentation](https://python.langchain.com/en/latest/index.html)
 - LLM-chain using Rust: [Documentation](https://docs.llm-chain.xyz/), [Github](https://github.com/sobelio/llm-chain)
 - DragGAN using Python: [Github](https://github.com/XingangPan/DragGAN), [Paper](https://vcai.mpi-inf.mpg.de/projects/DragGAN/)
   > available only on ubuntu
-- https://github.com/mshumer/gpt-author
+- <https://github.com/mshumer/gpt-author>
 
 ## References
 
 - [Learn Prompting book](https://learnprompting.org/docs/basics/intro)
 - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
-- https://www.freecodecamp.org/news/langchain-how-to-create-custom-knowledge-chatbots/amp/
+- <https://www.freecodecamp.org/news/langchain-how-to-create-custom-knowledge-chatbots/amp/>
 
 ```
 
