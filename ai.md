@@ -188,7 +188,4 @@ For more, head out to [this](./ai_prompt.md).
 - [Learn Prompting book](https://learnprompting.org/docs/basics/intro)
 - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 - <https://www.freecodecamp.org/news/langchain-how-to-create-custom-knowledge-chatbots/amp/>
-
-```
-
-```
+- [Generative AI in a Nutshell - how to survive and thrive in the age of AI](https://www.youtube.com/watch?v=2IK3DFHRFfw) ✅
