@@ -88,25 +88,6 @@ After installation, packages are installed into `/usr/local/Cellar/<package>` wi
 
 - `$ brew doctor --verbose`: check if brew is working fine or not.
 
-## Console
-
-Prefer `zsh` instead of `bash`.
-
-> Correspondingly, use `~/.zshrc`, `~/.zprofile` instead of `~/.bashrc`, `~/.bash_profile` file.
-
-Use `profile` suffixed file for adding additional command during toolkit installation.
-
-To know which one is being used now:
-
-```
-
-❯ echo $0
--zsh
-
-```
-
-Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/).
-
 ## Architecture
 
 > An Apple Silicon mac can run both the **Intel** and the **ARM64** portions of a universal binary application. But not the other way around. Intel binaries are emulated under **Rosetta 2** on Apple Silicon, but there is no emulation of **ARM64** on **Intel**-based mac. [Source](https://indiespark.top/programming/compile-open-ssl-apple-silicon/)
@@ -313,6 +294,21 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 ## Terminal/CLI
 
+Prefer `zsh` instead of `bash`.
+
+> Correspondingly, use `~/.zshrc`, `~/.zprofile` instead of `~/.bashrc`, `~/.bash_profile` file.
+
+Use `profile` suffixed file for adding additional command during toolkit installation.
+
+To know which one is being used now:
+
+```sh
+❯ echo $0
+-zsh
+```
+
+Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/).
+
 ### Shortcut keys
 
 - <kbd>ctrl+l</kbd>: clear the console
@@ -482,12 +478,13 @@ plugins=(
 
 - [Force Shutdown using Key](https://www.youtube.com/watch?v=ePhnDneb19M)
 - Hibernate: Go to Apple icon >> Shutdown >> tick the "Reopen the windows..." >> Press shutdown button.
+- [Prevent indexing of a particular directory](#7-indexing-is-stuck-on-spotlight)
 
 ## Troubleshoot
 
 ### 1. Error: 'This Apple ID has not yet been used with the App Store'
 
-- This error occurs after login into "App Store" >> press Review button >> Error >> Again login >> Review >> Error .....likewise infinite times.
+- **Reason**: This error occurs after login into "App Store" >> press Review button >> Error >> Again login >> Review >> Error .....likewise infinite times.
 - **Solution**: Open "Apple Music" App. Go to Account on the top >> Login using Apple ID >> Set the payment (as None or other method) & billing address >> Done.
 
 ### 2. Unable to run unverified App
@@ -529,13 +526,13 @@ Error: An unsatisifed requirement failed this build.
 
 ### 4. Error: xcrun: error: invalid active developer path
 
-- Reason: After updating MacOS, the CLI needs to be updated.
-- Solution: Run `xcode-select --install` in terminal.
+- **Reason**: After updating MacOS, the CLI needs to be updated.
+- **Solution**: Run `xcode-select --install` in terminal.
 
 ### 5. The command is not activated even after `export PATH=$PWD/bin:$PATH`
 
-- Reason: the command is not mentioned into the `~/.zprofile`
-- Solution:
+- **Reason**: the command is not mentioned into the `~/.zprofile`
+- **Solution**:
   - Open the file in ST editor, `$ subl ~/.zprofile`.
   - add this line `export PATH=$PWD/bin:$PATH` to the End of File (EOF).
   - Run this to activate `$ source ~/.zprofile`
@@ -543,8 +540,18 @@ Error: An unsatisifed requirement failed this build.
 
 ### 6. Git install repeatedly fails after Mac Update
 
-- Reason: Unknown
-- Solution: `$ sudo xcode-select -switch /Library/Developer/CommandLineTools`
+- **Reason**: Unknown
+- **Solution**: `$ sudo xcode-select -switch /Library/Developer/CommandLineTools`
+
+### 7. Indexing is stuck on spotlight
+
+- **Reason**: May be because it is indexing external drives (HDD/SSD).
+- **Solution**: "System Settings" >> "Siri & Spotlight" in sidebar >> "Spotlight Privacy":
+  - <u>Exclude files in a folder or disk from Spotlight searches</u>: Click the Add button ➕, then select a folder or disk. You can also drag folders or disks into the field.
+  - <u>Include excluded files in folders or disks in Spotlight searches</u>: Select the folder or disk in the list, then click the Remove button ➖.
+  ![](img/spotlight_indexing.png)
+
+  Now, restart your computer to enable indexing with updated folders settings. 🎉
 
 ## References
 
