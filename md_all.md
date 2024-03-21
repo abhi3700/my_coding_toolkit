@@ -26,11 +26,12 @@ preferred_vscode_theme: Light (Visual Studio C++)
 - Collapsible: Expand text with title
   <details>
   <summary><b>Expand: </b></summary>
-  	
+
   <h2>Abhijit is a good boy</h2>
   <p>Humand is a village in Chashm Rural District, Shahmirzad District, Mehdishahr County, Semnan Province, Iran. At the 2006 census, its existence was noted, but its population was not reported. </p>
-  	
+
   </details>
+
 - ##### Collapsible: Expand code snippet/block with title
 
   > NOTE: give a line break after summary tag
@@ -44,7 +45,7 @@ preferred_vscode_theme: Light (Visual Studio C++)
   std::cout << "With Iterator:" << std::endl;
   for (std::vector<string>::iterator i = v.begin(); i != v.end(); ++i)
   {
-  	std::cout << *i << std::endl;
+   std::cout << *i << std::endl;
   }
   ```
 
@@ -52,16 +53,20 @@ preferred_vscode_theme: Light (Visual Studio C++)
 
 - Single line code snippet - `code`
 - Multiple-line code snippet -
+
   ```cpp
   std::string s = "hello";
   ```
+
 - Image from HTTP link
   - 1
+
   ```
   <p align="center">
     <img src="https://github.com/DrifeCommunity/Documentation/blob/master/Images/DRIFE-Governance.png" alt="DRIFE_governance" width="550" height="510">
   </p>
   ```
+
   - 2 with no width or height <br/>
     `![eos_image](http://url/to/img.png)`
 - Image from local folder
@@ -158,3 +163,10 @@ wc -l en_US.twitter.txt
   - altogether
   + together
   ```
+
+- Note with purple color
+
+>[!IMPORTANT]
+> ds
+>
+> sfds
