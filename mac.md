@@ -329,6 +329,8 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - `$ lsof -i:<PORT_NO>`: Check if a port is open. E.g. `lsof -i:3000`
 - `$ kill <PID>`: kill a process running on a port: E.g. `kill 4534`
 - `open -n -a Terminal <path>`: open a new terminal window at the given path (optional).
+- `date -ur <timestamp>`: `Get UTC human-readable datetime from UNIX timestamp
+- `date -j -d %s <timestamp>`: `Get IST human-readable datetime from UNIX timestamp
 
 ---
 

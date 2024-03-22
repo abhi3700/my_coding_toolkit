@@ -23,3 +23,5 @@
 * Connection #0 to host 127.0.0.1 left intact
 Hello World!% 
 ```
+
+- `$ curl https://example.com | json_pp`: prettify the JSON output in terminal
