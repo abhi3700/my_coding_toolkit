@@ -293,8 +293,9 @@ $ git commit -m "SCs added" -m "
 > "
 [master 4245ac0] SCs added
  1 file changed, 4 insertions(+), 1 deletion(-)
-
 ```
+
+- ##### Edit last commit message: `$ git commit --amend -m "New message"` (this will edit the last commit's title only)
 
 ### Push
 
