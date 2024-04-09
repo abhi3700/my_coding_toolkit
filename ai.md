@@ -182,6 +182,10 @@ For more, head out to [this](./ai_prompt.md).
 - DragGAN using Python: [Github](https://github.com/XingangPan/DragGAN), [Paper](https://vcai.mpi-inf.mpg.de/projects/DragGAN/)
   > available only on ubuntu
 - <https://github.com/mshumer/gpt-author>
+- Github GPT Crawler: <https://github.com/phloai/gpt-github-crawler>
+  - Usage: Make the github repo files as knowledge base. Then, create a GPT using the `output.json` generated file based on repo url, etc. in `config.json`.
+- GPT Crawler: <https://github.com/BuilderIO/gpt-crawler>
+  - Usage: Make a `output.json` file by crawling through a documentation url & matchers in `config.json`. And use it as knowledge base. This could be used for education purpose for an individual/community.
 
 ## References
 
