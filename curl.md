@@ -6,6 +6,8 @@
 - `$ curl -X POST https://example.com`: POST request
 - `$ curl --verbose "127.0.0.1:3000"`: verbose mode i.e. shows the request and response headers and body
 
+> Just use `-v` instead of `--verbose`.
+
 ```sh
 ❯ curl --verbose "127.0.0.1:3000"
 *   Trying 127.0.0.1:3000...
