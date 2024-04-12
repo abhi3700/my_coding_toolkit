@@ -219,6 +219,7 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 - <kbd>cmd+opt+n</kbd>: show/hide the widget panel on right side of screen
 - <kbd>cmd+opt+d</kbd>: show/hide the dock (bar below)
 - <kbd>ctrl+e</kbd>: Show the cursor to the end of the line
+- <kbd>opt+shift+F12/F11</kbd>: Increase/Decrease volume by small steps (i.e. 4 steps per box/division). Otherwise, if only F11/F12 keys used, it increases by 1 box.
 
 ## Installation
 
