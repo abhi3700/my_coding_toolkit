@@ -26,4 +26,18 @@
 Hello World!% 
 ```
 
-- `$ curl https://example.com | json_pp`: prettify the JSON output in terminal
+- `$ curl https://example.com | json_pp`: prettify the JSON output in terminal. Also, it shows the download, upload and total bytes transferred.
+
+```sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    61  100    33  100    28  45205  38356 --:--:-- --:--:-- --:--:-- 61000
+{
+   "id" : 1337,
+   "username" : "abhi3700"
+}
+```
+
+- Post request with JSON body in 2 ways:
+  - `$ curl -X POST http://0.0.0.0:3000/users -H "Content-Type: application/json" -d '{"username":"abhi3700"}' | json_pp`, where `body.json` is defined at current directory. `{"username":"abhi3700"}`
+  - `$ curl -X POST http://0.0.0.0:3000/users -H "Content-Type: application/json" -d @body.json | json_pp`, where `body.json` is defined at current directory. `body.json` is really helpful in cases where JSON content is very big and might look clumsy to write in terminal.
