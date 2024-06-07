@@ -299,6 +299,24 @@ My favourite color themes:
 - <kbd>ctrl+shift+k</kbd> - delete the line cursor is at
 - press <kbd>ctrl</kbd> & hold - Edit multiple lines at different line no. simultaneously.
 
+## Code
+
+- Auto close tag in HTML. In order to get the following, you just have to type `header>nav>ul>li*5` in `*.html` file:
+
+```html
+<header>
+    <nav>
+        <ul>
+            <li>hello</li>
+            <li>hello</li>
+            <li>helllo</li>
+            <li>abhi</li>
+            <li>arpit</li>
+        </ul>
+    </nav>
+</header>
+```
+
 ## Preferences
 
 - In VSCode, 2 ways to be dependent on settings for a language:
