@@ -301,7 +301,9 @@ My favourite color themes:
 
 ## Code
 
-- Auto close tag in HTML. In order to get the following, you just have to type `header>nav>ul>li*5` in `*.html` file:
+In order to get the following in `*.html` file,
+
+- type `header>nav>ul>li*5`:
 
 ```html
 <header>
@@ -315,6 +317,29 @@ My favourite color themes:
         </ul>
     </nav>
 </header>
+```
+
+- type `.product$*4``div#header>ul>li*5`:
+
+```html
+<div class="product1"></div>
+<div class="product2"></div>
+<div class="product3"></div>
+<div class="product4"></div>
+```
+
+- type `div#header>ul>li*5`:
+
+```html
+<div id="header">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 ```
 
 ## Preferences
