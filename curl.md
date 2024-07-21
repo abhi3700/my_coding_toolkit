@@ -39,5 +39,5 @@ Hello World!%
 ```
 
 - Post request with JSON body in 2 ways:
-  - `$ curl -X POST http://0.0.0.0:3000/users -H "Content-Type: application/json" -d '{"username":"abhi3700"}' | json_pp`, where `body.json` is defined at current directory. `{"username":"abhi3700"}`
-  - `$ curl -X POST http://0.0.0.0:3000/users -H "Content-Type: application/json" -d @body.json | json_pp`, where `body.json` is defined at current directory. `body.json` is really helpful in cases where JSON content is very big and might look clumsy to write in terminal.
+  - `$ curl localhost:3000/users -X POST -H "Content-Type: application/json" -d '{"username":"abhi3700"}' | json_pp`, where `body.json` is defined at current directory. `{"username":"abhi3700"}`
+  - `$ curl localhost:3000/users -X POST -H "Content-Type: application/json" -d @body.json | json_pp`, where `body.json` is defined at current directory. `body.json` is really helpful in cases where JSON content is very big and might look clumsy to write in terminal.
