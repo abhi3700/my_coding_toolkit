@@ -409,6 +409,8 @@ Pull = fetch + merge changes into local branch
 
 - ##### `$ git rm <path/to/submodule> --cached` - remove submodule with keeping the submodule folder as is in the repo
 
+- ##### `$ git rm <path/to/submodule> -r --cached` - remove the submodule folder from the main repo's git index, without deleting the submodule folder from the repo. This is useful when the folder is being moved to another git repo
+
 - ##### update submodule
 
   - `$ cd <custom-submodule-repo-name>`
