@@ -1,5 +1,16 @@
 # Heroku
 
+## Description
+
+Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+It supports following ways to deploy the code:
+
+- Heroku Git
+- Github
+- Container Registry
+    > Supports only docker image with amd64 architecture. Azure Container Registry supports both amd64 & arm64 architectures.
+
 ## Install
 
 ### macOS
@@ -16,14 +27,23 @@ heroku login
 
 ## Commands
 
-- `heroku create`: create a new app
-- `heroku info`: show info. about the app
-- `heroku open`: open/run the app in browser at the generated URL. Sample: <https://rust-api-heroku-11ef8f87fb50.herokuapp.com/>
+> Just add `--app <app-name>` or `-a <app-name>` to the command to run it for a specific app.
+
+- `heroku apps:create`: create a new app
+- `heroku apps:create <app-name>`: create a new app with a specific name
+- `heroku apps:delete <app-name>`: delete an app
+- `heroku apps:info <app-name>`: show info. about the app
+- `heroku apps:open <app-name>`: open/run the app in browser at the generated URL. Sample: <https://rust-api-heroku-11ef8f87fb50.herokuapp.com/>
 - `heroku logs`: show logs
 - `heroku logs --tail`: show logs in real time
 - `heroku logs --tail --app rust-api-heroku-11ef8f87fb50`: show logs in real time for a specific app
 - `heroku addons`: show all the addons
 - `heroku config`: show all the config vars
+- `heroku config:set <key>=<value>`: set a config var
+- `heroku config:unset <key>`: unset a config var
+- `heroku config:get <key>`: get a config var
+- `heroku config:get <key> --app <app-name>`: get a config var for a specific app
+- `heroku stack:set heroku-24 -a <app-name>`: set the stack for a specific app
 
 ## Procfile
 
@@ -45,12 +65,38 @@ But the catch is that `PORT=$PORT` is not needed. We can simply use `web: ./targ
 
 ### Heroku Git
 
-Pros & Cons: The code is to be pushed separately to Heroku & Github.
+<u>Pros & Cons:</u> The code is to be pushed separately to Heroku & Github.
 
 ### Github
 
-Pros & Cons: The code is to be pushed to Github only. Heroku will automatically deploy the code from Github.
+<u>Pros & Cons:</u> The code is to be pushed to Github only. Heroku will automatically deploy the code from Github.
 
 ### Container Registry
 
-TODO: NOT YET TESTED
+Need to push a docker image (with `amd64` architecture) to the registry.
+
+## Troubleshooting
+
+### 1. `Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch`
+
+- *Cause*: This means that the app is not able to bind to the port. This can happen if the port is not set correctly.
+- *Solution*: Add `PORT=$PORT` in the "Settings >> Config Vars" in the Heroku app.
+
+### 2. `MongoDB Error: Kind: Server selection timeout: No available servers. Topology: { Type: ReplicaSetNoPrimary, .....`
+
+Full error:
+
+```sh
+Error: Kind: Server selection timeout: No available servers. Topology: { Type: ReplicaSetNoPrimary, Set Name: atlas-3wdz0g-shard-0, Servers: [ { Address: ac-xdtjxkm-shard-00-01.xrlfvc5.mongodb.net:27017, Type: Unknown }, { Address: ac-xdtjxkm-shard-00-00.xrlfvc5.mongodb.net:27017, Type: Unknown }, { Address: ac-xdtjxkm-shard-00-02.xrlfvc5.mongodb.net:27017, Type: Unknown } ] }, labels: {}
+```
+
+- *Cause*: Somehow the MongoDB connection string although being correct, is not discoverable by the Heroku app. I have experienced this in all other cloud providers like Render, Koyeb as well. Inspite of trying many different URI formats, the issue persisted.
+
+```sh
+MONGODB_URI=mongodb://USERNAME:PASSWORD@ac-xdtjxkm-shard-00-00.xrlfvc5.mongodb.net:27017,ac-xdtjxkm-shard-00-01.xrlfvc5.mongodb.net:27017,ac-xdtjxkm-shard-00-02.xrlfvc5.mongodb.net:27017/?ssl=true&connectTimeoutMS=30000&serverSelectionTimeoutMS=30000&w=majority&tlsAllowInvalidCertificates=true&authSource=admin&replicaSet=atlas-3wdz0g-shard-0
+MONGODB_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.xrlfvc5.mongodb.net/
+MONGODB_URI=mongodb://USERNAME:PASSWORD@ac-xdtjxkm-shard-00-02.xrlfvc5.mongodb.net:27017
+MONGODB_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.xrlfvc5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+```
+
+- *Solution*: I simply switched to other MongoDB cloud provider like DigitalOcean. And on setting the URI in the Heroku app, the issue got solved 🎉.
