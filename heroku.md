@@ -9,7 +9,18 @@ It supports following ways to deploy the code:
 - Heroku Git
 - Github
 - Container Registry
-    > Supports only docker image with amd64 architecture. Azure Container Registry supports both amd64 & arm64 architectures.
+    > Supports only docker image with amd64 architecture whereas Azure Container Registry supports both amd64 & arm64 architectures.
+
+**Alternatives**:
+
+- Render
+- Koyeb
+- Fly.io
+- DigitalOcean
+- Azure App Services
+- AWS Elastic Beanstalk
+- Google Cloud Run
+- Vercel
 
 ## Install
 
@@ -44,6 +55,7 @@ heroku login
 - `heroku config:get <key>`: get a config var
 - `heroku config:get <key> --app <app-name>`: get a config var for a specific app
 - `heroku stack:set heroku-24 -a <app-name>`: set the stack for a specific app
+- `heroku stop DYNO -a <app-name>`: stop a specific dyno for a specific app
 
 ## Procfile
 
@@ -60,6 +72,10 @@ web: PORT=$PORT ./target/release/rust-api-heroku
 But the catch is that `PORT=$PORT` is not needed. We can simply use `web: ./target/release/rust-api-heroku`.
 
 > The address host should be `0.0.0.0`, **NOT** ~~`127.0.0.1`/`localhost`/`::1`/`0.0.0.1`~~.
+
+## Environment Vars
+
+- For web app, add `PORT` as an environment variable. Don't rename it to some other name. This is so, inherently, heroku sets PORT dynamically for an App.
 
 ## Deployment
 
