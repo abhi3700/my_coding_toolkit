@@ -3,6 +3,7 @@
 ## Usage
 
 - `$ curl https://example.com` or `$ curl "https://example.com"`: GET request
+- `$ curl http://example.com --verbose -w "\nTotal time: %{time_total}s\n"`: GET request with time taken to complete the request
 - `$ curl -X POST https://example.com`: POST request
 - `$ curl --verbose "127.0.0.1:3000"`: verbose mode i.e. shows the request and response headers and body
 
