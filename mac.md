@@ -332,6 +332,7 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - `open -n -a Terminal <path>`: open a new terminal window at the given path (optional).
 - `date -ur <timestamp>`: `Get UTC human-readable datetime from UNIX timestamp
 - `date -j -d %s <timestamp>`: `Get IST human-readable datetime from UNIX timestamp
+- `dx -sh <FOLDER-NAME>`: Get folder size.
 
 ---
 
