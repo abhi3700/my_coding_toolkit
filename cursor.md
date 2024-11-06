@@ -15,3 +15,5 @@ VSCode like editor with native AI code assistant.
 1. Import settings from VSCode.
 2. Use <kbd>ctrl+l</kbd> to use "**Expand Line Selection**". In VSCode, it is enabled with <kbd>cmd+l</kbd> by default. Actually in Cursor editor, <kbd>cmd+l</kbd> is the shortcut key for "**Open AI chat**" on selected text.
    ![](img/expand_line_selection.png)
+3. For pining a tab in editor, change the shortcut key in Cursor to <kbd>cmd+k,cmd+enter</kbd>.
+   ![](img/pin_tab.png)
