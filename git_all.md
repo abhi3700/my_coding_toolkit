@@ -896,6 +896,20 @@ Credential Manager
 
 > NOTE: after disable, the `git push` won't work
 
+### macOS
+
+- Copy Personal Access Token (PAT) from Github's "Settings >> Developer settings >> Personal access token".
+- Just give "Repo" scope.
+- If you want to manually add your token:
+  - Open the "Keychain Access" App.
+  - Search for github.com & click on "GitHub - <https://api.github.com>" to open the details.
+  - [OPTIONAL] If not found, Click on the "+" button to add a new token.
+  - Enter your personal access token as the password.
+    1. Show password.
+    2. Enter your personal access token as the password.
+    3. Click "Save".
+  - "Save Changes"
+
 ### Windows
 
 #### Set
@@ -911,12 +925,6 @@ Credential Manager
 
 - For global, In CMD or git-bash in the repo, `git config --global --unset credential.helper`
 - For repo, In CMD or git-bash in the repo, `git config --system --unset credential.helper` if this has been set in the system configuration file.
-
-### macOS
-
-- copy personal access token from Github's Settings >> Developer settings >> Personal access token
-- `$ git config --global credential.helper cache` to set globally. To clear, `$ git config --global --unset credential.helper`
-- During the `git push ..` command, add username & password as the token.
 
 ## Github Action
 
