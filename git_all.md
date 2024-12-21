@@ -910,6 +910,10 @@ Credential Manager
     3. Click "Save".
   - "Save Changes"
 
+---
+
+Same issue might happen during pulling a cargo dependency from Github (private repo). [Solution](https://github.com/abhi3700/My_Learning-Rust/commit/78ede064ead765fc793ea34bc652520d7f6eaaf2)
+
 ### Windows
 
 #### Set
