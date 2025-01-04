@@ -295,7 +295,16 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 ## Terminal/CLI
 
-Prefer `zsh` instead of `bash`.
+View all your terminals (`bash`, `zsh`, `fish`, ..) in VSCode (or Cursor).
+> This is helpful when you want to use `zsh` instead of `fish` because let's say it doesn't support few things or during exporting few vars like `$PATH` to terminal with new variant.
+
+![](img/vscode_all_terminals.png)
+
+---
+
+Prefer `fish` instead of `zsh`.
+
+~~Prefer `zsh` instead of `bash`~~.
 
 > Correspondingly, use `~/.zshrc`, `~/.zprofile` instead of `~/.bashrc`, `~/.bash_profile` file.
 
@@ -318,6 +327,7 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - <kbd>cmd+t</kbd>: open a new tab at the current directory
 - <kbd>ctrl+w</kbd>: backspace word by word
 - <kbd>ctrl+q</kbd>: clear the entire command/sentence
+- <kbd>ctrl+d</kbd>: logout from different setup like `colima`, or any VM or `python3`, etc..
 
 ### Commands
 
@@ -333,6 +343,9 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - `date -ur <timestamp>`: `Get UTC human-readable datetime from UNIX timestamp
 - `date -j -d %s <timestamp>`: `Get IST human-readable datetime from UNIX timestamp
 - `dx -sh <FOLDER-NAME>`: Get folder size.
+- `sudo lsof -i :<PORT_NO>`: Show the process running on a given port.
+  > Get the PID from 🔝.
+- `sudo kill -9 <PID>`: Kill the process running on a port via PID
 
 ---
 
@@ -340,8 +353,8 @@ Types:
 
 `bash`
 
-```
-❯ which bash
+```sh
+$ which bash
 /bin/bash
 ```
 
@@ -349,9 +362,21 @@ Types:
 
 `zsh` (I use)
 
-```
-❯ which zsh
+```sh
+$ which zsh
 /opt/homebrew/bin/zsh
+```
+
+---
+
+installed bin paths of `zsh`:
+
+```sh
+$ where zsh
+/opt/homebrew/bin/zsh
+/opt/homebrew/bin/zsh
+/opt/homebrew/bin/zsh
+/bin/zsh
 ```
 
 ---
@@ -360,12 +385,12 @@ Change from `zsh` to `bash`: `❯ chsh -s /bin/bash $USER`
 
 Find which one is being used on Linux/Mac:
 
-```
-❯ echo $0
+```sh
+$ echo $0
 -zsh
 ```
 
-```
+```sh
 $ echo $0
 /bin/bash
 ```
@@ -374,31 +399,15 @@ $ echo $0
 
 Find which version of bash/zsh being used on Linux/Mac:
 
-```
-❯ bash --version
+```sh
+$ bash --version
 GNU bash, version 3.2.57(1)-release (arm64-apple-darwin21)
 Copyright (C) 2007 Free Software Foundation, Inc.
 ```
 
-```
-❯ zsh --version
+```sh
+$ zsh --version
 zsh 5.9 (arm-apple-darwin21.3.0)
-```
-
----
-
-Show the process running on a given port:
-
-```
-❯ sudo lsof -i :<PORT_NO>
-```
-
-> Get the PID from 🔝.
-
-Kill the process running on a port via PID:
-
-```
-❯ sudo kill -9 <PID>
 ```
 
 ---
@@ -478,6 +487,84 @@ plugins=(
 )
 ```
 
+### Fish
+
+Current situation:
+
+- You have a successful Terminal app running with `zsh` enabled. Well in order to use auto completions based on your history & access modern features, use **Fish** instead.
+- So, effectively you are on `zsh` terminal (on top of factory reset Apple's terminal app). Now, you are planning to change it to `fish`.
+
+Installation:
+
+1. Open your Terminal app, run `$ brew install fish` to install fish.
+2. Get the `fish` path,
+
+```sh
+which fish
+/opt/homebrew/bin/fish
+```
+
+3. Add fish to shells list:
+
+```sh
+echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+```
+
+4. Change the shell to fish by default so that when a new terminal tab/window opened, it redirects me to `fish` shell just like previously `zsh`.
+
+```sh
+chsh -s /opt/homebrew/bin/fish
+```
+
+5. Now, you have to copy the `zsh`'s `$PATH` variable (has previously installed bin PATHs) into that of `fish`.
+
+```sh
+echo $PATH
+...
+...
+```
+
+6. Paste into fish's config file using `nano` command:
+
+```sh
+nano ~/.config/fish/config.fish
+```
+
+7. Add that line here (wouldn't be wrapped).
+
+```sh
+set -gx PATH <paste-your-PATH-here>
+```
+
+DONE! 🎉
+
+---
+
+You can also revert back from `fish` to `zsh`:
+
+1. Make sure `zsh` is present in your shells list. Verify:
+
+```sh
+cat /etc/shells
+```
+
+2. [OPTIONAL] If not available, add its path to shells list.
+
+```sh
+$ which zsh
+/opt/homebrew/bin/zsh
+
+$ echo /opt/homebrew/bin/zsh | sudo tee -a /etc/shells
+```
+
+3. Change shell back to `zsh`.
+
+```sh
+chsh -s /opt/homebrew/bin/zsh
+```
+
+DONE! 🎉
+
 ## How-to
 
 - [Force Shutdown using Key](https://www.youtube.com/watch?v=ePhnDneb19M)
@@ -503,8 +590,10 @@ plugins=(
 - Below is the error for `eosio` installation
 
 ```
+
 eosio: The intel architecture is required for this software.
 Error: An unsatisifed requirement failed this build.
+
 ```
 
 - Solution: Follow [this](https://benobi.one/posts/running_brew_on_m1_for_x86/)
@@ -514,8 +603,10 @@ Error: An unsatisifed requirement failed this build.
     - create `.../brew.zsh` using `$ touch ~/.oh-my-zsh/custom/brew.zsh`
 
   ```
+
   export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
   alias ibrew='arch -x86_64 /usr/local/bin/brew'
+
   ```
 
   - Re-source your zsh term `$ source ~/.zshrc`
