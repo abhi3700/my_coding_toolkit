@@ -30,7 +30,7 @@ This is a CLI tool that is built on top of `lima`. It is very easy to use unlike
 - Commands:
   - `$ colima list` => lists the VMs
   - `$ colima start` => starts the VM
-  - `$ colima start --cpu 4 --memory 8` => starts the VM with custom ram & cpu
+  - `$ colima start --cpu 4 --memory 8` => starts the VM with custom ram & cpu. Also, add `--disk 100` if required for 100 GB.
   - `$ colima stop` => stops the VM
   - `$ colima ssh` => opens the VM's shell like `lima` i.e. get to use linux on top of mac with same ARM hardware.c
   - `$ colima status` => shows the status of VM
