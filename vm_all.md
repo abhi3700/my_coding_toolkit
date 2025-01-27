@@ -375,3 +375,7 @@ After installation, to allow the shared directory to be shown in the installed O
 
 1. `$ sudo apt install spice-vdagent spice-webdavd davfs2`
 2. Restart the VM
+
+### Alpine linux inside UTM
+
+Just refer [this](https://www.notion.so/Alpine-UTM-18604691a26f80b39826fd0676fd9b7e?pvs=4).
