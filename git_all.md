@@ -383,11 +383,16 @@ Pull = fetch + merge changes into local branch
 
 This is another way to add a repo-2 inside another repo-1. The repo-2's all commits are squashed into 1 commit & added to repo-1.
 
-- ##### `git subtree add --prefix=<dir-name> <repo-2-remote-url> <branch-name> --squash`: Add subtree to parent repo.
+- ##### `git subtree add --prefix=<dir-name> <repo-2-remote-url> <branch-name> --squash`: Add subtree to parent repo
+
   Example: `$ git subtree add --prefix=sdk https://github.com/abhi3700/omnipay-sdk-rs.git main --squash`
-- ##### `$ git subtree push --prefix=<dir-name> <repo-2-remote-url> <branch-name>`: Push changes from repo-1 to repo-2. Develop normally within repo-1, modifying the contents of the `sdk` directory as needed. After making changes in the dir in repo-1, commit them & then push changes to repo-2.
+
+- ##### `$ git subtree push --prefix=<dir-name> <repo-2-remote-url> <branch-name>`: Push changes from repo-1 to repo-2. Develop normally within repo-1, modifying the contents of the `sdk` directory as needed. After making changes in the dir in repo-1, commit them & then push changes to repo-2
+
   Example: `git subtree push --prefix=sdk https://github.com/abhi3700/omnipay-sdk-rs.git main`
-- ##### `$ git subtree pull --prefix=<dir-name> <repo-2-remote-url> <branch-name> --squash`: Pull changes from repo-2 to repo-1.
+
+- ##### `$ git subtree pull --prefix=<dir-name> <repo-2-remote-url> <branch-name> --squash`: Pull changes from repo-2 to repo-1
+
   Example: `git subtree pull --prefix=sdk https://github.com/abhi3700/omnipay-sdk-rs.git main --squash`
 
 > In case of any conflicts during syncing via `git subtree pull ..` & `git subtree push ..`, it has to be solved manually.
@@ -959,6 +964,19 @@ yarn upgrade --latest
 ```
 
 And then push the changes to Github. It will run successfully.
+
+## Animation
+
+### gource
+
+[Home](https://gource.io/).
+
+Install gource, ffmpeg cli tools via `$ brew install gource` & `brew install ffmpeg` respectively.
+
+Commands:
+
+- `$ gource --hide filenames,dirnames,users --auto-skip-seconds 0.1 -s 0.1 --output-ppm-stream - | ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i - -b 65536K movie.mp4` to get a video alongwith a window showing the animation like this:
+  ![](img/gource_demo.png)
 
 ## Troubleshoot
 
