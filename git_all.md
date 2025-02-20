@@ -397,6 +397,8 @@ This is another way to add a repo-2 inside another repo-1. The repo-2's all comm
 
 > In case of any conflicts during syncing via `git subtree pull ..` & `git subtree push ..`, it has to be solved manually.
 
+- ##### `$ git log --grep="git-subtree"`: Verify the other repo is registered as subtree of this repository
+
 ### Submodule
 
 - ##### `$ git submodule add <repo-url.git> <custom-repo-name>` - add submodule
