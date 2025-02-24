@@ -399,6 +399,24 @@ This is another way to add a repo-2 inside another repo-1. The repo-2's all comm
 
 - ##### `$ git log --grep="git-subtree"`: Verify the other repo is registered as subtree of this repository
 
+---
+
+In order to remove old subtree & add back same subtree due to folder change. Suppose, `common/` folder is relocated to `src/common/` in the same repo. So, we need to change the subtree location in repo's config so that adding `git subtree push ..` works.
+
+Follow this procedure:
+
+1. [OPTIONAL] `git subtree split --prefix=common -b old-subtree`
+2. `git rm -r common`
+3. `git commit -m "Removed old subtree from common/"`
+4. Add the subtree:
+
+```sh
+# git subtree add --prefix=src/common <subtree-repo-url> <branch>
+git subtree add --prefix=src/common https://github.com/example/common-repo.git main
+```
+
+Now, pull or push whatever you prefer. Done 🎉.
+
 ### Submodule
 
 - ##### `$ git submodule add <repo-url.git> <custom-repo-name>` - add submodule
