@@ -14,6 +14,94 @@ macOS (M1)
 
 > NOTE: In macOS, to open a repo on `Fork` App, just open in terminal & type `$ fork` & then <kbd>Enter</kbd>.
 
+## SSH Setup
+
+```
+Machine: Linux OS (Ubuntu) on AMD64
+```
+
+1. Generate an SSH key
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+  • When prompted for a file location, press Enter to accept the default (~/.ssh/id_ed25519).
+  • Optionally, add a passphrase for extra security.
+
+2. Start the ssh-agent in Fish/Bash shell
+
+Unlike Bash, Fish uses different syntax. You can add a snippet to your Fish configuration so that the ssh-agent starts automatically.
+
+```sh
+nano ~/.config/fish/config.fish
+```
+
+3. Add the following lines to check if the ssh-agent is running and start it if not:
+
+```sh
+# Start ssh-agent if it isn't running
+if not pgrep -u $USER ssh-agent > /dev/null
+    eval (ssh-agent -c)
+end
+```
+
+& leading to:
+
+```sh
+if status is-interactive
+  # Commands to run in interactive..
+  # Start ssh-agent if it isn't running
+  if not pgrep -u $USER ssh-agent > /dev/null
+      eval (ssh-agent -c)
+  end
+end
+```
+
+4. Add Your SSH Key to the Agent
+
+Now add your newly created SSH key to the agent:
+
+```sh
+ssh-add ~/.ssh/id_ed25519
+```
+
+If you set a passphrase during key creation, you’ll be prompted to enter it now.
+
+5. Add Your Public Key to GitHub
+
+```sh
+# copy the public key
+cat ~/.ssh/id_ed25519.pub
+
+# In Github, "Settings >> SSH and GPG keys", create a new key
+# Paste the public key. Click Add SSH key.
+```
+
+6. Test your SSH Connection with Github.com
+
+```sh
+ssh -T git@github.com
+```
+
+Just write "yes" to add it to your trusted host list.
+
+You should see a message like:
+
+```
+Hi <your_username>! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+7. Use SSH with Git
+
+Make sure your Git remotes use the SSH URL. For example, to update your remote URL, run:
+
+```sh
+git remote set-url origin git@github.com:owner/repo.git
+```
+
+Replace owner/repo.git with your repository’s path.
+
 ## Setup multiple Github Accounts locally
 
 This is about how to manage multiple github accounts on same device.
