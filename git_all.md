@@ -639,6 +639,21 @@ bdcf6bbf44791bf14ae9fec6e3b1212fdec49435
 
 - ##### `$ git merge feature master` - merge **feature** branch with the master branch when you are on the master branch
 
+- To obtain branching & merged into main w/o creating a github PR, use `--no-ff` i.e. no fast forward flag like this: `$ git merge --no-ff improvement/redis-5x-speedup` into `main` branch.
+
+```sh
+git checkout -b feature/my-single-change
+
+# Make your changes and commit
+git commit -am "Your changes here"
+
+# Switch back to main
+git checkout main
+
+# Merge with no-fast-forward to force a merge commit
+git merge --no-ff feature/my-single-change -m "Merge feature/my-single-change"
+```
+
 ### Diff
 
 - ##### `$ git diff <filename.ext>` - shows the difference b/w `last pushed` and `current modified` of a file
