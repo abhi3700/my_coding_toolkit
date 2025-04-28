@@ -550,18 +550,18 @@ Now, pull or push whatever you prefer. Done 🎉.
 
   1. Edit `.git/config` file and remove the submodule section.
   2. Edit `.gitmodules` file and remove the entry for the submodule.
-  3. Unstage (for NEW) and Remove the Submodule path from tracking (for both NEW & pre-existing): <br/>
-     `$ git rm --cached path_to_submodule` <br/>
+  3. Unstage (for NEW) and Remove the Submodule path from tracking (for both NEW & pre-existing): \
+     `$ git rm --cached path_to_submodule` \
      `$ rm -rf .git/modules/path_to_submodule`
 
-  4. Delete the submodule directory from your working. [If the submodule folder is not needed anymore]<br/>
+  4. Delete the submodule directory from your working, if the submodule folder is not needed anymore \
      `$ rm -rf <path/to/submodule>`
-  5. Unstage (for NEW) and Remove the `.gitmodules` (if there are no more submodules) <br/>
-     `$ git rm --cached .gitmodules` <br/>
-     `$ rm -rf .gitmodules` <br/>
-  6. Commit changes (if there is any other change) <br/>
+  5. Unstage (for NEW) and Remove the `.gitmodules` if there are no more submodules \
+     `$ git rm --cached .gitmodules` \
+     `$ rm -rf .gitmodules`
+  6. Commit changes (if there is any other change) \
      `$ git commit -m "Removed submodule <name>"`
-  7. Push the commit <br/>
+  7. Push the commit \
      `$ git push origin <branch>`
 
 - ##### `$ git submodule deinit` - deregister the submodule from tracking by the git repo
