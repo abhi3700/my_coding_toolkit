@@ -453,31 +453,51 @@ Just add this to `~/.zprofile` (if using `zsh`). Then, run `source ~/.zprofile` 
   - Run this to activate `$ source ~/.zprofile`
   - Now, use the command in the current/new terminal.
 
-### Beautify
+### Zsh
 
-#### 1. Preparation
+#### 1. Install Homebrew (if not installed)
 
-Recommend to install homebrew first:
+1. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+#### 2. Install Zsh and set it as default shell
 
-Install zsh if you are on macOS version prior to Catalina:
+- `$ brew install zsh`
+- Set zsh as your default shell `$ chsh -s $(which zsh)`.
+- Restart the terminal.
 
-- Install zsh `brew install zsh`
-- Set zsh as your default shell `chsh -s /usr/local/bin/zsh`
+#### 3. Install Oh My Zsh
 
-#### 2. Install oh-my-zsh
+Oh My Zsh is a framework for managing your Zsh configuration. It enhances the Zsh shell experience
 
-- `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+- **🧰 Predefined Configuration Structure**: It sets up your `~/.zshrc` with sensible defaults, useful environment settings, and plugin support — so you don’t have to write everything from scratch.
+- **🎨 Themes**: Over 150 themes for a visually appealing and informative terminal prompt (e.g., showing Git branch, status, Python env, etc.).
+  - You can switch themes just by setting ZSH_THEME="agnoster" (or others) in .zshrc.
+- **🔌 Plugins** (Huge Win): It comes with 300+ ready-to-use plugins like
+  - git (useful Git aliases)
+  - zsh-autosuggestions: Suggest commands as you type
+  - zsh-syntax-highlighting: Highlight valid/invalid commands
+  - autojump: Jump to frequently used directories
+  - docker, brew, etc.: Command shortcuts for dev tools
+- Install via `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
-#### 3. Install oh-my-zsh theme & must-have plugins
+#### 3. Install plugins
 
-- config `.zshrc` (present in `~` location)
-- open via `nano ~/.zshrc` & set these
+- `zsh-autosuggestions`: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+- `zsh-syntax-highlighting`: `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+- `autojump`: `brew install autojump`
+
+#### 4. Configure Theme, Plugins in `~/.zshrc` file
+
 - Set `ZSH_THEME` to your favorite theme name (preferred `intheloop`). Select from [link1](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes), [link2](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes)
-- must-have plugins
 
+```sh
+ZSH_THEME="intheloop"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
+
+- Find the plugins=(...) section and update to:
+
+```sh
 plugins=(
   git
   extract
@@ -487,12 +507,39 @@ plugins=(
 )
 ```
 
+Then add this line:
+
+```sh
+source $ZSH/oh-my-zsh.sh
+```
+
+And then add at the bottom (to ensure plugins are sourced):
+
+```sh
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+
+#### 5. Apply Changes
+
+```sh
+source ~/.zshrc
+```
+
+#### ✅ Result
+
+- 🔤 Auto-complete suggestions like Fish shell
+- 🌈 Color syntax and directory highlighting
+- ⚡ Fast navigation with autojump
+- 🎨 Modern prompt with Git/status indicators (via Powerlevel10k)
+
 ### Fish
 
 Current situation:
 
 - You have a successful Terminal app running with `zsh` enabled. Well in order to use auto completions based on your history & access modern features, use **Fish** instead.
 - So, effectively you are on `zsh` terminal (on top of factory reset Apple's terminal app). Now, you are planning to change it to `fish`.
+- But, now realized `fish` comes with its function type of design, i dislike it somehow. So, switching back to `zsh` with `autojump` installed to get the autocompletion.
 
 Installation:
 
