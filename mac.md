@@ -520,6 +520,15 @@ source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
+Make sure you have this at the bottom.
+
+```sh
+autoload -Uz compinit
+compinit
+```
+
+For folder suggestion, you have to <kbd>tab</kbd>.
+
 #### 5. Apply Changes
 
 ```sh
