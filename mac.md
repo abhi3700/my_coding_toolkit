@@ -457,12 +457,24 @@ Just add this to `~/.zprofile` (if using `zsh`). Then, run `source ~/.zprofile` 
 
 #### 1. Install Homebrew (if not installed)
 
-1. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+> You might have to use some commands like:
+
+```sh
+echo >> ~/.zprofile
+...
+```
+
+All of it is given right at the end of brew installation terminal tab. Don't close unless done.
 
 #### 2. Install Zsh and set it as default shell
 
 - `$ brew install zsh`
-- Set zsh as your default shell `$ chsh -s $(which zsh)`.
+  > By default, it would be set as `/bin/zsh`. You can check via `$ which zsh`.
+- Set zsh as your default shell `$ chsh -s /opt/homebrew/bin/zsh`.
 - Restart the terminal.
 
 #### 3. Install Oh My Zsh
