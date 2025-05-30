@@ -796,6 +796,7 @@ git merge --no-ff feature/my-single-change -m "Merge feature/my-single-change"
 - `git tag <version-number> -m <title> -m <description>`: give message title or both title & description.
 - `git tag -d <version-number>`: delete a tag locally.
 - `git tag --delete origin <version-number>`: delete a tag remotely.
+- `git push origin :refs/tags/<tagname>`: Replace a tag with a new one.
 
 ## Recipes
 
