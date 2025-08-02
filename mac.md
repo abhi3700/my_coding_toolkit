@@ -336,6 +336,10 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - `$ which <command>`: gives the location of the command file
 - open any application from terminal: `$ open -a <executable_dir>` E.g. `open -a /Applications/Visual\ Studio\ Code.app`
 - `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
+- `$ zip -r foo.zip foo/ --exclude '**/target/*' 'foo/.git/*' 'foo/.vscode/*' 'foo/.github/*'`: zip a folder excluding subfolders.
+- `$ unzip foo.zip`: Unzip a folder.
+- `$ ifconfig | grep "inet " | grep -v 127.0.0.1`: Get IP address (w/wo connected to wifi or ethernet). Most likely the first one.
+- `curl -O http://<mac-ip>:8080/foo.zip`: Download folder from another macbook.
 - `$ env`: all the global variables. can be used like this `$ echo $NVM_DIR` -> `/Users/abhi3700/.nvm`
 - `$ lsof -i:<PORT_NO>`: Check if a port is open. E.g. `lsof -i:3000`
 - `$ kill <PID>`: kill a process running on a port: E.g. `kill 4534`
