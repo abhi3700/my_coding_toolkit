@@ -350,6 +350,7 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - `sudo lsof -i :<PORT_NO>`: Show the process running on a given port.
   > Get the PID from 🔝.
 - `sudo kill -9 <PID>`: Kill the process running on a port via PID
+- `openssl rand -base64 16`: Create 16 chars password. Increase the length to 24 for stronger.
 
 ---
 
