@@ -10,11 +10,12 @@ The followings could be the needs:
 Below is the list of softwares which support this VM:
 
 - GUI-based
-  - UTM
+  - [UTM](#utm--install-ubuntu-amd-on-mac-arm)
   - Parallels
   - VMWare (doesn't support M1 processor)
 - CLI-based
-  - Lima
+  - [Colima](#a1-colima)
+  - [Lima](#a2-lima)
 
 > All the softwares support VM based same architecture as host or different architectures (ARM on AMD, AMD on ARM)
 
@@ -26,37 +27,122 @@ Install Ubuntu (ARM) on Mac (ARM)
 
 This is a CLI tool that is built on top of `lima`. It is very easy to use unlike `lima`.
 
+> [!NOTE]
+> We can have different instances of VM with different config (CPU, RAM, DISK, mount, network).
+
+#### Config file
+
+For each profile, stays at `~/.colima/PROFILE/colima.yaml`. \
+E.g. for `default`: \
+`~/.colima/default/colima.yaml`
+
+---
+
+Set a location as `false` in mount:
+
+```yaml
+mounts:
+  - location: /Users/
+    writable: false
+```
+
+#### Disk
+
+Colima stores Lima VMs inside its own directory, in: `~/.colima/_lima/PROFILE/`. \
+E.g. for sandbox profile:
+
+```sh
+$ ~/.colima/_lima/colima-sandbox
+basedisk          cloud-config.yaml diffdisk          ha.pid            ha.stderr.log     lima-version      qemu.pid          serial.log        serialp.log       serialv.log       ssh.config
+cidata.iso        colima.yaml       ga.sock           ha.sock           ha.stdout.log     lima.yaml         qmp.sock          serial.sock       serialp.sock      serialv.sock      ssh.sock
+```
+
+Colima (via Lima) uses copy-on-write disk layers:
+
+- **basedisk**
+  - The immutable base image (Ubuntu/Alpine/whatever Colima downloaded)
+  - Never changes
+  - Contains original OS image
+
+- **diffdisk**
+  - Contains all your changes
+  - Package installs, docker images, git repos, files, configs, everything inside VM
+  - Grows as you modify the VM
+  - THIS is the file you snapshot, back up, or delete if you want a fresh VM
+
+This is the actual “writeable” disk of the VM.
+
+TL;DR — The VM’s real data is in: \
+`~/.colima/_lima/colima-sandbox/diffdisk`
+
+This is the file you:
+
+- back up
+- delete to reset VM
+- clone
+- scan if you’re worried about malware
+
+**Summary**:
+
+![](img/colima_disk_summary.png)
+
+#### Open folder in Host's VSCode
+
+1. View the "Config File" (common for all VM profiles) in "**Remote-SSH: Settings**" in Command Palette.
+2. If empty, then by default it's set to `~/.ssh/config`.
+3. Get the `ssh.config` data of the VM profile (**sandbox**, say) via `$ cat ~/.colima/_lima/colima-sandbox/ssh.config`.
+4. Now, open the file: `~/.ssh/config` & then add the above content (looks like this):
+
+```sh
+# Example
+Host colima-sandbox
+  IdentityFile "/Users/abhi3700/.colima/_lima/_config/user"
+  User abhi3700
+  Hostname 127.0.0.1
+  Port 50986
+```
+
+5. Now, automatically, you would find the VM profile name (colima-sandbox) as set in the ssh config file (read by VSCode).
+
+![](img/colima_vscode_sandbox.png)
+
+6. Then you have to open it in another window. And then go to the folder (`/tmp`, say) & open the cloned repo.
+
+#### Commands
+
 - Install using brew: `$ brew install colima`.
-- Commands:
-  - `$ colima list` => lists the VMs
-  - `$ colima start` => starts the VM
-  - `$ colima start --cpu 4 --memory 8` => starts the VM with custom ram & cpu. Also, add `--disk 100` if required for 100 GB.
-  - `$ colima stop` => stops the VM
-  - `$ colima ssh` => opens the VM's shell like `lima` i.e. get to use linux on top of mac with same ARM hardware.c
-  - `$ colima status` => shows the status of VM
+- `$ colima list` => lists the VMs
+- `$ colima start` => starts the VM
+- `$ colima start --cpu 4 --memory 8` => starts the VM with custom ram & cpu. Also, add `--disk 100` if required for 100 GB.
+- `$ colima start --profile sandbox --memory 4 --cpu 4 --edit` => starts the VM with custom ram & cpu. Also, add `--disk 100` if required for 100 GB. And you can edit the config opened in terminal.
+- `$ colima stop` => stops the VM
+- `$ colima ssh` => opens the VM's shell like `lima` i.e. get to use linux on top of mac with same ARM hardware.c
+- `$ colima ssh -p sandbox` => open VM's shell of sandbox profile.
+- `$ colima status` => shows the status of VM
 
-    ```sh
-    INFO[0000] colima is running using QEMU
-    INFO[0000] arch: aarch64
-    INFO[0000] runtime: docker
-    INFO[0000] mountType: sshfs
-    INFO[0000] socket: unix:///Users/abhi3700/.colima/default/docker.sock
-    ```
+  ```sh
+  INFO[0000] colima is running using QEMU
+  INFO[0000] arch: aarch64
+  INFO[0000] runtime: docker
+  INFO[0000] mountType: sshfs
+  INFO[0000] socket: unix:///Users/abhi3700/.colima/default/docker.sock
+  ```
 
-  - `$ colima version` => shows the version of VM
+- `$ colima version` => shows the version of VM
 
-    ```sh
-    colima version 0.6.7
-    git commit: ba1be00e9aec47f2c1ffdacfb7e428e465f0b58a
+  ```sh
+  colima version 0.6.7
+  git commit: ba1be00e9aec47f2c1ffdacfb7e428e465f0b58a
 
-    runtime: docker
-    arch: aarch64
-    client: v24.0.5
-    server: v24.0.7
-    ```
+  runtime: docker
+  arch: aarch64
+  client: v24.0.5
+  server: v24.0.7
+  ```
 
-  - <kbd>ctrl+d</kbd>: Quit the VM's shell
-  - `$ colima help` => shows the help
+- <kbd>ctrl+d</kbd>: Quit the VM's shell
+- `$ colima help` => shows the help
+- `$ df -h`: Get current storage of VM (Total, Used, Available).
 
 #### Use `docker` inside VM of `colima` like this
 
