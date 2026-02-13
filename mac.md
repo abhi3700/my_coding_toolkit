@@ -338,7 +338,13 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
 - `$ zip -r foo.zip foo/ --exclude '**/target/*' 'foo/.git/*' 'foo/.vscode/*' 'foo/.github/*'`: zip a folder excluding subfolders.
 - `$ unzip foo.zip`: Unzip a folder.
-- `$ ifconfig | grep "inet " | grep -v 127.0.0.1`: Get IP address (w/wo connected to wifi or ethernet). Most likely the first one.
+- IP address:
+  - 1️⃣ **Public** IP (Internet-facing IP): `$ curl https://ifconfig.me` or `$ curl https://api.ipify.org` or `$ curl https://checkip.amazonaws.com`
+  - 2️⃣ **Local** IP (LAN / Wi-Fi / Ethernet):
+    - For Wi-Fi: `$ ipconfig getifaddr en0`.
+    - For ethernet: `$ ipconfig getifaddr en1`.
+    - List all active IPV4 addresses: `$ ifconfig | grep "inet " | grep -v 127.0.0.1`.
+  - **Public** + **Local**: `$ echo "Public IP:" $(curl -s https://api.ipify.org) && echo "Local IP:" $(ipconfig getifaddr en0)`
 - `curl -O http://<mac-ip>:8080/foo.zip`: Download folder from another macbook.
 - `$ env`: all the global variables. can be used like this `$ echo $NVM_DIR` -> `/Users/abhi3700/.nvm`
 - `$ lsof -i:<PORT_NO>`: Check if a port is open. E.g. `lsof -i:3000`
@@ -577,19 +583,19 @@ which fish
 /opt/homebrew/bin/fish
 ```
 
-3. Add fish to shells list:
+1. Add fish to shells list:
 
 ```sh
 echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
 ```
 
-4. Change the shell to fish by default so that when a new terminal tab/window opened, it redirects me to `fish` shell just like previously `zsh`.
+1. Change the shell to fish by default so that when a new terminal tab/window opened, it redirects me to `fish` shell just like previously `zsh`.
 
 ```sh
 chsh -s /opt/homebrew/bin/fish
 ```
 
-5. Now, you have to copy the `zsh`'s `$PATH` variable (has previously installed bin PATHs) into that of `fish`.
+1. Now, you have to copy the `zsh`'s `$PATH` variable (has previously installed bin PATHs) into that of `fish`.
 
 ```sh
 echo $PATH
@@ -597,13 +603,13 @@ echo $PATH
 ...
 ```
 
-6. Paste into fish's config file using `nano` command:
+1. Paste into fish's config file using `nano` command:
 
 ```sh
 nano ~/.config/fish/config.fish
 ```
 
-7. Add that line here (wouldn't be wrapped).
+1. Add that line here (wouldn't be wrapped).
 
 ```sh
 set -gx PATH <paste-your-PATH-here>
@@ -621,7 +627,7 @@ You can also revert back from `fish` to `zsh`:
 cat /etc/shells
 ```
 
-2. [OPTIONAL] If not available, add its path to shells list.
+1. [OPTIONAL] If not available, add its path to shells list.
 
 ```sh
 $ which zsh
@@ -630,7 +636,7 @@ $ which zsh
 $ echo /opt/homebrew/bin/zsh | sudo tee -a /etc/shells
 ```
 
-3. Change shell back to `zsh`.
+1. Change shell back to `zsh`.
 
 ```sh
 chsh -s /opt/homebrew/bin/zsh
