@@ -36,7 +36,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
   • When prompted for a file location, press Enter to accept the default (~/.ssh/id_ed25519).
   • Optionally, add a passphrase for extra security.
 
-2. Start the ssh-agent in Fish/Bash shell
+1. Start the ssh-agent in Fish/Bash shell
 
 Unlike Bash, Fish uses different syntax. You can add a snippet to your Fish configuration so that the ssh-agent starts automatically.
 
@@ -44,7 +44,7 @@ Unlike Bash, Fish uses different syntax. You can add a snippet to your Fish conf
 nano ~/.config/fish/config.fish
 ```
 
-3. Add the following lines to check if the ssh-agent is running and start it if not:
+1. Add the following lines to check if the ssh-agent is running and start it if not:
 
 ```sh
 # Start ssh-agent if it isn't running
@@ -65,7 +65,7 @@ if status is-interactive
 end
 ```
 
-4. Add Your SSH Key to the Agent
+1. Add Your SSH Key to the Agent
 
 Now add your newly created SSH key to the agent:
 
@@ -75,7 +75,7 @@ ssh-add ~/.ssh/id_ed25519
 
 If you set a passphrase during key creation, you’ll be prompted to enter it now.
 
-5. Add Your Public Key to GitHub
+1. Add Your Public Key to GitHub
 
 ```sh
 # copy the public key
@@ -85,7 +85,7 @@ cat ~/.ssh/id_ed25519.pub
 # Paste the public key. Click Add SSH key.
 ```
 
-6. Test your SSH Connection with Github.com
+1. Test your SSH Connection with Github.com
 
 ```sh
 ssh -T git@github.com
@@ -99,7 +99,7 @@ You should see a message like:
 Hi <your_username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-7. Use SSH with Git
+1. Use SSH with Git
 
 Make sure your Git remotes use the SSH URL. For example, to update your remote URL, run:
 
@@ -802,6 +802,39 @@ git merge --no-ff feature/my-single-change -m "Merge feature/my-single-change"
 
 Describes the whole workflow for a task.
 
+### Rebase
+
+Suppose your history looks like this:
+
+```txt
+A---B---C (main)
+     \
+      D---E (head)(feat/payroll-agent)
+```
+
+If you run:
+
+```sh
+# If you are on `other` branch.
+git rebase main
+
+# If you are on `main` branch.
+# That means: rebase feat/payroll-agent onto main
+git rebase main feat/payroll-agent
+```
+
+Git will:
+
+ 1. Take commits D and E
+ 2. Temporarily remove them
+ 3. Reapply them on top of C
+
+Result:
+
+```sh
+A---B---C---D'---E'
+```
+
 ### Delete unpushed commits locally
 
 - Delete the most recent commit, _keeping_ the work you've done: <br/>
@@ -838,7 +871,7 @@ $ git commit --amend -m "FAQ added" -m "
  1 file changed, 5 insertions(+), 1 deletion(-)
 ```
 
-2. Force push to update the history of the remote repository
+1. Force push to update the history of the remote repository
 
 ```bash
 git push --force <branch-name>
@@ -858,7 +891,7 @@ pick 11ce0ab34 fix: Fix spelling.
 # Rebase 7e59e8ead..11ce0ab34 onto 7e59e8ead (5 commands)
 ```
 
-2. Move to the lines of the commit message you want to change and replace pick with reword
+1. Move to the lines of the commit message you want to change and replace pick with reword
 
 ```bash
 reword 43f8707f9 fix: update dependency json5 to ^2.1.1
@@ -870,14 +903,14 @@ pick 11ce0ab34 fix: Fix spelling.
 # Rebase 7e59e8ead..11ce0ab34 onto 7e59e8ead (5 commands)
 ```
 
-3. Save the changes and close the editor.
-4. For each chosen commit, a new text editor window will open. Change the commit message, save the file, and close the editor.
+1. Save the changes and close the editor.
+2. For each chosen commit, a new text editor window will open. Change the commit message, save the file, and close the editor.
 
 ```bash
 fix: update dependency json5 to ^2.1.1
 ```
 
-5. Force push the changes to the remote repository:
+1. Force push the changes to the remote repository:
 
 ```bash
 git push --force <branch-name>
@@ -987,8 +1020,8 @@ if [[ $(git status --porcelain | wc -l) -gt 0 ]]; then
 fi
 ```
 
-3. [Optional] If any issue, do this `chmod +x auto-push.sh`
-4. To run in **Task Scheduler** in Windows PC/Desktop, create a batch file with the following code:
+1. [Optional] If any issue, do this `chmod +x auto-push.sh`
+2. To run in **Task Scheduler** in Windows PC/Desktop, create a batch file with the following code:
 
 ```bat
 @echo off
@@ -996,8 +1029,8 @@ cmd /c ""C:\Program Files\Git\bin\sh.exe" "Z:\SECTIONS\DRY ETCH\OPs\auto_push.sh
 rem pause
 ```
 
-5. [OPTIONAL] Add this `F:\Softwares\Git\bin\sh.exe --login -i "F:\Developer\auto-push.sh"` in **target** param of "Properties >> Shortcut" tab in the shortcut file of "auto_push.sh" shell script file.
-6. Add this file in task scheduler.
+1. [OPTIONAL] Add this `F:\Softwares\Git\bin\sh.exe --login -i "F:\Developer\auto-push.sh"` in **target** param of "Properties >> Shortcut" tab in the shortcut file of "auto_push.sh" shell script file.
+2. Add this file in task scheduler.
 
 ### Create a Git Repository (@ Server level) and clone repository (@ Client level)
 
