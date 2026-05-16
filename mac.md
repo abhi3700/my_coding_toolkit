@@ -727,6 +727,11 @@ Error: An unsatisifed requirement failed this build.
 
   Now, restart your computer to enable indexing with updated folders settings. 🎉
 
+## Security
+
+- Turn ON the Firewall.
+  - Enable the stealth mode.
+
 ## References
 
 - Apple keyboard shortcuts - <https://support.apple.com/en-in/HT201236>
