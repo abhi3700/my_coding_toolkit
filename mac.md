@@ -259,6 +259,8 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
     - Now, Warp opens from any other app on macOS using this shortcut key. Usage: from VSCode editor.
   - Setup default editor to VSCode in Warp settings.
 
+## [Password-Protected Folder on macOS](./mac_pp.md)
+
 ## Display
 
 - Night light/effect: "System Preferences" >> Displays >> Night Shift >> Schedule: On, Manual
@@ -338,6 +340,7 @@ Read [more](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-lo
 - `$ tar -xf boost-1.78.0.tar.gz`: unzip a folder via terminal
 - `$ zip -r foo.zip foo/ --exclude '**/target/*' 'foo/.git/*' 'foo/.vscode/*' 'foo/.github/*'`: zip a folder excluding subfolders.
 - `$ unzip foo.zip`: Unzip a folder.
+- `$ zip -e foo$$`
 - IP address:
   - 1️⃣ **Public** IP (Internet-facing IP): `$ curl https://ifconfig.me` or `$ curl https://api.ipify.org` or `$ curl https://checkip.amazonaws.com`
   - 2️⃣ **Local** IP (LAN / Wi-Fi / Ethernet):
