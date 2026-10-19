@@ -1,4 +1,12 @@
-# MacOS for Windows users
+# MacOS
+
+If you are coming from Windows, this might be a helpful guide in migration.
+
+Applicable for both intel & silicon processors.
+
+> [!Note]
+> For silicon, use **homebrew** as package manager unless the package is not available. \
+> For intel, use **macport** as package manager unless the package is not available.
 
 ```console
 ❯ sysctl -n machdep.cpu.brand_string
@@ -467,9 +475,7 @@ Just add this to `~/.zprofile` (if using `zsh`). Then, run `source ~/.zprofile` 
   - Run this to activate `$ source ~/.zprofile`
   - Now, use the command in the current/new terminal.
 
-### Zsh
-
-#### 1. Install Homebrew (if not installed)
+### Homebrew
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -484,14 +490,33 @@ echo >> ~/.zprofile
 
 All of it is given right at the end of brew installation terminal tab. Don't close unless done.
 
-#### 2. Install Zsh and set it as default shell
+### Port
 
-- `$ brew install zsh`
-  > By default, it would be set as `/bin/zsh`. You can check via `$ which zsh`.
-- Set zsh as your default shell `$ chsh -s /opt/homebrew/bin/zsh`.
+Install from [here](https://www.macports.org/install.php).
+
+### Zsh
+
+#### 1. Install Zsh and set it as default shell
+
+- For silicon processor: `$ brew install zsh`. For intel processor: `sudo port install zsh` or download Zsh 5.9 from the official source.
+  
+```sh
+cd ~/Downloads
+
+curl -LO https://www.zsh.org/pub/zsh-5.9.tar.xz
+
+tar -xf zsh-5.9.tar.xz
+cd zsh-5.9
+which zsh
+# /usr/local/bin/zsh
+```
+
+> By default, it would be set as `/bin/zsh`. You can check via `$ which zsh`.
+
+- Set `zsh` as your default shell `$ chsh -s /opt/homebrew/bin/zsh`.
 - Restart the terminal.
 
-#### 3. Install Oh My Zsh
+#### 2. Install "Oh My Zsh"
 
 Oh My Zsh is a framework for managing your Zsh configuration. It enhances the Zsh shell experience
 
@@ -504,13 +529,15 @@ Oh My Zsh is a framework for managing your Zsh configuration. It enhances the Zs
   - zsh-syntax-highlighting: Highlight valid/invalid commands
   - autojump: Jump to frequently used directories
   - docker, brew, etc.: Command shortcuts for dev tools
-- Install via `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- Install from source via `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
 #### 3. Install plugins
 
 - `zsh-autosuggestions`: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 - `zsh-syntax-highlighting`: `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-- `autojump`: `brew install autojump`
+- `autojump`:
+  - silicon processor: `brew install autojump`
+  - intel processor: `sudo port install autojump`
 
 #### 4. Configure Theme, Plugins in `~/.zshrc` file
 
