@@ -30,6 +30,30 @@ kern.hv_support: 1
 VMX
 ```
 
+## Background
+
+**Darwin is the Unix-based core operating system underlying Apple's macOS**. Think of it as the foundation responsible for processes, threads, memory, filesystems, networking, device drivers, and system calls.
+
+![alt text](img/mac_architecture.png)
+![alt text](img/darwin_linux_windows.png)
+![alt text](img/mac_inside_darwin.png)
+![alt text](img/mac_internal_for_rust.png)
+
+Verify darwin
+
+```sh
+uname -s
+
+# Darwin kernel release
+uname -r
+
+# macOS version
+sw_vers
+
+# system architecture
+uname -m
+```
+
 ## Installation
 
 System:
