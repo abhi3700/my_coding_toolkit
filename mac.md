@@ -239,33 +239,73 @@ alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
 
 ## Apps
 
+Following apps are mostly used.
+
+### Office/Docs
+
 - **Numbers**: a quick analysis app like Excel for data analytics.
 - **Pages**: a document app like Word, but with PPT type of styling. Easy to add cards, etc.
+- **Keynote**: PPT replacement, but
 - **Notes**: a note app for maintaining TODO list
   - <kbd>cmd+opt+n</kbd>: show/hide folders
-- **Freeform**: whiteboard app like Miro [FREE for macOS]
-- **Miro**: Architecture, Mind Map, Whiteboard [PAID]
-- **Draw.io**: Architecture, Mind Map, Whiteboard [FREE]
+- **MS Office**: I use especially PPT for edit,
+
+### Code
+
 - **Visual Studio Code (VSC)**: Global code editor
 - **Virtual Machine (VM)**: For any VM setup, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/vm_all.md).
   - GUI (UTM)
-  - CLI (lima)
-- **Handbrake**: File compressor
-- **Photo Booth**: Capture Image, Video
-- **Facetime**: Call someone
-- **OBS** (FREE): Screen recorder with/without camera
+  - CLI (lima/colima)
+- **Freeform**: whiteboard app like Miro [FREE for macOS]
+- **Miro**: Architecture, Mind Map, Whiteboard [PAID]
+- **Draw.io**: Architecture, Mind Map, Whiteboard [FREE]
+- **Excalidraw**: available as VSCode extension.
+
+<details>
+<summary>Terminal Phone: An interactive iPhone in your terminal, shared with your AI agents..</summary>
+
+[Github](https://github.com/govijr/terminal-phone)
+
+</details>
+<details>
+<summary>Terminal Mac: A separate macOS desktop for computer-use agents, viewed and controlled from a terminal.</summary>
+
+Terminal Mac:
+
+[![](img/terminal_mac_twitter_post.png)](https://x.com/kirtandopamine/status/2117678349828976746)
+
+[Github](https://github.com/govijr/terminal-mac)
+
+</details>
+
+<details>
+<summary>Warp</summary>
+
+**[Warp](https://www.warp.dev/)**: Rust-based Terminal for any OS (Windows, Linux, Mac). It's fast & has a lot of features (AI suggestion) & customizations, notifications, etc unlike default `Terminal` app.
+
+- Open from VSCode:
+  1. Go to Preferences using <kbd>cmd+,</kbd>.
+  2. Search for "terminal" & then in "Terminal > External: Osx Exec", replace `Terminal.app` with `Warp.app`.
+  3. Just press <kbd>cmd+shift+c</kbd> to open **Warp** app at the workspace directory. Each time you press the shortcut key, it opens new session in Warp terminal app.
+- Setup hotkey:
+  - Go to Warp settings, then press any shortcut key for instance, <kbd>ctrl+shift+t</kbd>.
+  - Now, Warp opens from any other app on macOS using this shortcut key. Usage: from VSCode editor.
+- Setup default editor to VSCode in Warp settings.
+
+</details>
+
+### Photo, Video Editor
+
+- **VN Video Editor**: Free upto 100 videos/month & then 300rs./month.
 - **Movavi Video Suite 23** (purchased license)
+- **OBS** (FREE): Screen recorder with/without camera
+- **Preview**: for quick edit.
+- **Photo Booth**: Capture Image, Video
+- **Microsoft PPT**: For editing images,..
+- **Facetime**: Call someone
 - **Fork** (purchased license): Git GUI
 - **Screen recorder**: <kbd>cmd+shift+5</kbd>
-- **[Warp](https://www.warp.dev/)**: Rust-based Terminal for any OS (Windows, Linux, Mac). It's fast & has a lot of features (AI suggestion) & customizations, notifications, etc unlike default `Terminal` app.
-  - Open from VSCode:
-    1. Go to Preferences using <kbd>cmd+,</kbd>.
-    2. Search for "terminal" & then in "Terminal > External: Osx Exec", replace `Terminal.app` with `Warp.app`.
-    3. Just press <kbd>cmd+shift+c</kbd> to open **Warp** app at the workspace directory. Each time you press the shortcut key, it opens new session in Warp terminal app.
-  - Setup hotkey:
-    - Go to Warp settings, then press any shortcut key for instance, <kbd>ctrl+shift+t</kbd>.
-    - Now, Warp opens from any other app on macOS using this shortcut key. Usage: from VSCode editor.
-  - Setup default editor to VSCode in Warp settings.
+- **Handbrake**: File compressor
 
 ## [Password-Protected Folder on macOS](./mac_pp.md)
 
